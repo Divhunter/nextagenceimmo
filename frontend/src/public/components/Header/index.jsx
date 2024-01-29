@@ -89,7 +89,7 @@ const Header = () => {
 					<Link to='gestion'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Gestion</p>
 					</Link>
-					<Link to='sante'>
+					<Link to='estimation'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Estimation</p>
 					</Link>
 					<Link to='pro'>

@@ -3,44 +3,44 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import logoEpargne from '../../assets/pictures/logo-epargne.png'
+import logoEstimation from '../../assets/pictures/logo-estimation.png'
 
 // styles
-import './m-epargne.css'
-import './d-epargne.css'
+import './m-estimation.css'
+import './d-estimation.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
-const Epargne = () => {
+const Estimation = () => {
 
-    const epargneHeader = pagesHeadersArray.find(el => el.title === "3")
-    const epargneHeaderArray = []
-    epargneHeaderArray.push(epargneHeader)
+    const estimationHeader = pagesHeadersArray.find(el => el.title === "3")
+    const estimationHeaderArray = []
+    estimationHeaderArray.push(estimationHeader)
 
 	return (
 		<section 
-            id='epargne' 
-            className='epargne'
+            id='estimation' 
+            className='estimation'
         >
-            {epargneHeaderArray.map((item, index) => (
+            {estimationHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div id='epargne-header-text'>
+                        <div id='estimation-header-text'>
                             {item.titleCol1}
                             <br/>
                             <img
-                                src={logoEpargne} 
+                                src={logoEstimation} 
                                 className='header-logo'
                                 width='615px'
                                 height='747px'
                                 loading='lazy'
-                                alt='logo-epargne'
+                                alt='logo-estimation'
                             />
                         </div>
                     }
                     subTitle1={
-                        <div id='titleEpargne'>
+                        <div id='titleestimation'>
                             {item.subTitle1}
                         </div>
                     }
@@ -72,4 +72,4 @@ const Epargne = () => {
 	)
 }
 
-export default Epargne
+export default Estimation

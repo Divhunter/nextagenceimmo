@@ -6,7 +6,7 @@ import Background from '../../public/components/Background'
 import Header from '../../public/components/Header'
 import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
-import Epargne from '../../public/components/Epargne'
+import Estimation from '../../public/components/Estimation'
 import Gestion from '../../public/components/Gestion'
 import Sante from '../../public/components/Sante'
 import Vowd from '../../public/components/Vowd'
@@ -30,7 +30,7 @@ const PublicContainer = () => {
         gsap.fromTo(
             elem,
             {
-                opacity: 0,
+                opacity: 200,
                 y: -200,
             },
             {
@@ -52,7 +52,7 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#titleEpargne')
+        slideInTop('#titleestimation')
     }, [])
 
     useEffect(() => {
@@ -90,7 +90,7 @@ const PublicContainer = () => {
 				<Banner />
 				<About />
                 <Gestion />
-				<Epargne />
+				<Estimation />
 				<Sante />
                 <Vowd />
                 <Prof />
