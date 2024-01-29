@@ -1,0 +1,92 @@
+/**********************************************************************************************/
+/********************************************* banner *****************************************/
+/**********************************************************************************************/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 188vw;
+    margin-bottom: -5vw;
+}
+
+.banner__banner-background {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.banner__logo-mutuact {
+    position: relative;
+    top: -100vw;
+    margin-top: -40vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70vw;
+    height: auto;   
+    z-index: 3000;
+}
+
+.banner__picture1 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    margin-bottom: -2vw;
+}
+
+.banner__picture2 {
+    display: none;
+}
+
+.banner__picture--in {
+    opacity: 1;
+    transform: scale(1.08, 1.08);
+    transition: all 2.5s ease;
+}
+
+.banner__picture--out {
+    opacity: 0;
+    transition: all 2.5s ease;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* banner *****************************************/
+    /**********************************************************************************************/
+    
+    .banner {
+        height: 66vw;
+        margin-bottom: -3vw;
+    }
+
+    .banner__picture1 {
+        display: none;
+    }
+    
+    .banner__picture2 {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        margin-bottom: -3vw;
+    }
+
+    .banner__logo-mutuact {
+        top: -30vw;
+        margin-top: -80vw;
+        width: 40vw;
+        height: auto;   
+        z-index: 3000;
+    }
+}

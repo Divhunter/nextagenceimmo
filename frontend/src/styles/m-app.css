@@ -1,0 +1,136 @@
+/**********************************************************************************************/
+/********************************************** app *******************************************/
+/**********************************************************************************************/
+
+header,
+footer, 
+section, 
+article {
+    overflow: hidden;
+    background-color: white;
+}
+
+section {
+    position: relative;
+    margin-top: -1px; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+ul, li {
+    list-style:none;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+input, textarea ,Link,a{
+    border: 0;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    border: 0;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.arrow-down {
+    width: 10vw;
+    height: auto;
+    opacity: .6;
+} 
+
+.arrow-left {
+	font-size: 6.5vw;
+	color: rgb(10, 86, 109);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn {
+	font-size: 6vw;
+	color: rgb(10, 86, 109);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn:hover,
+.arrow-left:hover {
+	color: rgb(52, 190, 167);
+	transition: color .4s;
+}
+
+.logout__btn:active,
+.arrow:active {
+	color: rgb(17, 142, 180);
+}
+
+.x-delete {
+    float: right;
+    font-size: 4vw;
+    color: rgb(10, 86, 109);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.x-delete:hover {
+    color: red ;
+    opacity:1
+}
+
+/**********************************************************************************************/
+/********************************************* form *******************************************/
+/**********************************************************************************************/
+
+.loader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%; /* Largeur à 100% pour occuper tout l'espace de l'élément parent */
+    height: 100%; /* Hauteur à 100% pour occuper tout l'espace de l'élément parent */
+    background: linear-gradient(rgb(17, 29, 39), rgb(108, 121, 129));
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .arrow-down {
+        width: 40px;
+    }
+
+    .arrow-left {
+        font-size: 28px;
+    }
+
+    .logout__btn {
+		font-size: 28px;
+	}
+
+    .x-delete {
+        font-size: 28px;
+    }
+}

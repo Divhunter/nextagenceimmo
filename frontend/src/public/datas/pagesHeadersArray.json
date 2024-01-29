@@ -1,0 +1,68 @@
+[
+
+    {	
+        "title": "1",
+        "titleCol1": "À propos",
+        "subTitle1": "Notre Agence Immo : depuis plus de 10 ans, nos équipes d'experts vous accompagnent dans vos projets immobiliers et répondent à vos besoins spécifiques.",
+        "subTitle2": "Nos 2 agences situées à Lyon et Vénissieux disposent des derniers outils technologiques et de la meilleure couverture publicitaire du marché",
+        "button": "",
+        "text1": ""
+    },
+    {
+        "title": "2",
+		"titleCol1": "Gestion",
+        "subTitle1": "Nous vous accompagnons dans la gestion de votre patrimoine immobilier. De l'estimation locative à la gestion de votre bien.",
+        "subTitle2": "N'hésitez pas à nous demander un devis personnalisé pour votre mandat de gestion.",
+        "button": "",
+        "text1": ""
+    },
+	{	
+        "title": "3",
+		"titleCol1": "Épargne",
+        "subTitle1": "En tant qu'assureur chevronné, nous comprenons l'importance cruciale de préparer l'avenir financier de nos clients. C'est avec enthousiasme que nous vous présentons des solutions d'épargne conçues pour transformer vos rêves en réalité.",
+        "subTitle2": "ASSURANCE VIE - PLAN D'ÉPARGNE RETRAITE - ASSURANCE DÉCÉS - ASSURANCE DÉPENDANCE - RENTE ...",
+        "text1": ""
+    },
+    {
+        "title": "4",
+		"titleCol1": "Santé",
+        "subTitle1": "Prenez le contrôle de votre bien-être. Optez pour une complémentaire santé qui va au-delà des attentes, assurant une protection solide et des remboursements adaptés.",
+        "subTitle2": "COMPLÉMENTAIRE INDIVIDUELLE - COLLECTIVE - JEUNE - FAMILLE - RESPONSABLE - 100% ...",
+        "text1": ""
+	},
+    {
+        "title": "5",
+		"titleCol1": "Pro.",
+        "subTitle1": "Ensemble, écrivons la success story de votre entreprise. Notre cabinet comprend les défis uniques auxquels font face les professionnels comme vous.",
+        "subTitle2": "RCP - MRP - CYBER RISQUES - FLOTTE AUTOMOBILE - DOMMAGE AUX BIENS - RCM - JURIDIQUE ... ",
+        "text1": ""
+	},
+    {	
+        "title": "6",
+		"titleCol1": "Prêt",
+        "subTitle1": "Lorsque vous envisagez de concrétiser un projet financier avec l'aide d'un emprunt, il est essentiel de considérer la protection de votre investissement. Dans la plupart des situations, la souscription à une assurance emprunteur est incontournable, tant pour votre sécurité que celle de votre famille.",
+        "subTitle2": "PRÊT PERSONNEL - IMMOBILIER - AUTOMOBILE - ÉTUDIANT - CONSOMMATION - PROFESSIONNEL ...",
+        "text1": ""
+	},
+    {	
+        "title": "7",
+		"titleCol1": "Auto, habitation ...",
+        "subTitle1": "Votre style de vie est unique, et vos assurances devraient l'être aussi. Que vous jongliez entre votre voiture en semaine et votre moto le week-end, ou que vous ayez un rythme de vie différent, nous avons les solutions d'assurance auto et moto taillées sur mesure pour vous.",
+        "subTitle2": "CIVIL AUTO - TOUS RISQUE - AUTO KL/M - CONDUCTEUR - ASSISTANCE - BRISE GLACE - JURIDIQUE AUTO ...",
+        "text1": ""
+	},
+    {	
+        "title": "8",
+		"titleCol1": "Contact agence",
+        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet d'assurance",
+        "subTitle2": "NOTRE AGENCE VOUS ACCUEILLE DU LUNDI AU VENDREDI DE 9H À 12H30 ET 14H À 18H30",
+        "text1": ""
+	},
+    {	
+        "title": "9",
+		"titleCol1": "Formulaire de contact",
+        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet d'assurance.",
+        "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",
+        "text1": ""
+	}
+]

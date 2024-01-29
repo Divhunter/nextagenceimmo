@@ -1,0 +1,178 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .about__logo {
+        width: 6vw;
+    }
+    
+    .button {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1.4vw 2.2vw 1.4vw 2.2vw;
+        font-size: 2vw;
+    }
+
+    .containerAbout>p {
+        font-size: 1.8vw;
+        line-height: 3vw;
+        letter-spacing: normal;
+    }
+
+    .containerAbout>p>div {
+        font-size: 2.1vw;
+    }
+
+    .containerAbout__text {
+        margin: 6vw 4.375vw 5vw 4.375vw;
+        font-size: 1.2vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2.8vw;
+        font-weight: 600;
+        line-height: 6vw;
+    }
+
+    .containerAbout__bloc__square {
+        top: 7vw;
+        left: 8vw;
+        padding-right: 43vw;
+        height: 12vw;
+    }
+
+    .containerAbout__bloc__pub {
+        top: 4.5vw;
+        margin-left: 12vw;
+        margin-right: 12vw;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .button {
+        padding: 1.312vw 2.187vw 1.312vw 2.187vw;
+        font-size: 1.75vw;
+        letter-spacing: .0237vw;
+    }
+
+    .containerAbout>p {
+        font-size: 1.6vw;
+        line-height: 2.5vw;
+    }
+
+    .containerAbout>p>div {
+        font-size: 1.8vw;
+    }
+
+    .containerAbout__text {
+        margin: 4vw 4.375vw 5vw 4.375vw;
+        font-size: 1vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2vw;
+    }
+
+    .containerAbout__bloc__square {
+        top: 7vw;
+        left: 12vw;
+        padding-right: 32.8vw;
+        height: 9vw;
+    }
+
+    .containerAbout__bloc__pub {
+        top: 4.5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /********************************************* about ******************************************/
+    /**********************************************************************************************/
+
+    .about__logo {
+        margin-bottom: 1.6vw;
+        width: 4vw;
+    }
+
+    .button {
+        padding: 1.095vw 1.825vw 1.095vw 1.825vw;
+        font-size: 1.46vw;
+        letter-spacing: .0365vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 .219vw .584vw;
+        margin-bottom: 8vw;
+    }
+
+    .containerAbout {
+        margin-top: -7vw;
+        margin-bottom: -3.5vw;
+        height: 58.473vw;
+    }
+
+    .containerAbout>p {
+        font-size: 1.2vw;
+        line-height: 2vw;
+    }
+
+    .containerAbout>p>div {
+        font-size: 1.5vw;
+    }
+
+    .containerAbout__text {
+        width: 40vw;
+        margin: 2.5vw 3vw 3vw 3vw;
+    }
+
+    .containerAbout__text__header {
+        font-size: 2.044vw;
+        line-height: 2.555vw;
+    }
+
+    .containerAbout__bloc {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+    }
+
+    .containerAbout__bloc__couple {
+        float: right;
+        width: 38.982vw;
+    }
+
+    .containerAbout__bloc__pub {
+        top: 25.725vw;
+        right: 0;
+        margin-left: 40vw;
+        margin-right: 3.19vw;
+        font-size: 2.4vw;
+        line-height: 2.92vw;
+    }
+
+    .containerAbout__bloc__pub>span {
+        color: rgb(206, 39, 73);
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/2br/static/css/main.ab9214fb.css",
+    "main.js": "/2br/static/js/main.1a61d2f7.js",
+    "static/media/vdo.mp4": "/2br/static/media/vdo.7cd9bd74bc822e597a7d.mp4",
+    "static/media/handshake2.png": "/2br/static/media/handshake2.b906154c63fe1a49f203.png",
+    "static/media/background1.jpg": "/2br/static/media/background1.6801d1c4392fe54cbe46.jpg",
+    "static/media/macon.jpg": "/2br/static/media/macon.bed8858d0f11d55f8298.jpg",
+    "static/media/img4-2.jpg": "/2br/static/media/img4-2.7111bacddf684a1d58ad.jpg",
+    "static/media/img4-1.jpg": "/2br/static/media/img4-1.04b04c7e0c3205945c25.jpg",
+    "static/media/img1-2.jpg": "/2br/static/media/img1-2.509ac41dedc2c88a9550.jpg",
+    "static/media/img1-1.jpg": "/2br/static/media/img1-1.a6867b742623ed32b667.jpg",
+    "static/media/gros-oeuvre.jpg": "/2br/static/media/gros-oeuvre.9f987f8d0b3307501a8a.jpg",
+    "static/media/img2-2.jpg": "/2br/static/media/img2-2.62b41b0becbf68bbb1cb.jpg",
+    "static/media/2biconw.png": "/2br/static/media/2biconw.6c4700720e213ec5a247.png",
+    "static/media/logo-2br-2.png": "/2br/static/media/logo-2br-2.71586584834dee681eb2.png",
+    "static/media/handshake.jpg": "/2br/static/media/handshake.87cfcf152dab144d9967.jpg",
+    "static/media/img3-2.jpg": "/2br/static/media/img3-2.0c5a35d1c0a5b8dc3b62.jpg",
+    "static/media/electricien.jpg": "/2br/static/media/electricien.5ba16d3b76733f1d3017.jpg",
+    "static/media/img2-1.jpg": "/2br/static/media/img2-1.5a972af539e4bbd1c529.jpg",
+    "static/media/office.jpg": "/2br/static/media/office.55041a032b51ff2cddc0.jpg",
+    "static/media/menuisier2.jpg": "/2br/static/media/menuisier2.553f6a540889790c4fb3.jpg",
+    "static/media/img3-1.jpg": "/2br/static/media/img3-1.3204545692b80f3ff448.jpg",
+    "static/media/plombier.jpg": "/2br/static/media/plombier.64fd710226af3c3c2e78.jpg",
+    "static/media/mur.jpg": "/2br/static/media/mur.fbb73fcf7b177e6fd60f.jpg",
+    "static/media/img0-1.jpg": "/2br/static/media/img0-1.07b075460ff3bedc0163.jpg",
+    "static/media/peintre.jpg": "/2br/static/media/peintre.f74816e219a10d4e127c.jpg",
+    "static/media/architecte.jpg": "/2br/static/media/architecte.3309368c38e6d22511d8.jpg",
+    "static/media/sol.jpg": "/2br/static/media/sol.97bc9fcf9fd70427c622.jpg",
+    "static/media/img0-2.jpg": "/2br/static/media/img0-2.e328170bfee2a7ce6399.jpg",
+    "static/media/drapeau-2br-w.png": "/2br/static/media/drapeau-2br-w.9cad3f71373cbc410d44.png",
+    "static/media/label-decennal.png": "/2br/static/media/label-decennal.820527b1c05731ff11c9.png",
+    "static/media/label-qualibat.png": "/2br/static/media/label-qualibat.bb857467b4c1e09403d9.png",
+    "index.html": "/2br/index.html",
+    "main.ab9214fb.css.map": "/2br/static/css/main.ab9214fb.css.map",
+    "main.1a61d2f7.js.map": "/2br/static/js/main.1a61d2f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab9214fb.css",
+    "static/js/main.1a61d2f7.js"
+  ]
+}

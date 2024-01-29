@@ -1,0 +1,121 @@
+/**********************************************************************************************/
+/********************************************* login ******************************************/
+/**********************************************************************************************/
+.login {
+    text-align: center;
+    width: 100% !important;
+    height: 100vh;
+    background-color: white;
+    color: rgb(10, 86, 109);
+    z-index: 2000;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column !important;
+    align-items:flex-start; 
+}
+
+
+.login__header {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 5vw;
+    margin: 0;
+    color: rgb(10, 86, 109);
+    font-family: Open, sans-serif;
+    font-weight: 500;
+    font-size: 4.5vw;
+    line-height: 6vw;
+    letter-spacing: .1vw;
+}
+
+.login__header > a {
+    color: rgb(52, 190, 167)
+}
+
+.login__header > a:hover {
+    border-bottom: 1px solid rgb(52, 190, 167)
+}
+
+.password {
+    position: relative;
+  }
+
+.icon-password {
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+    color: rgb(32, 53, 65); 
+    cursor: pointer;
+}
+
+.login__title {
+    margin-top: 70px;
+    z-index: 1000;
+}
+
+.form-login {
+display: flex;
+flex-direction: column;    
+gap: .5rem;
+width: 400px;
+}
+.input-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.error-message{
+    text-align: start;
+}
+.form-login input{
+
+height: 50px;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* login ******************************************/
+    /**********************************************************************************************/
+    .login__header {
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+ 
+}
+@media screen and (max-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* login ******************************************/
+    /**********************************************************************************************/
+    .login__header {
+        text-align: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .form-login {
+        
+        width: 80%;
+        }
+}

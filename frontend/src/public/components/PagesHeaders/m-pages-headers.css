@@ -1,0 +1,211 @@
+/**********************************************************************************************/
+/***************************************** pages-headers **************************************/
+/**********************************************************************************************/
+
+.title-container {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-family: 'Roboto+Mono', sans-serif;
+    background-color: white;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header-rubrik {
+    height: auto;
+    padding-top: 0.875vw;
+    padding-bottom: 4.6vw;
+    background-color: white;
+}
+
+h2 {
+    position: relative;
+    font-size: 5.6vw;
+    letter-spacing: .0275vw;
+    color: rgb(31, 61, 75);
+    font-family: 'Open', sans-serif;
+}
+
+.header-logo {
+    width: 12vw;
+    height: auto;
+    margin-top: 6vw;
+    margin-bottom: 0;
+}
+
+h3 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 6vw;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width: auto;
+    font-family: 'Helvetica';
+    font-size: 6vw;
+    letter-spacing: .0437vw;
+    font-weight: 800;
+    color: white;
+    background-image: 
+    url("https://www.transparenttextures.com/patterns/light-wool.png"),
+    linear-gradient(to right, rgb(206, 39, 73), rgb(16, 31, 38));
+}
+
+h4 {
+    display: inline-block;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    font-size: 4.5vw;
+    line-height: 5.4vw;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: rgb(31, 61, 75);
+}
+
+.paragraph {
+    position: relative;
+    text-align: left;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 4.8vw;
+    font-weight: 300;
+    font-size: 1.75vw;
+    line-height: 2.275vw;
+    letter-spacing: .0875vw;
+}
+
+.why {
+    width: 100%;
+    text-align: center;
+    margin-top: -2.625vw;
+    margin-bottom: 4.375vw;
+    font-size: 5vw;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: rgba(80, 80, 80,.8);
+    background-color: rgb(244, 252, 250); 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.why>header {
+    margin-bottom: 7.5vw;
+    padding: 2vw;
+    background-color: transparent;
+    z-index: 2000;
+}
+
+.why>p {
+    text-align: left;
+    margin-top: .875vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 14vw;
+    font-size: 4.5vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+    color: rgb(80, 80, 80);
+}
+
+.pagination {
+    position: absolute;
+    display: inline-block;
+    top: 9vw;
+    padding: auto;
+    left: 72.6vw;
+    max-width: 12vw;
+    height: 12vw;
+    font-size: 8vw;
+    font-weight: 800;
+    background-color: rgb(201, 216, 224);
+    color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+    
+    .header-rubrik {
+        padding-top: 0.518vw;
+        padding-bottom: 2.726vw;
+    }
+
+    h2 {
+        font-size: 2.785vw;
+        letter-spacing: .0163vw;
+    }
+
+    h3 {
+        margin-top: 1.777vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        padding-left: 4.148vw;
+        padding-right: 4.148vw;
+        font-size: 3.555vw;
+        letter-spacing: .0259vw;
+    }
+
+    .header-logo {
+        width: 6vw;
+        margin-top: 2vw;
+        margin-bottom: 1.5vw;
+    }
+
+    h4 {
+        line-height: 3.2vw;
+        margin-left: 4.148vw;
+        margin-right: 4.148vw;
+        font-size: 2.666vw;
+    }
+
+    .paragraph {
+        margin-left: 5.6vw;
+        margin-right: 5.6vw;
+        margin-bottom: 2.844vw;
+        font-size: 1.037vw;
+        line-height: 1.348vw;
+        letter-spacing: .0518vw;
+    }
+
+    .why {
+        margin-top: -1.555vw;
+        margin-bottom: 2.592vw;
+        font-size: 2.963vw;
+    }
+    
+    .why>header {
+        margin-bottom: 4.444vw;
+        padding: 1.185vw;
+    }
+
+    .pagination {
+        top: 5vw;
+        left: 61vw;
+        max-width: 6vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+    
+    .why>p{
+        margin-top: .518vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 8vw;
+        font-size: 2.37vw;
+        line-height: 3.141vw;
+    }
+}

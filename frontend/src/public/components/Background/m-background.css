@@ -1,0 +1,157 @@
+/**********************************************************************************************/
+/****************************************** background ****************************************/
+/**********************************************************************************************/
+
+.background {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.link__button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+    display: flex;
+    padding-left: 1vw;
+    flex-wrap: nowrap;
+    max-width: 48vw;
+    width: 48vw;
+    height: 12vw;
+    border-radius: 12vw;
+    background: linear-gradient(to left, rgb(36, 160, 139), rgb(9, 76, 97));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.background__button {
+    top: 60vw;
+    bottom: 20vw;
+    margin-top: 45vw;
+    margin-bottom: 20vw;
+}
+
+.link__button:after {
+    content: '';
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12vw;
+    background: linear-gradient(to right, rgb(36, 160, 139), rgb(9, 76, 97));
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.link__button:hover:after {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    opacity: 0;
+}
+
+.link__button:active {
+    background: linear-gradient(to right, rgb(36, 160, 139), rgb(9, 76, 97));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.link__button:active .link__button__btn,
+.link__button:active .link__button__text {
+    color: rgb(231, 244, 253);
+}
+
+.link__button__btn {
+    position: relative;
+    margin-right: 2vw;
+    font-size: 10vw;
+    color: rgb(231, 244, 253);
+    transition: color .4s;
+    z-index: 1;
+}
+
+.link__button__text {
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    letter-spacing: .3vw;
+    color: rgb(231, 244, 253);
+    transition: color .4s;
+    z-index: 1;
+}
+
+.background__plus {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    margin-right: 8vw;
+    top: 27.4vw;
+    transform: translate(0, -95%);
+    padding: .6vw 1vw .6vw 1vw;
+    font-family: 'Open', sans-serif;
+    font-size: 4.5vw;
+    letter-spacing: .073vw;
+    border: solid 1px rgba(0, 119, 255, .3);
+    background-color: rgba(0, 119, 255, .3);
+    border-radius: 3px;
+    color: white;
+    transition: background-color .4s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.background__plus:hover {
+    background-color: rgb(0, 119, 255);
+    transition: background-color .4s;
+}
+
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /****************************************** background ****************************************/
+    /**********************************************************************************************/
+    
+    .link__button {
+        padding-left: .5vw;
+        width: 22.7vw;
+        height: 6vw;
+        border-radius: 10vw;
+        z-index: 100;
+    }
+
+    .background__button {
+        top: -17vw;
+    }
+    
+    .link__button:after {
+        border-radius: 10vw;
+    }
+    
+    .link__button__btn {
+        margin-right: 1vw;
+        font-size: 5vw;
+    }
+    
+    .link__button__text {
+        font-size: 2vw;
+        letter-spacing: .04vw;
+    }
+
+    .background__plus {
+        margin-right: 8vw;
+        top: 50vw;
+        padding: .6vw 1vw .6vw 1vw;
+        font-size: 3vw;
+        letter-spacing: .073vw;
+    }
+}

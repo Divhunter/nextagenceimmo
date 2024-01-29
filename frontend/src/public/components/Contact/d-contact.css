@@ -1,0 +1,129 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /******************************************** contact *****************************************/
+    /**********************************************************************************************/
+
+    .containerContact {
+        margin-top: -7vw;
+        margin-bottom: 7vw;
+    }
+
+    .containerContact__bloc__woman {
+        width: 48.8vw;
+        margin-right: 0;
+        margin-top: 80.2vw;
+    }
+
+    .containerContact__bloc__pub {
+        top: 132vw;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /******************************************** contact *****************************************/
+    /**********************************************************************************************/
+
+    .containerContact {
+        margin-top: -6.3vw;
+        margin-bottom: 6.3vw;
+        height: 140.1vw;
+    }
+
+    .containerContact__text {
+        width: 45.15vw;
+        margin: 3.5vw 4.375vw 4.375vw 4.375vw;
+        font-size: 1.4vw;
+    }
+
+    .containerContact__text__header {
+        font-size: 2.45vw;
+        line-height: 3.062vw;
+    }
+
+    .containerContact__text__form {
+        margin: 5.25vw 0 4.375vw 5.25vw;
+        padding-right: 4.375vw;
+        top: 5.687vw;
+        left: -2vw;
+        width: 43.75vw;
+    }
+
+    .containerContact__bloc__woman {
+        width: 50vw;
+        margin-top: 48.1vw;
+    }
+
+    .containerContact__bloc__pub {
+        top: 100vw;
+        margin-left: -5vw;
+        font-size: 2.7vw;
+        line-height: 3.5vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /******************************************** contact *****************************************/
+    /**********************************************************************************************/
+
+    .containerContact {
+        height: 127.6vw;
+        margin-top: -4.5vw;
+        margin-bottom: 4.5vw;
+    }
+
+    .containerContact__text {
+        width: 37.668vw;
+        margin: 2.92vw 3.65vw 3.65vw 3.65vw;
+        font-size: 1.168vw;
+    }
+
+    .containerContact__text__header {
+        font-size: 2.044vw;
+        font-weight: 600;
+        line-height: 2.555vw;
+    }
+
+    .containerContact__text__form {
+        margin: 4.38vw 0 3.65vw 4.38vw;
+        padding-left: 3.65vw;
+        padding-right: 3.65vw;
+        top: 4.745vw;
+        width: 36.5vw;
+    }
+
+    .containerContact__bloc {
+        right: 0.05vw;
+    }
+
+    .containerContact__bloc__woman {
+        width: 48.5vw;
+        margin-right: 0;
+        margin-top: 38.4vw;
+    }
+
+    .containerContact__bloc__pub {
+        top: 91vw;
+        margin-left: 7vw;
+        font-weight: 800;
+        font-size: 2.555vw;
+        line-height: 2.92vw;
+    }
+}

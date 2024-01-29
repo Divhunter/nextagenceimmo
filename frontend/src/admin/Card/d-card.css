@@ -1,0 +1,92 @@
+@media screen and (max-width: 551px) {
+/********************************************************************************************/
+/******************************************** card ******************************************/
+/********************************************************************************************/
+
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 2vw;
+        padding: 0 7vw;
+        background-color: rgb(245, 245, 246);
+        color: rgb(10, 86, 109);
+    }
+
+    .card__title {
+        font-family: Open, sans-serif;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(10, 86, 109);
+    }
+
+    .card__container {
+        font-family: Open, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .card__container__info {
+        color: black;
+        font-family: Open, sans-serif;
+    }
+
+    .profil {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 0.5rem;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 18px !important;
+    }
+
+    .date {
+        font-size: 14px !important;
+    }
+
+    .photo {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(rgb(52, 190, 167), rgb(10, 86, 109));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email{
+        color: initial;
+        font-size: 16px;
+    }
+
+    .phone-item {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .call {
+        color: #00b3ff !important;
+    }
+    
+    .whathapp {
+        color: #21b658 !important;
+    }
+    
+    .phone-text {
+        font-size: 16px;
+    }
+}
+

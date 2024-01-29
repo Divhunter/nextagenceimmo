@@ -1,0 +1,97 @@
+/**********************************************************************************************/
+/********************************************** CGU *******************************************/
+/**********************************************************************************************/
+
+.cgu {
+    padding: 10vw 7vw 10vw 7vw;
+    color: black;
+}
+
+.cgu__logo-mutuact {
+    margin-bottom: 5vw;
+    width: 10vw;
+    height: auto;
+}
+
+.cgu > h1 {
+    margin-bottom: 15vw;
+    text-align: center;
+    width: 100%;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    color: rgb(10, 86, 109);
+    background-color: rgb(236, 251, 255);
+}
+
+.cgu > h2 {
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    font-size: 6.2vw;
+    letter-spacing: .05vw;
+}
+
+.cgu > p {
+    font-family: Open, sans-serif;
+    font-size: 5vw;
+    line-height: 7vw;
+}
+
+.cgu > li {
+    list-style: disc;
+    margin-top: auto;
+    margin-left: 3vw;
+    font-size: 4.5vw;
+    color: rgb(10, 86, 109);
+}
+
+.cgu > li> a {
+    color: rgb(10, 86, 109);
+    font-weight: 500;
+}
+
+.cgu > div {
+    font-size: 0;
+    width: 100%;
+    height: 1px;
+    margin-top: 10vw;
+    background-color: rgba(10, 86, 109, .5);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************** cgu *******************************************/
+    /**********************************************************************************************/
+
+    .cgu__logo-mutuact {
+        width: 7vw;
+    }
+
+    .cgu > h1 {
+        margin-bottom: 5.926vw;
+    }
+
+    .cgu > h2 {
+        margin-top: 3.555vw;
+        margin-bottom: 3.555vw;
+        font-size: 3.259vw;
+        letter-spacing: .0163vw;
+    }
+    
+    .cgu > p {
+        font-size: 2.37vw;
+        line-height: 3.555vw;
+    }
+    
+    .cgu > li {
+        margin-left: 1.777vw;
+        font-size: 2.074vw;
+    }
+    
+    .cgu > div {
+        margin-top: 5.926vw;
+    }
+}

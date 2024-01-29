@@ -1,0 +1,190 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+
+	.solutions {
+		display: none;
+        padding: 1.7vw;
+        letter-spacing: .15vw;
+        font-size: 2.2vw;
+        top: 55vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+
+	.navbar-closed {
+		height: 6vw;
+	}
+
+	.navbar__logoMutuactW {
+		left: 4vw;
+		width: 6vw;
+	}
+
+	.navbar__button-x {
+		top: 1.8vw;
+	}
+	
+	.navbar__button-bars {
+		top: 2vw;
+	}
+
+	.nav__menu__link-header {
+        margin-top: 1.5vw;
+		font-size: 1.7vw;
+        letter-spacing: .073vw;
+    }
+
+	.nav__menu__text {
+		font-size: 1.5vw;
+	}
+
+    .actu {
+        margin-right: 8.2vw;
+    }
+
+	.b-contact {
+		margin-right: .6vw;
+	}
+
+	.devis {
+		float: left;
+		margin-left: 3vw;
+	}
+
+	.devis-hidden {
+		display: none;
+	}
+
+	.devis-visible {
+		display: block;
+	}
+
+	.solutions {
+        font-size: 1.8vw;
+        top: 53vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /********************************************* header *****************************************/
+    /**********************************************************************************************/
+	.navbar-closed {
+		height: 7vw;
+	}
+	
+	.navbar-open {
+		height: 55vw;
+	}
+
+	.navbar__button-x {
+		top: 2.6vw;
+		right: 5vw;
+		font-size: 2vw;
+	}
+	
+	.navbar__button-bars {
+		top: 2.8vw;
+		right: 5vw;
+		font-size: 1.66vw;
+	}
+	
+	.navbar__menu-open {
+		top: 2.5vw;
+		height: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.nav__menu__logo-nai {
+		margin-top : 2vw;
+		margin-left: 5vw;
+		width: 8vw;
+		height: auto;
+	}
+
+	.nav__menu__button {
+        position: absolute;
+        display: inline-block;
+        top: 2vw;
+        padding: 1vw;
+        border-radius: 5px;
+		font-weight: 600;
+		letter-spacing: .2vw;
+        color: white;
+		cursor: pointer;
+    }
+
+	.nav__menu__button:hover {
+        filter: brightness(120%);
+		transition: filter .4s;
+    }
+
+	.nav__menu__transaction {
+        right: 20vw;
+        background-color: rgb(206, 39, 73);
+		transition: filter .4s;
+    }
+
+	.nav__menu__location {
+        right: 10vw;
+        background-color: rgb(128, 27, 47);
+		transition: filter .4s;
+    }
+
+	.navbar__menu {
+		position: absolute;
+		text-align: left;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		top: 10vw;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 30vw;
+	}
+
+	.navbar__menu-open {
+		display: flex;
+		transition: .4s;
+	}
+
+	.navbar__menu-closed {
+		display: none;
+		transition: .4s;
+	}
+
+	.navbar__menu__text {
+		margin-left: 0;
+		font-weight: 600;
+		font-size: 1.8vw;
+		line-height: 1vw;
+		letter-spacing: .3vw;
+		color: white;
+		cursor: pointer;
+		transition: color .4s, margin-left .4s;
+	}
+
+	.navbar__menu__text:hover {
+		margin-left: 2vw;
+		color: rgb(206, 39, 73);
+		transition: color .4s, margin-left .4s;
+	}
+}

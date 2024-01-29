@@ -1,0 +1,297 @@
+/**********************************************************************************************/
+/********************************************* form *******************************************/
+/**********************************************************************************************/
+
+.form {
+    display: flex;
+	flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    width: 77.6vw;
+    padding-right: 2.5vw;
+    background: linear-gradient(rgb(255, 255, 255) 95%, transparent);
+}
+
+.form-contact {
+    margin: 0;
+    padding: 0;
+    top: 12vw;
+}
+
+.form-group{
+    margin-bottom: .73vw;
+}
+
+.form-group > input,
+.form-group > textarea {
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1.2vw;
+    padding: 1.46vw;
+    font-family: Open, sans-serif;
+    font-weight: 400;
+    font-size: 4.5vw;
+    line-height: 5vw;
+    letter-spacing: .073vw;
+    opacity: 1;
+    border: solid 2px rgb(10, 86, 109);
+}
+
+.form-group input {
+    height: 12vw;
+}
+
+.form-group > textarea {
+    height: 30vw;
+}
+
+.form-group > input,
+.form-group > textarea {
+    background-color: rgb(235, 235, 235);
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    border: solid 2px rgb(52, 190, 167);
+}
+
+.form-group input:focus,
+.form-group input:focus[type=password],
+.form-group textarea:focus {
+    color: black;
+    border: solid 2px rgb(52, 190, 167);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgb(128, 128, 128);
+    opacity: .7;
+}
+
+.form-group input:hover::placeholder,
+.form-group textarea:hover::placeholder {
+    color: black;
+    opacity: .7;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    color: black;
+    opacity: .7;
+}
+
+.form-group label {
+    display: none;
+}
+
+.global-error {
+    margin: 10px 0;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.alert-success{
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin: 10px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.error-message {
+    font-family: 'Open', sans-serif;
+    font-size: 3.8vw;
+    font-style: italic;
+    line-height: 4.8vw;
+    color: red;
+    margin-top: .073vw;
+}
+
+.count-message {
+    margin-left: 2vw;
+    font-size: 3.7vw;
+    line-height: 4.7vw;
+}
+
+.contact-legal-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 8vw;
+}
+
+.contact-legal-content__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-right: 3.5vw;
+    font-size: 3.8vw;
+    line-height: 4.8vw;
+}
+
+.contact-legal-content__text__link {
+    font-weight: bold;
+    color: rgb(52, 190, 167);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-legal-content__text__link:hover {
+    border-bottom: 1px solid rgb(84, 240, 214);
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+}
+
+.recaptcha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2px;
+    margin: 10vw -3vw 10vw;
+}
+
+.label-recap {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6vw;
+    line-height: 4.3vw;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.002em;
+    color: black;
+    margin-bottom: 1.5vw;
+    margin-left: 4vw;
+}
+
+.formSubmit {
+	border: 0;
+    font-family: Open, sans-serif;
+	background-color: rgb(255, 145, 0);
+    box-shadow: rgba(255, 58, 58, 0.5) 0 2.19vw 4.38vw -.876vw inset, 
+    rgba(255, 72, 0, 0.719) 0px 1.314vw 2.628vw -1.134vw inset;
+	color: white;
+	cursor: pointer;
+	transition: background-color .2s;
+}
+
+.formSubmit:hover {
+	transition: background-color .2s;
+	background-color: rgb(255, 177, 31);
+}
+
+.formSubmit:active {
+	background-color: rgb(255, 208, 0);
+}
+
+.contact-submit {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+    width: auto;
+	height: auto;
+    padding: 4.5vw;
+    margin-bottom: 3vw;
+    border-radius: 4px;
+    font-family: Open, sans-serif;
+    font-size: 5vw;
+    font-weight: 500;
+    letter-spacing: .1vw;
+    color: white;
+    border: none;
+    cursor:pointer
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .form {
+        width: 42vw;
+        padding-right: 0;
+        background: transparent;
+    }
+
+    .form-contact {
+        margin: 0;
+        top: 5vw;
+    }
+
+    .form-group > input,
+    .form-group > textarea {
+        border-radius: .438vw;
+        margin-bottom: .4vw;
+        font-size: 2vw;
+        line-height: 1.898vw;
+        letter-spacing: 0.03vw;
+    }
+
+    .form-group > textarea {
+        height: 20vw;
+    }
+    
+    .form-group input {
+        height: 6vw;
+    }
+
+    .error-message {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    .count-message {
+        margin-left: .5vw;
+        margin-bottom: .5vw;
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    .contact-legal-content {
+        margin-top: 1vw;
+    }
+
+    .contact-legal-content__text {
+        font-size: 1.7vw;
+        line-height: 2.5vw;
+    }
+
+    .recaptcha {
+        margin: 2.5vw 1.5vw;
+    }
+
+
+    .label-recap {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+    }
+
+    .contact-submit {
+        padding: 1.75vw;
+        margin-bottom: 1.05vw;
+        border-radius: 0.525vw;
+        font-size: 2.5vw;
+        letter-spacing: .0437vw;
+    }
+}

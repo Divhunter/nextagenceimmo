@@ -1,0 +1,44 @@
+.pagination{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    width: 100% ;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px; */
+    padding: .8rem;
+    position: sticky;
+    bottom: -105px;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+.page{
+    color: white;
+    background-color: rgb(85, 96, 97);
+    padding: .2rem .5rem;
+    border-radius: 7px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.disabled{
+    color: rgb(73, 73, 73);
+    cursor: not-allowed !important;
+}
+
+.active{
+    color: white;
+    background-color: rgb(10, 86, 109);
+    padding: .2rem .5rem;
+    border-radius: 7px;
+}
+
+.next,.prev {
+    cursor: pointer;
+}

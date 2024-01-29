@@ -1,0 +1,164 @@
+/**********************************************************************************************/
+/******************************************** footer ******************************************/
+/**********************************************************************************************/
+
+.footer {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-family: Open, sans-serif;
+    color: white;
+    background-color: black;
+    margin-bottom: -5vw;
+}
+
+.footer > h1 {
+    margin-top: 10vw;
+    font-size: 7vw;
+}
+
+.footer__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60vw;
+    height: 20vw;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__link__icon {
+	position: relative;
+    color: rgb(109, 255, 231);
+    font-size: 9vw;
+    opacity: .8;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.footer__link__icon:hover {
+	color: rgb(180, 255, 243);
+    opacity: 1;
+    transition: all .2s;
+}
+
+.footer__logo-mutuact {
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+    width: 50vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer > p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 4.2vw;
+    line-height: 6vw;
+}
+
+.mail-link {
+    color: rgb(55, 255, 222) !important; 
+}
+
+.mail-link:hover {
+    text-decoration: underline;
+    color: rgb(55, 255, 222);
+}
+
+.footer__partenaires {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    background-color: white;
+    margin-top: 10vw;
+    padding: 10vw 5vw 2vw 5vw;
+}
+
+.footer__partenaires__logo {
+    height: 15vw;
+    width: auto;
+    margin-bottom: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.footer__copyright {
+    width: 100%;
+    height: auto;
+    padding: .25vw 7vw .25vw 7vw;
+    margin-bottom: 0;
+    bottom: 0;
+    font-size: 3.8vw;
+    line-height: 5vw;
+    background-color: rgb(32, 32, 32);
+}
+
+.footer__copyright__link {
+    color: rgb(55, 255, 222) !important;
+}
+
+.footer__copyright__link:hover {
+    color: rgb(55, 255, 222) !important;
+    text-decoration: underline;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* footer *****************************************/
+    /**********************************************************************************************/
+    
+    .footer > h1 {
+        margin-top: 5.926vw;
+        font-size: 4vw;
+    }
+    
+    .footer__link {
+        width: 35.55vw;
+        height: 11.852vw;
+    }
+    
+    .footer__link__icon {
+        font-size: 5.333vw;
+    }
+    
+    .footer__logo-mutuact {
+        margin-top: 5.25vw;
+        margin-bottom: 5.25vw;
+        width: 20vw;
+    }
+
+    .footer > p {
+        font-size: 2.2vw;
+        line-height: 3.555vw;
+    }
+
+    .footer__partenaires {
+        padding: 8vw 5vw 0vw 5vw;
+    }
+
+    .footer__partenaires__logo {
+        height: 8vw;
+        margin-bottom: 5vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+    
+    .footer__copyright {
+        padding: .15vw 7vw .15vw 7vw;
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }  
+}

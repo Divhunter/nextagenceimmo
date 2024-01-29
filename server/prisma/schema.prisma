@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Modèle Account
+model Account {
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String  @db.ObjectId
+  type              String
+  provider          String  @unique
+  providerAccountId String  @unique
+  refresh_token     String? @db.String
+  access_token      String? @db.String
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.String
+  session_state     String?
+
+  lastLogin  DateTime? // Champ pour enregistrer la date/heure de la dernière connexion
+  lastLogout DateTime? // Champ pour enregistrer la date/heure de la dernière déconnexion
+  isLoggedIn Boolean?
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+// Modèle Session
+model Session {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  sessionToken String   @unique
+  userId       String   @db.ObjectId
+  expires      DateTime
+  loginIp      String? // Adresse IP de la connexion
+  deviceInfo   String? // Informations sur le périphérique utilisé lors de la connexion (navigateur, OS, etc.)
+  isLoggedIn   Boolean? // Champ pour indiquer si la session est active ou non
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+// Modèle User
+model User {
+  id                String              @id @default(auto()) @map("_id") @db.ObjectId
+  name              String
+  email             String              @unique
+  image             String?
+  password          String
+  role              RoleEnumType        @default(user)
+  emailVerifiedDate DateTime?
+  emailVerified     Boolean?
+  accounts          Account[]
+  sessions          Session[]
+  VerificationToken VerificationToken[]
+}
+
+// Modèle VerificationToken
+model VerificationToken {
+  id        String                 @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String                 @db.ObjectId
+  user      User                   @relation(fields: [userId], references: [id])
+  token     String                 @unique
+  isUsed    Boolean
+  createdAt DateTime
+  expiresAt DateTime
+  type      VerificationTokenType?
+}
+
+// Enum pour les types de jeton de vérification
+enum VerificationTokenType {
+  initial_verification
+  reset_email
+  resend_email_verification
+  // Ajoutez d'autres types de jetons au besoin
+}
+
+enum RoleEnumType {
+  user
+  admin
+}
+
+// Modeles pour les projets 
+model Projet {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  firstName   String
+  lastName    String
+  email       String    @unique
+  phone       String
+  createdDate DateTime
+  updatedDate DateTime
+  isRead      Boolean
+  messages    Message[]
+}
+
+model Message {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  content     String
+  createdDate DateTime
+  projetId    String   @db.ObjectId
+  projet      Projet   @relation(fields: [projetId], references: [id])
+}

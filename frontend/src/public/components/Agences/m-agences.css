@@ -1,0 +1,76 @@
+/**********************************************************************************************/
+/******************************************** agences *****************************************/
+/**********************************************************************************************/
+
+.containerOffice__bloc {
+    width: auto;
+    height: auto;
+}
+
+.containerOffice__bloc__office__pic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    filter: brightness(30%);
+}
+
+.containerOffice__bloc__office__text {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 9vw;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 1.5vw;
+    z-index: 1000;
+}
+
+.containerOffice__bloc__office__text__content {
+    margin-top: -2vw;
+}
+
+.containerOffice__bloc__office__text__content > p > a,
+.agences-adress {
+    color: rgb(163, 255, 240) !important; 
+}
+
+.agences-adress {
+    margin-top: -1vw;
+    line-height: 5vw;
+    cursor: pointer;
+}
+
+.containerOffice__bloc__office__text__content > p > a:hover,
+.agences-adress:hover {
+    text-decoration: underline;
+    color: rgb(163, 255, 240);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************************* agences ****************************************/
+    /**********************************************************************************************/
+
+    .containerOffice__bloc__office__text {
+        padding-top: 1.777vw;
+        font-size: 2.37vw;
+        line-height: 0.888vw;
+    }
+    
+    .containerOffice__bloc__office__text__content {
+        height: 33vw;
+        margin-top: 13vw;
+    }
+    
+    .agences-adress {
+        margin-top: -1.6vw;
+    }
+}

@@ -1,0 +1,119 @@
+/**********************************************************************************************/
+/******************************************** contact *****************************************/
+/**********************************************************************************************/
+
+.containerContact {
+    display: inline-block;
+    width: 100%;
+    height: 382.6vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10vw;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.containerContact__text {
+    display: inline-block;
+    width: auto;
+    margin: 6vw 4.375vw 6vw 4.375vw;
+    color: black;
+    font-size: 1.4vw;
+}
+
+.containerContact__text__header {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 6.5vw;
+    color: rgb(104, 104, 104);
+}
+
+.containerContact__text__form {
+    position: absolute;
+    margin-top: 5.25vw;
+    margin-bottom: 4.375vw;
+    margin-left: 2vw;
+    padding-left: 0;
+    padding-right: 0;
+    top: 15vw;
+    height: auto;
+    background-color: black;
+}
+
+.containerContact__bloc {
+    position: absolute;
+    display: inline-block;
+    right: 0vw;
+    overflow: hidden;
+}
+
+.containerContact__bloc__woman {
+    width: 70vw;
+    height: auto;
+    margin-right: 0;
+    margin-top: 254vw;
+}
+
+.containerContact__bloc__pub {
+    position: absolute;
+    display: inline-block;
+    top: 330vw;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    font-family: 'Helvetica';
+    font-weight: 800;
+    font-size: 6vw;
+    line-height: 6.5vw;
+    color: rgb(0, 218, 181);
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /******************************************** contact *****************************************/
+    /**********************************************************************************************/
+
+    .containerContact {
+        height: 170vw;
+        margin-bottom: 10vw;
+    }
+
+    .containerContact__text {
+        width: 45.15vw;
+        margin: 3.5vw 4.375vw 4.375vw 4.375vw;
+        font-size: 1.4vw;
+    }
+
+    .containerContact__text__header {
+        font-size: 2.6vw;
+        line-height: 3.062vw;
+    }
+
+    .containerContact__text__form {
+        margin: 5.25vw 0 4.375vw 5.25vw;
+        padding-right: 4.375vw;
+        top: 5.687vw;
+        left: -2vw;
+        width: 43.75vw;
+    }
+
+    .containerContact__bloc__woman {
+        width: 64.8vw;
+        margin-right: -15vw;
+        margin-top: 50.8vw;
+    }
+
+    .containerContact__bloc__pub {
+        top: 125vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+}

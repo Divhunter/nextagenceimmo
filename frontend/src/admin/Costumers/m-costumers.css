@@ -1,0 +1,134 @@
+/* Media Query 2 (max-width: 900px) */
+@media screen and (max-width: 1200px) {
+    .all-clients {
+        grid-template-columns: repeat(2,1fr) !important  ;
+        gap: 20px;
+    }
+
+    .photoco {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .profil-initialco {
+        font-size: 1.5rem ;
+    }
+
+    .date {
+        font-size: 14px ;
+        color: black;
+        font-family: Open, sans-serif;
+    }
+}
+@media screen and (max-width: 750px) {
+    .all-clients {
+        grid-template-columns: 1fr !important  ;
+        gap: .6rem !important;
+    }
+
+    .photoco {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .profil-initialco {
+        font-size: 1.3rem !important;
+    }
+
+    .nameco {
+        font-size: 16px !important ;
+    }
+
+    .date {
+        font-size: 14px ;
+        color: black;
+        font-family: Open, sans-serif;
+    }
+}
+
+/* Media Query 1 (max-width: 551px) */
+@media screen and (max-width: 551px) {
+    .dashboard {
+        padding: .7rem !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .dashboard-right {
+        gap: .3rem !important;
+    }
+    
+    .item-stat {
+        padding: .5rem !important;
+        gap: .2rem !important;
+        font-size: 14px !important;
+        border-radius: 5px !important;
+    }
+    .icon-right { 
+        font-size:1.5rem !important ;
+    }
+  
+    .trash-delete{
+        font-size: 1.3rem !important;
+    }
+
+    .all-clients {
+        gap: 10px;
+    }
+
+    .costumers__card {
+        padding: 8px !important;
+        border-radius: 10px;
+    }
+
+    .nameco {
+        font-size: 18px !important ;
+    }
+    .date {
+        font-size: .7rem !important ;
+    }
+}
+
+/* Media Query 3 (max-width: 451px) */
+@media screen and (max-width: 451px) {
+    .icons-delete {
+        flex-direction: column;
+        align-items: end !important;
+    }
+}
+
+@media screen and (min-width: 1210px) {
+    .all-clients {
+        grid-template-columns: repeat(3, 1fr) !important ;
+        gap: 20px;
+    }
+
+    .photoco {
+        width: 60px ;
+        height: 60px ;
+    }
+
+    .profil-initialco {
+        font-size: 1.5rem ;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .all-clients {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .all-clients {
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 20px;
+    }
+
+    .photoco {
+        width: 60px ;
+        height: 60px ;
+    }
+
+    .profil-initialco {
+        font-size: 2rem ;
+    }
+}

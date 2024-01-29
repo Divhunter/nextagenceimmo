@@ -1,0 +1,308 @@
+/**********************************************************************************************/
+/******************************************* costumers ****************************************/
+/**********************************************************************************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    position: fixed;
+    font-family: Open, sans-serif;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    top: 0;
+    background-color: rgb(245, 245, 246);
+    z-index: 100000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.notif {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    transition: color .4s;
+    cursor: pointer;
+}
+
+
+.costumers {
+    width: 100%;
+    min-height: calc(100vh - 3rem);
+    margin-top: 3rem;
+    height: auto;
+    padding: 2vw 5vw;
+    background: rgb(245, 245, 246);
+    color: rgb(10, 86, 109);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.costumers__title {
+    text-align: center;
+    font-weight: 400;
+    color: rgb(10, 86, 109);
+}
+
+.dashboard {
+    margin-top: 2rem;
+    background-color: rgb(245, 245, 246);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between !important;
+    gap: 1rem;
+    padding: .7rem 1rem;
+    font-family: Open, sans-serif;
+    width: 100%;
+}
+
+.tooltip-content {
+    font-size: 15px !important;
+}
+
+.dashboard-left,
+.item-stat {
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.lu {
+    color: rgb(10, 86, 109);
+    font-size: 20px !important;
+   
+}
+
+.nonlu {
+    color: gray;
+    font-size: 18px !important;
+}
+
+.icon-stat,
+.item-stat {
+    font-size: 18px;
+}
+
+.dashboard-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-stat {
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    height: 90%;
+    width: auto;
+    display: flex;
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.icon-right {
+    cursor: pointer;
+    color: rgb(134, 134, 134);
+    font-size: 30px;
+}
+
+.select-all {
+    font-size: 2.2rem;
+}
+
+.trash-delete {
+    color: rgb(255, 38, 0);
+}
+
+.x-cancel {
+    font-size: 2.5rem;
+    transform: rotateY(40deg);
+    color: rgb(6, 6, 228);
+}
+
+.filter {
+    position: relative;
+}
+
+.filter-modal {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .50rem;
+    background-color: rgb(17, 29, 39);
+    border-radius: 7px;
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+}
+
+.filter-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.filter-item {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.filter-content:hover {
+    background-color: gray !important;
+}
+
+.all-clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+
+.costumers__card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between !important;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    /* margin-bottom: 10px; */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 0.4s;
+}
+
+.costumers__card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: box-shadow 0.4s;
+}
+
+.costumers__card__info {
+    font-size: 18px;
+    color: black;
+    font-family: Open, sans-serif;
+}
+
+.date {
+    font-size: 15px;
+    color: black;
+    font-family: Open, sans-serif;
+}
+
+.link-card {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: start;
+    align-self: flex-start;
+}
+
+.icons-delete {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    flex-wrap: wrap;
+}
+
+.x-delete {
+    color: rgb(10, 86, 109);
+    font-size: 1.5rem !important;
+}
+
+.icon-delete {
+    color: red !important;
+    font-size: 1.5rem !important;
+}
+
+.icon-back {
+    color: rgb(10, 86, 109) !important;
+}
+
+.icon-back:hover {
+    color: rgb(52, 190, 167) !important;
+}
+
+.confirm-visible {
+    display: block;
+}
+
+.confirm-hidden {
+    display: none;
+}
+
+.no-data {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    align-self: flex-start;
+}
+
+.profil-info {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.photoco {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(rgb(52, 190, 167), rgb(10, 86, 109));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-initialco {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.nameco {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    font-weight: 600;
+    font-size: 16px;
+}
