@@ -38,4 +38,8 @@
         border: solid 1px rgb(31, 61, 75);
         font-size: 2vw;
     }
+
+    .estimation {
+        margin-bottom: -15vw;
+    }
 }

@@ -5,6 +5,7 @@ import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
 import office from '../../assets/pictures/office.jpg'
+import logoEstimation from '../../assets/pictures/logo-agences.png'
 
 // styles
 import './m-agences.css'
@@ -14,9 +15,9 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const Agences = () => {
 
-    const redirection = 'https://www.google.com/maps/place/41+Rue+de+la+D%C3%A9couverte,+31670+Lab%C3%A8ge/@43.5486589,1.4988126,17z/data=!3m1!4b1!4m14!1m7!4m6!1m4!2m2!1d4.859918!2d45.753319!4e1!1m0!3m5!1s0x12aebe752ad9aaa9:0xd6f36883f2362eeb!8m2!3d43.548655!4d1.5013875!16s%2Fg%2F11bw3_w4y6?entry=ttu'
+    const redirection = 'https://www.google.fr/maps/place/NOTRE+AGENCE+IMMO/@45.7341047,4.8512631,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ea1a7d100001:0xed0c061d8a46da0c!8m2!3d45.734101!4d4.853838!16s%2Fg%2F11gd215m_z?entry=ttu'
     
-    const agencesHeader = pagesHeadersArray.find(el => el.title === "8")
+    const agencesHeader = pagesHeadersArray.find(el => el.title === "4")
     const agencesHeaderArray = []
     agencesHeaderArray.push(agencesHeader)
 
@@ -46,11 +47,24 @@ const Agences = () => {
     }, [])
 
 	return (
-		<section id='agences' className='agences'>
+		<section id='agences' className='agences section--padding'>
             {agencesHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
-                    titleCol1={item.titleCol1}
+                    titleCol1={
+                        <div id='agences-header-text'>
+                            <img
+                                src={logoEstimation} 
+                                className='header-logo'
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-estimation'
+                            />
+                            <br/>
+                            {item.titleCol1}
+                        </div>
+                    }
                     subTitle1={
                         <div id='titleAgences'>
                             {item.subTitle1}
@@ -76,16 +90,16 @@ const Agences = () => {
                                     <div 
                                         className='containerOffice__bloc__office__text__content'
                                         >
-                                        <p><strong>MUTUACT</strong></p>
+                                        <p><strong>Notreagenceimmo</strong></p>
                                         <p>standard</p>
-                                        <p>06 28 18 02 03</p>
+                                        <p>04 72 76 33 44</p>
                                         <p>
-                                            <a href='mailto:mutuact@mutuact.fr'>mutuact@mutuact.fr</a>
+                                            <a href='mailto:accueil@notreagenceimmo.com'>accueil@notreagenceimmo.com</a>
                                         </p>
                                         <p  
                                             className='agences-adress'
                                         >
-                                            <a href={redirection}>41 Rue de la Découverte CS37621 - 31670 Labège</a>
+                                            <a href={redirection}>165 Rte de Vienne, 69008 Lyon</a>
                                         </p>
                                     </div>
                                 </div>

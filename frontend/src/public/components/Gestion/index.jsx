@@ -15,7 +15,7 @@ const Gestion = () => {
     gestionHeaderArray.push(gestionHeader)
 
 	return (
-		<section id='gestion' className='gestion'>
+		<section id='gestion' className='gestion section--padding'>
             {gestionHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
@@ -30,10 +30,11 @@ const Gestion = () => {
                                 alt='logo-gestion'
                             />
                             <br/>
+                            {item.titleCol1}
                         </div>
                     }
                     subTitle1={
-                        <div>
+                        <div id='titleGestion'>
                             {item.subTitle1}
                         </div>
                     }

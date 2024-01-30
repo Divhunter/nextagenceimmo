@@ -21,15 +21,13 @@ const Estimation = () => {
 	return (
 		<section 
             id='estimation' 
-            className='estimation'
+            className='estimation section--padding'
         >
             {estimationHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
                     titleCol1={
                         <div id='estimation-header-text'>
-                            {item.titleCol1}
-                            <br/>
                             <img
                                 src={logoEstimation} 
                                 className='header-logo'
@@ -38,10 +36,12 @@ const Estimation = () => {
                                 loading='lazy'
                                 alt='logo-estimation'
                             />
+                            <br/>
+                            {item.titleCol1}
                         </div>
                     }
                     subTitle1={
-                        <div>
+                        <div id='titleEstimation'>
                             {item.subTitle1}
                         </div>
                     }
@@ -52,7 +52,7 @@ const Estimation = () => {
                     }
                     button={
                         <Link to='contact'>
-                            <p className='button'>Contactez un conseil</p>
+                            <p className='button estimation-button'>Contactez un conseil</p>
                         </Link>
                     }
                 />

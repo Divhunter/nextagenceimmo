@@ -12,7 +12,6 @@ import Sante from '../../public/components/Sante'
 import Vowd from '../../public/components/Vowd'
 import Prof from '../../public/components/Prof'
 import Pret from '../../public/components/Pret'
-import Auto from '../../public/components/Auto'
 import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
@@ -31,7 +30,7 @@ const PublicContainer = () => {
             elem,
             {
                 opacity: 200,
-                y: -200,
+                y: -300,
             },
             {
                 opacity: 1,
@@ -52,11 +51,15 @@ const PublicContainer = () => {
     }, [])
 
     useEffect(() => {
-        slideInTop('#titleestimation')
+        slideInTop('#titleGestion')
     }, [])
 
     useEffect(() => {
-        slideInTop('#titleGestion')
+        slideInTop('#titleEstimation')
+    }, [])
+
+    useEffect(() => {
+        slideInTop('#titleAgences')
     }, [])
 
 	useEffect(() => {
@@ -75,14 +78,6 @@ const PublicContainer = () => {
         slideInTop('#titleAuto')
     }, [])
 
-    useEffect(() => {
-        slideInTop('#titleAgences')
-    }, [])
-
-    useEffect(() => {
-        slideInTop('#titleContact')
-    }, [])
-
 	return (
 		<>
 			<main>
@@ -91,12 +86,11 @@ const PublicContainer = () => {
 				<About />
                 <Gestion />
 				<Estimation />
+                <Agences />
 				<Sante />
                 <Vowd />
                 <Prof />
                 <Pret />
-                <Auto />
-                <Agences />
 				<Contact />
 				<Footer />
                 <Background />

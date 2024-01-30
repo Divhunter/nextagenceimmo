@@ -159,6 +159,10 @@
     /***************************************** pages-headers **************************************/
     /**********************************************************************************************/
 
+    .section--padding {
+        padding-top: 3.3vw;
+    }
+    
     .header-rubrik {
         padding-top: 1vw;
         padding-bottom: 3.65vw;
@@ -167,6 +171,7 @@
     h2 {
         font-size: 2vw;
         letter-spacing: .073vw;
+        z-index: 500;
     }
 
     .header-logo {

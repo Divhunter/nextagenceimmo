@@ -23,11 +23,11 @@
         "subTitle2": "",
         "button": ""
     },
-    {
+    {	
         "title": "4",
-		"titleCol1": "Santé",
-        "subTitle1": "Prenez le contrôle de votre bien-être. Optez pour une complémentaire santé qui va au-delà des attentes, assurant une protection solide et des remboursements adaptés.",
-        "subTitle2": "COMPLÉMENTAIRE INDIVIDUELLE - COLLECTIVE - JEUNE - FAMILLE - RESPONSABLE - 100% ...",
+		"titleCol1": "Notre agence",
+        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet immobilier",
+        "subTitle2": "Notre agence vous accueille du lundi au vendredi de 9h à 12h et 13h30 à 17h30",
         "text1": ""
 	},
     {
@@ -37,25 +37,11 @@
         "subTitle2": "RCP - MRP - CYBER RISQUES - FLOTTE AUTOMOBILE - DOMMAGE AUX BIENS - RCM - JURIDIQUE ... ",
         "text1": ""
 	},
-    {	
+    {
         "title": "6",
-		"titleCol1": "Prêt",
-        "subTitle1": "Lorsque vous envisagez de concrétiser un projet financier avec l'aide d'un emprunt, il est essentiel de considérer la protection de votre investissement. Dans la plupart des situations, la souscription à une assurance emprunteur est incontournable, tant pour votre sécurité que celle de votre famille.",
-        "subTitle2": "PRÊT PERSONNEL - IMMOBILIER - AUTOMOBILE - ÉTUDIANT - CONSOMMATION - PROFESSIONNEL ...",
-        "text1": ""
-	},
-    {	
-        "title": "7",
-		"titleCol1": "Auto, habitation ...",
-        "subTitle1": "Votre style de vie est unique, et vos assurances devraient l'être aussi. Que vous jongliez entre votre voiture en semaine et votre moto le week-end, ou que vous ayez un rythme de vie différent, nous avons les solutions d'assurance auto et moto taillées sur mesure pour vous.",
-        "subTitle2": "CIVIL AUTO - TOUS RISQUE - AUTO KL/M - CONDUCTEUR - ASSISTANCE - BRISE GLACE - JURIDIQUE AUTO ...",
-        "text1": ""
-	},
-    {	
-        "title": "8",
-		"titleCol1": "Contact agence",
-        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet d'assurance",
-        "subTitle2": "NOTRE AGENCE VOUS ACCUEILLE DU LUNDI AU VENDREDI DE 9H À 12H30 ET 14H À 18H30",
+		"titleCol1": "Santé",
+        "subTitle1": "Prenez le contrôle de votre bien-être. Optez pour une complémentaire santé qui va au-delà des attentes, assurant une protection solide et des remboursements adaptés.",
+        "subTitle2": "COMPLÉMENTAIRE INDIVIDUELLE - COLLECTIVE - JEUNE - FAMILLE - RESPONSABLE - 100% ...",
         "text1": ""
 	},
     {	

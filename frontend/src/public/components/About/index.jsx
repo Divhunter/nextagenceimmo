@@ -17,7 +17,7 @@ const About = () => {
 	return (
 		<section 
                 id='about' 
-                className='about'
+                className='about section--padding'
         >
             {aboutHeaderArray.map((item, index) => (
                 <PagesHeaders 
