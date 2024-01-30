@@ -44,7 +44,7 @@ const About = () => {
                     subTitle2={item.subTitle2}
                     button={
                         <Link to='contact'>
-                            <p className='button'>Contactez votre conseil</p>
+                            <p className='button'>Contactez-nous</p>
                         </Link>
                     }
                     text1={

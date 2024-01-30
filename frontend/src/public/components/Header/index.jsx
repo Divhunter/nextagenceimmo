@@ -21,7 +21,7 @@ const Header = () => {
 	const scrollToTop = () => {
 		window.scrollTo(0, 0)
 	}
-
+	
 	return (
 		<>
 			<nav id='navbar' className={	
@@ -91,6 +91,9 @@ const Header = () => {
 					</Link>
 					<Link to='estimation'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Estimation</p>
+					</Link>
+					<Link to='agence'>
+						<p onClick={isOpenState} className='navbar__menu__text'>Notre agance</p>
 					</Link>
 					<Link to='pro'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Documments utiles</p>

@@ -30,15 +30,18 @@ const Gestion = () => {
                                 alt='logo-gestion'
                             />
                             <br/>
-                            {item.titleCol1}
                         </div>
                     }
                     subTitle1={
-                        <div id='titlegestion'>
+                        <div>
                             {item.subTitle1}
                         </div>
                     }
-                    subTitle2={item.subTitle2}
+                    subTitle2={
+                        <div>
+                            {item.subTitle2}
+                        </div>
+                    }
                     button={
                         <Link to='https://www.orchestrav2.egiweb.net/'>
                             <p className='button'>Accès intranet</p>
