@@ -2,6 +2,7 @@ import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
 import woman from '../../assets/pictures/woman.png'
 import ContactForm from '../../../functions/ContactForm'
+import logoDrapeau from '../../assets/pictures/logo-drapeau.png'
 
 // styles
 import './m-contact.css'
@@ -9,7 +10,7 @@ import './d-contact.css'
 
 const Contact = () => {
     
-    const contactHeader = pagesHeadersArray.find(el => el.title === "9")
+    const contactHeader = pagesHeadersArray.find(el => el.title === "6")
     const contactHeaderArray = []
     contactHeaderArray.push(contactHeader)
 
@@ -18,7 +19,20 @@ const Contact = () => {
             {contactHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
-                    titleCol1={item.titleCol1}
+                    titleCol1={
+                        <div id='contact-header-text'>
+                            <img
+                                src={logoDrapeau}
+                                className='header-logo'
+                                width='615px'
+                                height='747px'
+                                loading='lazy'
+                                alt='logo-drapeau'
+                            />
+                            <br/>
+                            {item.titleCol1}
+                        </div>
+                    }
                     subTitle1={
                         <div id='titleContact'>
                             {item.subTitle1}

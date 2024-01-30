@@ -32,20 +32,13 @@
 	},
     {
         "title": "5",
-		"titleCol1": "Pro.",
-        "subTitle1": "Ensemble, écrivons la success story de votre entreprise. Notre cabinet comprend les défis uniques auxquels font face les professionnels comme vous.",
-        "subTitle2": "RCP - MRP - CYBER RISQUES - FLOTTE AUTOMOBILE - DOMMAGE AUX BIENS - RCM - JURIDIQUE ... ",
-        "text1": ""
-	},
-    {
-        "title": "6",
-		"titleCol1": "Santé",
-        "subTitle1": "Prenez le contrôle de votre bien-être. Optez pour une complémentaire santé qui va au-delà des attentes, assurant une protection solide et des remboursements adaptés.",
-        "subTitle2": "COMPLÉMENTAIRE INDIVIDUELLE - COLLECTIVE - JEUNE - FAMILLE - RESPONSABLE - 100% ...",
+		"titleCol1": "Documents utils",
+        "subTitle1": "",
+        "subTitle2": "",
         "text1": ""
 	},
     {	
-        "title": "9",
+        "title": "6",
 		"titleCol1": "Formulaire de contact",
         "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet d'assurance.",
         "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",

@@ -95,10 +95,10 @@ const Header = () => {
 					<Link to='agences'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Notre agence</p>
 					</Link>
-					<Link to='pro'>
+					<Link to='docs'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Documments utiles</p>
 					</Link>
-					<Link to='pret'>
+					<Link to='contact'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Contact</p>
 					</Link>
 				</menu> 

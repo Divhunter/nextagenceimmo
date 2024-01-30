@@ -8,10 +8,7 @@ import Banner from '../../public/components/Banner'
 import About from '../../public/components/About'
 import Estimation from '../../public/components/Estimation'
 import Gestion from '../../public/components/Gestion'
-import Sante from '../../public/components/Sante'
-import Vowd from '../../public/components/Vowd'
-import Prof from '../../public/components/Prof'
-import Pret from '../../public/components/Pret'
+import Docs from '../../public/components/Docs'
 import Agences from '../../public/components/Agences'
 import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
@@ -63,19 +60,7 @@ const PublicContainer = () => {
     }, [])
 
 	useEffect(() => {
-        slideInTop('#titleSante')
-    }, [])
-
-	useEffect(() => {
-        slideInTop('#titlePro')
-    }, [])
-
-	useEffect(() => {
-        slideInTop('#titlePret')
-    }, [])
-
-    useEffect(() => {
-        slideInTop('#titleAuto')
+        slideInTop('#titleDocs')
     }, [])
 
 	return (
@@ -87,10 +72,7 @@ const PublicContainer = () => {
                 <Gestion />
 				<Estimation />
                 <Agences />
-				<Sante />
-                <Vowd />
-                <Prof />
-                <Pret />
+                <Docs />
 				<Contact />
 				<Footer />
                 <Background />
