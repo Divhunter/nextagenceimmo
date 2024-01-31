@@ -11,7 +11,7 @@
     {
         "title": "2",
 		"titleCol1": "Gestion",
-        "subTitle1": "Nous vous accompagnons dans la gestion de votre patrimoine immobilier. De l'estimation locative à la gestion de votre bien.",
+        "subTitle1": "Nous vous accompagnons dans la gestion de votre patrimoine immobilier, de l'estimation locative à la gestion de votre bien.",
         "subTitle2": "N'hésitez pas à nous demander un devis personnalisé pour votre mandat de gestion.",
         "button": "",
         "text1": ""
@@ -32,7 +32,7 @@
 	},
     {
         "title": "5",
-		"titleCol1": "Documents utils",
+		"titleCol1": "Documents utiles",
         "subTitle1": "",
         "subTitle2": "",
         "text1": ""

@@ -51,4 +51,11 @@
         height: 31vw;
         margin-top: 12vw;
     }
+
+    .sep {
+        width: 80%;
+        height: 1px;
+        margin: 6vw auto 0 auto;
+        background-color: rgba(255, 255, 255, .5);
+    }
 }

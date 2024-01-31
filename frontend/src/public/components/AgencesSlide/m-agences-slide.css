@@ -1,0 +1,147 @@
+/*******************************************************************************************************/
+/********************************************* agences-slide *******************************************/
+/*******************************************************************************************************/
+
+.agences-slide {
+    position: relative;
+    left: -21.9vw;
+    width: auto;
+    height: auto;
+}
+
+.agences-slide__filtre {
+    margin-top: 0;
+    padding-top: 6vw;
+    padding-left: 22vw;
+    padding-right: 22vw;
+    width: 90vw;
+    height: 95vw;
+    font-size: 2.37vw;;
+    font-weight: 500;
+    line-height: 8vw;
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+.agences-slide__filtre__arrow {
+    font-size: 4.5vw;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .3);
+    transition: color .4s;
+}
+
+.agences-slide__filtre__arrow:hover {
+    color: rgb(255, 208, 217);
+    transition: color .4s;
+}
+
+.agences-slide__filtre__arrow__left {
+    float: left;
+    margin-left: -2vw;
+}
+
+.agences-slide__filtre__arrow__right {
+    float: right;
+    margin-right: -18vw;
+}
+
+.agences-slide__filtre__text {
+    width: 54.5vw;
+    height: auto;
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    line-height: 8vw;
+    color: rgb(255, 242, 204);
+}
+
+.agences-slide__filtre__container__dote {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    width: 16vw;
+}
+
+.dot {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: rgb(206, 39, 73);
+    transition: background-color .5s;
+}
+
+.dot-active {
+    background-color: rgb(255, 148, 169);
+}
+
+.dot-inactive {
+    background-color: rgba(158, 158, 158, 0.3);
+}
+
+.text-visible {
+    display: inline-block;
+}
+
+.text-hidden {
+    display: none;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /*******************************************************************************************************/
+    /********************************************* agences-slide *******************************************/
+    /*******************************************************************************************************/
+
+    .agences-slide {
+        left: -12.977vw;
+    }
+
+    .agences-slide__filtre {
+        margin-top: 0;
+        margin-bottom: 2.962vw;
+        padding-top: 3.555vw;
+        padding-left: 13.037vw;
+        padding-right: 13.037vw;
+        width: 54.518vw;
+        height: 53.333vw;
+        font-size: 2.37vw;
+        line-height: 4.74vw;
+    } 
+
+    .agences-slide__filtre__arrow {
+        font-size: 2.666vw;
+    }
+
+    .agences-slide__filtre__arrow__left {
+        margin-left: -1.185vw;
+    }
+
+    .agences-slide__filtre__arrow__right {
+        margin-right: -11.259vw;
+    }
+
+    .agences-slide__filtre__text {
+        width: 32.592vw;
+        margin-top: 5.925vw;
+        margin-bottom: 2.962vw;
+        line-height: 0.888vw;
+    } 
+    
+    .agences-slide__filtre__container__dote {
+        width: 7.111vw;
+    }
+    
+    .dot {
+        width: 1.185vw;
+        height: 1.185vw;
+    }
+}

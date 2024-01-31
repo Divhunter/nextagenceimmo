@@ -62,9 +62,13 @@ const Contact = () => {
                                     />
                                 </div>
                                 <p className='containerContact__bloc__pub'>
-                                    Notre objectif
+                                    La clé de vos 
                                     <br/>
-                                    est de vous offrir la tranquillité d'esprit
+                                    projets immo
+                                    <br/>
+                                    est à portée 
+                                    <br/>
+                                    de main
                                 </p>
                             </div>
                         </>

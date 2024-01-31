@@ -139,16 +139,35 @@
     }
 
 	.nav__menu__transaction {
-        right: 20vw;
+        right: 24vw;
         background-color: rgb(206, 39, 73);
 		transition: filter .4s;
     }
 
 	.nav__menu__location {
-        right: 10vw;
+        right: 14vw;
         background-color: rgb(128, 27, 47);
 		transition: filter .4s;
     }
+
+	.nav__menu__alert {
+		position: absolute;
+		display: inline-block;
+        top: 2vw;
+        padding: .68vw;
+		right: 9.6vw;
+		font-size: 1.5vw;
+		border: solid 2px rgba(255, 255, 255, .4);
+		background-color: transparent;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color .4s;
+	}
+
+	.nav__menu__alert:hover {
+		background-color: rgba(255, 255, 255, .5);
+		transition: background-color .4s;
+	}
 
 	.navbar__menu {
 		position: absolute;

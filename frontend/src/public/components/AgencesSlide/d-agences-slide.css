@@ -1,0 +1,168 @@
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 767px ****************************************/
+
+@media screen and (min-width: 768px) {
+
+    /*******************************************************************************************************/
+    /********************************************* agences-slide *******************************************/
+    /*******************************************************************************************************/
+
+    .agences-slide__filtre {
+        height: 60vw;
+        line-height: 6.125vw;
+    } 
+    
+    .agences-slide__filtre__arrow {
+        margin-top: 0;
+        font-size: 1.75vw;
+    }
+
+    .agences-slide__filtre__text {
+        line-height: 5.25vw;
+        margin-top: 8vw;
+        margin-bottom: -4.375vw;
+    } 
+
+    .agences-slide__filtre__container__dote {
+        width: 5.25vw;
+    }
+
+    .dot {
+        width: 1vw;
+        height: 1vw;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 991px ****************************************/
+
+@media screen and (min-width: 992px) {
+
+    /*******************************************************************************************************/
+    /********************************************* agences-slide *******************************************/
+    /*******************************************************************************************************/
+
+    .agences-slide {
+        left: -22vw;
+    }
+
+    .agences-slide__filtre {
+        padding-left: 22vw;
+        padding-right: 22vw;
+        width: 85vw;
+        height: 45vw;
+        line-height: 6.125vw;
+    } 
+    
+    .agences-slide__filtre__arrow {
+        font-size: 1.75vw;
+    }
+
+    .agences-slide__filtre__arrow__left {
+        margin-left: -2vw;
+    }
+
+    .agences-slide__filtre__arrow__right {
+        margin-right: -19vw;
+    }
+
+    .agences-slide__filtre__text {
+        width: 52.5vw;
+        line-height: 5.25vw;
+        margin-bottom: -4.375vw;
+    } 
+
+    .agences-slide__filtre__more {
+        padding: 1.575vw 2.187vw 1.575vw 2.187vw;
+        font-size: 1.75vw;
+    }
+
+    .agences-slide__filtre__container__dote {
+        width: 10vw;
+    }
+
+    .dot {
+        width: .8vw;
+        height: .8vw;
+    }
+}
+
+/********************************************* media queries *************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /*******************************************************************************************************/
+    /********************************************* agences-slide *******************************************/
+    /*******************************************************************************************************/
+
+    .agences-slide {
+        position: relative;
+        top: 0;
+        margin-top: -5vw;
+        left: auto;
+        width: auto;
+        height: auto;
+    }
+    
+    .agences-slide__filtre {
+        margin: auto;
+        width: 75.7vw;
+        height: auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        line-height: 5.11vw;
+        border-radius: 10px;
+    } 
+    
+    .agences-slide__filtre__arrow {
+        font-size: 3.5vw;
+    }
+
+    .agences-slide__filtre__arrow__left {
+        float: left;
+        margin-left: -.8vw;
+    }
+
+    .agences-slide__filtre__arrow__right {
+        float: right;
+        margin-right: -.6vw;
+    }
+
+    .agences-slide__filtre__text {
+        margin-top: 10vw;
+        margin-bottom: 0;
+        width: 43.8vw;
+        line-height: 2.8vw;
+        font-size: 2vw;
+    }
+    
+    .agences-slide__filtre__text__mail {
+        color: rgb(255, 208, 217) !important; 
+    }
+
+    .agences-slide__filtre__text__mail:hover {
+        text-decoration: underline;
+    }
+
+    .agences-title {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .agences-slide__filtre__more {
+        border: .146vw;
+        padding: 1.314vw 1.825vw 1.314vw 1.825vw;
+        font-size: 1.46vw;
+    }
+
+    .agences-slide__filtre__container__dote {
+        top: 5.3vw;
+        width: 10vw;
+    }
+
+    .dot {
+        width: 1vw;
+        height: 1vw;
+    }
+}

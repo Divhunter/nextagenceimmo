@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import logoDrapeau from '../../assets/pictures/logo-drapeau.png'
+import logoDocs from '../../assets/pictures/logo-docs.png'
 
 
 // styles
@@ -29,7 +29,7 @@ const Docs = () => {
                     titleCol1={
                         <div id='docs-header-text'>
                             <img
-                                src={logoDrapeau} 
+                                src={logoDocs} 
                                 className='header-logo'
                                 width='615px'
                                 height='747px'

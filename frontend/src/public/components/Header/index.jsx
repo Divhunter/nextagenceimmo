@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as Home} from 'react-router-dom'
 import { useState } from 'react'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faBullhorn } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
@@ -47,6 +47,12 @@ const Header = () => {
 				<Link to='location'>
 					<div className='nav__menu__button nav__menu__location'>Location</div>
 				</Link>
+
+				<div className='nav__menu__alert'>
+					<FontAwesomeIcon
+						icon={faBullhorn}
+					/>
+				</div>
 
 				<FontAwesomeIcon 
 					onClick={(e) => { isOpenState(e); scrollToTop(e) }} 

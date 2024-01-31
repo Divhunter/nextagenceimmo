@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
+import AgencesSlide from '../../components/AgencesSlide'
 import office from '../../assets/pictures/office.jpg'
 import logoEstimation from '../../assets/pictures/logo-agences.png'
 
@@ -62,7 +63,7 @@ const Agences = () => {
                                 alt='logo-estimation'
                             />
                             <br/>
-                            {item.titleCol1}
+                            {item.titleCol1}  
                         </div>
                     }
                     subTitle1={
@@ -101,10 +102,9 @@ const Agences = () => {
                                         >
                                             <a href={redirection}>165 Rte de Vienne, 69008 Lyon</a>
                                         </p>
-                                        <p>
-                                            
-                                        </p>
+                                        <div className='sep'></div>
                                     </div>
+                                    <AgencesSlide />
                                 </div>
                             </div>
                         </div> 
