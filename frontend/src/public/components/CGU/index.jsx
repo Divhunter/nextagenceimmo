@@ -1,14 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
-import logoMutuactP from '../../assets/pictures/logo-mutuact-blanc-solo.png'
+import logoNAIS from '../../assets/pictures/icon.png'
 
 // styles
 import './m-cgu.css'
 import './d-cgu.css'
 
 const CGU = () => {
-
-    // localStorage.removeItem('token')
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -20,8 +18,8 @@ const CGU = () => {
             className='cgu'>
             <Link to='/'>
                 <img 
-                    className='cgu__logo-mutuact' 
-                    src={logoMutuactP} alt='logo mutuact' 
+                    className='cgu__logo-notreagenceimmo' 
+                    src={logoNAIS} alt='logo notreagenceimmo' 
                 />
             </Link>
             <h1>Mentions légales</h1>
@@ -95,7 +93,7 @@ const CGU = () => {
                 Collecte des données
             </h2>
             <p>
-                Notre site internet « mutuact.fr » collecte des données personnelles :
+                Notre site internet « notreagenceimmo.com » collecte des données personnelles :
                 Quand vous nous contactez à l’aide d’un de nos formulaires.
                 Quelles sont les données collectées et pourquoi ?
                 Uniquement des informations nécessaires à notre échange telles que : votre nom, prénom, adresse email, téléphone.
@@ -120,9 +118,9 @@ const CGU = () => {
                 Comment voir ou supprimer mes données ?
             </h2>
             <p>
-                Raison Sociale : MUTUACT
+                Raison Sociale : NOTREAGENCEIMMO
                 <br/><br/>
-                Adresse du siège social : 41 Rue de la Découverte CS37621 - 31670 Labège - France
+                Adresse du siège social : 165 Rte de Vienne, 69008 Lyon - France
                 <br/><br/>
                 Pour toute demande relative à vos données personnelles, vous pouvez nous contacter directement (via notre formulaire de contact) afin de consulter ou demander la suppression de ses données collectées. Nous vous répondrons dans un délai de 30 jours.
             </p>

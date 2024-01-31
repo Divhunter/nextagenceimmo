@@ -2,7 +2,7 @@ import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
 import woman from '../../assets/pictures/woman.png'
 import ContactForm from '../../../functions/ContactForm'
-import logoDrapeau from '../../assets/pictures/logo-drapeau.png'
+import logoContact from '../../assets/pictures/logo-contact.png'
 
 // styles
 import './m-contact.css'
@@ -20,14 +20,14 @@ const Contact = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div id='contact-header-text'>
+                        <div id='contact-header-text' className='contact section--padding'>
                             <img
-                                src={logoDrapeau}
+                                src={logoContact}
                                 className='header-logo'
                                 width='615px'
                                 height='747px'
                                 loading='lazy'
-                                alt='logo-drapeau'
+                                alt='logo-contact'
                             />
                             <br/>
                             {item.titleCol1}

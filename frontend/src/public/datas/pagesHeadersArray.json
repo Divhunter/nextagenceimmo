@@ -3,8 +3,8 @@
     {	
         "title": "1",
         "titleCol1": "À propos",
-        "subTitle1": "Notreagenceimmo : depuis plus de 10 ans, nos équipes d'experts vous accompagnent dans vos projets immobiliers et répondent à vos besoins spécifiques.",
-        "subTitle2": "Nos 2 agences situées à Lyon et Vénissieux disposent des derniers outils technologiques et de la meilleure couverture publicitaire du marché",
+        "subTitle1": "NOTRE AGENCE IMMO : depuis plus de 10 ans, nos équipes d'experts vous accompagnent dans vos projets immobiliers et répondent à vos besoins spécifiques.",
+        "subTitle2": "Nos 2 agences situées à Lyon et Vénissieux disposent des derniers outils technologiques et de la meilleure couverture publicitaire du marché.",
         "button": "",
         "text1": ""
     },
@@ -26,14 +26,14 @@
     {	
         "title": "4",
 		"titleCol1": "Notre agence",
-        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet immobilier",
+        "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet immobilier.",
         "subTitle2": "Notre agence vous accueille du lundi au vendredi de 9h à 12h et 13h30 à 17h30",
         "text1": ""
 	},
     {
         "title": "5",
 		"titleCol1": "Documents utiles",
-        "subTitle1": "",
+        "subTitle1": "Pour faciliter le traitement de votre dossier, veuillez consulter les documents nécessaires disponibles au téléchargement sur notre site.",
         "subTitle2": "",
         "text1": ""
 	},

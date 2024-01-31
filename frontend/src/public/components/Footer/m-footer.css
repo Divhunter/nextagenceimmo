@@ -8,7 +8,7 @@
     height: auto;
     font-family: Open, sans-serif;
     color: white;
-    background-color: black;
+    background-color: rgb(16, 31, 38);
     margin-bottom: -5vw;
 }
 
@@ -33,7 +33,7 @@
 
 .footer__link__icon {
 	position: relative;
-    color: rgb(109, 255, 231);
+    color: rgb(241, 122, 146);
     font-size: 9vw;
     opacity: .8;
     cursor: pointer;
@@ -41,12 +41,12 @@
 }
 
 .footer__link__icon:hover {
-	color: rgb(180, 255, 243);
+	color: rgb(247, 160, 177);
     opacity: 1;
     transition: all .2s;
 }
 
-.footer__logo-mutuact {
+.footer__logo-Notreagenceimmo {
     margin-top: 12vw;
     margin-bottom: 12vw;
     width: 50vw;
@@ -62,12 +62,11 @@
 }
 
 .mail-link {
-    color: rgb(55, 255, 222) !important; 
+    color: rgb(241, 122, 146) !important; 
 }
 
 .mail-link:hover {
     text-decoration: underline;
-    color: rgb(55, 255, 222);
 }
 
 .footer__partenaires {
@@ -99,15 +98,14 @@
     bottom: 0;
     font-size: 3.8vw;
     line-height: 5vw;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(16, 31, 38);
 }
 
 .footer__copyright__link {
-    color: rgb(55, 255, 222) !important;
+    color: rgb(241, 122, 146) !important;
 }
 
 .footer__copyright__link:hover {
-    color: rgb(55, 255, 222) !important;
     text-decoration: underline;
 }
 
@@ -134,7 +132,7 @@
         font-size: 5.333vw;
     }
     
-    .footer__logo-mutuact {
+    .footer__logo-Notreagenceimmo {
         margin-top: 5.25vw;
         margin-bottom: 5.25vw;
         width: 20vw;

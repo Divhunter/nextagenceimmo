@@ -12,12 +12,12 @@
     .form-group > textarea {
         margin-bottom: auto;
         font-size: 1.8vw;
-        border: solid 2px rgb(10, 86, 109);
+        border: solid 2px rgb(51, 100, 122);
     }
 
     .form-group input:hover,
     .form-group textarea:hover {
-        border: solid 2px rgb(52, 190, 167);
+        border: solid 2px rgb(81, 124, 145);
     }
 
     .form-group > textarea {

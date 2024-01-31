@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
 import { Link as Home} from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { faBars, faXmark, faBullhorn } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
@@ -12,6 +12,10 @@ import './m-header.css'
 import './d-header.css'
 
 const Header = () => {
+
+	useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 	const [isOpen, setIsOpen] = useState(false)
 	const isOpenState = () => {
@@ -29,7 +33,7 @@ const Header = () => {
 				'navbar navbar-open':
 				'navbar navbar-closed' 
 			}>
-				<Home to='/'>
+				<Home to='https://notreagenceimmo.vercel.app/'>
 					<img 
 						className='nav__menu__logo-nai' 
 						src={ isOpen ? logoNAIS : logoNAI } 

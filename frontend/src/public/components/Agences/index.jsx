@@ -91,7 +91,7 @@ const Agences = () => {
                                     <div 
                                         className='containerOffice__bloc__office__text__content'
                                         >
-                                        <p><strong>Notreagenceimmo</strong></p>
+                                        <p><strong>NOTRE AGENCE IMMO</strong></p>
                                         <p>standard</p>
                                         <p>04 72 76 33 44</p>
                                         <p>

@@ -27,14 +27,14 @@ const Docs = () => {
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div id='docs-header-text'>
+                        <div id='docs-header-text' className='docs section--padding'>
                             <img
                                 src={logoDocs} 
                                 className='header-logo'
                                 width='615px'
                                 height='747px'
                                 loading='lazy'
-                                alt='logo-estimation'
+                                alt='logo-documents'
                             />
                             <br/>
                             {item.titleCol1}

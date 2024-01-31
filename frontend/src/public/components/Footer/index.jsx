@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import {fab, faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import {fab, faFacebook, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import iconMutuact from '../../assets/pictures/logo-mutuact-blanc.png'
+import logoNAI from '../../assets/pictures/logo-notreagence.png'
 import logoMalakoff from '../../assets/brands/logo-malakoff.png'
 import logoCegema from '../../assets/brands/logo-cegema.png'
 import logoAlpis from '../../assets/brands/logo-alpis.png'
@@ -27,44 +27,44 @@ const Footer = () => {
           <FontAwesomeIcon className='footer__link__icon icon-fb' icon={(fab, faFacebook)} />
         </Link>
         <Link to='/'>
+          <FontAwesomeIcon className='footer__link__icon icon-tw' icon={(fab, faTwitter)} />
+        </Link>
+        <Link to='/'>
           <FontAwesomeIcon className='footer__link__icon icon-lk' icon={(fab, faLinkedin)} />
         </Link>
         <Link to='/'>
           <FontAwesomeIcon className='footer__link__icon icon-gh' icon={(fab, faInstagram)} />
         </Link>
-        <Link to='/'>
-          <FontAwesomeIcon className='footer__link__icon icon-yt' icon={(fab, faYoutube)} />
-        </Link>
       </div>
-      <Link to='https://www.mutuact.fr/mutuact'>
+      <Link to='https://notreagenceimmo.vercel.app/'>
         <img 
-            className='footer__logo-mutuact' 
-            src={iconMutuact}
-            width='2035px'
-            height='960px'
-            fetchpriority='high'  
-            alt='mutuact-icon' 
-        />
+						className='footer__logo-Notreagenceimmo' 
+						src={ logoNAI } 
+						max-width='4123px'
+						max-height='1554px'
+						fetchpriority='high' 
+						alt='logo de notre agence immo'
+				/>
       </Link>
       <p className='footer__logo-info'>
-        MUTUACT
+        NOTRE AGENCE IMMO
         <br/>
-        SIRET 75344673100048
+        Numéro SIRET : 40223003100021
         <br/>
-        Tél : 06 28 18 02 03
+        Tél : 04 72 76 33 44
         <br/>
-        https://www.mutuact.fr
+        https://www.Notreagenceimmo.com
         <br/>
         <span>
           <a 
-            href='mailto:mutuact@mutuact.fr'
+            href='mailto:accueil@notreagenceimmo.com'
             className='mail-link'
           >
-              mutuact@mutuact.fr
+              accueil@notreagenceimmo.com
           </a>
         </span>
         <br/>
-        41 Rue de la Découverte CS37621 - 31670 Labège - France
+        165 Rte de Vienne, 69008 Lyon
       </p><div className='footer__partenaires'>
         <img 
           className='footer__partenaires__logo'
@@ -157,7 +157,7 @@ const Footer = () => {
       </div>
       <div className='footer__copyright'>
           <p>
-              © MUTUACT - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
+              © Notreagenceimmo - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
           </p>
       </div>	
     </section>
