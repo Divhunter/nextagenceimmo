@@ -11,7 +11,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    filter: brightness(20%);
+    filter: brightness(50%);
 }
 
 .containerOffice__bloc__office__text {
@@ -47,7 +47,6 @@
 .containerOffice__bloc__office__text__content > p > a:hover,
 .agences-adress:hover {
     text-decoration: underline;
-    color: rgb(163, 255, 240);
 }
 
 /********************************************* media queries ************************************************/
