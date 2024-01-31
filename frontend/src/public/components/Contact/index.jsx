@@ -45,7 +45,7 @@ const Contact = () => {
                             <div className='containerContact'>
                                 <div className='containerContact__text' >
                                     <p className='containerContact__text__header'>
-                                        Devis gratuit sous 48h
+                                        Estimation offerte
                                     </p>
                                     <div className='containerContact__text__form'>
                                         <ContactForm />

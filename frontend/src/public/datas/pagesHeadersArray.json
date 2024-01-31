@@ -27,21 +27,20 @@
         "title": "4",
 		"titleCol1": "Notre agence",
         "subTitle1": "Prenez rendez-vous, nous vous accueillons dans nos locaux pour vous conseiller au mieux sur les composantes de votre pojet immobilier.",
-        "subTitle2": "Notre agence vous accueille du lundi au vendredi de 9h à 12h et 13h30 à 17h30",
+        "subTitle2": "Notre agence vous accueille du lundi au vendredi de 9h à 12h et 13h30 à 17h30.",
         "text1": ""
 	},
     {
         "title": "5",
 		"titleCol1": "Documents utiles",
         "subTitle1": "Pour faciliter le traitement de votre dossier, veuillez consulter les documents nécessaires disponibles au téléchargement sur notre site.",
-        "subTitle2": "",
-        "text1": ""
+        "subTitle2": ""
 	},
     {	
         "title": "6",
 		"titleCol1": "Formulaire de contact",
-        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet d'assurance.",
-        "subTitle2": "NOUS REVIENDRONS VERS VOUS DANS LES MEILLEURS DÉLAIS POUR VOUS FOURNIR UN DEVIS PERSONNALISÉ",
+        "subTitle1": "Nous vous invitons à remplir le formulaire de contact en nous fournissant autant de détails que possible sur votre projet immobilier.",
+        "subTitle2": "Dans le cadre d'un projet de vente, nous vous proposons l'estimation gratuite de votre bien.",
         "text1": ""
 	}
 ]
