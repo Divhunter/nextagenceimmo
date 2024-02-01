@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import selectionArray from '../../datas/selectionArray.json'
 import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,6 +27,8 @@ const SelectionSlide = () => {
 
     return (
         <div className='selection-slide'>
+
+            <p className='selection-slide__title'>Slide notre sélection</p>
         
             {picLength > 1 ? (
                 <>
@@ -43,7 +45,7 @@ const SelectionSlide = () => {
                 </>
             ) : null}
             
-            {selectionArray.map((items, id) => (
+            {/*{selectionArray.map((items, id) => (
                 <div key={id}>
                     <div className='selection-slide__card'>
                         <Link to={`/Lodgement/${items.id}`}>
@@ -55,7 +57,7 @@ const SelectionSlide = () => {
                         </Link>
                     </div>
                 </div>
-            ))}
+            ))}*/}
         </div>
     ) 
 }

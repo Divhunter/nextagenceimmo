@@ -5,6 +5,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import Background from '../../public/components/Background'
 import Header from '../../public/components/Header'
 import Banner from '../../public/components/Banner'
+import Selection from '../../public/components/Selection'
 import About from '../../public/components/About'
 import Estimation from '../../public/components/Estimation'
 import Gestion from '../../public/components/Gestion'
@@ -68,6 +69,7 @@ const PublicContainer = () => {
 			<main>
 				<Header />
 				<Banner />
+                <Selection />
 				<About />
                 <Gestion />
 				<Estimation />

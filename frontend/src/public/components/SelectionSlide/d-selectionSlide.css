@@ -17,7 +17,15 @@
         background-color: white;
         border-radius: 20px;
         overflow: hidden;
-    }  
+    } 
+    
+    .selection-slide__title {
+        margin: -45px auto 0 auto;
+        top: 50%;
+        transform: translate(0, 50%);
+        color: rgb(206, 39, 73);
+        font-size: 2vw;
+    }
 
     .selection-slide__card {
         width: 200px;
