@@ -22,6 +22,11 @@ const Header = () => {
         setIsOpen(!isOpen)
     }
 
+	const [isActu, setIsActu] = useState(false)
+	const isActuState = () => {
+        setIsActu(!isActu)
+    }
+
 	const scrollToTop = () => {
 		window.scrollTo(0, 0)
 	}
@@ -52,7 +57,11 @@ const Header = () => {
 					<div className='nav__menu__button nav__menu__location'>Location</div>
 				</Link>
 
-				<div className='nav__menu__alert'>
+				<div
+					 
+					className='nav__menu__alert'
+					onClick={isActuState}
+				>
 					<FontAwesomeIcon
 						icon={faBullhorn}
 					/>
@@ -113,6 +122,29 @@ const Header = () => {
 					</Link>
 				</menu> 
 			</nav>
+			<div 
+				id='actu'
+				className={
+				isActu ?
+				'actu-visible':'actu-hidden'
+				}
+			>
+				<div className='actu-container'>
+					<div 
+						onClick={isActuState}
+						className='actu-container__closed' 
+					>
+						<FontAwesomeIcon icon={faXmark} />
+					</div>
+					<header>
+						<h1>Créez votre alerte personnalisée et ne ratez plus aucun bien !</h1>
+					</header>
+					<div className='actu-form'>
+						<p>Formulaire Alert e-mail</p>
+					</div>
+					<br/>
+				</div>
+			</div>
 		</>
 	)
 }

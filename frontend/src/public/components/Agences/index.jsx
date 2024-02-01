@@ -104,6 +104,7 @@ const Agences = () => {
                                         </p>
                                         <div className='sep'></div>
                                     </div>
+                                    <p><strong>ORGANIGRAMME</strong></p>
                                     <AgencesSlide />
                                 </div>
                             </div>
