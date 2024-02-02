@@ -58,8 +58,11 @@ const Header = () => {
 					</Link>
 					<div
 						
-						className='nav__menu__alert'
-						onClick={isActuState}
+						className={
+							isActu ?
+							'nav__menu__alert nav__menu__alert--gray' : 'nav__menu__alert nav__menu__alert--transparent'
+						}
+						onClick={(e) => { setIsOpen(false); isActuState(e) }} 
 					>
 						<FontAwesomeIcon
 							icon={faBullhorn}
