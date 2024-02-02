@@ -49,22 +49,22 @@ const Header = () => {
 					/>
 				</Home>
 
-				<Link to='transaction'>
-					<div className='nav__menu__button nav__menu__transaction'>Transaction</div>
-				</Link>
-
-				<Link to='location'>
-					<div className='nav__menu__button nav__menu__location'>Location</div>
-				</Link>
-
-				<div
-					 
-					className='nav__menu__alert'
-					onClick={isActuState}
-				>
-					<FontAwesomeIcon
-						icon={faBullhorn}
-					/>
+				<div className='container-button'>
+					<Link to='transaction'>
+						<div className='nav__menu__button nav__menu__transaction'>Transaction</div>
+					</Link>
+					<Link to='location'>
+						<div className='nav__menu__button nav__menu__location'>Location</div>
+					</Link>
+					<div
+						
+						className='nav__menu__alert'
+						onClick={isActuState}
+					>
+						<FontAwesomeIcon
+							icon={faBullhorn}
+						/>
+					</div>
 				</div>
 
 				<FontAwesomeIcon 

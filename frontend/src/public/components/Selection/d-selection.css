@@ -3,16 +3,36 @@
 
 @media screen and (min-width: 1200px) {
 
-    /**********************************************************************************************/
-    /********************************************* vowd *******************************************/
-    /**********************************************************************************************/
+    /***************************************************************************************************/
+    /********************************************* selection *******************************************/
+    /***************************************************************************************************/
 
     .selection__container {
         width: 100%;
         height: auto;
         text-align: center;
         margin: -2vw 0 0 0;
-        padding: 5vw 3vw 3.2vw 3vw;
-        background-color: rgb(13, 35, 44);
+        padding: 3vw 3vw 3.2vw 3vw;
+        background: linear-gradient(rgba(92, 100, 105, .7), rgba(92, 100, 105, .5), white);
     }  
+
+    .selection__container__header {
+        background: transparent;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .selection__container__header__title {
+        font-family: 'Helvetica';
+        font-size: 2vw;
+        font-weight: 500;
+        letter-spacing: .2vw;
+    }
+
+    .selection__container__text {
+        margin-top: 4vw;
+        font-family: 'Open', sans-serif;
+        font-size: 1.2vw;
+        letter-spacing: .03vw;
+        color: rgb(13, 37, 48);
+    }
 }

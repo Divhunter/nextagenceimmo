@@ -9,50 +9,75 @@
 
     .selection-slide {
         display: flex;
-        flex-direction: left;
-        flex-wrap: nowrap;
-        margin: 0;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
-        height: 250px;
-        background-color: white;
-        border-radius: 20px;
-        overflow: hidden;
+        height: 18.27vw;
     } 
-    
-    .selection-slide__title {
-        margin: -45px auto 0 auto;
-        top: 50%;
-        transform: translate(0, 50%);
-        color: rgb(206, 39, 73);
-        font-size: 2vw;
-    }
 
     .selection-slide__card {
-        width: 200px;
-        height: 255px;
-        background-color: rgb(172, 172, 172);
-        margin-top: -23px;
-        margin-left: 1px;
-        margin-right: 1px;
-    }
-
-    .selection-slide__arrow {
-        position: absolute;
-        top: 10vw;
-        font-size: 3vw;
+        position: relative;
+        width: 22.87vw;
+        height: 16.07vw;
+        margin-top: 0;
+        margin-left: .15vw;
+        border-radius: 10px;
         color: white;
-        cursor: pointer;
+        font-family: 'Open', sans-serif;
+        overflow: hidden;
+        z-index: 4000;
     }
 
-    .selection-slide__arrow-left {
+    .selection-slide__card__img {
+        position: absolute;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         display: inline-block;
-        left: 5vw;
-        margin: 0;
+        width: 25vw;
+        height: auto;
+        z-index: -1;
+        filter: brightness(80%);
+        transition: filter .4s, width .4s;
     }
 
-    .selection-slide__arrow-right {
-        display: inline-block;
-        right: 5vw;
-        margin: 0;
+    .selection-slide__card__img:hover {
+        filter: brightness(100%);
+        width: 27vw;
+        transition: filter .4s, width .4s;
+    }
+
+    .selection-slide__card__text__exclu {
+        width: 10.96vw;
+        transform: rotate(-20deg);
+        margin-top: -14.61vw;
+        padding: .51vw;
+        font-size: 1.31vw;
+        letter-spacing: .073vw;
+        color: white;
+        background-color: rgb(206, 39, 73);
+    }
+
+    .selection-slide__card__text {
+        margin-top: 12.27vw;
+        padding: 0 1.09vw 0 1.09vw;
+        font-size: 1.24vw;
+        font-weight: bold;
+        line-height: .73vw;
+        letter-spacing: .036vw;
+        color: white !important;
+    }
+
+    .selection-slide__card__text__lieux {
+        text-align: left;
+        font-size: 1.61vw;
+    }
+
+    .selection-slide__card__text__dp {
+        display: flex;
+        margin-top: -1.82vw;
+        width: 100%;
+        justify-content: space-between;
     }
 }
