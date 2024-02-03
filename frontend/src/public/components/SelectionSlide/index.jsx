@@ -12,7 +12,7 @@ import './d-selectionSlide.css'
 const SelectionSlide = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000,
         slidesToShow: 4,
@@ -25,7 +25,7 @@ const SelectionSlide = () => {
                 {selectionArray.map((items, id) => (
                     <div key={id}>
                         <div className='selection-slide__card'>
-                            <Link to={`/Lodgement/${items.id}`}>
+                            <Link to={`/Bien/${items.id}`}>
                                 <div className='selection-slide__card__text'>
                                     <p className='selection-slide__card__text__lieux'>{items.lieux}</p>
                                     <div className='selection-slide__card__text__dp'>

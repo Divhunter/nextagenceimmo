@@ -23,13 +23,13 @@ const Footer = () => {
     <section className='footer'>
       <h1>Suivez-nous</h1>
       <div className='footer__link'>
-        <Link to=''>
+        <Link to='https://www.facebook.com/Notreagenceimmolyon'>
           <FontAwesomeIcon className='footer__link__icon icon-fb' icon={(fab, faFacebook)} />
         </Link>
-        <Link to='/'>
+        <Link to='https://twitter.com/NotreAgenceImmo'>
           <FontAwesomeIcon className='footer__link__icon icon-tw' icon={(fab, faTwitter)} />
         </Link>
-        <Link to='/'>
+        <Link to='https://www.linkedin.com/company/notre-agence-immo/about/'>
           <FontAwesomeIcon className='footer__link__icon icon-lk' icon={(fab, faLinkedin)} />
         </Link>
         <Link to='/'>

@@ -33,8 +33,9 @@
     {
         "title": "5",
 		"titleCol1": "Documents utiles",
-        "subTitle1": "Pour faciliter le traitement de votre dossier, veuillez consulter les documents nécessaires disponibles au téléchargement sur notre site.",
-        "subTitle2": ""
+        "subTitle1": "Pour faciliter le traitement de votre dossier, veuillez consulter les documents nécessaires disponibles au téléchargement.",
+        "subTitle2": "Le traitement des dossiers peut nécessiter quelques semaines. Nous déployons tous les efforts nécessaires pour accélérer ce processus.",
+        "text1":""
 	},
     {	
         "title": "6",

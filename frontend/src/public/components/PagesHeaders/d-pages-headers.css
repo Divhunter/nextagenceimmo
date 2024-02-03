@@ -52,14 +52,16 @@
         letter-spacing: .0875vw;
     }
 
-    .why {
+    .why,
+    .uploader {
         margin-top: -2.625vw;
         margin-bottom: 4.375vw;
         padding: 0 5vw 5vw 5vw;
         font-size: 2.6vw;
     }
 
-    .why>header {
+    .why > header,
+    .uploader > header {
         margin-bottom: 3.5vw;
     }
 
@@ -68,7 +70,8 @@
         left: 50vw;
     }
 
-    .why>p{
+    .why > p 
+    .uploader > p {
         margin-top: 0;
         margin-left: 1.75vw;
         margin-right: 1.75vw;
@@ -122,14 +125,16 @@
         letter-spacing: .0875vw;
     }
 
-    .why {
+    .why,
+    .uploader {
         margin-top: -2.625vw;
         margin-bottom: 4.375vw;
         padding: 0 4vw 4vw 4vw;
         font-size: 2.3vw;
     }
 
-    .why>header {
+    .why > header,
+    .uploader > header {
         margin-bottom: 3vw;
     }
 
@@ -141,7 +146,8 @@
         font-size: 2.5vw;
     }
 
-    .why>p{
+    .why > p 
+    .uploader > p {
         margin-top: .875vw;
         margin-left: 1.75vw;
         margin-right: 1.75vw;
@@ -206,7 +212,8 @@
         letter-spacing: .073vw;
     }
 
-    .why {
+    .why,
+    .uploader {
         margin-top: -7.5vw;
         margin-bottom: -3.5vw;
         padding: 0 5vw 2vw 5vw;
@@ -214,8 +221,8 @@
         font-weight: 700;
     }
 
-    .why>header {
-        margin-bottom: 1.5vw;
+    .why > header {
+        margin-bottom: 0;
     }
 
     .pagination {
@@ -226,13 +233,38 @@
         font-size: 3.5vw;
     }
 
-    .why>p{
+    .why > p {
         display: inline-block;
+        text-align: left;
         margin-top: 5vw;
         margin-left: 1.8vw;
         margin-right: 1.8vw;
         font-size: 1.5vw;
         font-weight: 500;
         line-height: 1.9vw;
+    }
+
+    .uploder__content {
+        text-align: left;
+        margin: 0 auto; 
+        font-size: 1.5vw;
+        font-weight: 500;
+        line-height: 1.9vw;
+        width: 40%;
+    }
+
+    .uploder__content > span {
+        color: rgb(0, 119, 255);
+        transition: color .4s;
+        cursor: pointer;
+    }
+
+    .uploder__content > span:hover {
+        color: rgb(75, 158, 253);
+        transition: color .4s;
+    }
+
+    .uploder__content > span:active {
+        color: rgb(136, 191, 253);
     }
 }

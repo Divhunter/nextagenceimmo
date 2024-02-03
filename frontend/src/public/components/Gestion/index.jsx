@@ -76,6 +76,7 @@ const Gestion = () => {
                                     <br/><br/>
                                     &#8226; Espace client dédié en ligne
                                 </p>
+                                <br/><br/><br/>
                             </section>
                         </>
                     } 

@@ -83,7 +83,8 @@ h4 {
     letter-spacing: .0875vw;
 }
 
-.why {
+.why,
+.uploader {
     width: 100%;
     text-align: center;
     margin-top: -2.625vw;
@@ -96,14 +97,16 @@ h4 {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.why>header {
+.why > header,
+.uploader > header {
     margin-bottom: 7.5vw;
     padding: 2vw;
     background-color: transparent;
     z-index: 2000;
 }
 
-.why>p {
+.why > p
+.uploader > p {
     text-align: left;
     margin-top: .875vw;
     margin-left: 7vw;
@@ -182,13 +185,15 @@ h4 {
         letter-spacing: .0518vw;
     }
 
-    .why {
+    .why,
+    .uploader {
         margin-top: -1.555vw;
         margin-bottom: 2.592vw;
         font-size: 2.963vw;
     }
     
-    .why>header {
+    .why > header,
+    .uploader > header {
         margin-bottom: 4.444vw;
         padding: 1.185vw;
     }
@@ -201,7 +206,8 @@ h4 {
         font-size: 3vw;
     }
     
-    .why>p{
+    .why > p
+    .uploader > p {
         margin-top: .518vw;
         margin-left: 5vw;
         margin-right: 5vw;

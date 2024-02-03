@@ -3,6 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
+import Uploader from '../../../functions/Uploader'
 import logoDocs from '../../assets/pictures/logo-docs.png'
 
 
@@ -45,14 +46,17 @@ const Docs = () => {
                             {item.subTitle1}
                         </div>
                     }
-                    subTitle2={
-                        <div className='doc-func'>
-                            <p>Fonctionnalité uploader</p>
-                        </div>
+                    subTitle2={item.subTitle2}
+                    text1={
+                        <>
+                            <br/><br/>
+                            <Uploader />  
+                        </> 
                     }
                 />
             ))}
 		</section>
+        
 	)
 }
 
