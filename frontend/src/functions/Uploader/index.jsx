@@ -65,7 +65,7 @@ return (
             <p 
                 onClick={downloadAll}
                 className='button'>
-                    Tous télécharger
+                    Tout télécharger
             </p>
         </section> 
     )
