@@ -28,6 +28,17 @@
         letter-spacing: .2vw;
     }
 
+    .selection__container__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: 50vw;
+        margin: auto;
+        background-color: rgb(62, 97, 117);
+        color: black;
+    }
+
     .selection__container__text {
         margin-top: 4vw;
         font-family: 'Open', sans-serif;

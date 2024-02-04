@@ -6,7 +6,6 @@ import { notifyError, notifySuccess } from '../../context/Notify'
 import ReCAPTCHA from 'react-google-recaptcha'
 import {AiOutlineCheckCircle} from 'react-icons/ai'
 
-
 import './m-contact-form.css'
 import './d-contact-form.css'
 

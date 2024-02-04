@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import selectionArray from '../../datas/selectionArray.json'
+import selectionArray from '../../datas/biensArray.json'
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
@@ -27,10 +27,10 @@ const SelectionSlide = () => {
                         <div className='selection-slide__card'>
                             <Link to={`/Bien/${items.id}`}>
                                 <div className='selection-slide__card__text'>
-                                    <p className='selection-slide__card__text__lieux'>{items.lieux}</p>
+                                    <p className='selection-slide__card__text__ville'>{items.ville}</p>
                                     <div className='selection-slide__card__text__dp'>
                                         <p className='selection-slide__card__text__dp__designation'>{items.designation}</p>
-                                        <p className='selection-slide__card__text__dp__prix'>{items.prix}</p>
+                                        <p className='selection-slide__card__text__dp__prix'>{items.prix} <span>{items.unite}</span></p>
                                     </div>
                                 </div>
                                 {items.exclu ? 

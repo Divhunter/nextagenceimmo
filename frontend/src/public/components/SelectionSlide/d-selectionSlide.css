@@ -28,6 +28,16 @@
         z-index: 4000;
     }
 
+    .selection-slide__card .selection-slide__card__img{
+        width: 25vw;
+        transition: width .4s;
+    }
+
+    .selection-slide__card:hover .selection-slide__card__img{
+        width: 27vw;
+        transition: width .4s;
+    }
+
     .selection-slide__card__img {
         position: absolute;
         align-items: center;
@@ -38,14 +48,6 @@
         width: 25vw;
         height: auto;
         z-index: -1;
-        filter: brightness(80%);
-        transition: filter .4s, width .4s;
-    }
-
-    .selection-slide__card__img:hover {
-        filter: brightness(100%);
-        width: 27vw;
-        transition: filter .4s, width .4s;
     }
 
     .selection-slide__card__text__exclu {
@@ -61,7 +63,6 @@
 
     .selection-slide__card__text {
         margin-top: 12.27vw;
-        padding: 0 1.09vw 0 1.09vw;
         font-size: 1.24vw;
         font-weight: bold;
         line-height: .73vw;
@@ -69,15 +70,21 @@
         color: white !important;
     }
 
-    .selection-slide__card__text__lieux {
+    .selection-slide__card__text__ville {
         text-align: left;
+        margin-left: 1.09vw;
+        margin-right: 1.09vw;
         font-size: 1.61vw;
+        text-shadow: 0 0 1em rgb(1, 1, 1), 0 0 0.2em rgb(1, 1, 1);
     }
 
     .selection-slide__card__text__dp {
         display: flex;
-        margin-top: -1.82vw;
+        padding: 2vw 1.09vw 0 1.09vw;
+        margin-top: -3.7vw;
         width: 100%;
         justify-content: space-between;
+        text-shadow: 0 0 2em rgb(1, 1, 1), 0 0 0.6em rgb(1, 1, 1);
+        /*background-color: rgba(6, 17, 22, .6);*/
     }
 }

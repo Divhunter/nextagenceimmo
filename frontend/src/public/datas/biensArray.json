@@ -1,0 +1,122 @@
+[
+    {
+        "id": "bien1",
+        "img": "/asset/appt1.jpg",
+        "vente": "Transaction",
+        "ville": "Bron",
+        "piece": "2 pièces",
+        "designation": "Appartement",
+        "prix": 117000, 
+        "unite": " €",
+        "type": "Appartement",
+        "exclu": true
+    },
+    {
+        "id": "bien2",
+        "img": "/asset/appt2.jpg",
+        "vente": "Location",
+        "piece": "3 pièces",
+        "ville": "Lyon 8ème",
+        "designation": "Appartement",
+        "prix": 1091, 
+        "unite": " € / Mois",
+        "type": "Appartement",
+        "exclu": true
+    },
+    {
+        "id": "bien3",
+        "img": "/asset/appt3.jpg",
+        "vente": "Location",
+        "piece": "2 pièces",
+        "ville": "Lyon 8ème",
+        "designation": "Appartement",
+        "prix": 620, 
+        "unite": " € / Mois",
+        "type": "Appartement",
+        "exclu": true
+    },
+    {
+        "id": "bien4",
+        "img": "/asset/appt4.jpg",
+        "ville": "Lyon 8ème",
+        "vente": "Location",
+        "piece": "2 pièces",
+        "designation": "Appartement",
+        "prix": 490, 
+        "unite": " € / Mois",
+        "type": "Appartement",
+        "exclu": true
+    },
+    {
+        "id": "bien5",
+        "img": "/asset/loc1.jpg",
+        "vente": "Location",
+        "piece": "1 pièce",
+        "ville": "Lyon 8ème",
+        "designation": "Local co.",
+        "prix": 247.28, 
+        "unite": " € / Mois",
+        "type": "Locaux d'activité",
+        "exclu": true
+    },
+    {
+        "id": "bien6",
+        "img": "/asset/appt1.jpg",
+        "vente": "Location",
+        "piece": "1 pièce",
+        "ville": "Lyon 8ème",
+        "designation": "Parking",
+        "prix": 60, 
+        "unite": " € / Mois",
+        "type": "Garage / parking",
+        "exclu": true
+    },
+    {
+        "id": "bien7",
+        "img": "/asset/appt1.jpg",
+        "vente": "Location",
+        "piece": "2 pièces",
+        "ville": "Lyon 8ème",
+        "designation": "Appartement",
+        "prix": 590, 
+        "unite": " € / Mois",
+        "type": "Appartement",
+        "exclu": true
+    },
+    {
+        "id": "bien8",
+        "img": "/asset/appt1.jpg",
+        "vente": "Location",
+        "piece": "3 pièces",
+        "ville": "Oullin",
+        "designation": "Appartement",
+        "prix": 948.10, 
+        "unite": " € / Mois",
+        "type": "Appartement",
+        "exclu": null
+    },
+    {
+        "id": "bien9",
+        "img": "/asset/appt1.jpg",
+        "vente": "Location",
+        "piece": "1 pièce",
+        "ville": "Oullin",
+        "designation": "Garage",
+        "prix": 70, 
+        "unite": " € / Mois",
+        "type": "Garage / parking",
+        "exclu": null
+    },
+    {
+        "id": "bien10",
+        "img": "/asset/appt1.jpg",
+        "vente": "Location",
+        "piece": "1 pièce",
+        "ville": "Oullin",
+        "designation": "Garage",
+        "prix": 95, 
+        "unite": " € / Mois",
+        "type": "Garage / parking",
+        "exclu": null
+    }
+]
