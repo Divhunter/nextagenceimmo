@@ -36,7 +36,7 @@ const SelectionSlide = () => {
                                 {items.exclu ? 
                                     <p className='selection-slide__card__text__exclu'>Exclusivité</p>
                                 : null} 
-                                <img className='selection-slide__card__img' src={items.img} alt='appartement'/>
+                                <img className='selection-slide__card__img' src={items.img} alt='bien immobilier'/>
                             </Link>
                         </div>
                     </div>
