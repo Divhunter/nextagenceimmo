@@ -73,7 +73,7 @@
     },
     {
         "id": "bien7",
-        "img": "/asset/appt1.jpg",
+        "img": "/asset/appt5.jpg",
         "vente": "Location",
         "piece": "2 pièces",
         "ville": "Lyon 8ème",
@@ -85,7 +85,7 @@
     },
     {
         "id": "bien8",
-        "img": "/asset/appt1.jpg",
+        "img": "/asset/appt6.jpg",
         "vente": "Location",
         "piece": "3 pièces",
         "ville": "Oullin",
@@ -97,7 +97,7 @@
     },
     {
         "id": "bien9",
-        "img": "/asset/appt1.jpg",
+        "img": "/asset/gar2.jpg",
         "vente": "Location",
         "piece": "1 pièce",
         "ville": "Oullin",
@@ -109,7 +109,7 @@
     },
     {
         "id": "bien10",
-        "img": "/asset/appt1.jpg",
+        "img": "/asset/gar1.jpg",
         "vente": "Location",
         "piece": "1 pièce",
         "ville": "Oullin",
