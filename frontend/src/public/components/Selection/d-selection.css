@@ -31,11 +31,12 @@
     .selection__container__form {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        width: 90%;
-        height: 50vw;
+        width: 100%;
+        height: auto;
         margin: auto;
-        background-color: rgb(62, 97, 117);
+        padding-top: 3vw;
+        border-radius: 10px;
+        background-color: white;
         color: black;
     }
 

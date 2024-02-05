@@ -1,226 +1,331 @@
 import React, { useState } from 'react'
-import Autosuggest from 'react-autosuggest'
+// import Autosuggest from 'react-autosuggest'
 
 import './m-formulaireRecherche.css'
 import './d-formulaireRecherche.css'
 
+
 const FormulaireRecherche = () => {
-  /*const [categorie, setCategorie] = useState('');
-  const [typesBiens, setTypesBiens] = useState([]);
-  const [nombrePieces, setNombrePieces] = useState([]);
-  const [localites, setLocalites] = useState([]);
-  const [fourchettePrix, setFourchettePrix] = useState('');
+  const [operations, setOperations] = useState([])
+  const [selectAllOperations, setSelectAllOperations] = useState(false)
 
-  const handleChangeCategorie = (event) => {
-    setCategorie(event.target.value);
-  };
+  const [typesBiens, setTypesBiens] = useState([])
+  const [selectAllTypesBiens, setSelectAllTypesBiens] = useState(false)
 
-  const handleChangeTypesBiens = (event) => {
-    const value = event.target.value;
-    if (value === 'Tout sélectionner') {
-      setTypesBiens(value === 'Tout sélectionner' ? ['Tout sélectionner'] : []);
+  const [nombrePieces, setNombrePieces] = useState([])
+  const [selectAllNombrePieces, setSelectAllNombrePieces] = useState(false)
+
+  const [localisations, setLocalisations] = useState([])
+  const [selectAllLocalisations, setSelectAllLocalisations] = useState(false)
+
+  const [prix, setPrix] = useState([])
+  const [selectAllPrix, setSelectAllPrix] = useState(false)
+
+  const [openWindow, setOpenWindow] = useState(null)
+
+  const operationsOptions = [
+    'Vente',
+    'Location',
+    'Location saisonnière',
+    'Programme',
+    'Viager',
+    'Enchère',
+  ]
+
+  const typesBiensOptions = [
+    'Appartement',
+    'Maison',
+    'Terrain',
+    'Commerce',
+    'Garage / Parking',
+    'Immeuble',
+    'Bureau',
+    'Bateau',
+    'Locaux / Entrepôts',
+    'Cave / Box',
+  ]
+
+  const nombrePiecesOptions = [
+    '1 pièce',
+    '2 pièces',
+    '3 pièces',
+    '4 pièces',
+    '5 pièces',
+    '6+ pièces',
+  ]
+
+  const localisationsOptions = [
+    'Brignais',
+    'Bron',
+    'Irigny',
+    'La Mulatière',
+    'Lyon 2ième',
+    'Lyon 7ième',
+    'Lyon 8ième',
+    'Oullin',
+    'Saint-Genis-Laval',
+    'Vénissieux',
+  ]
+
+  const prixOptions = [
+    '0-500',
+    '500-1000',
+    '1000-1500',
+    '1500-2000',
+    '2000-3000',
+    '3000-4000',
+    '4000-5000',
+    '5000+',
+  ]
+
+  const handleToggleOperation = (operation) => {
+    setOpenWindow('operations')
+    if (operation === 'Tout sélectionner') {
+      setSelectAllOperations(!selectAllOperations)
+      setOperations(selectAllOperations ? [] : operationsOptions)
     } else {
-      setTypesBiens((types) => {
-        return types.includes(value)
-          ? types.filter((type) => type !== value && type !== 'Tout sélectionner')
-          : [...types, value];
-      });
-    }
-  };
+      const updatedOperations = operations.includes(operation)
+        ? operations.filter((selectedOperation) => selectedOperation !== operation)
+        : [...operations, operation]
 
-  const handleChangeNombrePieces = (event) => {
-    const value = event.target.value;
-    if (value === 'Tout sélectionner') {
-      setNombrePieces(value === 'Tout sélectionner' ? ['Tout sélectionner'] : []);
+      setOperations(updatedOperations)
+      setSelectAllOperations(updatedOperations.length === operationsOptions.length)
+    }
+  }
+
+  const handleToggleTypeBien = (type) => {
+    setOpenWindow('typesBiens')
+    if (type === 'Tout sélectionner') {
+      setSelectAllTypesBiens(!selectAllTypesBiens)
+      setTypesBiens(selectAllTypesBiens ? [] : typesBiensOptions)
     } else {
-      setNombrePieces((pieces) => {
-        return pieces.includes(value)
-          ? pieces.filter((piece) => piece !== value && piece !== 'Tout sélectionner')
-          : [...pieces, value];
-      });
-    }
-  };
+      const updatedTypesBiens = typesBiens.includes(type)
+        ? typesBiens.filter((selectedType) => selectedType !== type)
+        : [...typesBiens, type]
 
-  const handleChangeLocalites = (event) => {
-    const value = event.target.value;
-    if (value === 'Tout sélectionner') {
-      setLocalites(value === 'Tout sélectionner' ? ['Tout sélectionner'] : []);
+      setTypesBiens(updatedTypesBiens)
+      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length)
+    }
+  }
+
+  const handleToggleNombrePieces = (nombrePiece) => {
+    setOpenWindow('nombrePieces')
+    if (nombrePiece === 'Tout sélectionner') {
+      setSelectAllNombrePieces(!selectAllNombrePieces)
+      setNombrePieces(selectAllNombrePieces ? [] : nombrePiecesOptions)
     } else {
-      setLocalites((lieux) => {
-        return lieux.includes(value)
-          ? lieux.filter((lieu) => lieu !== value && lieu !== 'Tout sélectionner')
-          : [...lieux, value];
-      });
-    }
-  };
-  
-  const handleChangeFourchettePrix = (event) => {
-    setFourchettePrix(event.target.value);
-};
-  
+      const updatedNombrePieces = nombrePieces.includes(nombrePiece)
+        ? nombrePieces.filter((selectedNombrePiece) => selectedNombrePiece !== nombrePiece)
+        : [...nombrePieces, nombrePiece]
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Effectuez ici l'action de recherche en utilisant la catégorie, les types de biens, le nombre de pièces et les localités sélectionnés.
-    console.log('Catégorie sélectionnée:', categorie);
-    console.log('Types de biens sélectionnés:', typesBiens);
-    console.log('Nombre de pièces sélectionné:', nombrePieces);
-    console.log('Localités sélectionnées:', localites);
-    console.log('Fourchette de prix sélectionnée:', fourchettePrix);
-  };
+      setNombrePieces(updatedNombrePieces)
+      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length)
+    }
+  }
+
+  const handleToggleLocalisations = (localisation) => {
+    setOpenWindow('localisations')
+    if (localisation === 'Tout sélectionner') {
+      setSelectAllLocalisations(!selectAllLocalisations)
+      setLocalisations(selectAllLocalisations ? [] : localisationsOptions)
+    } else {
+      const updatedLocalisations = localisations.includes(localisation)
+        ? localisations.filter((selectedLocalisation) => selectedLocalisation !== localisation)
+        : [...localisations, localisation]
+
+      setLocalisations(updatedLocalisations)
+      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length)
+    }
+  }
+
+  const handleTogglePrix = (prixOption) => {
+    setOpenWindow('prix')
+    if (prixOption === 'Tout sélectionner') {
+      setSelectAllPrix(!selectAllPrix)
+      setPrix(selectAllPrix ? [] : prixOptions)
+    } else {
+      const updatedPrix = prix.includes(prixOption)
+        ? prix.filter((selectedPrix) => selectedPrix !== prixOption)
+        : [...prix, prixOption]
+
+      setPrix(updatedPrix)
+      setSelectAllPrix(updatedPrix.length === prixOptions.length)
+    }
+  }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Catégorie :
-        <select value={categorie} onChange={handleChangeCategorie}>
-          <option value="">Sélectionnez une catégorie</option>
-          <option value="Vente">Vente</option>
-          <option value="Location">Location</option>
-          <option value="Location saisonnière">Location saisonnière</option>
-          <option value="Programme">Programme</option>
-          <option value="Viager">Viager</option>
-          <option value="Enchère">Enchère</option>
-        </select>
-      </label>
+    <div>
+      <div className="dropdown">
+        <div
+          className="dropdown-header"
+          onClick={() => setOpenWindow(openWindow === 'operations' ? null : 'operations')}
+        >
+          Types d'opération
+        </div>
+        {openWindow === 'operations' && (
+          <div className="dropdown-options">
+            <label>
+              <input
+                type="checkbox"
+                id="selectAllOperations"
+                checked={selectAllOperations}
+                onChange={() => handleToggleOperation('Tout sélectionner')}
+              />
+              Tout sélectionner
+            </label>
+            {operationsOptions.map((operation) => (
+              <label key={operation}>
+                <input
+                  type="checkbox"
+                  id={operation}
+                  value={operation}
+                  checked={operations.includes(operation)}
+                  onChange={() => handleToggleOperation(operation)}
+                />
+                {operation}
+              </label>
+            ))}
+          </div>
+        )}
+      </div>
 
-      <label>
-        Types de biens :
-        <select value={typesBiens} onChange={handleChangeTypesBiens} multiple>
-          <option value="Tout sélectionner">Tout sélectionner</option>
-          <option value="Appartement">Appartement</option>
-          <option value="Maison">Maison</option>
-          <option value="Terrain">Terrain</option>
-          <option value="Commerce">Commerce</option>
-          <option value="Garage / Parking">Garage / Parking</option>
-          <option value="Immeuble">Immeuble</option>
-          <option value="Bureau">Bureau</option>
-          <option value="Bateau">Bateau</option>
-          <option value="Locaux d'activité / Entrepôts">Locaux d'activité / Entrepôts</option>
-          <option value="Cave / Box">Cave / Box</option>
-        </select>
-      </label>
+      <div className="dropdown">
+        <div
+          className="dropdown-header"
+          onClick={() => setOpenWindow(openWindow === 'typesBiens' ? null : 'typesBiens')}
+        >
+          Types de bien
+        </div>
+        {openWindow === 'typesBiens' && (
+          <div className="dropdown-options">
+            <label>
+              <input
+                type="checkbox"
+                id="selectAllTypesBiens"
+                checked={selectAllTypesBiens}
+                onChange={() => handleToggleTypeBien('Tout sélectionner')}
+              />
+              Tout sélectionner
+            </label>
+            {typesBiensOptions.map((type) => (
+              <label key={type}>
+                <input
+                  type="checkbox"
+                  id={type}
+                  value={type}
+                  checked={typesBiens.includes(type)}
+                  onChange={() => handleToggleTypeBien(type)}
+                />
+                {type}
+              </label>
+            ))}
+          </div>
+        )}
+      </div>
 
-      <label>
-        Nombre de pièces :
-        <select value={nombrePieces} onChange={handleChangeNombrePieces} multiple>
-          <option value="Tout sélectionner">Tout sélectionner</option>
-          <option value="1 pièce">1 pièce</option>
-          <option value="2 pièces">2 pièces</option>
-          <option value="3 pièces">3 pièces</option>
-          <option value="4 pièces">4 pièces</option>
-          <option value="5 pièces">5 pièces</option>
-          <option value="6+ pièces">6+ pièces</option>
-        </select>
-      </label>
+      <div className="dropdown">
+        <div
+          className="dropdown-header"
+          onClick={() => setOpenWindow(openWindow === 'nombrePieces' ? null : 'nombrePieces')}
+        >
+          Nombre de pièce
+        </div>
+        {openWindow === 'nombrePieces' && (
+          <div className="dropdown-options">
+            <label>
+              <input
+                type="checkbox"
+                id="selectAllNombrePieces"
+                checked={selectAllNombrePieces}
+                onChange={() => handleToggleNombrePieces('Tout sélectionner')}
+              />
+              Tout sélectionner
+            </label>
+            {nombrePiecesOptions.map((nombrePiece) => (
+              <label key={nombrePiece}>
+                <input
+                  type="checkbox"
+                  id={nombrePiece}
+                  value={nombrePiece}
+                  checked={nombrePieces.includes(nombrePiece)}
+                  onChange={() => handleToggleNombrePieces(nombrePiece)}
+                />
+                {nombrePiece}
+              </label>
+            ))}
+          </div>
+        )}
+      </div>
 
-      <label>
-        Localités :
-        <select value={localites} onChange={handleChangeLocalites} multiple>
-          <option value="Tout sélectionner">Tout sélectionner</option>
-          <option value="Brignais">Brignais</option>
-          <option value="Bron">Bron</option>
-          <option value="Irigny">Irigny</option>
-          <option value="La Mulatière">La Mulatière</option>
-          <option value="Lyon 2ième">Lyon 2ième</option>
-          <option value="Lyon 7ième">Lyon 7ième</option>
-          <option value="Lyon 8ième">Lyon 8ième</option>
-          <option value="Oullin">Oullin</option>
-          <option value="Saint-Genis-Laval">Saint-Genis-Laval</option>
-          <option value="Vénissieux">Vénissieux</option>
-        </select>
-      </label>
+      <div className="dropdown">
+        <div
+          className="dropdown-header"
+          onClick={() => setOpenWindow(openWindow === 'localisations' ? null : 'localisations')}
+        >
+          Localisation
+        </div>
+        {openWindow === 'localisations' && (
+          <div className="dropdown-options">
+            <label>
+              <input
+                type="checkbox"
+                id="selectAllLocalisations"
+                checked={selectAllLocalisations}
+                onChange={() => handleToggleLocalisations('Tout sélectionner')}
+              />
+              Tout sélectionner
+            </label>
+            {localisationsOptions.map((localisation) => (
+              <label key={localisation}>
+                <input
+                  type="checkbox"
+                  id={localisation}
+                  value={localisation}
+                  checked={localisations.includes(localisation)}
+                  onChange={() => handleToggleLocalisations(localisation)}
+                />
+                {localisation}
+              </label>
+            ))}
+          </div>
+        )}
+      </div>
 
-      <label>
-        Fourchette de Prix :
-        <select value={fourchettePrix} onChange={handleChangeFourchettePrix}>
-          <option value="">Sélectionnez une fourchette de prix</option>
-          <option value="0-500">0 à 500 €</option>
-          <option value="500-1000">500 € à 1000 €</option>
-          <option value="1000-1500">1000 € à 1500 €</option>
-          <option value="1500-2000">1500 € à 2000 €</option>
-          <option value="2000-3000">2000 € à 3000 €</option>
-          <option value="3000-4000">3000 € à 4000 €</option>
-          <option value="4000-5000">4000 € à 5000 €</option>
-          <option value="5000+">Plus de 5000 €</option>
-        </select>
-      </label>
+      <div className="dropdown">
+        <div
+          className="dropdown-header"
+          onClick={() => setOpenWindow(openWindow === 'prix' ? null : 'prix')}
+        >
+          Fourchette de prix
+        </div>
+        {openWindow === 'prix' && (
+          <div className="dropdown-options">
+            <label>
+              <input
+                type="checkbox"
+                id="selectAllPrix"
+                checked={selectAllPrix}
+                onChange={() => handleTogglePrix('Tout sélectionner')}
+              />
+              Tout sélectionner
+            </label>
+            {prixOptions.map((prixOption) => (
+              <label key={prixOption}>
+                <input
+                  type="checkbox"
+                  id={prixOption}
+                  value={prixOption}
+                  checked={prix.includes(prixOption)}
+                  onChange={() => handleTogglePrix(prixOption)}
+                />
+                {prixOption}
+              </label>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
 
-      <button type="submit">Rechercher</button>
-    </form>
-  )*/
-  // Exemple de données pour l'auto-complétion
-
-  // Exemple de données pour l'auto-complétion de l'adresse
-  const addressSuggestions = [
-    '123 Rue de la République',
-    '456 Avenue des Champs-Élysées',
-    '789 Boulevard Saint-Michel',
-    '101 Place de la Concorde',
-  ];
-
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [address, setAddress] = useState('');
-  const [addressSuggestionsList, setAddressSuggestions] = useState([]);
-
-  const getAddressSuggestions = (inputValue) => {
-    const inputValueLowerCase = inputValue.toLowerCase();
-    return addressSuggestions.filter(
-      (addr) => addr.toLowerCase().includes(inputValueLowerCase)
-    );
-  };
-
-  const onAddressSuggestionsFetchRequested = ({ value }) => {
-    setAddressSuggestions(getAddressSuggestions(value));
-  };
-
-  const onAddressSuggestionsClearRequested = () => {
-    setAddressSuggestions([]);
-  };
-
-  const onAddressChange = (_, { newValue }) => {
-    setAddress(newValue);
-  };
-
-  const addressInputProps = {
-    placeholder: 'Saisissez une adresse...',
-    value: address,
-    onChange: onAddressChange,
-  };
-
-  return (
-    <form>
-      <label>
-        Prénom:
-        <input
-          type="text"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-      </label>
-      <label>
-        Nom:
-        <input
-          type="text"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
-      </label>
-      <label>
-        Adresse:
-        <Autosuggest
-          suggestions={addressSuggestionsList}
-          onSuggestionsFetchRequested={onAddressSuggestionsFetchRequested}
-          onSuggestionsClearRequested={onAddressSuggestionsClearRequested}
-          getSuggestionValue={(suggestion) => suggestion}
-          renderSuggestion={(suggestion) => <div>{suggestion}</div>}
-          inputProps={addressInputProps}
-        />
-      </label>
-      <button type="submit">Envoyer</button>
-    </form>
-  );
-};
-
-export default FormulaireRecherche;
+export default FormulaireRecherche

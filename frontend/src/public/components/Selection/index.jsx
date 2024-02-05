@@ -1,4 +1,4 @@
-// import FormulaireRecherche from '../../../functions/FormulaireRecherche'
+import FormulaireRecherche from '../../../functions/FormulaireRecherche'
 import SelectionSlide from '../../components/SelectionSlide'
 
 // styles
@@ -10,12 +10,14 @@ const Selection = () => {
     return (
         <section className='selection'>
             <div className='selection__container'>
+                <br/><br/>
+                <div className='selection__container__form'>
+                    <FormulaireRecherche />
+                </div>
+                <br/>
                 <header className='selection__container__header'>
                     <h1 className='selection__container__header__title'>Notre sélection</h1>
                 </header>
-                {/*<div className='selection__container__form'>
-                    <FormulaireRecherche />
-                </div>*/}
                 <SelectionSlide />
                 <p className='selection__container__text'>
                     NOTRE AGENCE IMMO vous accueille du lundi au vendredi de 9h00 à 12h00
