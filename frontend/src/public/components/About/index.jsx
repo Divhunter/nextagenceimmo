@@ -62,7 +62,7 @@ const About = () => {
                                 <br/><br/>
                                 Ici, nous ne vendons pas simplement des propriétés, nous créons des opportunités et réalisons des rêves. Ouvrons la porte à vos projets...
                                 <br/><br/>
-                                <div className='end'>La clé est à portée de main !</div>
+                                <span className='end'>La clé est à portée de main !</span>
                             </p>
                             <div className='containerAbout__bloc'>
                                 <img 

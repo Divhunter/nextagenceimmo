@@ -17,8 +17,8 @@ input[type="checkbox"]::after {
     display: block;
     height: 0.7rem;
     width: .3rem;
-    border-bottom: .31rem solid #a0ffe7;
-    border-right: .31rem solid #a0ffe7;
+    border-bottom: .31rem solid rgb(255, 222, 228);
+    border-right: .31rem solid rgb(255, 222, 228);
     opacity: 0;
     transform: rotate(45deg) translate(-50%, -50%);
     position: absolute;
@@ -32,7 +32,7 @@ input[type="checkbox"]::before {
     display: block;
     height: 0;
     width: 0;
-    background-color: rgb(10, 86, 109);
+    background-color: rgb(206, 39, 73);
     border-radius: 30%;
     opacity: .5;
     transform: translate(-50%, -50%);
