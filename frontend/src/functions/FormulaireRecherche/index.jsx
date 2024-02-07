@@ -155,7 +155,7 @@ const FormulaireRecherche = () => {
 
   const handleFilterSubmit = (event) => {
     event.preventDefault();
-  
+
     const selectedOptions = [
       {"Opérations": operations},
       {"TypesB": typesBiens},
@@ -163,8 +163,28 @@ const FormulaireRecherche = () => {
       {"Localisations": localisations},
       {"Fourchette": prix},
     ];
+
+  // Enregistrez le nouveau tableau dans le localStorage, écrasant l'ancien
+  localStorage.setItem('selectedArray', JSON.stringify(selectedOptions));
+
+  console.log(selectedOptions);
+
+  setOpenWindow(false)
+
+  const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
+    setFunction([]);
+    setSelectAllFunction(false);
   
-    console.log(selectedOptions);
+    // Vous pouvez également réinitialiser d'autres états selon les besoins
+  };
+  
+  // Utilisation de la fonction pour réinitialiser les différentes sélections
+  resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, []);
+  resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, []);
+  resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, []);
+  resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, []);
+  resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, []);
+  
   }
 
   return (
