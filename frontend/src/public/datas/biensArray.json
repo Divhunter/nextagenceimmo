@@ -41,9 +41,9 @@
     {
         "id": 4,
         "img": "/asset/appt4.jpg",
-        "Localisations": "Lyon 8ème",
         "Opérations": "Location",
         "NombreP": "2 pièces",
+        "Localisations": "Lyon 8ème",
         "designation": "Appartement",
         "Fourchette": "0-500",
         "prix": 490, 

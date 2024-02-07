@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import selectionArray from '../../public/datas/biensArray.json';
 import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -79,8 +78,6 @@ const FormulaireRecherche = () => {
     '5000+',
   ];
 
- 
-
   const handleToggleOperation = (operation) => {
     setOpenWindow('operations');
     if (operation === 'Tout sélectionner') {
@@ -156,85 +153,19 @@ const FormulaireRecherche = () => {
     }
   };
 
-  const calculateMatchingScore = (obj) => {
-    const prixValue = obj.prix;
-  
-    const prixScore = (() => {
-      if (prixValue <= 500) return 5;
-      if (prixValue <= 1000) return 4;
-      if (prixValue <= 1500) return 3;
-      if (prixValue <= 2000) return 2;
-      if (prixValue <= 3000) return 1;
-      return 0;
-    })();
-
-    console.log(prixScore)
-  
-    const matchingCriteria = [
-      { selected: operations.includes(obj.Opérations), weight: 1 },
-      { selected: typesBiens.includes(obj.TypesB), weight: 1 },
-      { selected: nombrePieces.includes(obj.NombreP), weight: 1 },
-      { selected: localisations.includes(obj.Localisations), weight: 1 },
-      { selected: prixScore > 0, weight: prixScore },
-    ];
-
-    console.log(matchingCriteria)
-  
-    const totalScore = matchingCriteria.reduce((accumulator, criterion) => {
-      const criterionScore = criterion.selected ? criterion.weight : 0;
-      console.log(`Criterion: ${criterion.selected}, Score: ${criterionScore}`);
-      return accumulator + criterionScore;
-    }, 0);
-
-    console.log(totalScore)
-  
-    console.log(`Total Score: ${totalScore}`);
-    return totalScore;
-  };
-  
-  
-  const sortObjectsBySelection = (objects) => {
-    return objects.sort((a, b) => {
-      const scoreDiff = calculateMatchingScore(b) - calculateMatchingScore(a);
-  
-      if (scoreDiff !== 0) {
-        return scoreDiff; // Trie en fonction du score de correspondance
-      } else {
-        // Si le score est le même, trie par ordre d'origine
-        return a.id - b.id;
-      }
-    });
-  };
-  
-
   const handleFilterSubmit = (event) => {
     event.preventDefault();
   
-    const filteredObjects = selectionArray.filter(obj => (
-      operations.includes(obj.Opérations) &&
-      typesBiens.includes(obj.TypesB) &&
-      nombrePieces.includes(obj.NombreP) &&
-      localisations.includes(obj.Localisations) &&
-      prix.includes(obj.Fourchette)
-      // Ajoutez d'autres critères si nécessaire
-    ));
-    
+    const selectedOptions = [
+      {"Opérations": operations},
+      {"TypesB": typesBiens},
+      {"NombreP": nombrePieces},
+      {"Localisations": localisations},
+      {"Fourchette": prix},
+    ];
   
-    const sortedObjects = sortObjectsBySelection(filteredObjects);
-
-
-    console.log(`
-      Opérations : ${operations.join(', ')}
-      TypesB : ${typesBiens.join(', ')}
-      NombreP : ${nombrePieces.join(', ')}
-      Localisations : ${localisations.join(', ')}
-      Fourchette : ${prix.join(', ')}
-      
-      Résultats triés par sélection :
-      ${sortedObjects.map(obj => `ID: ${obj.id}, Sélection: ${calculateMatchingScore(obj)}`).join('\n')}
-    `);
-  };
-  
+    console.log(selectedOptions);
+  }
 
   return (
     <form onSubmit={handleFilterSubmit}>
