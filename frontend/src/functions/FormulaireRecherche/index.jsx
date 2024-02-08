@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -6,6 +7,9 @@ import './m-formulaireRecherche.css';
 import './d-formulaireRecherche.css';
 
 const FormulaireRecherche = () => {
+
+  const navigate = useNavigate(); 
+
   const [operations, setOperations] = useState([]);
   const [selectAllOperations, setSelectAllOperations] = useState(false);
 
@@ -224,6 +228,8 @@ const FormulaireRecherche = () => {
   
     // Affichez les IDs triés
     alert("Matching IDs: " + sortedIDs.join(", "));
+
+    navigate("/biensContainer");
   };
   
 
@@ -434,7 +440,6 @@ const FormulaireRecherche = () => {
             </div>
           )}
         </div>
-  
         <button className='button-search'>
           <FontAwesomeIcon icon={faSearch} />
         </button>

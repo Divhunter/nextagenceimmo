@@ -3,6 +3,7 @@ import ScrollToTop from './functions/ScrollToTop'
 import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
 import AdminRouter from './admin/AdminRouter'
+import BiensContainer from './public/components/BiensContainer'
 import Error from './_utils/Error'
 import CGU from './public/components/CGU'
 
@@ -91,6 +92,7 @@ const App = () => {
             <Routes>
                 <Route exact path='/*' element={ <PublicRouter /> } />
                 <Route path='/dashboard/*' element={ <AdminRouter /> } />
+                <Route path='/biensContainer' element={ <BiensContainer /> } />
                 <Route path='/CGU' element={ <CGU /> } />
                 <Route path='*' element={ <Error /> } />
             </Routes>

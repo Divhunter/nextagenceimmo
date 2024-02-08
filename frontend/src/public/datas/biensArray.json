@@ -1,7 +1,13 @@
 [
     {
         "Id": 1.00,
-        "Img": "/asset/appt1.jpg",
+        "Cover": "/assets/covers/appt1.jpg",
+        "pictures": [
+			"/assets/pictures/pic-appt1.jpg",
+            "/assets/pictures/pic-appt1.jpg",
+            "/assets/pictures/pic-appt1.jpg",
+            "/assets/pictures/pic-appt1.jpg"
+		],
         "Opérations": "Transaction",
         "Localisations": "Bron",
         "NombreP": "2 pièces",
@@ -12,11 +18,12 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "50 m²"
+        "Superficie": "50 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.01,
-        "Img": "/asset/appt7.jpg",
+        "Cover": "/assets/covers/appt7.jpg",
         "Opérations": "Transaction",
         "Localisations": "Lyon 8ième",
         "NombreP": "3 pièces",
@@ -27,11 +34,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "75 m²"
+        "Superficie": "75 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.02,
-        "Img": "/asset/appt8.jpg",
+        "Cover": "/assets/covers/appt8.jpg",
         "Opérations": "Transaction",
         "Localisations": "Lyon 2ième",
         "NombreP": "4 pièces",
@@ -42,11 +50,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "90 m²"
+        "Superficie": "90 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.03,
-        "Img": "/asset/appt9.jpg",
+        "Cover": "/assets/covers/appt9.jpg",
         "Opérations": "Transaction",
         "Localisations": "Vénissieux",
         "NombreP": "3 pièces",
@@ -57,11 +66,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "70 m²"
+        "Superficie": "70 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.04,
-        "Img": "/asset/appt10.jpg",
+        "Cover": "/assets/covers/appt10.jpg",
         "Opérations": "Transaction",
         "Localisations": "Saint-Genis-Laval",
         "NombreP": "3 pièces",
@@ -72,11 +82,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "85 m²"
+        "Superficie": "85 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.10,
-        "Img": "/asset/mais1.jpg",
+        "Cover": "/assets/covers/mais1.jpg",
         "Opérations": "Transaction",
         "Localisations": "Bron",
         "NombreP": "5 pièces",
@@ -87,11 +98,12 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "172 m²"
+        "Superficie": "172 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.11,
-        "Img": "/asset/mais2.jpg",
+        "Cover": "/assets/covers/mais2.jpg",
         "Opérations": "Transaction",
         "Localisations": "Oullin",
         "NombreP": "4 pièces",
@@ -102,11 +114,12 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "165 m²"
+        "Superficie": "165 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.12,
-        "Img": "/asset/mais3.jpg",
+        "Cover": "/assets/covers/mais3.jpg",
         "Opérations": "Transaction",
         "Localisations": "Brignais",
         "NombreP": "4 pièces",
@@ -117,11 +130,12 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²"
+        "Superficie": "120 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.13,
-        "Img": "/asset/mais4.jpg",
+        "Cover": "/assets/covers/mais4.jpg",
         "Opérations": "Transaction",
         "Localisations": "Irigny",
         "NombreP": "6 pièces",
@@ -132,11 +146,12 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "150 m²"
+        "Superficie": "150 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 1.14,
-        "Img": "/asset/mais5.jpg",
+        "Cover": "/assets/covers/mais5.jpg",
         "Opérations": "Transaction",
         "Localisations": "Irigny",
         "NombreP": "4 pièces",
@@ -147,11 +162,12 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²"
+        "Superficie": "120 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.00,
-        "Img": "/asset/appt2.jpg",
+        "Cover": "/assets/covers/appt2.jpg",
         "Opérations": "Location",
         "NombreP": "3 pièces",
         "Localisations": "Lyon 8ième",
@@ -162,11 +178,12 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "73 m²"
+        "Superficie": "73 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.01,
-        "Img": "/asset/appt3.jpg",
+        "Cover": "/assets/covers/appt3.jpg",
         "Opérations": "Location",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
@@ -177,11 +194,12 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "47 m²"
+        "Superficie": "47 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.02,
-        "Img": "/asset/appt4.jpg",
+        "Cover": "/assets/covers/appt4.jpg",
         "Opérations": "Location",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
@@ -192,11 +210,12 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "40 m²"
+        "Superficie": "40 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.00,
-        "Img": "/asset/loc1.jpg",
+        "Cover": "/assets/covers/loc1.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
@@ -207,11 +226,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "50 m²"
+        "Superficie": "50 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.01,
-        "Img": "/asset/loc2.jpg",
+        "Cover": "/assets/covers/loc2.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
@@ -222,11 +242,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "300 m²"
+        "Superficie": "300 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.02,
-        "Img": "/asset/loc3.jpg",
+        "Cover": "/assets/covers/loc3.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 2ième",
@@ -237,11 +258,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "350 m²"
+        "Superficie": "350 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.03,
-        "Img": "/asset/loc4.jpg",
+        "Cover": "/assets/covers/loc4.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
@@ -252,11 +274,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "220 m²"
+        "Superficie": "220 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.04,
-        "Img": "/asset/loc5.jpg",
+        "Cover": "/assets/covers/loc5.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
@@ -267,11 +290,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "60 m²"
+        "Superficie": "60 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 3.05,
-        "Img": "/asset/loc6.jpg",
+        "Cover": "/assets/covers/loc6.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 2ième",
@@ -282,11 +306,12 @@
         "TypesB": "Locaux d'activité",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "450 m²"
+        "Superficie": "450 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 4.00,
-        "Img": "/asset/park1.jpg",
+        "Cover": "/assets/covers/park1.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
@@ -297,11 +322,12 @@
         "TypesB": "Garage / Parking",
         "Exclu": true,
         "Selection": true,
-        "Superficie": false
+        "Superficie": false,
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.03,
-        "Img": "/asset/appt5.jpg",
+        "Cover": "/assets/covers/appt5.jpg",
         "Opérations": "Location",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
@@ -312,11 +338,12 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "55 m²"
+        "Superficie": "55 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.04,
-        "Img": "/asset/appt6.jpg",
+        "Cover": "/assets/covers/appt6.jpg",
         "Opérations": "Location",
         "NombreP": "3 pièces",
         "Localisations": "Oullin",
@@ -327,11 +354,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": true,
-        "Superficie": "76 m²"
+        "Superficie": "76 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.05,
-        "Img": "/asset/appt11.jpg",
+        "Cover": "/assets/covers/appt11.jpg",
         "Opérations": "Location",
         "NombreP": "3 pièces",
         "Localisations": "La Mulatière",
@@ -342,11 +370,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "70 m²"
+        "Superficie": "70 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.06,
-        "Img": "/asset/appt12.jpg",
+        "Cover": "/assets/covers/appt12.jpg",
         "Opérations": "Location",
         "NombreP": "4 pièces",
         "Localisations": "La Mulatière",
@@ -357,11 +386,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "90 m²"
+        "Superficie": "90 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.07,
-        "Img": "/asset/appt13.jpg",
+        "Cover": "/assets/covers/appt13.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
@@ -372,11 +402,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "40 m²"
+        "Superficie": "40 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.08,
-        "Img": "/asset/appt14.jpg",
+        "Cover": "/assets/covers/appt14.jpg",
         "Opérations": "Location",
         "NombreP": "3 pièces",
         "Localisations": "Lyon 7ième",
@@ -387,11 +418,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "80 m²"
+        "Superficie": "80 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 2.09,
-        "Img": "/asset/appt15.jpg",
+        "Cover": "/assets/covers/appt15.jpg",
         "Opérations": "Location",
         "NombreP": "4 pièces",
         "Localisations": "Lyon 7ième",
@@ -402,11 +434,12 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²"
+        "Superficie": "120 m²",
+        "Description": "ici la description du bien"
     },
     {
         "Id": 4.01,
-        "Img": "/asset/gar2.jpg",
+        "Cover": "/assets/covers/gar2.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Oullin",
@@ -417,11 +450,12 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": true,
-        "Superficie": false
+        "Superficie": false,
+        "Description": "ici la description du bien"
     },
     {
         "Id": 4.02,
-        "Img": "/asset/gar1.jpg",
+        "Cover": "/assets/covers/gar1.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Oullin",
@@ -432,11 +466,12 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": true,
-        "Superficie": false
+        "Superficie": false,
+        "Description": "ici la description du bien"
     },
     {
         "Id": 4.03,
-        "Img": "/asset/gar3.jpg",
+        "Cover": "/assets/covers/gar3.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 2ième",
@@ -447,6 +482,7 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false
+        "Superficie": false,
+        "Description": "ici la description du bien"
     }
 ]
