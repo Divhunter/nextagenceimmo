@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -153,9 +153,40 @@ const FormulaireRecherche = () => {
     }
   };
 
+  const compareByMatchCount = (selectedOptionsArray, selectionArray) => {
+    const sortedIDs = selectionArray.map(item => item.Id);
+  
+    if (selectedOptionsArray) {
+      selectedOptionsArray.forEach((selectedOption, index) => {
+        const property = Object.keys(selectedOption)[0];
+        const selectedValues = selectedOption[property];
+  
+        if (selectedValues.length > 0) {
+          // Filtrez les éléments de selectionArray qui ont des valeurs correspondantes
+          const filteredArray = selectionArray.filter(item => {
+            const itemValue = item[property];
+  
+            // Vérifiez si la valeur de l'élément correspond à l'une des valeurs sélectionnées
+            return selectedValues.includes(itemValue);
+          });
+  
+          // Triez sortedIDs en fonction du nombre d'éléments correspondants
+          sortedIDs.sort((a, b) => {
+            const countA = filteredArray.filter(item => item.Id === a).length;
+            const countB = filteredArray.filter(item => item.Id === b).length;
+  
+            return countB - countA;
+          });
+        }
+      });
+    }
+  
+    return sortedIDs;
+  };
+    
   const handleFilterSubmit = (event) => {
     event.preventDefault();
-
+  
     const selectedOptions = [
       {"Opérations": operations},
       {"TypesB": typesBiens},
@@ -163,29 +194,38 @@ const FormulaireRecherche = () => {
       {"Localisations": localisations},
       {"Fourchette": prix},
     ];
-
-  // Enregistrez le nouveau tableau dans le localStorage, écrasant l'ancien
-  localStorage.setItem('selectedArray', JSON.stringify(selectedOptions));
-
-  console.log(selectedOptions);
-
-  setOpenWindow(false)
-
-  const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
-    setFunction([]);
-    setSelectAllFunction(false);
   
-    // Vous pouvez également réinitialiser d'autres états selon les besoins
+    // Enregistrez le nouveau tableau dans le localStorage, écrasant l'ancien
+    localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions));
+  
+    console.log(selectedOptions);
+  
+    setOpenWindow(false);
+  
+    const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
+      setFunction([]);
+      setSelectAllFunction(false);
+      // Vous pouvez également réinitialiser d'autres états selon les besoins
+    };
+  
+    // Utilisation de la fonction pour réinitialiser les différentes sélections
+    resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, []);
+    resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, []);
+    resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, []);
+    resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, []);
+    resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, []);
+  
+    // Récupérer le tableau depuis le localStorage
+    const selectionArray = require('../../public/datas/biensArray.json');
+    const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'));
+  
+    // Obtenez les IDs triés en fonction du nombre de correspondances
+    const sortedIDs = compareByMatchCount(selectedOptionsArray, selectionArray);
+  
+    // Affichez les IDs triés
+    alert("Matching IDs: " + sortedIDs.join(", "));
   };
   
-  // Utilisation de la fonction pour réinitialiser les différentes sélections
-  resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, []);
-  resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, []);
-  resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, []);
-  resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, []);
-  resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, []);
-  
-  }
 
   return (
     <form onSubmit={handleFilterSubmit}>

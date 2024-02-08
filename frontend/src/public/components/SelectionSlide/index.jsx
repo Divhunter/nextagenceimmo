@@ -25,18 +25,18 @@ const SelectionSlide = () => {
                 {selectionArray.map((items, id) => (
                     <div key={id}>
                         <div className='selection-slide__card'>
-                            <Link to={`/Bien/${items.id}`}>
+                            <Link to={`/Bien/${items.Id}`}>
                                 <div className='selection-slide__card__text'>
                                     <p className='selection-slide__card__text__ville'>{items.Opérations}</p>
                                     <div className='selection-slide__card__text__dp'>
-                                        <p className='selection-slide__card__text__dp__designation'>{items.designation}</p>
-                                        <p className='selection-slide__card__text__dp__prix'>{items.prix} <span>{items.unite}</span></p>
+                                        <p className='selection-slide__card__text__dp__designation'>{items.Designation}</p>
+                                        <p className='selection-slide__card__text__dp__prix'>{items.Prix} <span>{items.Unite}</span></p>
                                     </div>
                                 </div>
-                                {items.exclu ? 
+                                {items.Exclu ? 
                                     <p className='selection-slide__card__text__exclu'>Exclusivité</p>
                                 : null} 
-                                <img className='selection-slide__card__img' src={items.img} alt='bien immobilier'/>
+                                <img className='selection-slide__card__img' src={items.Img} alt='bien immobilier'/>
                             </Link>
                         </div>
                     </div>
