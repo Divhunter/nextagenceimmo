@@ -1,3 +1,29 @@
+.container-form-tags {
+    display: flex;
+    text-align: left;
+    padding: 1vw;
+    width: 82.2vw;
+    margin: 0 auto 2.5vw auto;
+    border: solid 1px rgb(13, 37, 48);
+    border-radius: 5px;
+}
+
+.tag {
+    display: inline-block;
+    margin-left: .5vw;
+    margin-top: .25vw;
+    margin-bottom: .25vw;
+    padding: .5vw;
+    font-family: 'Open', sans-serif;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: solid 1px rgb(180, 180, 180);
+}
+
+.formulaire-de-recherche {
+    margin-left: -3vw;
+}
+
 .dropdown {
     position: relative;
     font-family: 'Open', sans-serif;
@@ -53,8 +79,6 @@
 
 .button-search {
     position: absolute;
-    display: inline-block;
-    top: 6.7vw;
     margin-left: 4px;
     padding: .5vw;
     border-radius: 5px;

@@ -5,7 +5,7 @@ const BiensContainer = () => {
 
   return (
     <section className='biensContainer'>
-        <h1 className='biensContainer-text'>Ceci est le container biensContainer</h1>
+        <h1 className='biensContainer-text'>Ceci est la page biensContainer</h1>
     </section>
   );
 };

@@ -27,6 +27,8 @@ const FormulaireRecherche = () => {
 
   const [openWindow, setOpenWindow] = useState(null);
 
+  const [tags, setTags] = useState([]);
+
   const operationsOptions = [
     'Vente',
     'Location',
@@ -86,29 +88,37 @@ const FormulaireRecherche = () => {
     setOpenWindow('operations');
     if (operation === 'Tout sélectionner') {
       setSelectAllOperations(!selectAllOperations);
-      setOperations(selectAllOperations ? [] : operationsOptions);
+      const updatedOperations = selectAllOperations ? [] : operationsOptions;
+      setOperations(updatedOperations);
+      setSelectAllOperations(updatedOperations.length === operationsOptions.length);
+      updateTags('Opérations', updatedOperations);
     } else {
       const updatedOperations = operations.includes(operation)
         ? operations.filter((selectedOperation) => selectedOperation !== operation)
         : [...operations, operation];
-
+  
       setOperations(updatedOperations);
       setSelectAllOperations(updatedOperations.length === operationsOptions.length);
+      updateTags('Opérations', updatedOperations);
     }
   };
-
+  
   const handleToggleTypeBien = (type) => {
     setOpenWindow('typesBiens');
     if (type === 'Tout sélectionner') {
       setSelectAllTypesBiens(!selectAllTypesBiens);
-      setTypesBiens(selectAllTypesBiens ? [] : typesBiensOptions);
+      const updatedTypesBiens = selectAllTypesBiens ? [] : typesBiensOptions;
+      setTypesBiens(updatedTypesBiens);
+      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
+      updateTags('TypesB', updatedTypesBiens);
     } else {
       const updatedTypesBiens = typesBiens.includes(type)
         ? typesBiens.filter((selectedType) => selectedType !== type)
         : [...typesBiens, type];
-
+  
       setTypesBiens(updatedTypesBiens);
       setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
+      updateTags('TypesB', updatedTypesBiens);
     }
   };
 
@@ -116,14 +126,18 @@ const FormulaireRecherche = () => {
     setOpenWindow('nombrePieces');
     if (nombrePiece === 'Tout sélectionner') {
       setSelectAllNombrePieces(!selectAllNombrePieces);
-      setNombrePieces(selectAllNombrePieces ? [] : nombrePiecesOptions);
+      const updatedNombrePieces = selectAllNombrePieces ? [] : nombrePiecesOptions;
+      setNombrePieces(updatedNombrePieces);
+      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
+      updateTags('NombreP', updatedNombrePieces);
     } else {
       const updatedNombrePieces = nombrePieces.includes(nombrePiece)
         ? nombrePieces.filter((selectedNombrePiece) => selectedNombrePiece !== nombrePiece)
         : [...nombrePieces, nombrePiece];
-
+  
       setNombrePieces(updatedNombrePieces);
       setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
+      updateTags('NombreP', updatedNombrePieces);
     }
   };
 
@@ -131,14 +145,18 @@ const FormulaireRecherche = () => {
     setOpenWindow('localisations');
     if (localisation === 'Tout sélectionner') {
       setSelectAllLocalisations(!selectAllLocalisations);
-      setLocalisations(selectAllLocalisations ? [] : localisationsOptions);
+      const updatedLocalisations = selectAllLocalisations ? [] : localisationsOptions;
+      setLocalisations(updatedLocalisations);
+      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
+      updateTags('Localisations', updatedLocalisations);
     } else {
       const updatedLocalisations = localisations.includes(localisation)
         ? localisations.filter((selectedLocalisation) => selectedLocalisation !== localisation)
         : [...localisations, localisation];
-
+  
       setLocalisations(updatedLocalisations);
       setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
+      updateTags('Localisations', updatedLocalisations);
     }
   };
 
@@ -146,14 +164,18 @@ const FormulaireRecherche = () => {
     setOpenWindow('prix');
     if (prixOption === 'Tout sélectionner') {
       setSelectAllPrix(!selectAllPrix);
-      setPrix(selectAllPrix ? [] : prixOptions);
+      const updatedPrix = selectAllPrix ? [] : prixOptions;
+      setPrix(updatedPrix);
+      setSelectAllPrix(updatedPrix.length === prixOptions.length);
+      updateTags('Fourchette', updatedPrix);
     } else {
       const updatedPrix = prix.includes(prixOption)
         ? prix.filter((selectedPrix) => selectedPrix !== prixOption)
         : [...prix, prixOption];
-
+  
       setPrix(updatedPrix);
       setSelectAllPrix(updatedPrix.length === prixOptions.length);
+      updateTags('Fourchette', updatedPrix);
     }
   };
 
@@ -231,11 +253,41 @@ const FormulaireRecherche = () => {
 
     navigate("/biensContainer");
   };
-  
 
+  const updateTags = (category, updatedOptions) => {
+    const existingTags = [...tags];
+    const newTags = [];
+  
+    // Supprimer les tags associés à la catégorie
+    existingTags.forEach((tag) => {
+      if (!tag.category || tag.category !== category) {
+        newTags.push(tag);
+      }
+    });
+  
+    // Ajouter les nouveaux tags basés sur les options mises à jour
+    updatedOptions.forEach((option) => {
+      newTags.push({ category, value: option });
+    });
+  
+    // Mettre à jour l'état des tags
+    setTags(newTags);
+  };
+  
+  
   return (
-    <form onSubmit={handleFilterSubmit}>
-      <div>
+    <>
+      <div className='container-form-tags'>
+        {tags.map((tag, index) => (
+          <span key={index} className='tag'>
+            {tag.value}
+          </span>
+        ))}
+      </div>
+      <form
+        className='formulaire-de-recherche' 
+        onSubmit={handleFilterSubmit}
+      >
         <div className="dropdown">
           <div
             className="dropdown-header"
@@ -317,7 +369,7 @@ const FormulaireRecherche = () => {
             </div>
           )}
         </div>
-  
+    
         <div className="dropdown">
           <div
             className="dropdown-header"
@@ -443,10 +495,9 @@ const FormulaireRecherche = () => {
         <button className='button-search'>
           <FontAwesomeIcon icon={faSearch} />
         </button>
-      </div>
-    </form>
+      </form>
+    </>
   );
-  
 }
 
 export default FormulaireRecherche

@@ -30,7 +30,7 @@
 
     .selection__container__form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         width: 100%;
         height: auto;
         margin: auto;

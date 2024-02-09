@@ -132,6 +132,7 @@
 	}
 
 	.nav__menu__button {
+		border: none;
         padding: 1vw;
         border-radius: 5px;
 		font-weight: 600;
