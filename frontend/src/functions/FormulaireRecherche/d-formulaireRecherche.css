@@ -1,5 +1,6 @@
 .container-form-tags {
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
     padding: 1vw;
     width: 82.2vw;
