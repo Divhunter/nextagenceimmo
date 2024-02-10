@@ -382,6 +382,7 @@ const FormulaireRecherche = () => {
   return (
     <>
       <div className='container-form-tags'>
+        <p>Vos tags...</p>
         {tags.map((tag, index) => (
           <span key={index} className='tag'>
             {tag.value}&nbsp;&nbsp;

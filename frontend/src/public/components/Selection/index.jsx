@@ -11,6 +11,9 @@ const Selection = () => {
         <section className='selection'>
             <div className='selection__container'>
                 <br/><br/>
+                <header className='selection__container__header'>
+                    <h1 className='selection__container__header__title'>Filtre de sélection</h1>
+                </header>
                 <div className='selection__container__form'>
                     <FormulaireRecherche />
                 </div>
