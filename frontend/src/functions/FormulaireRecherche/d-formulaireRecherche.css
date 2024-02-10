@@ -1,3 +1,11 @@
+.formulaire-de-recherche {
+    background-color: black;
+    text-align: center;
+    width: auto;
+    height: 0;
+    margin-bottom: 6vw;
+}
+
 .container-form-tags {
     display: flex;
     flex-wrap: wrap;
@@ -12,12 +20,7 @@
 
 .container-form-tags > p {
     display: inline-block;
-    margin-left: .5vw;
-    margin-top: .25vw;
-    margin-bottom: .25vw;
-    padding-left: .5vw;
-    padding-right: .5vw;
-    height: 2vw;
+    margin: .57vw 0 .57vw 0;
     font-size: 1.2vw;
     color: rgb(150, 150, 150);
 }

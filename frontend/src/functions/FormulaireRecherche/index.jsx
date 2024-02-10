@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { faChevronDown, faChevronUp, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -349,6 +349,26 @@ const FormulaireRecherche = () => {
     // Réinitialiser la couleur des intitulés des champs
     handleClearAllFields();
   };
+
+  const handleDocumentClick = (event) => {
+    // Vérifiez si le clic est à l'intérieur du formulaire
+    if (formRef.current && !formRef.current.contains(event.target)) {
+      // Clic en dehors du formulaire, fermez toutes les fenêtres d'options
+      setOpenWindow(null);
+    }
+  };
+
+  useEffect(() => {
+    // Ajoutez un écouteur d'événements de clic au document entier
+    document.addEventListener('click', handleDocumentClick);
+
+    // Nettoyez l'écouteur d'événements lors du démontage du composant
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []);
+
+  const formRef = useRef(null);
   
   const handleTagClose = (index) => {
     const updatedTags = [...tags];
@@ -382,7 +402,7 @@ const FormulaireRecherche = () => {
   return (
     <>
       <div className='container-form-tags'>
-        <p>Vos tags...</p>
+        {tags.length === 0 && <p>Vos tags...</p>}
         {tags.map((tag, index) => (
           <span key={index} className='tag'>
             {tag.value}&nbsp;&nbsp;
@@ -399,9 +419,11 @@ const FormulaireRecherche = () => {
           onClick={handleClearAllTags}
         />
       </div>
+
       <form
         className='formulaire-de-recherche' 
         onSubmit={handleFilterSubmit}
+        ref={formRef} // Utilisez une référence pour le formulaire
       >
         <div className="dropdown">
           <div
