@@ -1,3 +1,36 @@
-.biensContainer-text {
-    color: black;
+/********************************************* BiensContainer ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /**************************************** BiensContainer **************************************/
+    /**********************************************************************************************/
+
+    .biensContainer__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 5vw;
+        width: 100%;
+    }
+
+    .biensContainer__items__covers {
+        width: 43vw;
+        height: auto;
+        margin-bottom: 2.5vw;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+        filter: brightness(80%);
+        transition: filter .4s, box-shadow .4s;
+    }
+
+    .biensContainer__items__covers:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        filter: brightness(100%);
+        transition: filter .4s, box-shadow .4s;
+    }
 }

@@ -1,33 +1,33 @@
-import { useState, useEffect, useRef } from 'react';
-import { useNavigate } from "react-router-dom";
-import { faChevronDown, faChevronUp, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState, useEffect, useRef } from 'react'
+import { useNavigate } from "react-router-dom"
+import { faChevronDown, faChevronUp, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import './m-formulaireRecherche.css';
-import './d-formulaireRecherche.css';
+import './m-formulaireRecherche.css'
+import './d-formulaireRecherche.css'
 
 const FormulaireRecherche = () => {
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate() 
 
-  const [operations, setOperations] = useState([]);
-  const [selectAllOperations, setSelectAllOperations] = useState(false);
+  const [operations, setOperations] = useState([])
+  const [selectAllOperations, setSelectAllOperations] = useState(false)
 
-  const [typesBiens, setTypesBiens] = useState([]);
-  const [selectAllTypesBiens, setSelectAllTypesBiens] = useState(false);
+  const [typesBiens, setTypesBiens] = useState([])
+  const [selectAllTypesBiens, setSelectAllTypesBiens] = useState(false)
 
-  const [nombrePieces, setNombrePieces] = useState([]);
-  const [selectAllNombrePieces, setSelectAllNombrePieces] = useState(false);
+  const [nombrePieces, setNombrePieces] = useState([])
+  const [selectAllNombrePieces, setSelectAllNombrePieces] = useState(false)
 
-  const [localisations, setLocalisations] = useState([]);
-  const [selectAllLocalisations, setSelectAllLocalisations] = useState(false);
+  const [localisations, setLocalisations] = useState([])
+  const [selectAllLocalisations, setSelectAllLocalisations] = useState(false)
 
-  const [prix, setPrix] = useState([]);
-  const [selectAllPrix, setSelectAllPrix] = useState(false);
+  const [prix, setPrix] = useState([])
+  const [selectAllPrix, setSelectAllPrix] = useState(false)
 
-  const [openWindow, setOpenWindow] = useState(null);
+  const [openWindow, setOpenWindow] = useState(null)
 
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState([])
 
   const [fieldColors, setFieldColors] = useState({
     operations: 'black',
@@ -35,7 +35,7 @@ const FormulaireRecherche = () => {
     nombrePieces: 'black',
     localisations: 'black',
     prix: 'black',
-  });
+  })
 
   const operationsOptions = [
     'Vente',
@@ -44,7 +44,7 @@ const FormulaireRecherche = () => {
     'Programme',
     'Viager',
     'Enchère',
-  ];
+  ]
 
   const typesBiensOptions = [
     'Appartement',
@@ -57,7 +57,7 @@ const FormulaireRecherche = () => {
     'Bateau',
     'Locaux / Entrepôts',
     'Cave / Box',
-  ];
+  ]
 
   const nombrePiecesOptions = [
     '1 pièce',
@@ -66,7 +66,7 @@ const FormulaireRecherche = () => {
     '4 pièces',
     '5 pièces',
     '6+ pièces',
-  ];
+  ]
 
   const localisationsOptions = [
     'Brignais',
@@ -79,7 +79,7 @@ const FormulaireRecherche = () => {
     'Oullin',
     'Saint-Genis-Laval',
     'Vénissieux',
-  ];
+  ]
 
   const prixOptions = [
     '0-500',
@@ -90,232 +90,157 @@ const FormulaireRecherche = () => {
     '3000-4000',
     '4000-5000',
     '5000+',
-  ];
+  ]
 
   const handleToggleOperation = (operation) => {
-    setOpenWindow('operations');
-    let updatedOperations;
+    setOpenWindow('operations')
+    let updatedOperations
 
     if (operation === 'Tout sélectionner') {
-      setSelectAllOperations(!selectAllOperations);
-      updatedOperations = selectAllOperations ? [] : operationsOptions;
-      setOperations(updatedOperations);
-      setSelectAllOperations(updatedOperations.length === operationsOptions.length);
-      updateTags('Opérations', updatedOperations);
+      setSelectAllOperations(!selectAllOperations)
+      updatedOperations = selectAllOperations ? [] : operationsOptions
+      setOperations(updatedOperations)
+      setSelectAllOperations(updatedOperations.length === operationsOptions.length)
+      updateTags('Opérations', updatedOperations)
     } else {
       updatedOperations = operations.includes(operation)
         ? operations.filter((selectedOperation) => selectedOperation !== operation)
-        : [...operations, operation];
+        : [...operations, operation]
   
-      setOperations(updatedOperations);
-      setSelectAllOperations(updatedOperations.length === operationsOptions.length);
-      updateTags('Opérations', updatedOperations);
+      setOperations(updatedOperations)
+      setSelectAllOperations(updatedOperations.length === operationsOptions.length)
+      updateTags('Opérations', updatedOperations)
     }
 
     setFieldColors((prevColors) => ({
       ...prevColors,
       operations: updatedOperations.length > 0 ? 'rgb(206, 39, 73)' : 'black',
-    }));
-  };
+    }))
+  }
 
   const handleToggleTypeBien = (type) => {
-    setOpenWindow('typesBiens');
-    let updatedTypesBiens;
+    setOpenWindow('typesBiens')
+    let updatedTypesBiens
 
     if (type === 'Tout sélectionner') {
-      setSelectAllTypesBiens(!selectAllTypesBiens);
-      updatedTypesBiens = selectAllTypesBiens ? [] : typesBiensOptions;
-      setTypesBiens(updatedTypesBiens);
-      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
-      updateTags('TypesB', updatedTypesBiens);
+      setSelectAllTypesBiens(!selectAllTypesBiens)
+      updatedTypesBiens = selectAllTypesBiens ? [] : typesBiensOptions
+      setTypesBiens(updatedTypesBiens)
+      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length)
+      updateTags('TypesB', updatedTypesBiens)
     } else {
       updatedTypesBiens = typesBiens.includes(type)
         ? typesBiens.filter((selectedType) => selectedType !== type)
-        : [...typesBiens, type];
+        : [...typesBiens, type]
   
-      setTypesBiens(updatedTypesBiens);
-      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
-      updateTags('TypesB', updatedTypesBiens);
+      setTypesBiens(updatedTypesBiens)
+      setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length)
+      updateTags('TypesB', updatedTypesBiens)
     }
 
     setFieldColors((prevColors) => ({
       ...prevColors,
       typesBiens: updatedTypesBiens.length > 0 ? 'rgb(206, 39, 73)' : 'black',
-    }));
-  };
+    }))
+  }
 
   const handleToggleNombrePieces = (nombrePiece) => {
-    setOpenWindow('nombrePieces');
-    let updatedNombrePieces;
+    setOpenWindow('nombrePieces')
+    let updatedNombrePieces
 
     if (nombrePiece === 'Tout sélectionner') {
-      setSelectAllNombrePieces(!selectAllNombrePieces);
-      updatedNombrePieces = selectAllNombrePieces ? [] : nombrePiecesOptions;
-      setNombrePieces(updatedNombrePieces);
-      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
-      updateTags('NombreP', updatedNombrePieces);
+      setSelectAllNombrePieces(!selectAllNombrePieces)
+      updatedNombrePieces = selectAllNombrePieces ? [] : nombrePiecesOptions
+      setNombrePieces(updatedNombrePieces)
+      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length)
+      updateTags('NombreP', updatedNombrePieces)
     } else {
       updatedNombrePieces = nombrePieces.includes(nombrePiece)
         ? nombrePieces.filter((selectedNombrePiece) => selectedNombrePiece !== nombrePiece)
-        : [...nombrePieces, nombrePiece];
+        : [...nombrePieces, nombrePiece]
   
-      setNombrePieces(updatedNombrePieces);
-      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
-      updateTags('NombreP', updatedNombrePieces);
+      setNombrePieces(updatedNombrePieces)
+      setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length)
+      updateTags('NombreP', updatedNombrePieces)
     }
 
     setFieldColors((prevColors) => ({
       ...prevColors,
       nombrePieces: updatedNombrePieces.length > 0 ? 'rgb(206, 39, 73)' : 'black',
-    }));
-  };
+    }))
+  }
 
   const handleToggleLocalisations = (localisation) => {
-    setOpenWindow('localisations');
-    let updatedLocalisations;
+    setOpenWindow('localisations')
+    let updatedLocalisations
 
     if (localisation === 'Tout sélectionner') {
-      setSelectAllLocalisations(!selectAllLocalisations);
-      updatedLocalisations = selectAllLocalisations ? [] : localisationsOptions;
-      setLocalisations(updatedLocalisations);
-      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
-      updateTags('Localisations', updatedLocalisations);
+      setSelectAllLocalisations(!selectAllLocalisations)
+      updatedLocalisations = selectAllLocalisations ? [] : localisationsOptions
+      setLocalisations(updatedLocalisations)
+      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length)
+      updateTags('Localisations', updatedLocalisations)
     } else {
       updatedLocalisations = localisations.includes(localisation)
         ? localisations.filter((selectedLocalisation) => selectedLocalisation !== localisation)
-        : [...localisations, localisation];
+        : [...localisations, localisation]
   
-      setLocalisations(updatedLocalisations);
-      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
-      updateTags('Localisations', updatedLocalisations);
+      setLocalisations(updatedLocalisations)
+      setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length)
+      updateTags('Localisations', updatedLocalisations)
     }
 
     setFieldColors((prevColors) => ({
       ...prevColors,
       localisations: updatedLocalisations.length > 0 ? 'rgb(206, 39, 73)' : 'black',
-    }));
-  };
+    }))
+  }
 
   const handleTogglePrix = (prixOption) => {
-    setOpenWindow('prix');
-    let updatedPrix;
+    setOpenWindow('prix')
+    let updatedPrix
 
     if (prixOption === 'Tout sélectionner') {
-      setSelectAllPrix(!selectAllPrix);
-      updatedPrix = selectAllPrix ? [] : prixOptions;
-      setPrix(updatedPrix);
-      setSelectAllPrix(updatedPrix.length === prixOptions.length);
-      updateTags('Fourchette', updatedPrix);
+      setSelectAllPrix(!selectAllPrix)
+      updatedPrix = selectAllPrix ? [] : prixOptions
+      setPrix(updatedPrix)
+      setSelectAllPrix(updatedPrix.length === prixOptions.length)
+      updateTags('Fourchette', updatedPrix)
     } else {
       updatedPrix = prix.includes(prixOption)
         ? prix.filter((selectedPrix) => selectedPrix !== prixOption)
-        : [...prix, prixOption];
+        : [...prix, prixOption]
   
-      setPrix(updatedPrix);
-      setSelectAllPrix(updatedPrix.length === prixOptions.length);
-      updateTags('Fourchette', updatedPrix);
+      setPrix(updatedPrix)
+      setSelectAllPrix(updatedPrix.length === prixOptions.length)
+      updateTags('Fourchette', updatedPrix)
     }
 
     setFieldColors((prevColors) => ({
       ...prevColors,
       prix: updatedPrix.length > 0 ? 'rgb(206, 39, 73)' : 'black',
-    }));
-  };
-
-  const compareByMatchCount = (selectedOptionsArray, selectionArray) => {
-    const sortedIDs = selectionArray.map(item => item.Id);
-  
-    if (selectedOptionsArray) {
-      selectedOptionsArray.forEach((selectedOption, index) => {
-        const property = Object.keys(selectedOption)[0];
-        const selectedValues = selectedOption[property];
-  
-        if (selectedValues.length > 0) {
-          // Filtrez les éléments de selectionArray qui ont des valeurs correspondantes
-          const filteredArray = selectionArray.filter(item => {
-            const itemValue = item[property];
-  
-            // Vérifiez si la valeur de l'élément correspond à l'une des valeurs sélectionnées
-            return selectedValues.includes(itemValue);
-          });
-  
-          // Triez sortedIDs en fonction du nombre d'éléments correspondants
-          sortedIDs.sort((a, b) => {
-            const countA = filteredArray.filter(item => item.Id === a).length;
-            const countB = filteredArray.filter(item => item.Id === b).length;
-  
-            return countB - countA;
-          });
-        }
-      });
-    }
-  
-    return sortedIDs;
-  };
-    
-  const handleFilterSubmit = (event) => {
-    event.preventDefault();
-  
-    const selectedOptions = [
-      {"Opérations": operations},
-      {"TypesB": typesBiens},
-      {"NombreP": nombrePieces},
-      {"Localisations": localisations},
-      {"Fourchette": prix},
-    ];
-  
-    // Enregistrez le nouveau tableau dans le localStorage, écrasant l'ancien
-    localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions));
-  
-    console.log(selectedOptions);
-  
-    setOpenWindow(false);
-  
-    const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
-      setFunction([]);
-      setSelectAllFunction(false);
-      // Vous pouvez également réinitialiser d'autres états selon les besoins
-    };
-  
-    // Utilisation de la fonction pour réinitialiser les différentes sélections
-    resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, []);
-    resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, []);
-    resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, []);
-    resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, []);
-    resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, []);
-  
-    // Récupérer le tableau depuis le localStorage
-    const selectionArray = require('../../public/datas/biensArray.json');
-    const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'));
-  
-    // Obtenez les IDs triés en fonction du nombre de correspondances
-    const sortedIDs = compareByMatchCount(selectedOptionsArray, selectionArray);
-  
-    // Affichez les IDs triés
-    alert("Matching IDs: " + sortedIDs.join(", "));
-
-    navigate("/biensContainer");
-  };
+    }))
+  }
 
   const updateTags = (category, updatedOptions) => {
-    const existingTags = [...tags];
-    const newTags = [];
+    const existingTags = [...tags]
+    const newTags = []
   
     // Supprimer les tags associés à la catégorie
     existingTags.forEach((tag) => {
       if (!tag.category || tag.category !== category) {
-        newTags.push(tag);
+        newTags.push(tag)
       }
-    });
+    })
   
     // Ajouter les nouveaux tags basés sur les options mises à jour
     updatedOptions.forEach((option) => {
-      newTags.push({ category, value: option });
-    });
+      newTags.push({ category, value: option })
+    })
   
     // Mettre à jour l'état des tags
-    setTags(newTags);
-  };
+    setTags(newTags)
+  }
 
   const handleClearAllFields = () => {
     setFieldColors({
@@ -324,80 +249,157 @@ const FormulaireRecherche = () => {
       nombrePieces: 'black',
       localisations: 'black',
       prix: 'black',
-    });
-  };  
+    })
+  }  
 
   const handleClearAllTags = () => {
     // Réinitialiser toutes les sélections
-    setOperations([]);
-    setSelectAllOperations(false);
-    setTypesBiens([]);
-    setSelectAllTypesBiens(false);
-    setNombrePieces([]);
-    setSelectAllNombrePieces(false);
-    setLocalisations([]);
-    setSelectAllLocalisations(false);
-    setPrix([]);
-    setSelectAllPrix(false);
+    setOperations([])
+    setSelectAllOperations(false)
+    setTypesBiens([])
+    setSelectAllTypesBiens(false)
+    setNombrePieces([])
+    setSelectAllNombrePieces(false)
+    setLocalisations([])
+    setSelectAllLocalisations(false)
+    setPrix([])
+    setSelectAllPrix(false)
   
     // Réinitialiser les tags
-    setTags([]);
+    setTags([])
   
     // Fermer toutes les fenêtres dropdown
-    setOpenWindow(null);
+    setOpenWindow(null)
   
     // Réinitialiser la couleur des intitulés des champs
-    handleClearAllFields();
-  };
+    handleClearAllFields()
+  }
 
   const handleDocumentClick = (event) => {
     // Vérifiez si le clic est à l'intérieur du formulaire
     if (formRef.current && !formRef.current.contains(event.target)) {
       // Clic en dehors du formulaire, fermez toutes les fenêtres d'options
-      setOpenWindow(null);
+      setOpenWindow(null)
     }
-  };
+  }
 
   useEffect(() => {
     // Ajoutez un écouteur d'événements de clic au document entier
-    document.addEventListener('click', handleDocumentClick);
+    document.addEventListener('click', handleDocumentClick)
 
     // Nettoyez l'écouteur d'événements lors du démontage du composant
     return () => {
-      document.removeEventListener('click', handleDocumentClick);
-    };
-  }, []);
+      document.removeEventListener('click', handleDocumentClick)
+    }
+  }, [])
 
-  const formRef = useRef(null);
+  const formRef = useRef(null)
   
   const handleTagClose = (index) => {
-    const updatedTags = [...tags];
-    const removedTag = updatedTags.splice(index, 1)[0];
+    const updatedTags = [...tags]
+    const removedTag = updatedTags.splice(index, 1)[0]
 
     // En fonction de la catégorie du tag, désélectionnez la checkbox associée
     switch (removedTag.category) {
       case 'Opérations':
-        handleToggleOperation(removedTag.value);
-        break;
+        handleToggleOperation(removedTag.value)
+        break
       case 'TypesB':
-        handleToggleTypeBien(removedTag.value);
-        break;
+        handleToggleTypeBien(removedTag.value)
+        break
       case 'NombreP':
-        handleToggleNombrePieces(removedTag.value);
-        break;
+        handleToggleNombrePieces(removedTag.value)
+        break
       case 'Localisations':
-        handleToggleLocalisations(removedTag.value);
-        break;
+        handleToggleLocalisations(removedTag.value)
+        break
       case 'Fourchette':
-        handleTogglePrix(removedTag.value);
-        break;
+        handleTogglePrix(removedTag.value)
+        break
       default:
         // Gérer les autres catégories si nécessaire
-        break;
+        break
     }
 
-    setTags(updatedTags);
-  };
+    setTags(updatedTags)
+  }
+
+  const compareByMatchCount = (selectedOptionsArray, selectionArray) => {
+    const sortedIDs = selectionArray.map(item => item.Id)
+  
+    if (selectedOptionsArray) {
+      selectedOptionsArray.forEach((selectedOption, index) => {
+        const property = Object.keys(selectedOption)[0]
+        const selectedValues = selectedOption[property]
+  
+        if (selectedValues.length > 0) {
+          // Filtrez les éléments de selectionArray qui ont des valeurs correspondantes
+          const filteredArray = selectionArray.filter(item => {
+            const itemValue = item[property]
+  
+            // Vérifiez si la valeur de l'élément correspond à l'une des valeurs sélectionnées
+            return selectedValues.includes(itemValue)
+          })
+  
+          // Triez sortedIDs en fonction du nombre d'éléments correspondants
+          sortedIDs.sort((a, b) => {
+            const countA = filteredArray.filter(item => item.Id === a).length
+            const countB = filteredArray.filter(item => item.Id === b).length
+  
+            return countB - countA
+          })
+        }
+      })
+    }
+  
+    return sortedIDs
+  }
+    
+  const handleFilterSubmit = (event) => {
+    event.preventDefault()
+  
+    const selectedOptions = [
+      {"Opérations": operations},
+      {"TypesB": typesBiens},
+      {"NombreP": nombrePieces},
+      {"Localisations": localisations},
+      {"Fourchette": prix},
+    ]
+  
+    // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
+    localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions))
+  
+    /*console.log(selectedOptions)*/
+  
+    setOpenWindow(false)
+  
+    const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
+      setFunction([])
+      setSelectAllFunction(false)
+    }
+  
+    // Utilisation de la fonction pour réinitialiser les différentes sélections
+    resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, [])
+    resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, [])
+    resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, [])
+    resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, [])
+    resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, [])
+  
+    // Récupérer le tableau depuis le localStorage
+    const selectionArray = require('../../public/datas/biensArray.json')
+    const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'))
+  
+    // Obtenir les IDs triés en fonction du nombre de correspondances
+    const sortedIDs = compareByMatchCount(selectedOptionsArray, selectionArray)
+  
+    // IDs triés
+    alert("Matching IDs: " + sortedIDs.join(", "))
+
+    // Sauvegarde du tableau d'objets dans le localStorage
+    localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs)) 
+
+    navigate("/biensContainer")
+  }
 
   return (
     <>
@@ -405,7 +407,7 @@ const FormulaireRecherche = () => {
         {tags.length === 0 && <p>Vos tags...</p>}
         {tags.map((tag, index) => (
           <span key={index} className='tag'>
-            {tag.value}&nbsp;&nbsp;
+            {tag.value}
             <FontAwesomeIcon
               className='tag-closed'
               icon={faXmark}
@@ -639,7 +641,7 @@ const FormulaireRecherche = () => {
         </button>
       </form>
     </>
-  );
+  )
 }
 
 export default FormulaireRecherche
