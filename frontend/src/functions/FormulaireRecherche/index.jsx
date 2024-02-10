@@ -29,6 +29,14 @@ const FormulaireRecherche = () => {
 
   const [tags, setTags] = useState([]);
 
+  const [fieldColors, setFieldColors] = useState({
+    operations: 'black',
+    typesBiens: 'black',
+    nombrePieces: 'black',
+    localisations: 'black',
+    prix: 'black',
+  });
+
   const operationsOptions = [
     'Vente',
     'Location',
@@ -86,14 +94,16 @@ const FormulaireRecherche = () => {
 
   const handleToggleOperation = (operation) => {
     setOpenWindow('operations');
+    let updatedOperations;
+
     if (operation === 'Tout sélectionner') {
       setSelectAllOperations(!selectAllOperations);
-      const updatedOperations = selectAllOperations ? [] : operationsOptions;
+      updatedOperations = selectAllOperations ? [] : operationsOptions;
       setOperations(updatedOperations);
       setSelectAllOperations(updatedOperations.length === operationsOptions.length);
       updateTags('Opérations', updatedOperations);
     } else {
-      const updatedOperations = operations.includes(operation)
+      updatedOperations = operations.includes(operation)
         ? operations.filter((selectedOperation) => selectedOperation !== operation)
         : [...operations, operation];
   
@@ -101,18 +111,25 @@ const FormulaireRecherche = () => {
       setSelectAllOperations(updatedOperations.length === operationsOptions.length);
       updateTags('Opérations', updatedOperations);
     }
+
+    setFieldColors((prevColors) => ({
+      ...prevColors,
+      operations: updatedOperations.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+    }));
   };
-  
+
   const handleToggleTypeBien = (type) => {
     setOpenWindow('typesBiens');
+    let updatedTypesBiens;
+
     if (type === 'Tout sélectionner') {
       setSelectAllTypesBiens(!selectAllTypesBiens);
-      const updatedTypesBiens = selectAllTypesBiens ? [] : typesBiensOptions;
+      updatedTypesBiens = selectAllTypesBiens ? [] : typesBiensOptions;
       setTypesBiens(updatedTypesBiens);
       setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
       updateTags('TypesB', updatedTypesBiens);
     } else {
-      const updatedTypesBiens = typesBiens.includes(type)
+      updatedTypesBiens = typesBiens.includes(type)
         ? typesBiens.filter((selectedType) => selectedType !== type)
         : [...typesBiens, type];
   
@@ -120,18 +137,25 @@ const FormulaireRecherche = () => {
       setSelectAllTypesBiens(updatedTypesBiens.length === typesBiensOptions.length);
       updateTags('TypesB', updatedTypesBiens);
     }
+
+    setFieldColors((prevColors) => ({
+      ...prevColors,
+      typesBiens: updatedTypesBiens.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+    }));
   };
 
   const handleToggleNombrePieces = (nombrePiece) => {
     setOpenWindow('nombrePieces');
+    let updatedNombrePieces;
+
     if (nombrePiece === 'Tout sélectionner') {
       setSelectAllNombrePieces(!selectAllNombrePieces);
-      const updatedNombrePieces = selectAllNombrePieces ? [] : nombrePiecesOptions;
+      updatedNombrePieces = selectAllNombrePieces ? [] : nombrePiecesOptions;
       setNombrePieces(updatedNombrePieces);
       setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
       updateTags('NombreP', updatedNombrePieces);
     } else {
-      const updatedNombrePieces = nombrePieces.includes(nombrePiece)
+      updatedNombrePieces = nombrePieces.includes(nombrePiece)
         ? nombrePieces.filter((selectedNombrePiece) => selectedNombrePiece !== nombrePiece)
         : [...nombrePieces, nombrePiece];
   
@@ -139,18 +163,25 @@ const FormulaireRecherche = () => {
       setSelectAllNombrePieces(updatedNombrePieces.length === nombrePiecesOptions.length);
       updateTags('NombreP', updatedNombrePieces);
     }
+
+    setFieldColors((prevColors) => ({
+      ...prevColors,
+      nombrePieces: updatedNombrePieces.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+    }));
   };
 
   const handleToggleLocalisations = (localisation) => {
     setOpenWindow('localisations');
+    let updatedLocalisations;
+
     if (localisation === 'Tout sélectionner') {
       setSelectAllLocalisations(!selectAllLocalisations);
-      const updatedLocalisations = selectAllLocalisations ? [] : localisationsOptions;
+      updatedLocalisations = selectAllLocalisations ? [] : localisationsOptions;
       setLocalisations(updatedLocalisations);
       setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
       updateTags('Localisations', updatedLocalisations);
     } else {
-      const updatedLocalisations = localisations.includes(localisation)
+      updatedLocalisations = localisations.includes(localisation)
         ? localisations.filter((selectedLocalisation) => selectedLocalisation !== localisation)
         : [...localisations, localisation];
   
@@ -158,18 +189,25 @@ const FormulaireRecherche = () => {
       setSelectAllLocalisations(updatedLocalisations.length === localisationsOptions.length);
       updateTags('Localisations', updatedLocalisations);
     }
+
+    setFieldColors((prevColors) => ({
+      ...prevColors,
+      localisations: updatedLocalisations.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+    }));
   };
 
   const handleTogglePrix = (prixOption) => {
     setOpenWindow('prix');
+    let updatedPrix;
+
     if (prixOption === 'Tout sélectionner') {
       setSelectAllPrix(!selectAllPrix);
-      const updatedPrix = selectAllPrix ? [] : prixOptions;
+      updatedPrix = selectAllPrix ? [] : prixOptions;
       setPrix(updatedPrix);
       setSelectAllPrix(updatedPrix.length === prixOptions.length);
       updateTags('Fourchette', updatedPrix);
     } else {
-      const updatedPrix = prix.includes(prixOption)
+      updatedPrix = prix.includes(prixOption)
         ? prix.filter((selectedPrix) => selectedPrix !== prixOption)
         : [...prix, prixOption];
   
@@ -177,6 +215,11 @@ const FormulaireRecherche = () => {
       setSelectAllPrix(updatedPrix.length === prixOptions.length);
       updateTags('Fourchette', updatedPrix);
     }
+
+    setFieldColors((prevColors) => ({
+      ...prevColors,
+      prix: updatedPrix.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+    }));
   };
 
   const compareByMatchCount = (selectedOptionsArray, selectionArray) => {
@@ -274,6 +317,16 @@ const FormulaireRecherche = () => {
     setTags(newTags);
   };
 
+  const handleClearAllFields = () => {
+    setFieldColors({
+      operations: 'black',
+      typesBiens: 'black',
+      nombrePieces: 'black',
+      localisations: 'black',
+      prix: 'black',
+    });
+  };  
+
   const handleClearAllTags = () => {
     // Réinitialiser toutes les sélections
     setOperations([]);
@@ -286,14 +339,17 @@ const FormulaireRecherche = () => {
     setSelectAllLocalisations(false);
     setPrix([]);
     setSelectAllPrix(false);
-
+  
     // Réinitialiser les tags
     setTags([]);
-
+  
     // Fermer toutes les fenêtres dropdown
     setOpenWindow(null);
+  
+    // Réinitialiser la couleur des intitulés des champs
+    handleClearAllFields();
   };
-
+  
   const handleTagClose = (index) => {
     const updatedTags = [...tags];
     const removedTag = updatedTags.splice(index, 1)[0];
@@ -349,6 +405,7 @@ const FormulaireRecherche = () => {
         <div className="dropdown">
           <div
             className="dropdown-header"
+            style={{ color: fieldColors.operations }}
             onClick={() => setOpenWindow(openWindow === 'operations' ? null : 'operations')}
           >
             Types d'opération
@@ -390,6 +447,7 @@ const FormulaireRecherche = () => {
         <div className="dropdown">
           <div
             className="dropdown-header"
+            style={{ color: fieldColors.typesBiens }}
             onClick={() => setOpenWindow(openWindow === 'typesBiens' ? null : 'typesBiens')}
           >
             Types de bien
@@ -431,6 +489,7 @@ const FormulaireRecherche = () => {
         <div className="dropdown">
           <div
             className="dropdown-header"
+            style={{ color: fieldColors.nombrePieces }}
             onClick={() => setOpenWindow(openWindow === 'nombrePieces' ? null : 'nombrePieces')}
           >
             Nombre de pièce
@@ -472,6 +531,7 @@ const FormulaireRecherche = () => {
         <div className="dropdown">
           <div
             className="dropdown-header"
+            style={{ color: fieldColors.localisations }}
             onClick={() => setOpenWindow(openWindow === 'localisations' ? null : 'localisations')}
           >
             Localisation
@@ -513,6 +573,7 @@ const FormulaireRecherche = () => {
         <div className="dropdown">
           <div
             className="dropdown-header"
+            style={{ color: fieldColors.prix }}
             onClick={() => setOpenWindow(openWindow === 'prix' ? null : 'prix')}
           >
             Fourchette de prix
