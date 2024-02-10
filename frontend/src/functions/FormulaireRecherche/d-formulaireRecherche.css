@@ -2,10 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    padding: 1vw;
+    padding: 1vw 3vw 1vw 1vw;
     width: 82.2vw;
     margin: 0 auto 2.5vw auto;
-    border: solid 1px rgb(13, 37, 48);
+    border: solid 1px rgb(180, 180, 180);
     border-radius: 5px;
 }
 
@@ -16,9 +16,30 @@
     margin-bottom: .25vw;
     padding: .5vw;
     font-family: 'Open', sans-serif;
-    font-size: 1vw;
+    font-size: .9vw;
     border-radius: 5px;
-    border: solid 1px rgb(180, 180, 180);
+    background-color: rgb(218, 218, 218);
+}
+
+.tag-closed {
+    transition: color .4s;
+}
+
+.tag-closed-all { 
+    position: absolute;
+    right: 8.8vw;
+    margin-top: -.66vw;
+    font-size: 1.5vw;
+    color:  rgb(180, 180, 180);
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.tag-closed:hover,
+.tag-closed-all:hover {
+    color: red;
+    transition: color .4s;
+    cursor: pointer;
 }
 
 .formulaire-de-recherche {

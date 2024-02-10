@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp, faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './m-formulaireRecherche.css';
@@ -273,16 +273,74 @@ const FormulaireRecherche = () => {
     // Mettre à jour l'état des tags
     setTags(newTags);
   };
-  
-  
+
+  const handleClearAllTags = () => {
+    // Réinitialiser toutes les sélections
+    setOperations([]);
+    setSelectAllOperations(false);
+    setTypesBiens([]);
+    setSelectAllTypesBiens(false);
+    setNombrePieces([]);
+    setSelectAllNombrePieces(false);
+    setLocalisations([]);
+    setSelectAllLocalisations(false);
+    setPrix([]);
+    setSelectAllPrix(false);
+
+    // Réinitialiser les tags
+    setTags([]);
+
+    // Fermer toutes les fenêtres dropdown
+    setOpenWindow(null);
+  };
+
+  const handleTagClose = (index) => {
+    const updatedTags = [...tags];
+    const removedTag = updatedTags.splice(index, 1)[0];
+
+    // En fonction de la catégorie du tag, désélectionnez la checkbox associée
+    switch (removedTag.category) {
+      case 'Opérations':
+        handleToggleOperation(removedTag.value);
+        break;
+      case 'TypesB':
+        handleToggleTypeBien(removedTag.value);
+        break;
+      case 'NombreP':
+        handleToggleNombrePieces(removedTag.value);
+        break;
+      case 'Localisations':
+        handleToggleLocalisations(removedTag.value);
+        break;
+      case 'Fourchette':
+        handleTogglePrix(removedTag.value);
+        break;
+      default:
+        // Gérer les autres catégories si nécessaire
+        break;
+    }
+
+    setTags(updatedTags);
+  };
+
   return (
     <>
       <div className='container-form-tags'>
         {tags.map((tag, index) => (
           <span key={index} className='tag'>
-            {tag.value}
+            {tag.value}&nbsp;&nbsp;
+            <FontAwesomeIcon
+              className='tag-closed'
+              icon={faXmark}
+              onClick={() => handleTagClose(index)}
+            />
           </span>
         ))}
+        <FontAwesomeIcon
+          className='tag-closed-all'
+          icon={faXmark}
+          onClick={handleClearAllTags}
+        />
       </div>
       <form
         className='formulaire-de-recherche' 
