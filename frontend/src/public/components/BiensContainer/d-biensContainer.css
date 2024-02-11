@@ -7,6 +7,12 @@
     /**************************************** BiensContainer **************************************/
     /**********************************************************************************************/
 
+    .biensContainer__message {
+        color: black;
+        text-align: center;
+        font-size: 5vw;
+    }
+
     .biensContainer__items {
         display: flex;
         justify-content: space-between;
