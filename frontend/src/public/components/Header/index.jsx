@@ -54,8 +54,8 @@ const Header = () => {
 				<div className='container-button'>
 					<button 
 						onClick={() => navigate("/biensContainer")}
-						className='nav__menu__button nav__menu__transaction'
-					>Transaction
+						className='nav__menu__button nav__menu__vente'
+					>Vente
 					</button>
 					<button 
 						onClick={() => navigate("/biensContainer")}

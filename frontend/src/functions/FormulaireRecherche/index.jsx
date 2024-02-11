@@ -39,11 +39,7 @@ const FormulaireRecherche = () => {
 
   const operationsOptions = [
     'Vente',
-    'Location',
-    'Location saisonnière',
-    'Programme',
-    'Viager',
-    'Enchère',
+    'Location'
   ]
 
   const typesBiensOptions = [
@@ -226,19 +222,19 @@ const FormulaireRecherche = () => {
     const existingTags = [...tags]
     const newTags = []
   
-    // Supprimer les tags associés à la catégorie
+    // Suppréssion des tags associés à la catégorie
     existingTags.forEach((tag) => {
       if (!tag.category || tag.category !== category) {
         newTags.push(tag)
       }
     })
   
-    // Ajouter les nouveaux tags basés sur les options mises à jour
+    // Ajout des nouveaux tags basés sur les options mises à jour
     updatedOptions.forEach((option) => {
       newTags.push({ category, value: option })
     })
   
-    // Mettre à jour l'état des tags
+    // Mise à jour de l'état des tags
     setTags(newTags)
   }
 
@@ -253,7 +249,7 @@ const FormulaireRecherche = () => {
   }  
 
   const handleClearAllTags = () => {
-    // Réinitialiser toutes les sélections
+    // Réinitialisation de toutes les sélections
     setOperations([])
     setSelectAllOperations(false)
     setTypesBiens([])
@@ -265,29 +261,29 @@ const FormulaireRecherche = () => {
     setPrix([])
     setSelectAllPrix(false)
   
-    // Réinitialiser les tags
+    // Réinitialisation des tags
     setTags([])
   
-    // Fermer toutes les fenêtres dropdown
+    // Fermeture de toutes les fenêtres dropdown
     setOpenWindow(null)
   
-    // Réinitialiser la couleur des intitulés des champs
+    // Réinitialisation de la couleur des intitulés des champs
     handleClearAllFields()
   }
 
   const handleDocumentClick = (event) => {
-    // Vérifiez si le clic est à l'intérieur du formulaire
+    // Vérification de si le clic est à l'intérieur du formulaire
     if (formRef.current && !formRef.current.contains(event.target)) {
-      // Clic en dehors du formulaire, fermez toutes les fenêtres d'options
+      // Le Clic en dehors du formulaire ferme toutes les fenêtres d'options
       setOpenWindow(null)
     }
   }
 
   useEffect(() => {
-    // Ajoutez un écouteur d'événements de clic au document entier
+    // Ajout d'un écouteur d'événements de clic au document entier
     document.addEventListener('click', handleDocumentClick)
 
-    // Nettoyez l'écouteur d'événements lors du démontage du composant
+    // Nettoyage de l'écouteur d'événements lors du démontage du composant
     return () => {
       document.removeEventListener('click', handleDocumentClick)
     }
@@ -299,7 +295,7 @@ const FormulaireRecherche = () => {
     const updatedTags = [...tags]
     const removedTag = updatedTags.splice(index, 1)[0]
 
-    // En fonction de la catégorie du tag, désélectionnez la checkbox associée
+    // En fonction de la catégorie du tag, désélection de la checkbox associée
     switch (removedTag.category) {
       case 'Opérations':
         handleToggleOperation(removedTag.value)
@@ -333,15 +329,15 @@ const FormulaireRecherche = () => {
         const selectedValues = selectedOption[property]
   
         if (selectedValues.length > 0) {
-          // Filtrez les éléments de selectionArray qui ont des valeurs correspondantes
+          // Filtre des éléments de selectionArray qui ont des valeurs correspondantes
           const filteredArray = selectionArray.filter(item => {
             const itemValue = item[property]
   
-            // Vérifiez si la valeur de l'élément correspond à l'une des valeurs sélectionnées
+            // Comparaison de la valeur de l'élément avec l'une des valeurs sélectionnées
             return selectedValues.includes(itemValue)
           })
   
-          // Triez sortedIDs en fonction du nombre d'éléments correspondants
+          // Tri de sortedIDs en fonction du nombre d'éléments correspondants
           sortedIDs.sort((a, b) => {
             const countA = filteredArray.filter(item => item.Id === a).length
             const countB = filteredArray.filter(item => item.Id === b).length
@@ -351,7 +347,7 @@ const FormulaireRecherche = () => {
         }
       })
     }
-  
+
     return sortedIDs
   }
     
@@ -369,8 +365,6 @@ const FormulaireRecherche = () => {
     // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
     localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions))
   
-    /*console.log(selectedOptions)*/
-  
     setOpenWindow(false)
   
     const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
@@ -385,21 +379,35 @@ const FormulaireRecherche = () => {
     resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, [])
     resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, [])
   
-    // Récupérer le tableau depuis le localStorage
+    // Récupération du tableau depuis le localStorage
     const selectionArray = require('../../public/datas/biensArray.json')
     const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'))
   
-    // Obtenir les IDs triés en fonction du nombre de correspondances
-    const sortedIDs = compareByMatchCount(selectedOptionsArray, selectionArray)
+    // Filtre des options sélectionnées
+    const filteredIDs = selectionArray.filter(item => {
+      return selectedOptions.every(option => {
+        const [property] = Object.keys(option)
+        const selectedValues = option[property]
   
-    // IDs triés
-    alert("Matching IDs: " + sortedIDs.join(", "))
-
+        if (property === "Opérations") {
+          return selectedValues.length === 0 || selectedValues.includes(item[property])
+        }
+  
+        return selectedValues.length === 0 || selectedValues.includes(item[property])
+      })
+    })
+  
+    // Récupération des IDs triés en fonction du nombre de correspondances
+    const sortedIDs = compareByMatchCount(selectedOptionsArray, filteredIDs)
+  
     // Sauvegarde du tableau d'objets dans le localStorage
-    localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs)) 
-
+    localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs))
+  
+    // Affichage des IDs triés
+    alert("Matching IDs: " + sortedIDs.join(", "))
+  
     navigate("/biensContainer")
-  }
+  }  
 
   return (
     <>
