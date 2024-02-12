@@ -39,7 +39,11 @@ const FormulaireRecherche = () => {
 
   const operationsOptions = [
     'Vente',
-    'Location'
+    'Location',
+    'Location saisonnière',
+    'Programme',
+    'Viager',
+    'Enchère'
   ]
 
   const typesBiensOptions = [
@@ -403,9 +407,6 @@ const FormulaireRecherche = () => {
     // Sauvegarde du tableau d'objets dans le localStorage
     localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs))
   
-    // Affichage des IDs triés
-    alert("Matching IDs: " + sortedIDs.join(", "))
-  
     navigate("/biensContainer")
   }  
 
@@ -433,7 +434,7 @@ const FormulaireRecherche = () => {
       <form
         className='formulaire-de-recherche' 
         onSubmit={handleFilterSubmit}
-        ref={formRef} // Utilisez une référence pour le formulaire
+        ref={formRef}
       >
         <div className="dropdown">
           <div
