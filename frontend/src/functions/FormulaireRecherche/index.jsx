@@ -421,8 +421,7 @@ const FormulaireRecherche = () => {
   
       navigate("/biensContainer")
     } else {
-      // Aucune option sélectionnée, vous pouvez gérer cela selon vos besoins
-      alert("Aucune option sélectionnée")
+      alert("Aucune option n'a été sélectionnée")
     }
   }
 
