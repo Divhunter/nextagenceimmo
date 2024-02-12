@@ -126,7 +126,7 @@
 		top: 2vw;
 		right: 9.6vw;
 		display: flex;
-		width: 20vw;
+		width: 12.5vw;
 		height: auto;
 		justify-content: space-between;
 	}
@@ -146,13 +146,8 @@
 		transition: filter .4s;
     }
 
-	.nav__menu__vente {
+	.nav__menu__filtre {
         background-color: rgb(206, 39, 73);
-		transition: filter .4s;
-    }
-
-	.nav__menu__location {
-        background-color: rgb(128, 27, 47);
 		transition: filter .4s;
     }
 

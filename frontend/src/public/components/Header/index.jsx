@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as Home } from "react-router-dom"
 import { useState, useEffect } from 'react'
-import { faBars, faXmark, faBullhorn } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
@@ -50,17 +50,14 @@ const Header = (props) => {
 				</Home>
 
 				<div className='container-button'>
-					<Link to='selection'>
-						<button
-							className='nav__menu__button nav__menu__vente'
-						>
-							Vente
-						</button>
-					</Link>
-					<Link to='selection'>
+					<Link to='selection__container'>
 						<button 
-							className='nav__menu__button nav__menu__location'
-						>Location
+							className='nav__menu__button nav__menu__filtre'
+						> 
+							<FontAwesomeIcon
+								icon={faSearch}
+							/>&nbsp;
+							Filtre
 						</button>
 					</Link>
 					<div

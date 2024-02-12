@@ -8,8 +8,8 @@ const Selection = () => {
     
     return (
         <section id='selection' className='selection'>
-            <div className='selection__container'>
-                <br/><br/>
+            <div id='selection__container' className='selection__container'>
+                <br/><br/><br/>
                 <header className='selection__container__header'>
                     <h1 className='selection__container__header__title'>Filtre de sélection</h1>
                 </header>
