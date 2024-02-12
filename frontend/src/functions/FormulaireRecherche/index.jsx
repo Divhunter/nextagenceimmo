@@ -396,14 +396,13 @@ const FormulaireRecherche = () => {
         if (property === "Opérations") {
           return selectedValues.length === 0 || selectedValues.includes(item[property])
         }
-  
         return selectedValues.length === 0 || selectedValues.includes(item[property])
       })
     })
   
     // Récupération des IDs triés en fonction du nombre de correspondances
     const sortedIDs = compareByMatchCount(selectedOptionsArray, filteredIDs)
-  
+    
     // Sauvegarde du tableau d'objets dans le localStorage
     localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs))
   

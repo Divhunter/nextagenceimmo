@@ -1,6 +1,9 @@
 import FormulaireRecherche from '../../../functions/FormulaireRecherche'
 import SelectionSlide from '../SelectionSlide'
 
+import './m-selection.css'
+import './d-selection.css'
+
 const Selection = () => {  
     
     return (
