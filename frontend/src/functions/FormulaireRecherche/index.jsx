@@ -284,6 +284,7 @@ const FormulaireRecherche = () => {
   }
 
   useEffect(() => {
+
     // Nettoyage des tableaux dans le localStorage
     localStorage.removeItem('selectedOptionsArray')
     localStorage.removeItem('sortedIDsArray')

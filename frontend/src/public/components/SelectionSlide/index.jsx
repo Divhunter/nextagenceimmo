@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import selectionArray from '../../datas/biensArray.json';
-import Slider from 'react-slick';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import selectionArray from '../../datas/biensArray.json'
+import Slider from 'react-slick'
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-import './m-selectionSlide.css';
-import './d-selectionSlide.css';
+import './m-selectionSlide.css'
+import './d-selectionSlide.css'
 
 const SelectionSlide = () => {
   const settings = {
@@ -16,9 +16,9 @@ const SelectionSlide = () => {
     speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
-  };
+  }
 
-  const selectedItems = selectionArray.filter((item) => item.Selection);
+  const selectedItems = selectionArray.filter((item) => item.Selection)
 
   return (
     <div className='selection-slide'>
@@ -44,7 +44,7 @@ const SelectionSlide = () => {
         ))}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default SelectionSlide;
+export default SelectionSlide

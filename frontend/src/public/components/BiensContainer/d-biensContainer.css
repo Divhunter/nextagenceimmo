@@ -6,11 +6,17 @@
     /**********************************************************************************************/
     /**************************************** BiensContainer **************************************/
     /**********************************************************************************************/
-
-    .biensContainer__message {
-        color: black;
+    .biensContainer {
         text-align: center;
-        font-size: 5vw;
+    }
+    
+    .biensContainer__message {
+        font-family: 'Open', sans-serif;
+        color: rgb(154, 154, 154);
+        font-weight: 500;
+        text-align: center;
+        font-size: 2.2vw;
+        letter-spacing: .2vw;
     }
 
     .biensContainer__items {
@@ -22,21 +28,32 @@
         width: 100%;
     }
 
-    .biensContainer__items__covers {
+    .biensContainer__items__items {
         width: 43vw;
-        height: auto;
+        height: 28.5vw;
         margin-bottom: 2.5vw;
         border-radius: 20px;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         cursor: pointer;
-        filter: brightness(80%);
-        transition: filter .4s, box-shadow .4s;
+        overflow: hidden;
     }
 
-    .biensContainer__items__covers:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        filter: brightness(100%);
-        transition: filter .4s, box-shadow .4s;
+    .biensContainer__items__items__covers {
+        width: 43vw;
+        height: auto;
+        overflow: hidden;
+        transition: width .4s
+    }
+
+    .biensContainer__items__items__covers:hover {
+        width: 45vw;
+        transition: width .4s
+    }
+
+    .button {
+        font-family: 'Open', sans-serif;
+    }
+
+    .biensContainer__button {
+        margin-bottom: 0;
     }
 }
