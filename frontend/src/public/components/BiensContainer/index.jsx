@@ -43,7 +43,7 @@ const BiensContainer = () => {
           <div 
             className='biensContainer__button button'
           >
-            Mon dossier en ligne
+            Votre dossier en ligne
           </div>
         </Link>
         <br/><br/>
