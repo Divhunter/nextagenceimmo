@@ -39,11 +39,7 @@ const FormulaireRecherche = () => {
 
   const operationsOptions = [
     'Vente',
-    'Location',
-    'Location saisonnière',
-    'Programme',
-    'Viager',
-    'Enchère'
+    'Location'
   ]
 
   const typesBiensOptions = [

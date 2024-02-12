@@ -1,14 +1,10 @@
 import FormulaireRecherche from '../../../functions/FormulaireRecherche'
-import SelectionSlide from '../../components/SelectionSlide'
+import SelectionSlide from '../SelectionSlide'
 
-// styles
-import './m-selection.css'
-import './d-selection.css'
-
-const Selection = () => {
+const Selection = () => {  
     
     return (
-        <section className='selection'>
+        <section id='selection' className='selection'>
             <div className='selection__container'>
                 <br/><br/>
                 <header className='selection__container__header'>

@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { useNavigate, Link as Home } from "react-router-dom"
+import { Link as Home } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { faBars, faXmark, faBullhorn } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +11,7 @@ import background1 from '../../assets/pictures/group.jpg'
 import './m-header.css'
 import './d-header.css'
 
-const Header = () => {
+const Header = (props) => {
 
 	useEffect(() => {
         window.scrollTo(0, 0)
@@ -30,8 +30,6 @@ const Header = () => {
 	const scrollToTop = () => {
 		window.scrollTo(0, 0)
 	}
-
-	const navigate = useNavigate(); 
 	
 	return (
 		<>
@@ -52,16 +50,19 @@ const Header = () => {
 				</Home>
 
 				<div className='container-button'>
-					<button 
-						onClick={() => navigate("/biensContainer")}
-						className='nav__menu__button nav__menu__vente'
-					>Vente
-					</button>
-					<button 
-						onClick={() => navigate("/biensContainer")}
-						className='nav__menu__button nav__menu__location'
-					>Location
-					</button>
+					<Link to='selection'>
+						<button
+							className='nav__menu__button nav__menu__vente'
+						>
+							Vente
+						</button>
+					</Link>
+					<Link to='selection'>
+						<button 
+							className='nav__menu__button nav__menu__location'
+						>Location
+						</button>
+					</Link>
 					<div
 						className={
 							isActu ?
