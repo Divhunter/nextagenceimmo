@@ -284,14 +284,18 @@ const FormulaireRecherche = () => {
   }
 
   useEffect(() => {
+    // Nettoyage des tableaux dans le localStorage
+    localStorage.removeItem('selectedOptionsArray')
+    localStorage.removeItem('sortedIDsArray')
+  
     // Ajout d'un écouteur d'événements de clic au document entier
     document.addEventListener('click', handleDocumentClick)
-
+  
     // Nettoyage de l'écouteur d'événements lors du démontage du composant
     return () => {
       document.removeEventListener('click', handleDocumentClick)
     }
-  }, [])
+  }, [])  
 
   const formRef = useRef(null)
   
@@ -358,56 +362,69 @@ const FormulaireRecherche = () => {
   const handleFilterSubmit = (event) => {
     event.preventDefault()
   
-    const selectedOptions = [
-      {"Opérations": operations},
-      {"TypesB": typesBiens},
-      {"NombreP": nombrePieces},
-      {"Localisations": localisations},
-      {"Fourchette": prix},
-    ]
+    // Vérification si au moins une option est sélectionnée
+    const isAnyOptionSelected =
+      operations.length > 0 ||
+      typesBiens.length > 0 ||
+      nombrePieces.length > 0 ||
+      localisations.length > 0 ||
+      prix.length > 0
   
-    // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
-    localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions))
+    if (isAnyOptionSelected) {
+      const selectedOptions = [
+        { "Opérations": operations },
+        { "TypesB": typesBiens },
+        { "NombreP": nombrePieces },
+        { "Localisations": localisations },
+        { "Fourchette": prix },
+      ]
   
-    setOpenWindow(false)
+      // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
+      localStorage.setItem('selectedOptionsArray', JSON.stringify(selectedOptions))
   
-    const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
-      setFunction([])
-      setSelectAllFunction(false)
-    }
+      setOpenWindow(false)
   
-    // Utilisation de la fonction pour réinitialiser les différentes sélections
-    resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, [])
-    resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, [])
-    resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, [])
-    resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, [])
-    resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, [])
+      const resetSelection = (state, setFunction, selectAllState, setSelectAllFunction, initialValues) => {
+        setFunction(initialValues)
+        setSelectAllFunction(false)
+      }
   
-    // Récupération du tableau depuis le localStorage
-    const selectionArray = require('../../public/datas/biensArray.json')
-    const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'))
+      // Utilisation de la fonction pour réinitialiser les différentes sélections
+      resetSelection(operations, setOperations, selectAllOperations, setSelectAllOperations, [])
+      resetSelection(typesBiens, setTypesBiens, selectAllTypesBiens, setSelectAllTypesBiens, [])
+      resetSelection(nombrePieces, setNombrePieces, selectAllNombrePieces, setSelectAllNombrePieces, [])
+      resetSelection(localisations, setLocalisations, selectAllLocalisations, setSelectAllLocalisations, [])
+      resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, [])
   
-    // Filtre des options sélectionnées
-    const filteredIDs = selectionArray.filter(item => {
-      return selectedOptions.every(option => {
-        const [property] = Object.keys(option)
-        const selectedValues = option[property]
+      // Récupération du tableau depuis le localStorage
+      const selectionArray = require('../../public/datas/biensArray.json')
+      const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'))
   
-        if (property === "Opérations") {
+      // Filtre des options sélectionnées
+      const filteredIDs = selectionArray.filter(item => {
+        return selectedOptions.every(option => {
+          const [property] = Object.keys(option)
+          const selectedValues = option[property]
+  
+          if (property === "Opérations") {
+            return selectedValues.length === 0 || selectedValues.includes(item[property])
+          }
           return selectedValues.length === 0 || selectedValues.includes(item[property])
-        }
-        return selectedValues.length === 0 || selectedValues.includes(item[property])
+        })
       })
-    })
   
-    // Récupération des IDs triés en fonction du nombre de correspondances
-    const sortedIDs = compareByMatchCount(selectedOptionsArray, filteredIDs)
-    
-    // Sauvegarde du tableau d'objets dans le localStorage
-    localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs))
+      // Récupération des IDs triés en fonction du nombre de correspondances
+      const sortedIDs = compareByMatchCount(selectedOptionsArray, filteredIDs)
   
-    navigate("/biensContainer")
-  }  
+      // Sauvegarde du tableau d'objets dans le localStorage
+      localStorage.setItem('sortedIDsArray', JSON.stringify(sortedIDs))
+  
+      navigate("/biensContainer")
+    } else {
+      // Aucune option sélectionnée, vous pouvez gérer cela selon vos besoins
+      alert("Aucune option sélectionnée")
+    }
+  }
 
   return (
     <>
