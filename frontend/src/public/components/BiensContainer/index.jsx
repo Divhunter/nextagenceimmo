@@ -84,15 +84,15 @@ const BiensContainer = () => {
               className='biensContainer__items__items' 
               key={Id}
             >
-              {item.Exclu ?
-                <p className='biensContainer__items__items__exclu'>Exclusivité</p>
-                : null
-              }
               <div className='biensContainer__items__items__content'>
                   <p>
                     {item.designation}
                   </p>  
               </div>
+              {item.Exclu ?
+                <p className='biensContainer__items__items__exclu'>Exclusivité</p>
+                : null
+              }
               <img
                 className='biensContainer__items__items__covers'
                 src={item.Cover}
