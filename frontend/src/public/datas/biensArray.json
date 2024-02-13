@@ -13,7 +13,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.01,
@@ -29,7 +30,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "75 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.02,
@@ -45,7 +47,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.03,
@@ -61,7 +64,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.04,
@@ -77,7 +81,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "85 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.10,
@@ -93,7 +98,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "172 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.11,
@@ -109,7 +115,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "165 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.12,
@@ -125,7 +132,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.13,
@@ -141,7 +149,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "150 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 1.14,
@@ -157,12 +166,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.00,
         "Cover": "/assets/covers/appt2.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "3 pièces",
         "Localisations": "Lyon 8ième",
         "Designation": "Appartement",
@@ -173,12 +184,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "73 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.01,
         "Cover": "/assets/covers/appt3.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
         "Designation": "Appartement",
@@ -189,12 +202,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "47 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.02,
         "Cover": "/assets/covers/appt4.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
         "Designation": "Appartement",
@@ -205,12 +220,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "40 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.03,
         "Cover": "/assets/covers/appt5.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "2 pièces",
         "Localisations": "Lyon 8ième",
         "Designation": "Appartement",
@@ -221,12 +238,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "55 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.04,
         "Cover": "/assets/covers/appt6.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "3 pièces",
         "Localisations": "Oullin",
         "Designation": "Appartement",
@@ -237,12 +256,14 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": "76 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.05,
         "Cover": "/assets/covers/appt11.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "3 pièces",
         "Localisations": "La Mulatière",
         "Designation": "Appartement",
@@ -253,12 +274,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.06,
         "Cover": "/assets/covers/appt12.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "4 pièces",
         "Localisations": "La Mulatière",
         "Designation": "Appartement",
@@ -269,12 +292,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.07,
         "Cover": "/assets/covers/appt13.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
         "Designation": "Appartement",
@@ -285,12 +310,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "40 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.08,
         "Cover": "/assets/covers/appt14.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "3 pièces",
         "Localisations": "Lyon 7ième",
         "Designation": "Appartement",
@@ -301,12 +328,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "80 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 2.09,
         "Cover": "/assets/covers/appt15.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "4 pièces",
         "Localisations": "Lyon 7ième",
         "Designation": "Appartement",
@@ -317,12 +346,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.00,
         "Cover": "/assets/covers/loc1.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
         "Designation": "Local co.",
@@ -333,12 +364,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.01,
         "Cover": "/assets/covers/loc2.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
         "Designation": "Local co.",
@@ -349,12 +382,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "300 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.02,
         "Cover": "/assets/covers/loc3.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 2ième",
         "Designation": "Local co.",
@@ -365,12 +400,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "350 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.03,
         "Cover": "/assets/covers/loc4.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 7ième",
         "Designation": "Local co.",
@@ -381,12 +418,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "220 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.04,
         "Cover": "/assets/covers/loc5.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
         "Designation": "Local co.",
@@ -397,13 +436,15 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "60 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 3.05,
         "Cover": "/assets/covers/loc6.jpg",
         "Opérations": "Location",
         "NombreP": "1 pièce",
+        "TypesL": "Vide",
         "Localisations": "Lyon 2ième",
         "Designation": "Local co.",
         "Fourchette": "1500-2000",
@@ -413,12 +454,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "450 m²",
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 4.00,
         "Cover": "/assets/covers/park1.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 8ième",
         "Designation": "Parking",
@@ -429,12 +472,14 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 4.01,
         "Cover": "/assets/covers/gar2.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Oullin",
         "Designation": "Garage",
@@ -445,12 +490,14 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 4.02,
         "Cover": "/assets/covers/gar1.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Oullin",
         "Designation": "Garage",
@@ -461,12 +508,14 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     },
     {
         "Id": 4.03,
         "Cover": "/assets/covers/gar3.jpg",
         "Opérations": "Location",
+        "TypesL": "Vide",
         "NombreP": "1 pièce",
         "Localisations": "Lyon 2ième",
         "Designation": "Garage",
@@ -477,6 +526,7 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Description": "ici la description du bien"
+        "Description": "ici la description du bien",
+        "Secteur": ""
     }
 ]

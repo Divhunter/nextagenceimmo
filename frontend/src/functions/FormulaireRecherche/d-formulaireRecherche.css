@@ -1,8 +1,8 @@
 .formulaire-de-recherche {
-    background-color: black;
     text-align: center;
     width: auto;
     height: 0;
+    margin-left: -3vw;
     margin-bottom: 6vw;
     color: black;
 }
@@ -58,10 +58,6 @@
     color: red;
     transition: color .4s;
     cursor: pointer;
-}
-
-.formulaire-de-recherche {
-    margin-left: -3vw;
 }
 
 .dropdown {

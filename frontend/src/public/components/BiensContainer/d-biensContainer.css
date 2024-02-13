@@ -9,14 +9,70 @@
     .biensContainer {
         text-align: center;
     }
+
+    .biensContainer__header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: rgb(38, 16, 16);
+    }
+
+    .biensContainer__header__pic {
+        width: 100%;
+        height: auto;
+        margin-bottom: -.18vw;
+        /*filter: brightness(60%);*/
+        opacity: .5;
+    }
+
+    .biensContainer__header__logo {
+        position: absolute;
+        margin-top : 2vw;
+		margin-left: 5vw;
+		width: 8vw;
+		height: auto;
+        z-index: 1000;
+    }
     
-    .biensContainer__message {
+    .biensContainer__header__message {
+        position: absolute;
+        top: 5vw;
+        left: 50%;
+        transform: translate(-50%, 0);
         font-family: 'Open', sans-serif;
-        color: rgb(154, 154, 154);
-        font-weight: 500;
-        text-align: center;
+        color: white;
+        font-weight: 700;
         font-size: 2.2vw;
         letter-spacing: .2vw;
+    }
+
+    .button {
+        font-family: 'Open', sans-serif;
+    }
+
+    .biensContainer__button {
+        margin: 3vw 0 0 0;
+    }
+
+    .biensContainer__select {
+        font-family: 'Open', sans-serif;
+        color: black;
+        margin-bottom: 3vw;
+    }
+
+    .biensContainer__select__label {
+        font-size: 1.3vw;
+        font-weight: bold;
+    }
+
+    .biensContainer__select__option {
+        padding: .7vw;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .biensContainer__select__option > option {
+        font-size: 1vw;
     }
 
     .biensContainer__items {
@@ -40,8 +96,7 @@
     .biensContainer__items__items__covers {
         width: 43vw;
         height: auto;
-        overflow: hidden;
-        transition: width .4s
+        transition: width .4s;
     }
 
     .biensContainer__items__items__covers:hover {
@@ -49,11 +104,24 @@
         transition: width .4s
     }
 
-    .button {
-        font-family: 'Open', sans-serif;
+    .biensContainer__items__items__exclu {
+        position: absolute;
+        display: block;
+        width: 10.96vw;
+        margin-top:3vw;
+        padding: .51vw;
+        font-size: 1.5vw;
+        letter-spacing: .073vw;
+        color: white;
+        background-color: rgb(206, 39, 73);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .biensContainer__button {
-        margin: 3vw 0 0 0;
+    .biensContainer__items__items__content {
+        position: absolute;
+        margin-top: 18.5vw;
+        width: 43vw;
+        height: 10vw;
+        background-color: rgba(1, 1, 1, .5);
     }
 }
