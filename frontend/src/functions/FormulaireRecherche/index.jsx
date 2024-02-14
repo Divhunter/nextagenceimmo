@@ -94,27 +94,14 @@ const FormulaireRecherche = () => {
 
   const handleToggleOperation = (operation) => {
     setOpenWindow('operations')
-    let updatedOperations
-
-    if (operation === 'Tout sélectionner') {
-      setSelectAllOperations(!selectAllOperations)
-      updatedOperations = selectAllOperations ? [] : operationsOptions
-      setOperations(updatedOperations)
-      setSelectAllOperations(updatedOperations.length === operationsOptions.length)
-      updateTags('Opérations', updatedOperations)
-    } else {
-      updatedOperations = operations.includes(operation)
-        ? operations.filter((selectedOperation) => selectedOperation !== operation)
-        : [...operations, operation]
   
-      setOperations(updatedOperations)
-      setSelectAllOperations(updatedOperations.length === operationsOptions.length)
-      updateTags('Opérations', updatedOperations)
-    }
-
+    const updatedOperations = [operation]
+    setOperations(updatedOperations)
+    updateTags('Opérations', updatedOperations)
+    
     setFieldColors((prevColors) => ({
       ...prevColors,
-      operations: updatedOperations.length > 0 ? 'rgb(206, 39, 73)' : 'black',
+      operations: 'rgb(206, 39, 73)',
     }))
   }
 
@@ -363,21 +350,12 @@ const FormulaireRecherche = () => {
   const handleFilterSubmit = (event) => {
     event.preventDefault()
   
-    // Vérification si au moins une option est sélectionnée
-    const isAnyOptionSelected =
-      operations.length > 0 ||
-      typesBiens.length > 0 ||
-      nombrePieces.length > 0 ||
-      localisations.length > 0 ||
-      prix.length > 0
-  
-    if (isAnyOptionSelected) {
+    // Vérification de si au moins un type d'opération est sélectionné
+    const isOpertationSelected = operations.length > 0
+
+    if (isOpertationSelected) {
       const selectedOptions = [
-        { "Opérations": operations },
-        { "TypesB": typesBiens },
-        { "NombreP": nombrePieces },
-        { "Localisations": localisations },
-        { "Fourchette": prix },
+        { "Opérations": operations }
       ]
   
       // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
@@ -422,7 +400,7 @@ const FormulaireRecherche = () => {
   
       navigate("/biensContainer")
     } else {
-      alert("Aucune option n'a été sélectionnée")
+      alert("Veuillez sélectionner votre type d'opération")
     }
   }
 
@@ -469,15 +447,6 @@ const FormulaireRecherche = () => {
           </div>
           {openWindow === 'operations' && (
             <div className="dropdown-options">
-              <label>
-                <input
-                  type="checkbox"
-                  id="selectAllOperations"
-                  checked={selectAllOperations}
-                  onChange={() => handleToggleOperation('Tout sélectionner')}
-                />
-                Tout sélectionner
-              </label>
               {operationsOptions.map((operation) => (
                 <label key={operation}>
                   <input
