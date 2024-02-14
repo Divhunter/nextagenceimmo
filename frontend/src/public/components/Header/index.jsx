@@ -57,7 +57,7 @@ const Header = (props) => {
 							<FontAwesomeIcon
 								icon={faSearch}
 							/>&nbsp;
-							Filtre
+							Filtrez votre recherche
 						</button>
 					</Link>
 					<div
