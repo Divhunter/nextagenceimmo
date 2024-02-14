@@ -350,12 +350,16 @@ const FormulaireRecherche = () => {
   const handleFilterSubmit = (event) => {
     event.preventDefault()
   
-    // Vérification de si au moins un type d'opération est sélectionné
+    // Vérification de si au moins une option de type d'opération est sélectionnée
     const isOpertationSelected = operations.length > 0
 
     if (isOpertationSelected) {
       const selectedOptions = [
-        { "Opérations": operations }
+        { "Opérations": operations },
+        { "TypesB": typesBiens },
+        { "NombreP": nombrePieces },
+        { "Localisations": localisations },
+        { "Fourchette": prix },
       ]
   
       // Sauvegarde du nouveau tableau dans le localStorage, écrasant l'ancien
