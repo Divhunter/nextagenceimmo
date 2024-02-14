@@ -107,66 +107,71 @@ const BiensContainer = () => {
         {selectedTypeLocation === '' ? 
         <div className='biensContainer__items'>
           {sortedBiens.map((item, Id) => (
-            <div
-              className='biensContainer__items__items' 
-              key={Id}
-            >
-              <div className='biensContainer__items__items__content'>
-                  <p className='biensContainer__items__items__content__secteur'>
-                    {item.Secteur}
-                  </p>
-                  <p className='biensContainer__items__items__content__prix'>
-                    {item.Prix}{item.Unite}
-                  </p> 
-                  <p className='biensContainer__items__items__content__description'>
-                    {item.Description}
-                  </p>  
+            <Link to={`/BiensCard/${item.Id}`}>
+              <div
+                className='biensContainer__items__items' 
+                key={Id}
+              >
+                <div className='biensContainer__items__items__content'>
+                    <p className='biensContainer__items__items__content__secteur'>
+                      {item.Secteur}
+                    </p>
+                    <p className='biensContainer__items__items__content__prix'>
+                      {item.Prix}{item.Unite}
+                    </p> 
+                    <p className='biensContainer__items__items__content__description'>
+                      {item.Description}
+                    </p>  
+                </div>
+                
+                {item.Exclu ?
+                  <p className='biensContainer__items__items__exclu'>Exclusivité</p>
+                  : null
+                }
+                <img
+                  className='biensContainer__items__items__covers'
+                  src={item.Cover}
+                  max-width='1500px'
+                  max-height='1000px'
+                  fetchpriority='high'
+                  alt='bien immobilier'
+                />
               </div>
-              {item.Exclu ?
-                <p className='biensContainer__items__items__exclu'>Exclusivité</p>
-                : null
-              }
-              <img
-                className='biensContainer__items__items__covers'
-                src={item.Cover}
-                max-width='1500px'
-                max-height='1000px'
-                fetchpriority='high'
-                alt='bien immobilier'
-              />
-            </div>
+            </Link>
           ))} 
         </div> :
         <div className='biensContainer__items'>
           {filteredBiens.map((item, Id) => (
-            <div
-              className='biensContainer__items__items' 
-              key={Id}
-            >
-              <div className='biensContainer__items__items__content'>
-                  <p className='biensContainer__items__items__content__secteur'>
-                    {item.Secteur}
-                  </p>
-                  <p className='biensContainer__items__items__content__prix'>
-                    {item.Prix}{item.Unite}
-                  </p> 
-                  <p className='biensContainer__items__items__content__description'>
-                    {item.Description}
-                  </p>  
+            <Link to={`/BiensCard/${item.Id}`}>
+              <div
+                className='biensContainer__items__items' 
+                key={Id}
+              >
+                <div className='biensContainer__items__items__content'>
+                    <p className='biensContainer__items__items__content__secteur'>
+                      {item.Secteur}
+                    </p>
+                    <p className='biensContainer__items__items__content__prix'>
+                      {item.Prix}{item.Unite}
+                    </p> 
+                    <p className='biensContainer__items__items__content__description'>
+                      {item.Description}
+                    </p>  
+                </div>
+                {item.Exclu ?
+                  <p className='biensContainer__items__items__exclu'>Exclusivité</p>
+                  : null
+                }
+                <img
+                  className='biensContainer__items__items__covers'
+                  src={item.Cover}
+                  max-width='1500px'
+                  max-height='1000px'
+                  fetchpriority='high'
+                  alt='bien immobilier'
+                />
               </div>
-              {item.Exclu ?
-                <p className='biensContainer__items__items__exclu'>Exclusivité</p>
-                : null
-              }
-              <img
-                className='biensContainer__items__items__covers'
-                src={item.Cover}
-                max-width='1500px'
-                max-height='1000px'
-                fetchpriority='high'
-                alt='bien immobilier'
-              />
-            </div>
+            </Link>
           ))} 
         </div>
         }
@@ -202,7 +207,6 @@ const BiensContainer = () => {
         )}
 
         {/*Relatif à l'option Vente saisonnière*/}
-
 
       </section>
     <Footer/>

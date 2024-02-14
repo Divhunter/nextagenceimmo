@@ -49,6 +49,7 @@ const FormulaireRecherche = () => {
   const typesBiensOptions = [
     'Appartement',
     'Maison',
+    'Chalet',
     'Terrain',
     'Commerce',
     'Garage / Parking',
@@ -79,6 +80,7 @@ const FormulaireRecherche = () => {
     'Oullin',
     'Saint-Genis-Laval',
     'Vénissieux',
+    'Alpes *Nouveau'
   ]
 
   const prixOptions = [

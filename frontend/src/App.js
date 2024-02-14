@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
 import AdminRouter from './admin/AdminRouter'
 import BiensContainer from './public/components/BiensContainer'
+import BiensCard from './public/components/BiensCard'
 import Error from './_utils/Error'
 import CGU from './public/components/CGU'
 
@@ -93,6 +94,7 @@ const App = () => {
                 <Route exact path='/*' element={ <PublicRouter /> } />
                 <Route path='/dashboard/*' element={ <AdminRouter /> } />
                 <Route path='/biensContainer' element={ <BiensContainer /> } />
+                <Route path='/biensCard/:Id' element={<BiensCard />} />
                 <Route path='/CGU' element={ <CGU /> } />
                 <Route path='*' element={ <Error /> } />
             </Routes>

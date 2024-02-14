@@ -23,10 +23,10 @@ const SelectionSlide = () => {
   return (
     <div className='selection-slide'>
       <Slider {...settings}>
-        {selectedItems.map((item, id) => (
-          <div key={id}>
+        {selectedItems.map((item, Id) => (
+          <div key={Id}>
             <div className='selection-slide__card'>
-              <Link to={`/Bien/${item.Id}`}>
+              <Link to={`/BiensCard/${item.Id}`}>
                 <div className='selection-slide__card__text'>
                   <p className='selection-slide__card__text__ville'>{item.Opérations}</p>
                   <div className='selection-slide__card__text__dp'>
