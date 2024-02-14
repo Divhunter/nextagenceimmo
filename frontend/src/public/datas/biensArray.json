@@ -13,8 +13,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.01,
@@ -30,8 +30,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "75 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.02,
@@ -47,8 +47,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.03,
@@ -64,8 +64,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.04,
@@ -81,8 +81,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "85 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.10,
@@ -98,8 +98,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "172 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.11,
@@ -115,8 +115,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "165 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.12,
@@ -132,8 +132,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.13,
@@ -149,8 +149,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "150 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 1.14,
@@ -166,14 +166,14 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.00,
         "Cover": "/assets/covers/appt2.jpg",
         "Opérations": "Location",
-        "TypesL": "Vide",
+        "TypesL": "Meublé",
         "NombreP": "3 pièces",
         "Localisations": "Lyon 8ième",
         "Designation": "Appartement",
@@ -184,8 +184,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "73 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Rue Général Gouraud - A proximité des commerces et transports en commun - Libre de suite.",
+        "Description": "T3 meublé Lyon 8ème Secteur Moulin à Vent"
     },
     {
         "Id": 2.01,
@@ -202,8 +202,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "47 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.02,
@@ -220,8 +220,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "40 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.03,
@@ -238,8 +238,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "55 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.04,
@@ -256,8 +256,8 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": "76 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.05,
@@ -274,8 +274,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.06,
@@ -292,8 +292,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.07,
@@ -310,8 +310,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "40 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.08,
@@ -328,8 +328,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "80 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 2.09,
@@ -346,8 +346,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.00,
@@ -364,8 +364,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.01,
@@ -382,8 +382,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "300 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.02,
@@ -400,8 +400,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "350 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.03,
@@ -418,8 +418,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "220 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.04,
@@ -436,8 +436,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "60 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 3.05,
@@ -454,8 +454,8 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "450 m²",
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 4.00,
@@ -472,8 +472,8 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 4.01,
@@ -490,8 +490,8 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 4.02,
@@ -508,8 +508,8 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     },
     {
         "Id": 4.03,
@@ -526,7 +526,7 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Description": "ici la description du bien",
-        "Secteur": ""
+        "Secteur": "Ici la secteur du bien",
+        "Description": "Ici la description du bien"
     }
 ]
