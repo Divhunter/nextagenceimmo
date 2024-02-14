@@ -46,8 +46,8 @@
         letter-spacing: .2vw;
     }
 
-    .button {
-        font-family: 'Open', sans-serif;
+    .biensContainer__vide {
+        margin: 5vw 0 0 0;
     }
 
     .biensContainer__button {

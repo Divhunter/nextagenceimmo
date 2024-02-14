@@ -61,6 +61,16 @@ const BiensContainer = () => {
           <h1 className='biensContainer__header__message'>{resultMessage}</h1>
         </div>
 
+        {/*Relatif à aucun bien trouvé*/}
+
+        {sortedBiens.length === 0 && (
+          <Link to='/'>
+            <button className='biensContainer__vide button'>
+                Retour à l'Accueil
+            </button> 
+          </Link>
+        )}
+
         {/*Relatif à l'option Location*/}
 
         {isLocationAvailable && (
@@ -190,6 +200,10 @@ const BiensContainer = () => {
             </p>
           </>
         )}
+
+        {/*Relatif à l'option Vente saisonnière*/}
+
+
       </section>
     <Footer/>
     </>
