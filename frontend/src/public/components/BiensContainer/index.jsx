@@ -16,7 +16,9 @@ const BiensContainer = () => {
   // Tri des biens dans l'ordre de sortedIDsArray
   const sortedBiens = sortedIDsArray.map((id) => biensArray.find((bien) => bien.Id === id))
 
-  const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id));
+  const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id))
+
+  const isVenteAvailable = biensArray.some((bien) => bien.Opérations === "Vente" && sortedIDsArray.includes(bien.Id));
 
   const [selectedTypeLocation, setSelectedTypeLocation] = useState('')
 
@@ -38,7 +40,7 @@ const BiensContainer = () => {
     <>
       <section className='biensContainer'>
         <div className='biensContainer__header'>
-        <Link to='/'>
+          <Link to='/'>
             <img
               className='biensContainer__header__logo'
               src={logoNAIS}
@@ -58,6 +60,9 @@ const BiensContainer = () => {
           />
           <h1 className='biensContainer__header__message'>{resultMessage}</h1>
         </div>
+
+        {/*Relatif à l'option Location*/}
+
         {isLocationAvailable && (
           <>
             <Link to='https://app.zelok.fr/auth/signup/locataire/step2'>
@@ -155,6 +160,36 @@ const BiensContainer = () => {
           ))} 
         </div>
         }
+
+        {/*Relatif à l'option Vente*/}
+
+        {isVenteAvailable && (
+          <>
+            <p className='biensContainer__contentVente'>
+              <strong>
+                Notre agence Immo vous accompagne dans vos projets immobilier. 
+                <br/>
+                Nos 2 agences situées à Lyon et Vénissieux disposent des derniers outils technologiques et de la meilleure couverture publicitaire du marché.
+              </strong>
+              <br/><br/>
+              Nous vous proposons :
+              <br/><br/>
+              - L’estimation gratuite de votre bien
+              <br/>
+              - Signature électronique du mandat de vente certifiée
+              <br/>
+              - Visite 360 degrés 
+              <br/>
+              - Visite 3D Matterport
+              <br/>
+              - Reportage photo avec appareil professionnel 
+              <br/>
+              - Publicités avec visibilités maximales
+              <br/>
+              - Matières de communication physique (panneaux, flyers...) et digitale (réseaux sociaux...)
+            </p>
+          </>
+        )}
       </section>
     <Footer/>
     </>

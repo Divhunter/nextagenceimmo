@@ -151,4 +151,12 @@
     .biensContainer__items__items__content__description {
         font-size: 1.3vw;
     }
+
+    .biensContainer__contentVente {
+        font-family: 'Open', sans-serif;
+        font-size: 1.3vw;
+        line-height: 2vw;
+        color: rgb(87, 87, 87);
+        margin: -2vw auto 5vw auto;
+    }
 }
