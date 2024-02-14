@@ -99,7 +99,7 @@
         width: 28vw;
         height: auto;
         transition: width .4s;
-        opacity: .5;
+        opacity: .55;
         z-index: -1000;
     }
 
