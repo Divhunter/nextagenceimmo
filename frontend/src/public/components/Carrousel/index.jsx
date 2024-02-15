@@ -1,6 +1,6 @@
 import biensArray from '../../datas/biensArray.json'
 import { useParams } from 'react-router-dom'
-import React, { useState } from "react";
+import { useState } from "react"
 import arrow from '../../assets/pictures/arrow.png'
 
 import './m-carrousel.css'
@@ -19,12 +19,12 @@ const Carrousel = () => {
 
 	// Définition de la fonction pour aller à l'image suivante du carrousel (+1 à currentPic)
 	const nextPic = () => {
-		setCurrentPic(currentPic === picsLength - 1 ? 0 : currentPic + 1);
+		setCurrentPic(currentPic === picsLength - 1 ? 0 : currentPic + 1)
 	}
 
 	// Définition de la fonction pour aller à l'image précédente du carrousel (-1 à currentPic)
 	const prevPic = () => {
-		setCurrentPic(currentPic === 0 ? picsLength - 1 : currentPic - 1);
+		setCurrentPic(currentPic === 0 ? picsLength - 1 : currentPic - 1)
 	}
 
 	return (
@@ -55,7 +55,7 @@ const Carrousel = () => {
 				)
 			})}
 
-			<h1 className='carrousel__secteur'>{card.Secteur}</h1>
+			<h1 className='carrousel__secteur'>{card.Secteur}<br/>{card.Prix}{card.Unite}</h1>
 
 			{/* affiche les boutons next/previous et du compteur si il y a plus d'un élément dans le carrousel */}
 			{picsLength > 1 ? (

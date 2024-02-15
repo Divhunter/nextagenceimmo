@@ -98,20 +98,23 @@ const FormulaireRecherche = () => {
     setOpenWindow('operations')
   
     if (operations.includes(operation)) {
-      setOperations([])
+      // Si l'opération est déjà sélectionnée, la désélectionner
+      const updatedOperations = []
+      setOperations(updatedOperations)
+      updateTags('Opérations', updatedOperations)
     } else {
+      // Si l'opération n'est pas sélectionnée, la sélectionner
       const updatedOperations = [operation]
       setOperations(updatedOperations)
+      updateTags('Opérations', updatedOperations)
     }
-  
-    const updatedTags = operations.includes(operation) ? [] : [{ category: 'Opérations', value: operation }]
-    setTags(updatedTags)
   
     setFieldColors((prevColors) => ({
       ...prevColors,
       operations: operations.includes(operation) ? 'black' : 'rgb(206, 39, 73)',
     }))
   }
+  
   
   const handleToggleTypeBien = (type) => {
     setOpenWindow('typesBiens')
@@ -218,23 +221,11 @@ const FormulaireRecherche = () => {
   }
 
   const updateTags = (category, updatedOptions) => {
-    const existingTags = [...tags]
-    const newTags = []
-  
-    // Suppréssion des tags associés à la catégorie
-    existingTags.forEach((tag) => {
-      if (!tag.category || tag.category !== category) {
-        newTags.push(tag)
-      }
+    setTags((prevTags) => {
+      const existingTags = prevTags.filter((tag) => tag.category !== category)
+      const newTags = updatedOptions.map((option) => ({ category, value: option }))
+      return [...existingTags, ...newTags];
     })
-  
-    // Ajout des nouveaux tags basés sur les options mises à jour
-    updatedOptions.forEach((option) => {
-      newTags.push({ category, value: option })
-    })
-  
-    // Mise à jour de l'état des tags
-    setTags(newTags)
   }
 
   const handleClearAllFields = () => {

@@ -1,4 +1,4 @@
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Carrousel from '../Carrousel'
@@ -15,6 +15,19 @@ const BiensCard = () => {
     useEffect(() => {
         document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
     }, [])
+
+    const navigate = useNavigate();
+
+    const sortedIDsArray = JSON.parse(localStorage.getItem('sortedIDsArray'))
+
+    const retour = () => {
+       
+        if (sortedIDsArray) {
+            navigate('/biensContainer')
+        } else {
+            navigate('/')
+        }
+    }
 
     // Récupération de la fiche correspondante
 	const { Id } = useParams()
@@ -41,10 +54,16 @@ const BiensCard = () => {
                         <li>{card.TypesB}</li>
                         <li>{card.NombreP}</li>
                         <li>{card.Localisations}</li>
+                        <li 
+                            id='biensCard__content__tag__retour'
+                            onClick={retour}
+                        >
+                            Retour
+                        </li>
                     </ul>
-                    <p className='biensCard__content__tag__prix'>
+                    {/*<p className='biensCard__content__tag__prix'>
                             {card.Prix}{card.Unite}
-                    </p>
+                    </p>*/}
                     <Carrousel/>
                 </article>
             </section>

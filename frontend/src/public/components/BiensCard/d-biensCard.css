@@ -52,11 +52,27 @@
         color: white;
     }
 
-    .biensCard__content__tag__prix {
+    #biensCard__content__tag__retour {
+        font-weight: bold;
+        background-color: rgb(0, 119, 255);
+        cursor: pointer;
+        transition: background-color .4s;
+    }
+
+    #biensCard__content__tag__retour:hover {
+        background-color: rgb(75, 158, 253);
+        transition: background-color .4s;
+    }
+
+    #biensCard__content__tag__retour:active {
+        background-color: rgb(136, 191, 253);
+    }
+
+    /*.biensCard__content__tag__prix {
         margin: 0 0 1vw .5vw;
         font-size: 2vw;
         font-weight: bold;
         letter-spacing: .2vw;
         color: rgb(206, 39, 73);
-    }
+    }*/
 }
