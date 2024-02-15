@@ -14,7 +14,7 @@ import './d-header.css'
 const Header = (props) => {
 
 	useEffect(() => {
-        window.scrollTo(0, 0)
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
     }, [])
 
 	const [isOpen, setIsOpen] = useState(false)

@@ -13,7 +13,7 @@ import './d-biensCard.css'
 const BiensCard = () => {
 
     useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
     }, [])
 
     // Récupération de la fiche correspondante

@@ -28,7 +28,7 @@ const BiensContainer = () => {
   })  
   
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
     // Mise à jour du message en fonction du nombre de biens trouvés
     if (sortedBiens.length > 0) {
       setResultMessage(`Nous avons trouvé ${selectedTypeLocation === '' ? sortedBiens.length : filteredBiens.length} resultat(s) pour votre recherche`)

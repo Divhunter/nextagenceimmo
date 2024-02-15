@@ -26,6 +26,13 @@
     {
         "Id": 1.01,
         "Cover": "/assets/covers/appt7.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Lyon 8ième",
         "NombreP": "3 pièces",
@@ -37,12 +44,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "75 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.02,
         "Cover": "/assets/covers/appt8.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Lyon 2ième",
         "NombreP": "4 pièces",
@@ -54,12 +68,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.03,
         "Cover": "/assets/covers/appt9.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Vénissieux",
         "NombreP": "3 pièces",
@@ -71,12 +92,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.04,
         "Cover": "/assets/covers/appt10.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Saint-Genis-Laval",
         "NombreP": "3 pièces",
@@ -88,12 +116,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "85 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.10,
         "Cover": "/assets/covers/mais1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Bron",
         "NombreP": "5 pièces",
@@ -105,12 +140,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "172 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.11,
         "Cover": "/assets/covers/mais2.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Oullin",
         "NombreP": "4 pièces",
@@ -122,12 +164,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "165 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.12,
         "Cover": "/assets/covers/mais3.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Brignais",
         "NombreP": "4 pièces",
@@ -139,12 +188,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.13,
         "Cover": "/assets/covers/mais4.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Irigny",
         "NombreP": "6+ pièces",
@@ -156,12 +212,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "150 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 1.14,
         "Cover": "/assets/covers/mais5.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Irigny",
         "NombreP": "4 pièces",
@@ -173,12 +236,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.00,
         "Cover": "/assets/covers/appt2.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Meublé",
         "NombreP": "3 pièces",
@@ -197,6 +267,13 @@
     {
         "Id": 2.01,
         "Cover": "/assets/covers/appt3.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "2 pièces",
@@ -209,12 +286,19 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "47 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.02,
         "Cover": "/assets/covers/appt4.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "2 pièces",
@@ -227,12 +311,19 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "40 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.03,
         "Cover": "/assets/covers/appt5.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "2 pièces",
@@ -245,12 +336,19 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "55 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.04,
         "Cover": "/assets/covers/appt6.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "3 pièces",
@@ -263,12 +361,19 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": "76 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.05,
         "Cover": "/assets/covers/appt11.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "3 pièces",
@@ -281,12 +386,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "70 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.06,
         "Cover": "/assets/covers/appt12.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Colocation",
         "NombreP": "4 pièces",
@@ -299,12 +411,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "90 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.07,
         "Cover": "/assets/covers/appt13.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Meublé",
         "NombreP": "1 pièce",
@@ -317,12 +436,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "40 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.08,
         "Cover": "/assets/covers/appt14.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Colocation",
         "NombreP": "3 pièces",
@@ -335,12 +461,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "80 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 2.09,
         "Cover": "/assets/covers/appt15.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Colocation",
         "NombreP": "4 pièces",
@@ -353,12 +486,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "120 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.00,
         "Cover": "/assets/covers/loc1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -371,12 +511,19 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.01,
         "Cover": "/assets/covers/loc2.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -389,12 +536,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "300 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.02,
         "Cover": "/assets/covers/loc3.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -407,12 +561,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "350 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.03,
         "Cover": "/assets/covers/loc4.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -425,12 +586,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "220 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.04,
         "Cover": "/assets/covers/loc5.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -443,12 +611,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "60 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 3.05,
         "Cover": "/assets/covers/loc6.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "NombreP": "1 pièce",
         "TypesL": "Vide",
@@ -461,12 +636,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": "450 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 4.00,
         "Cover": "/assets/covers/park1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -479,12 +661,19 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 4.01,
         "Cover": "/assets/covers/gar2.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -497,12 +686,19 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 4.02,
         "Cover": "/assets/covers/gar1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -515,12 +711,19 @@
         "Exclu": false,
         "Selection": true,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 4.03,
         "Cover": "/assets/covers/gar3.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location",
         "TypesL": "Vide",
         "NombreP": "1 pièce",
@@ -533,12 +736,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 5.00,
         "Cover": "/assets/covers/chal1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location saisonnière",
         "TypesL": null,
         "NombreP": "3 pièces",
@@ -551,12 +761,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 5.01,
         "Cover": "/assets/covers/chal2.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location saisonnière",
         "TypesL": null,
         "NombreP": "4 pièces",
@@ -569,12 +786,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 5.02,
         "Cover": "/assets/covers/chal3.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location saisonnière",
         "TypesL": null,
         "NombreP": "2 pièces",
@@ -587,12 +811,19 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
     {
         "Id": 5.03,
         "Cover": "/assets/covers/chal4.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Location saisonnière",
         "TypesL": null,
         "NombreP": "2 pièces",
@@ -605,7 +836,7 @@
         "Exclu": false,
         "Selection": false,
         "Superficie": false,
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     }
 ]

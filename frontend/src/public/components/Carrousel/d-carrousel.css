@@ -12,7 +12,8 @@
         object-fit: cover;
         max-width: 90.7vw;
         width: auto;
-        height: auto
+        height: auto;
+        filter: brightness(90%);
     }
     
     .carrousel__button {
@@ -44,7 +45,7 @@
     .carrousel__secteur {
         position: absolute;
         top: 2vw;
-        right: 5vw;
+        margin: 2vw 5vw 0 5vw;
         display: inline-block;
         font-size: 3vw;
         color: white;
