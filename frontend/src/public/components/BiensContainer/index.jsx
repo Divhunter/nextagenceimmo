@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import biensArray from '../../datas/biensArray.json'
 import Footer from '../Footer'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
 import lyon from '../../assets/pictures/lyon.jpg'
+
 import './m-biensContainer.css'
 import './d-biensContainer.css'
 

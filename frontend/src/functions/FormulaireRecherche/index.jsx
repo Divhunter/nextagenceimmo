@@ -97,16 +97,22 @@ const FormulaireRecherche = () => {
   const handleToggleOperation = (operation) => {
     setOpenWindow('operations')
   
-    const updatedOperations = [operation]
-    setOperations(updatedOperations)
-    updateTags('Opérations', updatedOperations)
-    
+    if (operations.includes(operation)) {
+      setOperations([])
+    } else {
+      const updatedOperations = [operation]
+      setOperations(updatedOperations)
+    }
+  
+    const updatedTags = operations.includes(operation) ? [] : [{ category: 'Opérations', value: operation }]
+    setTags(updatedTags)
+  
     setFieldColors((prevColors) => ({
       ...prevColors,
-      operations: 'rgb(206, 39, 73)',
+      operations: operations.includes(operation) ? 'black' : 'rgb(206, 39, 73)',
     }))
   }
-
+  
   const handleToggleTypeBien = (type) => {
     setOpenWindow('typesBiens')
     let updatedTypesBiens
@@ -244,7 +250,6 @@ const FormulaireRecherche = () => {
   const handleClearAllTags = () => {
     // Réinitialisation de toutes les sélections
     setOperations([])
-    setSelectAllOperations(false)
     setTypesBiens([])
     setSelectAllTypesBiens(false)
     setNombrePieces([])

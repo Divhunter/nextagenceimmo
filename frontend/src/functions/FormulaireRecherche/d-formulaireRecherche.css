@@ -31,16 +31,21 @@
     margin-left: .5vw;
     margin-top: .25vw;
     margin-bottom: .25vw;
-    padding: .5vw;
+    padding: .5vw .8vw .5vw .8vw;
+    font-family:'Open', sans-serif;
     font-size: .9vw;
     border-radius: 5px;
-    background-color: rgb(218, 218, 218);
-    color: black;
+    background-color: rgb(206, 39, 73);
+    color: white;
 }
 
 .tag-closed {
     margin-left: .5vw;
     transition: color .4s;
+}
+
+.tag-closed:hover {
+    cursor: pointer;
 }
 
 .tag-closed-all { 
@@ -53,7 +58,6 @@
     cursor: pointer;
 }
 
-.tag-closed:hover,
 .tag-closed-all:hover {
     color: red;
     transition: color .4s;

@@ -1,0 +1,85 @@
+.carrousel {
+    position: relative;
+    width: auto;
+    height: 68vw;
+    border-radius: 2.66vw;
+    margin-bottom: 4vw;
+    font-family: 'Open', sans-serif;
+    overflow: hidden;
+}
+
+.carrousel__pictures {
+    position: relative;
+    object-fit: cover;
+    width: 89.3vw;
+    height: 68vw;
+}
+
+.carrousel__pictures__active {
+    display: block;
+}
+
+.carrousel__pictures__inactive {
+    display: none;
+}
+
+.carrousel__button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: none;
+    background-color: rgba(120, 120, 120, 0.5);
+    border-radius: 50%;
+    width: 7.46vw;
+    height: 7.46vw;
+    cursor: pointer;
+}
+
+.carrousel__button__left {
+    left: 1.56vw;
+    transition: background-color 0.4s;
+}
+
+.carrousel__button__right {
+    right: 1.56vw;
+    transition: background-color 0.4s;
+}
+
+.carrousel__button__left:hover,
+.carrousel__button__right:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.4s;
+} 
+
+.carrousel__button__arrow {
+    position: relative;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, .3));
+    width: 4.08vw;
+    height: 2.4vw;
+}
+
+.carrousel__button__arrow__left {
+    transform: rotate(90deg);
+}
+
+.carrousel__button__arrow__right {
+    transform: rotate(-90deg);
+}
+
+.carrousel__count {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 1.33vw;
+    padding: 2vw;
+    font-family: 'Open', sans-serif;
+    font-size: 3.73vw;
+    line-height: 143%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}

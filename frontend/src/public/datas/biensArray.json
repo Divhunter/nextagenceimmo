@@ -2,6 +2,13 @@
     {
         "Id": 1.00,
         "Cover": "/assets/covers/appt1.jpg",
+        "Pictures": [
+            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/pictures/appt1/pic1-appt1.jpg",
+            "/assets/pictures/appt1/pic2-appt1.jpg",
+            "/assets/pictures/appt1/pic3-appt1.jpg",
+            "/assets/pictures/appt1/pic4-appt1.jpg"
+        ],
         "Opérations": "Vente",
         "Localisations": "Bron",
         "NombreP": "2 pièces",
@@ -13,7 +20,7 @@
         "Exclu": true,
         "Selection": true,
         "Superficie": "50 m²",
-        "Secteur": "Ici la secteur du bien",
+        "Secteur": "Secteur Petit Parilly",
         "Description": "Ici la description du bien"
     },
     {
