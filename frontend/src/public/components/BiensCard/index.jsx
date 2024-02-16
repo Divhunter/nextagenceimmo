@@ -5,7 +5,7 @@ import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
 import biensArray from '../../datas/biensArray.json'
-import { faPrint, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPrint, faEnvelope, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // styles
@@ -60,7 +60,10 @@ const BiensCard = () => {
                             id='biensCard__content__tag__retour'
                             onClick={retour}
                         >
-                            Retour
+                            Retour&nbsp;
+                            <FontAwesomeIcon
+								icon={faArrowCircleLeft}
+							/>
                         </li>
                         <li id='biensCard__content__tag__envoyer'>
                             <FontAwesomeIcon
@@ -74,6 +77,14 @@ const BiensCard = () => {
                         </li>
                     </ul>
                     <Carrousel/>
+                    <div className='biensCard__content__text'>
+                        <div className='biensCard__content__text__description'>
+
+                        </div>
+                        <div className='biensCard__content__text__form'>
+
+                        </div>
+                    </div>
                 </article>
             </section>
             <Footer/>

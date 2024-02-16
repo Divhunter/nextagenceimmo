@@ -55,8 +55,8 @@
     }
 
     .biensContainer__select {
-        font-family: 'Open', sans-serif;
         color: black;
+        font-family: 'Open', sans-serif;
         margin-bottom: 3vw;
     }
 
@@ -66,6 +66,7 @@
     }
 
     .biensContainer__select__option {
+        text-align: center;
         padding: .7vw;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -167,7 +168,7 @@
         font-family: 'Open', sans-serif;
         font-size: 1.3vw;
         line-height: 2vw;
-        color: rgb(87, 87, 87);
+        color: rgb(31, 61, 75);
         margin: -2vw auto 5vw auto;
     }
 }

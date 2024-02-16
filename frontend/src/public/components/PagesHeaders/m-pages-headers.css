@@ -92,9 +92,9 @@ h4 {
     font-size: 5vw;
     font-weight: 700;
     letter-spacing: normal;
-    color: rgba(80, 80, 80,.8);
-    background-color: rgb(244, 252, 250); 
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: rgb(31, 61, 75);
+    background-color: rgb(244, 252, 250);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .why > header,
@@ -115,7 +115,6 @@ h4 {
     font-size: 4.5vw;
     font-weight: 500;
     line-height: 5.3vw;
-    color: rgb(80, 80, 80);
 }
 
 .pagination {
@@ -128,7 +127,7 @@ h4 {
     height: 12vw;
     font-size: 8vw;
     font-weight: 800;
-    background-color: rgb(201, 216, 224);
+    background-color: rgb(181, 196, 204);
     color: white;
     border-radius: 50%;
     z-index: -1;
