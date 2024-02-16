@@ -24,7 +24,6 @@
         margin-left: .15vw;
         border-radius: 10px;
         color: white;
-        background-color: black;
         font-family: 'Open', sans-serif;
         overflow: hidden;
         z-index: 4000;
@@ -49,7 +48,7 @@
         display: inline-block;
         width: 25vw;
         height: auto;
-        opacity: .7;
+        filter: brightness(75%);
         z-index: -1;
     }
 
@@ -63,6 +62,7 @@
         color: white;
         background-color: rgb(206, 39, 73);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        z-index: 5000;
     }
 
     .selection-slide__card__text {
@@ -72,6 +72,7 @@
         letter-spacing: .036vw;
         color: white !important;
         text-shadow: 0 0 .2em rgb(1, 1, 1), 0 0 0.1em rgb(1, 1, 1);
+        z-index: 5000;
     }
 
     .selection-slide__card__text__op {
