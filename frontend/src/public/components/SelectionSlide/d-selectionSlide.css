@@ -24,6 +24,7 @@
         margin-left: .15vw;
         border-radius: 10px;
         color: white;
+        background-color: black;
         font-family: 'Open', sans-serif;
         overflow: hidden;
         z-index: 4000;
@@ -48,7 +49,7 @@
         display: inline-block;
         width: 25vw;
         height: auto;
-        filter: brightness(90%);
+        opacity: .7;
         z-index: -1;
     }
 
