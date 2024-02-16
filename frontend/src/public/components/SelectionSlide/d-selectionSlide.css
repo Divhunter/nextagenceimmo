@@ -71,6 +71,7 @@
         font-weight: bold;
         letter-spacing: .036vw;
         color: white !important;
+        text-shadow: 0 0 .2em rgb(1, 1, 1), 0 0 0.1em rgb(1, 1, 1);
     }
 
     .selection-slide__card__text__op {
@@ -79,13 +80,11 @@
         margin-right: 1.09vw;
         line-height: 2vw;
         font-size: 1.61vw;
-        text-shadow: 0 0 .2em rgb(1, 1, 1), 0 0 0.1em rgb(1, 1, 1);
     }
 
     .selection-slide__card__text__dp {
         padding-top: 2vw;
         margin-top: -5vw;
-        text-shadow: 0 0 .2em rgb(1, 1, 1), 0 0 0.1em rgb(1, 1, 1);
     }
 
     .selection-slide__card__text__dp__designation {
