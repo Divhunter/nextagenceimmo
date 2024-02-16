@@ -48,13 +48,14 @@
         display: inline-block;
         width: 25vw;
         height: auto;
+        filter: brightness(80%);
         z-index: -1;
     }
 
     .selection-slide__card__text__exclu {
         width: 10.96vw;
         /*transform: rotate(-20deg);*/
-        margin-top: -14.61vw;
+        margin-top: -10vw;
         padding: .51vw;
         font-size: 1.31vw;
         letter-spacing: .073vw;
@@ -64,29 +65,50 @@
     }
 
     .selection-slide__card__text {
-        margin-top: 12.27vw;
+        margin-top: 8.8vw;
         font-size: 1.24vw;
         font-weight: bold;
-        line-height: .73vw;
         letter-spacing: .036vw;
         color: white !important;
     }
 
-    .selection-slide__card__text__ville {
+    .selection-slide__card__text__op {
         text-align: left;
         margin-left: 1.09vw;
         margin-right: 1.09vw;
+        line-height: 2vw;
         font-size: 1.61vw;
         text-shadow: 0 0 1em rgb(1, 1, 1), 0 0 0.2em rgb(1, 1, 1);
     }
 
     .selection-slide__card__text__dp {
-        display: flex;
-        padding: 2vw 1.09vw 0 1.09vw;
-        margin-top: -3.7vw;
-        width: 100%;
-        justify-content: space-between;
-        text-shadow: 0 0 2em rgb(1, 1, 1), 0 0 0.6em rgb(1, 1, 1);
-        /*background-color: rgba(6, 17, 22, .6);*/
+        padding-top: 2vw;
+        margin-top: -5vw;
+        text-shadow: 0 0 20em rgb(1, 1, 1), 0 0 0.2em rgb(1, 1, 1);
+    }
+
+    .selection-slide__card__text__dp__designation {
+        display: inline;
+        text-align: left;
+        float: left;
+        margin-left: 1.09vw;
+        width: 10vw;
+        padding: 1vw 0 1vw 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background-color: none;
+        overflow: hidden;
+    }
+
+    .selection-slide__card__text__dp__prix {
+        display: inline;
+        text-align: right;
+        float: right;
+        margin-right: 1.09vw;
+        width: 9vw;
+        padding: 1vw 0 1vw 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }

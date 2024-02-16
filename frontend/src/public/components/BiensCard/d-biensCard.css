@@ -72,14 +72,14 @@
     #biensCard__content__tag__envoyer,
     #biensCard__content__tag__imprimer {
         float: right;
-        background-color: rgb(160, 159, 159);
+        background-color: rgb(122, 122, 122);
         cursor: pointer;
         transition: background-color .4s;
     }
 
     #biensCard__content__tag__envoyer:hover,
     #biensCard__content__tag__imprimer:hover {
-        background-color: rgb(175, 175, 175);
+        background-color: rgb(155, 155, 155);
         transition: background-color .4s;
     }
 }

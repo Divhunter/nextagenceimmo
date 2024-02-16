@@ -28,7 +28,7 @@ const SelectionSlide = () => {
             <div className='selection-slide__card'>
               <Link to={`/BiensCard/${item.Id}`}>
                 <div className='selection-slide__card__text'>
-                  <p className='selection-slide__card__text__ville'>{item.Opérations}</p>
+                  <p className='selection-slide__card__text__op'>{item.Opérations}<br/>{item.Localisations}</p>
                   <div className='selection-slide__card__text__dp'>
                     <p className='selection-slide__card__text__dp__designation'>{item.TypesB}</p>
                     <p className='selection-slide__card__text__dp__prix'>{item.Prix} <span>{item.Unite}</span></p>
