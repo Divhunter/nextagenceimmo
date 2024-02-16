@@ -46,7 +46,7 @@
         padding: .5vw .8vw .5vw .8vw;
         margin-left: .5vw;
         font-size: 1.5vw;
-        letter-spacing: .3vw;
+        letter-spacing: .2vw;
         border-radius: 5px;
         background-color: rgb(206, 39, 73);
         color: white;
@@ -54,6 +54,7 @@
 
     #biensCard__content__tag__retour {
         font-weight: bold;
+        letter-spacing: .15vw;
         background-color: rgb(0, 119, 255);
         cursor: pointer;
         transition: background-color .4s;
@@ -68,11 +69,17 @@
         background-color: rgb(136, 191, 253);
     }
 
-    /*.biensCard__content__tag__prix {
-        margin: 0 0 1vw .5vw;
-        font-size: 2vw;
-        font-weight: bold;
-        letter-spacing: .2vw;
-        color: rgb(206, 39, 73);
-    }*/
+    #biensCard__content__tag__envoyer,
+    #biensCard__content__tag__imprimer {
+        float: right;
+        background-color: rgb(160, 159, 159);
+        cursor: pointer;
+        transition: background-color .4s;
+    }
+
+    #biensCard__content__tag__envoyer:hover,
+    #biensCard__content__tag__imprimer:hover {
+        background-color: rgb(175, 175, 175);
+        transition: background-color .4s;
+    }
 }

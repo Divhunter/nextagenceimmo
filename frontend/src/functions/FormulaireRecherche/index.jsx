@@ -224,7 +224,7 @@ const FormulaireRecherche = () => {
     setTags((prevTags) => {
       const existingTags = prevTags.filter((tag) => tag.category !== category)
       const newTags = updatedOptions.map((option) => ({ category, value: option }))
-      return [...existingTags, ...newTags];
+      return [...existingTags, ...newTags]
     })
   }
 

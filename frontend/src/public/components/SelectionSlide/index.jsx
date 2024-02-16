@@ -30,7 +30,7 @@ const SelectionSlide = () => {
                 <div className='selection-slide__card__text'>
                   <p className='selection-slide__card__text__ville'>{item.Opérations}</p>
                   <div className='selection-slide__card__text__dp'>
-                    <p className='selection-slide__card__text__dp__designation'>{item.Designation}</p>
+                    <p className='selection-slide__card__text__dp__designation'>{item.TypesB}</p>
                     <p className='selection-slide__card__text__dp__prix'>{item.Prix} <span>{item.Unite}</span></p>
                   </div>
                 </div>

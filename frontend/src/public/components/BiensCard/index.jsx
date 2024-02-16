@@ -5,6 +5,8 @@ import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
 import biensArray from '../../datas/biensArray.json'
+import { faPrint, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // styles
 import './m-biensCard.css'
@@ -60,10 +62,17 @@ const BiensCard = () => {
                         >
                             Retour
                         </li>
+                        <li id='biensCard__content__tag__envoyer'>
+                            <FontAwesomeIcon
+								icon={faEnvelope}
+							/>
+                        </li>
+                        <li id='biensCard__content__tag__imprimer'>
+                            <FontAwesomeIcon
+								icon={faPrint}
+							/>
+                        </li>
                     </ul>
-                    {/*<p className='biensCard__content__tag__prix'>
-                            {card.Prix}{card.Unite}
-                    </p>*/}
                     <Carrousel/>
                 </article>
             </section>
