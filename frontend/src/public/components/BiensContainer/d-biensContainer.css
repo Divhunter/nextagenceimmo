@@ -100,7 +100,7 @@
         width: 28vw;
         height: auto;
         transition: width .4s;
-        opacity: .7;
+        opacity: .5;
         z-index: -1000;
     }
 
@@ -168,7 +168,7 @@
         font-family: 'Open', sans-serif;
         font-size: 1.3vw;
         line-height: 2vw;
-        color: rgb(31, 61, 75);
+        color: rgb(75, 75, 75);
         margin: -2vw auto 5vw auto;
     }
 }

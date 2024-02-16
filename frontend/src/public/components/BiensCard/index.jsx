@@ -79,7 +79,14 @@ const BiensCard = () => {
                     <Carrousel/>
                     <div className='biensCard__content__text'>
                         <div className='biensCard__content__text__description'>
-
+                            <header>
+                                <h1>Description</h1>
+                            </header>
+                            <p>{card.RefString}{card.RefNum} - {card.Description}</p>
+                            <div>
+                                <p>Résumé</p>
+                                <p>Surface</p>
+                            </div>
                         </div>
                         <div className='biensCard__content__text__form'>
 
