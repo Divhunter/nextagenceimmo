@@ -86,7 +86,7 @@
     .biensCard__content__text {
         display: flex;
         width: auto;
-        height: 50vw;
+        height: auto;
         padding: 0;
         margin-bottom: 5vw;
         font-size: 1.3vw;
@@ -96,15 +96,24 @@
 
     .biensCard__content__text__description {
         position: relative;
-        width: 60%;
-        height: 100%;
-        padding: 1vw 2vw 1vw 0;
+        width: 70%;
+        height: auto;
+        padding: 1vw 1vw 1vw 0;
+    }
+
+    .biensCard__content__text__description > p {
+        display: inline-block;
+        padding: 0;
+        width: 59vw;
+        height: auto;
+        text-align: justify;
+        text-justify: distribute;
     }
 
     .biensCard__content__text__form {
         position: relative;
-        width: 40%;
-        height: 100%;
+        width: 30%;
+        height: 50vw;
         background-color: rgb(184, 0, 153);
     }
 
@@ -113,5 +122,30 @@
         line-height: 0;
         font-weight: 600;
         letter-spacing: .15vw;
+    }
+
+    .biensCard__content__text__description__title {
+        display: flex;
+        flex-direction: left;
+        flex-wrap: wrap;
+    }
+
+    .biensCard__content__text__description__title > li > div {
+        width: 29vw;
+        height: 35vw;
+        margin-right: 1vw;
+        margin-bottom: 2vw;
+    }
+
+    .biensCard__content__text__description__title > li > div > header {
+        background-color: rgb(206, 39, 73);
+        color: white;
+        padding: 1vw;
+        font-size: 1.8vw;
+    }
+
+    .biensCard__content__text__description__title > li > div > p > span {
+        float: right;
+        margin-right: 1vw;
     }
 }

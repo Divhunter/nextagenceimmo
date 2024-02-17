@@ -82,11 +82,40 @@ const BiensCard = () => {
                             <header>
                                 <h1>Description</h1>
                             </header>
-                            <p>{card.RefString}{card.RefNum} - {card.Description}</p>
-                            <div>
-                                <p>Résumé</p>
-                                <p>Surface</p>
-                            </div>
+                            <p><strong>{card.RefString}{card.RefNum}</strong> - {card.Description}</p>
+                            <br/><br/>
+                            <ul className='biensCard__content__text__description__title'>
+                                <li>
+                                    <div>
+                                        <header>Résumé</header>
+                                        <p>
+                                            Pièces : <span><strong>{card.NombreP}</strong></span>
+                                            <br/>
+                                            Surface : <span><strong>{card.Surface}</strong></span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <header>Surfaces</header>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <header>Prestations</header>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <header>Efficacité énergéitique</header>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <header>Informations légales</header>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <div className='biensCard__content__text__form'>
 

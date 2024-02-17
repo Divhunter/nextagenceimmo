@@ -20,7 +20,7 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "50 m²",
+        "Surface": "27 m²",
         "Secteur": "Secteur Petit Parilly",
         "Description": "Secteur Petit Parilly, Hippodrome, secteur calme. Dans copropriété récente construction 2012, bel appartement situé au 2ème étage /2 comprenant une grande pièce à vivre séjour cuisine ouverte, salle de bains wc. Appartement lumineux avec grande baie vitrée sans vis-à-vis. Egalement une place de parking privative. A découvrir rapidement !"
     },
@@ -45,7 +45,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "75 m²",
+        "Surface": "75 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -70,7 +70,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "90 m²",
+        "Surface": "90 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -96,7 +96,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "70 m²",
+        "Surface": "70 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -121,7 +121,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "85 m²",
+        "Surface": "85 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -146,7 +146,7 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "172 m²",
+        "Surface": "172 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -171,7 +171,7 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "165 m²",
+        "Surface": "165 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -196,7 +196,7 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²",
+        "Surface": "120 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -221,7 +221,7 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "150 m²",
+        "Surface": "150 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -246,7 +246,7 @@
         "TypesB": "Maison",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²",
+        "Surface": "120 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -272,7 +272,7 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "73 m²",
+        "Surface": "73 m²",
         "Secteur": "Rue Général Gouraud - A proximité des commerces et transports en commun - Libre de suite.",
         "Description": "T3 Meublé Lyon 8ème Secteur Moulin à Vent"
     },
@@ -298,7 +298,7 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "47 m²",
+        "Surface": "47 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -324,7 +324,7 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "40 m²",
+        "Surface": "40 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -350,7 +350,7 @@
         "TypesB": "Appartement",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "55 m²",
+        "Surface": "55 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -376,7 +376,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": true,
-        "Superficie": "76 m²",
+        "Surface": "76 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -402,7 +402,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "70 m²",
+        "Surface": "70 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -428,7 +428,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "90 m²",
+        "Surface": "90 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -454,7 +454,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "40 m²",
+        "Surface": "40 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -480,7 +480,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "80 m²",
+        "Surface": "80 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -506,7 +506,7 @@
         "TypesB": "Appartement",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "120 m²",
+        "Surface": "120 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -532,7 +532,7 @@
         "TypesB": "Commerce",
         "Exclu": true,
         "Selection": true,
-        "Superficie": "50 m²",
+        "Surface": "50 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -558,7 +558,7 @@
         "TypesB": "Commerce",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "300 m²",
+        "Surface": "300 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -584,7 +584,7 @@
         "TypesB": "Commerce",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "350 m²",
+        "Surface": "350 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -610,7 +610,7 @@
         "TypesB": "Commerce",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "220 m²",
+        "Surface": "220 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -636,7 +636,7 @@
         "TypesB": "Commerce",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "60 m²",
+        "Surface": "60 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -662,7 +662,7 @@
         "TypesB": "Commerce",
         "Exclu": false,
         "Selection": false,
-        "Superficie": "450 m²",
+        "Surface": "450 m²",
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -688,7 +688,7 @@
         "TypesB": "Garage / Parking",
         "Exclu": true,
         "Selection": true,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -714,7 +714,7 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": true,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -740,7 +740,7 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": true,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -766,7 +766,7 @@
         "TypesB": "Garage / Parking",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -792,7 +792,7 @@
         "TypesB": "Chalet",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -818,7 +818,7 @@
         "TypesB": "Chalet",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -844,7 +844,7 @@
         "TypesB": "Chalet",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     },
@@ -870,7 +870,7 @@
         "TypesB": "Chalet",
         "Exclu": false,
         "Selection": false,
-        "Superficie": false,
+        "Surface": false,
         "Secteur": "Ici le secteur du bien",
         "Description": "Ici la description du bien"
     }
