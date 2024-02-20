@@ -5,7 +5,7 @@
     .carrousel {
         width: auto;
         height: 60vw;
-        border-radius: 1.82vw;
+        border-radius: 10px;
     }
     
     .carrousel__pictures {
@@ -13,13 +13,14 @@
         max-width: 90.7vw;
         width: auto;
         height: auto;
-        filter: brightness(90%);
+        /*filter: brightness(80%);*/
     }
     
     .carrousel__button {
         width: 0;
         height: 0;
-        background-color: rgba(150, 150, 150, 0);
+        background-color: rgba(0, 0, 0, 0);
+        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
     }
     
     .carrousel__button__left {
@@ -44,14 +45,18 @@
 
     .carrousel__secteur {
         position: absolute;
+        width: 100%;
         top: 2vw;
-        margin: 2vw 5vw 0 5vw;
+        margin: -2vw 0 0 0;
+        padding: 2vw 3vw 2vw 3vw;
         display: inline-block;
-        font-size: 3vw;
-        line-height: 4vw;
+        font-size: 1.8vw;
+        line-height: 2.8vw;
         letter-spacing: .12vw;
         color: white;
-        text-shadow: 0 0 1em rgba(1, 1, 1, .3), 0 0 0.2em rgba(1, 1, 1, .3);
+        text-shadow: 1px 1px 5px rgb(1, 1, 1, .6);
+        background-color: rgba(1, 1, 1, .3);
+        /*background: linear-gradient(rgba(1, 1, 1, .6), transparent);*/
         z-index: 1000;
     }
     

@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { Link as Home } from "react-router-dom"
+import { Link as Home, Link as Contact } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -123,9 +123,9 @@ const Header = (props) => {
 					<Link to='docs'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Documments utiles</p>
 					</Link>
-					<Link to='contact'>
+					<Contact to='/Contact'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Contact</p>
-					</Link>
+					</Contact>
 				</menu> 
 			</nav>
 			<div 

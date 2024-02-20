@@ -1,6 +1,6 @@
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Link as Contact } from 'react-router-dom'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
@@ -35,6 +35,11 @@ const BiensCard = () => {
     const [ upAndDownPrestations, setUpAndDownPrestations ] = useState(true)
     const isUpAndDownPrestations = () => {
         setUpAndDownPrestations(!upAndDownPrestations)
+    }
+
+    const [ upAndDownProximités, setUpAndDownProximités ] = useState(true)
+    const isUpAndDownProximités = () => {
+        setUpAndDownProximités(!upAndDownProximités)
     }
 
     const [ upAndDownEfficacitéEnergétique, setUpAndDownEfficacitéEnergétique ] = useState(true)
@@ -88,6 +93,13 @@ const BiensCard = () => {
         )
     }
 
+    const generateProximités = (value) => {
+        return (
+            (value !== null && value !== "" && value!== undefined) &&
+            <p>{value}</p>
+        )
+    }
+
     const generateEfficacitéEnrg = (label, pic) => {
         return (
             (   
@@ -124,6 +136,13 @@ const BiensCard = () => {
                 </div>
                 <article className='biensCard__content'>
                     <ul className='biensCard__content__tag'>
+                        {
+                            (
+                                card.Exclu !== false && card.Exclu !== "" &&
+                                card.Exclu !== undefined
+                            ) &&
+                            <li className='biensCard__content__tag__exclu'>Exclusivité</li>
+                        } 
                         <li>{card.Opérations}</li>
                         <li>{card.TypesB}</li>
                         <li>{card.NombreP}</li>
@@ -137,12 +156,12 @@ const BiensCard = () => {
 								icon={faArrowCircleLeft}
 							/>
                         </li>
-                        <li id='biensCard__content__tag__envoyer'>
+                        <li id='biensCard__content__tag__envoyer' title='Envoyer à un ami'>
                             <FontAwesomeIcon
 								icon={faEnvelope}
 							/>
                         </li>
-                        <li id='biensCard__content__tag__imprimer'>
+                        <li id='biensCard__content__tag__imprimer' title='Imprimer cette page'>
                             <FontAwesomeIcon
 								icon={faPrint}
 							/>
@@ -250,6 +269,7 @@ const BiensCard = () => {
                                         </header>
                                         {generatePrestations(card.Prestations.DoubleVitrage)}
                                         {generatePrestations(card.Prestations.FenêtresPVC)}
+                                        {generatePrestations(card.Prestations.Volets)}
                                         {generatePrestations(card.Prestations.Meublé)}
                                         {generatePrestations(card.Prestations.Ascenseur)}
                                         {generatePrestations(card.Prestations.FibreOptique)}
@@ -263,6 +283,39 @@ const BiensCard = () => {
                                         {generatePrestations(card.Prestations.PlaqueDeCuisson)}
                                         {generatePrestations(card.Prestations.Réfrigérateur)}
                                         {generatePrestations(card.Prestations.Vaisselle)}
+                                    </div>
+                                </li>
+                                <li>
+                                    <div 
+                                        className={
+                                            upAndDownProximités ? 
+                                            'biensCard-dropdown--Up': 
+                                            'biensCard-dropdown--Down'}
+                                    >
+                                        <header onClick={() => isUpAndDownProximités()}>
+                                            <p>
+                                                Proximités
+                                                {upAndDownProximités ? 
+                                                <span>
+                                                    <FontAwesomeIcon
+                                                        icon={faChevronDown}
+                                                    />
+                                                </span> :
+                                                <span>
+                                                    <FontAwesomeIcon
+                                                        icon={faChevronUp}
+                                                    />
+                                                </span>}
+                                            </p>
+                                        </header>
+                                        {generateProximités(card.Proximités.Bus)}
+                                        {generateProximités(card.Proximités.Commerces)}
+                                        {generateProximités(card.Proximités.ÉcolePrimaire)}
+                                        {generateProximités(card.Proximités.ÉcoleSecondaire)}
+                                        {generateProximités(card.Proximités.Hôpital)}
+                                        {generateProximités(card.Proximités.Parc)}
+                                        {generateProximités(card.Proximités.Supermarché)}
+                                        {generateProximités(card.Proximités.Tram)}
                                     </div>
                                 </li>
                                 <li>
@@ -331,6 +384,22 @@ const BiensCard = () => {
                                         </header>
                                         {
                                             (
+                                                card.InformationsLégales.ÉnergieConso !== null && card.InformationsLégales.ÉnergieConso !== "" &&
+                                                card.InformationsLégales.ÉnergieConso !== undefined
+                                            ) &&
+                                            <p>Énergie - Consommation conventionnelle :<span><strong>{card.InformationsLégales.ÉnergieConso}</strong></span></p>
+                                        } 
+
+                                        {
+                                            (
+                                                card.InformationsLégales.HonorairesAcharge !== null && card.InformationsLégales.HonorairesAcharge !== "" &&
+                                                card.InformationsLégales.HonorairesAcharge !== undefined
+                                            ) &&
+                                            <p>{card.InformationsLégales.HonorairesAcharge}</p>
+                                        } 
+
+                                        {
+                                            (
                                                 card.InformationsLégales.ZoneSoumise !== null && card.InformationsLégales.ZoneSoumise !== "" &&
                                                 card.InformationsLégales.ZoneSoumise !== undefined
                                             ) &&
@@ -358,8 +427,16 @@ const BiensCard = () => {
                                                 card.InformationsLégales.ChargesMois !== null && card.InformationsLégales.ChargesMois !== "" &&
                                                 card.InformationsLégales.ChargesMois !== undefined
                                             ) &&
-                                            <p>Charges :<span><strong>{card.InformationsLégales.ChargesMois} € / Mois</strong></span></p>
-                                        }      
+                                            <p>Charges de copropriété :<span><strong>{card.InformationsLégales.ChargesMois} € / Mois</strong></span></p>
+                                        }   
+
+                                        {
+                                            (
+                                                card.InformationsLégales.LoiCarrez !== null && card.InformationsLégales.LoiCarrez !== "" &&
+                                                card.InformationsLégales.LoiCarrez !== undefined
+                                            ) &&
+                                            <p>Loi Carrez :<span><strong>{card.InformationsLégales.LoiCarrez} m²</strong></span></p>
+                                        }     
 
                                         {
                                             (
@@ -425,6 +502,9 @@ const BiensCard = () => {
                         </div>*/}
                     </div>
                 </article>
+                <Contact to='/Contact'>
+                    <p className='button biensCard-button'>Contactez-nous</p>
+                </Contact>
             </section>
             <Footer/>
         </>

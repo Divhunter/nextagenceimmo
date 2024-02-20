@@ -55,6 +55,7 @@
         "Prestations": {   
             "DoubleVitrage": "Double vitrage",
             "FenêtresPVC": "Fenêtres PVC",
+            "Volets": null,
             "Meublé": null,
             "Ascenseur": null,
             "FibreOptique": null,
@@ -68,6 +69,16 @@
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
             "Vaisselle": null
+        },
+        "Proximités": {      
+            "Bus": "Bus",
+            "Commerces": "Commerces",
+            "ÉcolePrimaire": null,
+            "ÉcoleSecondaire": null,
+            "Hôpital": null,
+            "Parc": "Parc",
+            "Supermarché": "Supermarché",
+            "Tram": "Tram"
         },
         "EfficacitéEnergétique": {
             "EnergNeutre": "/assets/class/classEnergetiqueNeutre.png",
@@ -86,20 +97,22 @@
             "ClimE": null,
             "ClimF": null,
             "ClimG": null
-
         },
-        "InformationsLégales" : {       
-            "ZoneSoumise": "Zone soumise à encadrement des loyers",
-            "LoyerDeBase": 1036,
-            "LoyerDeRef":  1088.57,
-            "ChargesMois": 55,
-            "Honoraires": 697.80,
-            "DépôtDeGarantie": 2072,
-            "ÉtatDesLieux": 209.34,
-            "ChargesDeCopropriété" : 55,
-            "MontantEstimé": "750 € ~ 1060 €",
+        "InformationsLégales" : {    
+            "ÉnergieConso": "En cours de réalisation",
+            "HonorairesAcharge": "Honoraires à charge vendeur",    
+            "ZoneSoumise": null,
+            "LoyerDeBase": null,
+            "LoyerDeRef":  null,
+            "ChargesMois": null,
+            "Honoraires": null,
+            "DépôtDeGarantie": null,
+            "ÉtatDesLieux": null,
+            "ChargesDeCopropriété" : 50,
+            "LoiCarrez" : 26.95,
+            "MontantEstimé": null,
             "BarèmHonnoraires": "Consultez notre barème d'honoraires",
-            "ProcédureEnCours": "Non"
+            "ProcédureEnCours": "Aucune"
         },
         "Secteur": "Secteur Petit Parilly",
         "Description": "Secteur Petit Parilly, Hippodrome, secteur calme. Dans copropriété récente construction 2012, bel appartement situé au 2ème étage /2 comprenant une grande pièce à vivre séjour cuisine ouverte, salle de bains wc. Appartement lumineux avec grande baie vitrée sans vis-à-vis. Également une place de parking privative. À découvrir rapidement !"
@@ -127,7 +140,7 @@
         "Selection": false,
         "Résumé": {
             "Pièces": 3,
-            "Surface": "70 m²",
+            "Surface": "80 m²",
             "Chauffage": "Radiateur, Electrique, individuel",
             "EauChaude": "Chauffe-eau",
             "Etat": "Bon",
@@ -160,10 +173,11 @@
         "Prestations": {   
             "DoubleVitrage": "Double vitrage",
             "FenêtresPVC": "Fenêtres PVC",
+            "Volets": "Volets roulants électriques",
             "Meublé": null,
-            "Ascenseur": null,
-            "FibreOptique": null,
-            "Interphone": null,
+            "Ascenseur": "Ascenseur",
+            "FibreOptique": "Fibre optique",
+            "Interphone": "Interphone",
             "Cafetière": null,
             "Four": null,
             "FourAMicroOndes": null,
@@ -174,10 +188,20 @@
             "Réfrigérateur": null,
             "Vaisselle": null
         },
+        "Proximités": {      
+            "Bus": "Bus",
+            "Commerces": "Commerces",
+            "ÉcolePrimaire": "École primaire",
+            "ÉcoleSecondaire":"École secondaire",
+            "Hôpital": "Hôpital/clinique",
+            "Parc": "Parc",
+            "Supermarché": "Supermarché",
+            "Tram": "Tram"
+        },
         "EfficacitéEnergétique": {
-            "EnergNeutre": "/assets/class/classEnergetiqueNeutre.png",
+            "EnergNeutre": null,
             "EnergA": null,
-            "EnergB": null,
+            "EnergB": "/assets/class/classEnergetiqueB.png",
             "EnergC": null,
             "EnergD": null,
             "EnergE": null,
@@ -193,21 +217,24 @@
             "ClimG": null
 
         },
-        "InformationsLégales" : {       
-            "ZoneSoumise": "Zone soumise à encadrement des loyers",
-            "LoyerDeBase": 1036,
-            "LoyerDeRef":  1088.57,
-            "ChargesMois": 55,
-            "Honoraires": 697.80,
-            "DépôtDeGarantie": 2072,
-            "ÉtatDesLieux": 209.34,
-            "ChargesDeCopropriété" : 55,
-            "MontantEstimé": "750 € ~ 1060 €",
+        "InformationsLégales" : {   
+            "ÉnergieConso": null,
+            "HonorairesAcharge": "Honoraires à charge de vendeur", 
+            "ZoneSoumise": null,
+            "LoyerDeBase": null,
+            "LoyerDeRef":  null,
+            "ChargesMois": null,
+            "Honoraires": null,
+            "DépôtDeGarantie": null,
+            "ÉtatDesLieux": null,
+            "ChargesDeCopropriété" : 350,
+            "LoiCarrez" : null,
+            "MontantEstimé": "840 € ~ 1190 €",
             "BarèmHonnoraires": "Consultez notre barème d'honoraires",
-            "ProcédureEnCours": "Non"
+            "ProcédureEnCours": "Aucune"
         },
         "Secteur": "Rue Général Gouraud - A proximité des commerces et transports en commun (Tramways T2, T4 et T6, Bus C12)",
-        "Description": "Agréable et spacieux T3 meublé de 70m² situé au 1er étage avec ascenseur. Il comprend une entrée avec placards, un séjour avec cuisine américaine aménagée et équipée (plaques, four, hotte, frigo, lave-vaisselle) et un agréable balcon au calme côté cour. Un couloir dessert une salle d'eau avec lave-linge, un WC séparé, et deux chambres avec placards et bureaux. Une cave complète ce bien. Eau froide collective. Volets roulants électriques."
+        "Description": "Agréable et spacieux T3 de 80m² situé au 1er étage avec ascenseur. Il comprend une entrée avec placards, un séjour avec cuisine américaine et un agréable balcon au calme côté cour. Un couloir dessert une salle d'eau, un WC séparé, et deux chambres. Un garage privatif ainsi qu'une cave complète ce bien. Eau froide collective. Volets roulants électriques."
     },
     {
         "Id": 1.02,

@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll'
+import { Link as Contact } from "react-router-dom"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
@@ -51,9 +51,9 @@ const Estimation = () => {
                         </div>
                     }
                     button={
-                        <Link to='contact'>
+                        <Contact to='/Contact'>
                             <p className='button estimation-button'>Contactez un conseil</p>
-                        </Link>
+                        </Contact>
                     }
                 />
             ))}

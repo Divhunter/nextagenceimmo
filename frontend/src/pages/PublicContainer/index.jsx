@@ -11,7 +11,6 @@ import Estimation from '../../public/components/Estimation'
 import Gestion from '../../public/components/Gestion'
 import Docs from '../../public/components/Docs'
 import Agences from '../../public/components/Agences'
-import Contact from '../../public/components/Contact'
 import Footer from '../../public/components/Footer'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
@@ -75,7 +74,6 @@ const PublicContainer = () => {
 				<Estimation />
                 <Agences />
                 <Docs />
-				<Contact />
 				<Footer />
                 <Background />
 			</main>

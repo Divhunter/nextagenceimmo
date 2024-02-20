@@ -7,6 +7,7 @@ import BiensContainer from './public/components/BiensContainer'
 import BiensCard from './public/components/BiensCard'
 import Error from './_utils/Error'
 import CGU from './public/components/CGU'
+import Contact from './public/components/Contact'
 
 // styles
 import './styles/m-app.css'
@@ -93,6 +94,7 @@ const App = () => {
             <Routes>
                 <Route exact path='/*' element={ <PublicRouter /> } />
                 <Route path='/dashboard/*' element={ <AdminRouter /> } />
+                <Route path='/Contact' element={ <Contact /> } />
                 <Route path='/biensContainer' element={ <BiensContainer /> } />
                 <Route path='/biensCard/:Id' element={<BiensCard />} />
                 <Route path='/CGU' element={ <CGU /> } />

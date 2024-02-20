@@ -14,15 +14,14 @@
         width: 100%;
         height: auto;
         margin: 0;
-        background-color: rgb(38, 16, 16);
     }
 
     .biensContainer__header__pic {
         width: 100%;
         height: auto;
-        margin-bottom: -.18vw;
+        margin-bottom: -.3vw;
         /*filter: brightness(60%);*/
-        opacity: .5;
+        opacity: 1;
     }
 
     .biensContainer__header__logo {
@@ -31,6 +30,7 @@
 		margin-left: 5vw;
 		width: 8vw;
 		height: auto;
+        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
         z-index: 1000;
     }
     

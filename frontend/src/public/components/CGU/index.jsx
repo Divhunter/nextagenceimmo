@@ -9,7 +9,7 @@ import './d-cgu.css'
 const CGU = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
     }, [])
 
     return (

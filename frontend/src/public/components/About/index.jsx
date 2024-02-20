@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll'
+import { Link as Contact } from "react-router-dom"
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
 import couple from '../../assets/pictures/couple.jpg'
@@ -43,9 +43,9 @@ const About = () => {
                     }
                     subTitle2={item.subTitle2}
                     button={
-                        <Link to='contact'>
+                        <Contact to='/Contact'>
                             <p className='button'>Contactez-nous</p>
-                        </Link>
+                        </Contact>
                     }
                     text1={
                         <div id='containerAbout' className='containerAbout'>

@@ -25,6 +25,7 @@
 		margin-left: 5vw;
 		width: 8vw;
 		height: auto;
+        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
         z-index: 1000;
     }
 
@@ -44,7 +45,7 @@
     .biensCard__content__tag > li {
         display: inline-block;
         padding: .5vw .8vw .5vw .8vw;
-        margin-left: .5vw;
+        margin-right: .5vw;
         font-size: 1.5vw;
         letter-spacing: .2vw;
         border-radius: 5px;
@@ -72,6 +73,8 @@
     #biensCard__content__tag__envoyer,
     #biensCard__content__tag__imprimer {
         float: right;
+        margin-left: .5vw;
+        margin-right: 0;
         background-color: rgb(122, 122, 122);
         cursor: pointer;
         transition: background-color .4s;

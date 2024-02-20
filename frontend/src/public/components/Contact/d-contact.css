@@ -83,6 +83,22 @@
     /******************************************** contact *****************************************/
     /**********************************************************************************************/
 
+    .contact__header {
+        width: 100%;
+        height: 6vw;
+        margin: 0;
+    }
+
+    .contact__header__logo {
+        position: absolute;
+        margin-top : 2vw;
+		margin-left: 5vw;
+		width: 8vw;
+		height: auto;
+        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
+        z-index: 1000;
+    }
+
     .containerContact {
         height: 127.6vw;
         margin-top: -4.5vw;
@@ -125,5 +141,11 @@
         font-weight: 800;
         font-size: 2.555vw;
         line-height: 2.92vw;
+    }
+
+    .biensCard-button {
+        position: relative;
+        left: 50%;
+        transform: translate( -50%, 0);
     }
 }
