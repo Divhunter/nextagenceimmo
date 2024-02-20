@@ -204,4 +204,18 @@
         width: 11vw;
         height: auto;
     }
+
+    .biensCard-button-container {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .biensCard-button-container__simulateur {
+        margin-right: .7vw;
+    }
+
+    .biensCard-button-container__contact {
+        display: inline-block;
+    }
 }

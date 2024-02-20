@@ -5,7 +5,7 @@ import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
 import biensArray from '../../datas/biensArray.json'
-import { faPrint, faEnvelope, faArrowCircleLeft, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faPrint, faEnvelope, faArrowCircleLeft, faChevronDown, faChevronUp, faCalculator } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // styles
@@ -502,9 +502,19 @@ const BiensCard = () => {
                         </div>*/}
                     </div>
                 </article>
-                <Contact to='/Contact'>
-                    <p className='button biensCard-button'>Contactez-nous</p>
-                </Contact>
+                <div className='biensCard-button-container'>
+                    <Contact to='https://www.matchcredit.fr/calculette/mensualite-credit-immobilier'>
+                        <p className='button biensCard-button-container__simulateur'>
+                            Simulateur&nbsp;
+                            <FontAwesomeIcon
+								icon={faCalculator}
+							/>
+                        </p>
+                    </Contact>
+                    <Contact to='/Contact'>
+                        <p className='button biensCard-button-container__contact'>Contactez-nous</p>
+                    </Contact>
+                </div>
             </section>
             <Footer/>
         </>

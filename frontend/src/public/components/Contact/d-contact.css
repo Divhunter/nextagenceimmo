@@ -142,10 +142,4 @@
         font-size: 2.555vw;
         line-height: 2.92vw;
     }
-
-    .biensCard-button {
-        position: relative;
-        left: 50%;
-        transform: translate( -50%, 0);
-    }
 }
