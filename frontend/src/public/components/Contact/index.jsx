@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
@@ -115,79 +115,7 @@ const Contact = () => {
                     ))}
                 </section>
                 : 
-                <section id='contact' className='contact'>
-                    <div className='contact__header'>
-                        <Link to='/'>
-                            <img
-                            className='contact__header__logo'
-                            src={logoNAIS}
-                            max-width='4123px'
-                            max-height='1554px'
-                            fetchpriority='high'
-                            alt='logo de notre agence immo'
-                            />
-                        </Link>
-                    </div>
-                    {contactHeaderArray.map((item, index) => (
-                        <PagesHeaders 
-                            key={index}
-                            titleCol1={
-                                <div id='contact-header-text' className='contact section--padding'>
-                                    <img
-                                        src={logoContact}
-                                        className='header-logo'
-                                        width='615px'
-                                        height='747px'
-                                        loading='lazy'
-                                        alt='logo-contact'
-                                    />
-                                    <br/>
-                                    {item.titleCol1}
-                                </div>
-                            }
-                            subTitle1={
-                                <div id='titleContact'>
-                                    {item.subTitle1}
-                                </div>
-                            }
-                            subTitle2={item.subTitle2}
-                            text1={
-                                <>
-                                    <br/><br/>
-                                    <div className='containerContact'>
-                                        <div className='containerContact__text' >
-                                                <p className='containerContact__text__header'>
-                                                    Estimation offerte
-                                                </p>
-                                            <div className='containerContact__text__form'>
-                                                <ContactForm />
-                                            </div>
-                                        </div>
-                                        <div className='containerContact__bloc'>
-                                            <img 
-                                                className='containerContact__bloc__woman' 
-                                                src={woman}
-                                                width='1130px'
-                                                height='2078px'
-                                                fetchpriority='high' 
-                                                alt='serrage de main'
-                                            />
-                                        </div>
-                                        <p className='containerContact__bloc__pub'>
-                                            La clé de vos 
-                                            <br/>
-                                            projets immo
-                                            <br/>
-                                            est à portée 
-                                            <br/>
-                                            de main
-                                        </p>
-                                    </div>
-                                </>
-                            } 
-                        />
-                    ))}
-                </section>
+                < Navigate replace to ="/Error" />
             }
             <Footer />
         </>
