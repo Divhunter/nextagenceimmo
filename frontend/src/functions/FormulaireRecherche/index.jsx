@@ -38,7 +38,7 @@ const FormulaireRecherche = () => {
   })
 
   const operationsOptions = [
-    'Vente',
+    'Achat',
     'Location',
     'Location saisonnière',
     'Programme',

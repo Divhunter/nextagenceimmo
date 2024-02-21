@@ -119,7 +119,7 @@ const BiensCard = () => {
         )
     }
 
-    const isVente = card.Opérations.includes("Vente")
+    const isAchat = card.Opérations.includes("Achat")
    
     return card ? (
         <>
@@ -505,7 +505,7 @@ const BiensCard = () => {
                     </div>
                 </article>
                 <div className='biensCard-button-container'>
-                    {isVente &&
+                    {isAchat &&
                         <Contact to='https://www.matchcredit.fr/calculette/mensualite-credit-immobilier'>
                             <p className='button biensCard-button-container__simulateur'>
                                 Simulateur&nbsp;

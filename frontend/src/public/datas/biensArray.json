@@ -38,7 +38,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Bron",
         "NombreP": "1 pièce",
         "Fourchette": "5000+",
@@ -158,7 +158,7 @@
             "/assets/pictures/appt7/pic3-appt7.jpg",
             "/assets/pictures/appt7/pic4-appt7.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Lyon 8ième",
         "NombreP": "3 pièces",
         "Fourchette": "5000+",
@@ -278,7 +278,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Lyon 2ième",
         "NombreP": "4 pièces",
         "Fourchette": "5000+",
@@ -399,7 +399,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Vénissieux",
         "NombreP": "3 pièces",
         "Designation": "Appartement",
@@ -521,7 +521,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Saint-Genis-Laval",
         "NombreP": "3 pièces",
         "Fourchette": "5000+",
@@ -763,7 +763,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Oullin",
         "NombreP": "4 pièces",
         "Fourchette": "5000+",
@@ -884,7 +884,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Brignais",
         "NombreP": "4 pièces",
         "Fourchette": "5000+",
@@ -1005,7 +1005,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Irigny",
         "NombreP": "6+ pièces",
         "Fourchette": "5000+",
@@ -1126,7 +1126,7 @@
             "/assets/pictures/appt1/pic3-appt1.jpg",
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
-        "Opérations": "Vente",
+        "Opérations": "Achat",
         "Localisations": "Irigny",
         "NombreP": "4 pièces",
         "Fourchette": "5000+",

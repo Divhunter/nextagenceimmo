@@ -19,7 +19,7 @@ const BiensContainer = () => {
 
   const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id))
 
-  const isVenteAvailable = biensArray.some((bien) => bien.Opérations === "Vente" && sortedIDsArray.includes(bien.Id))
+  const isAchatAvailable = biensArray.some((bien) => bien.Opérations === "Achat" && sortedIDsArray.includes(bien.Id))
 
   const [selectedTypeLocation, setSelectedTypeLocation] = useState('')
 
@@ -177,11 +177,11 @@ const BiensContainer = () => {
         </div>
         }
 
-        {/*Relatif à l'option Vente*/}
+        {/*Relatif à l'option Achat*/}
 
-        {isVenteAvailable && (
+        {isAchatAvailable && (
           <>
-            <p className='biensContainer__contentVente'>
+            <p className='biensContainer__contentAchat'>
               <strong>
                 Notre agence Immo vous accompagne dans vos projets immobilier. 
                 <br/>
@@ -192,7 +192,7 @@ const BiensContainer = () => {
               <br/><br/>
               - L’estimation gratuite de votre bien
               <br/>
-              - Signature électronique du mandat de vente certifiée
+              - Signature électronique du mandat de Achat certifiée
               <br/>
               - Visite 360 degrés 
               <br/>
@@ -207,7 +207,7 @@ const BiensContainer = () => {
           </>
         )}
 
-        {/*Relatif à l'option Vente saisonnière*/}
+        {/*Relatif à l'option Achat saisonnière*/}
 
       </section>
     <Footer/>
