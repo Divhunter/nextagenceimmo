@@ -1,6 +1,33 @@
-[
+[   
+    {
+        "Id": 0,
+        "NoRef": true,
+        "RefString": null,
+        "RefNum": null,
+        "Cover": null,
+        "Pictures": null,
+        "Opérations": "",
+        "Localisations": null,
+        "NombreP": null,
+        "Fourchette": null,
+        "Prix": null, 
+        "Unite": null,
+        "TypesB": null,
+        "Exclu": false,
+        "Selection": false,
+        "Secteur": null,
+        "Description": null,
+        "Résumé": null,
+        "Surfaces": null,
+        "Prestations": null,
+        "Proximités": null,
+        "EfficacitéEnergétique":null,
+        "InformationsLégales" : null
+    },
+    
     {
         "Id": 1.00,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842630,
         "Cover": "/assets/covers/appt1.jpg",
@@ -120,6 +147,7 @@
     
     {
         "Id": 1.01,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842631,
         "Cover": "/assets/covers/appt7.jpg",
@@ -236,8 +264,10 @@
             "ProcédureEnCours": "Aucune"
         }
     }, 
+
     {
         "Id": 1.02,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842632,
         "Cover": "/assets/covers/appt8.jpg",
@@ -358,6 +388,7 @@
 
     {
         "Id": 1.03,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842633,
         "Cover": "/assets/covers/appt9.jpg",
@@ -479,6 +510,7 @@
     
     {
         "Id": 1.04,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842634,
         "Cover": "/assets/covers/appt10.jpg",
@@ -599,6 +631,7 @@
     
     {
         "Id": 1.10,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842635,
         "Cover": "/assets/covers/mais1.jpg",
@@ -719,6 +752,7 @@
     
     {
         "Id": 1.11,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842636,
         "Cover": "/assets/covers/mais2.jpg",
@@ -839,6 +873,7 @@
     
     {
         "Id": 1.12,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842637,
         "Cover": "/assets/covers/mais3.jpg",
@@ -959,6 +994,7 @@
     
     {
         "Id": 1.13,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842638,
         "Cover": "/assets/covers/mais4.jpg",
@@ -1079,6 +1115,7 @@
     
     {
         "Id": 1.14,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 85842639,
         "Cover": "/assets/covers/mais5.jpg",
@@ -1199,6 +1236,7 @@
     
     {
         "Id": 2.00,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842630,
         "Cover": "/assets/covers/appt2.jpg",
@@ -1320,6 +1358,7 @@
     
     {
         "Id": 2.01,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842631,
         "Cover": "/assets/covers/appt3.jpg",
@@ -1441,6 +1480,7 @@
     
     {
         "Id": 2.02,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842632,
         "Cover": "/assets/covers/appt4.jpg",
@@ -1562,6 +1602,7 @@
     
     {
         "Id": 2.03,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842633,
         "Cover": "/assets/covers/appt5.jpg",
@@ -1683,6 +1724,7 @@
     
     {
         "Id": 2.04,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842634,
         "Cover": "/assets/covers/appt6.jpg",
@@ -1804,6 +1846,7 @@
     
     {
         "Id": 2.05,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842635,
         "Cover": "/assets/covers/appt11.jpg",
@@ -1926,6 +1969,7 @@
     {
         "Id": 2.06,
         "RefString": "Ref. ",
+        "NoRef": false,
         "RefNum": 75842636,
         "Cover": "/assets/covers/appt12.jpg",
         "Pictures": [
@@ -2046,6 +2090,7 @@
     
     {
         "Id": 2.07,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842637,
         "Cover": "/assets/covers/appt13.jpg",
@@ -2167,6 +2212,7 @@
     
     {
         "Id": 2.08,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842638,
         "Cover": "/assets/covers/appt14.jpg",
@@ -2288,6 +2334,7 @@
     
     {
         "Id": 2.09,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 75842639,
         "Cover": "/assets/covers/appt15.jpg",
@@ -2409,6 +2456,7 @@
     
     {
         "Id": 3.00,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842630,
         "Cover": "/assets/covers/loc1.jpg",
@@ -2530,6 +2578,7 @@
     
     {
         "Id": 3.01,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842631,
         "Cover": "/assets/covers/loc2.jpg",
@@ -2651,6 +2700,7 @@
     
     {
         "Id": 3.02,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842632,
         "Cover": "/assets/covers/loc3.jpg",
@@ -2772,6 +2822,7 @@
     
     {
         "Id": 3.03,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842633,
         "Cover": "/assets/covers/loc4.jpg",
@@ -2893,6 +2944,7 @@
     
     {
         "Id": 3.04,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842634,
         "Cover": "/assets/covers/loc5.jpg",
@@ -3014,6 +3066,7 @@
     
     {
         "Id": 3.05,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 65842635,
         "Cover": "/assets/covers/loc6.jpg",
@@ -3135,6 +3188,7 @@
     
     {
         "Id": 4.00,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 55842630,
         "Cover": "/assets/covers/park1.jpg",
@@ -3256,6 +3310,7 @@
     
     {
         "Id": 4.01,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 55842631,
         "Cover": "/assets/covers/gar2.jpg",
@@ -3377,6 +3432,7 @@
     
     {
         "Id": 4.02,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 55842632,
         "Cover": "/assets/covers/gar1.jpg",
@@ -3498,6 +3554,7 @@
     
     {
         "Id": 4.03,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 55842632,
         "Cover": "/assets/covers/gar3.jpg",
@@ -3619,6 +3676,7 @@
     
     {
         "Id": 5.00,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 45842630,
         "Cover": "/assets/covers/chal1.jpg",
@@ -3740,6 +3798,7 @@
     
     {
         "Id": 5.01,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 45842631,
         "Cover": "/assets/covers/chal2.jpg",
@@ -3861,6 +3920,7 @@
     
     {
         "Id": 5.02,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 45842632,
         "Cover": "/assets/covers/chal3.jpg",
@@ -3982,6 +4042,7 @@
     
     {
         "Id": 5.03,
+        "NoRef": false,
         "RefString": "Ref. ",
         "RefNum": 45842633,
         "Cover": "/assets/covers/chal4.jpg",

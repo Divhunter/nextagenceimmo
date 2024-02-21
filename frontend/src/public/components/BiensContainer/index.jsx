@@ -19,12 +19,12 @@ const BiensContainer = () => {
 
   const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id))
 
-  const isVenteAvailable = biensArray.some((bien) => bien.Opérations === "Vente" && sortedIDsArray.includes(bien.Id));
+  const isVenteAvailable = biensArray.some((bien) => bien.Opérations === "Vente" && sortedIDsArray.includes(bien.Id))
 
   const [selectedTypeLocation, setSelectedTypeLocation] = useState('')
 
   const filteredBiens = biensArray.filter((bien) => {
-    return selectedTypeLocation === '' || (bien.TypesL ?? '').includes(selectedTypeLocation);
+    return selectedTypeLocation === '' || (bien.TypesL ?? '').includes(selectedTypeLocation)
   })  
   
   useEffect(() => {

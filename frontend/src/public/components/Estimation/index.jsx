@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
+import biensArray from '../../datas/biensArray.json'
 import logoEstimation from '../../assets/pictures/logo-estimation.png'
 
 // styles
@@ -17,6 +18,8 @@ const Estimation = () => {
     const estimationHeader = pagesHeadersArray.find(el => el.title === "3")
     const estimationHeaderArray = []
     estimationHeaderArray.push(estimationHeader)
+
+    const clientNoRef2 = biensArray.filter((item) => item.NoRef)
 
 	return (
 		<section 
@@ -50,10 +53,10 @@ const Estimation = () => {
                             <p>Formulaire de pré-estimation</p>
                         </div>
                     }
-                    button={
-                        <Contact to='/Contact'>
-                            <p className='button estimation-button'>Contactez un conseil</p>
-                        </Contact>
+                    button={clientNoRef2.map((item, Id) => (
+                        <Contact key={Id} to={`/Contact/${item.Id}`}>
+                            <p className='button'>Contactez-nous</p>
+                        </Contact>))
                     }
                 />
             ))}

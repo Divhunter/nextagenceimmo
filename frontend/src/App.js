@@ -94,7 +94,7 @@ const App = () => {
             <Routes>
                 <Route exact path='/*' element={ <PublicRouter /> } />
                 <Route path='/dashboard/*' element={ <AdminRouter /> } />
-                <Route path='/Contact' element={ <Contact /> } />
+                <Route path='/Contact/:Id' element={ <Contact /> } />
                 <Route path='/biensContainer' element={ <BiensContainer /> } />
                 <Route path='/biensCard/:Id' element={<BiensCard />} />
                 <Route path='/CGU' element={ <CGU /> } />

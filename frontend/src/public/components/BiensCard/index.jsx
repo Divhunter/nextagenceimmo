@@ -15,7 +15,7 @@ import './d-biensCard.css'
 const BiensCard = () => {
 
     useEffect(() => {
-        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
     }, [])
 
     const navigate = useNavigate();
@@ -119,8 +119,8 @@ const BiensCard = () => {
         )
     }
 
-    const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id))
-
+    const isVente = card.Opérations.includes("Vente")
+   
     return card ? (
         <>
             <section className='biensCard'>
@@ -505,7 +505,7 @@ const BiensCard = () => {
                     </div>
                 </article>
                 <div className='biensCard-button-container'>
-                    {!isLocationAvailable && 
+                    {isVente &&
                         <Contact to='https://www.matchcredit.fr/calculette/mensualite-credit-immobilier'>
                             <p className='button biensCard-button-container__simulateur'>
                                 Simulateur&nbsp;
@@ -513,9 +513,9 @@ const BiensCard = () => {
                                     icon={faCalculator}
                                 />
                             </p>
-                        </Contact>
+                        </Contact> 
                     }
-                    <Contact to='/Contact'>
+                    <Contact to={`/Contact/${Id}`}>
                         <p className='button biensCard-button-container__contact'>Contactez-nous</p>
                     </Contact>
                 </div>

@@ -1,6 +1,7 @@
 import { Link as Contact } from "react-router-dom"
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
+import biensArray from '../../datas/biensArray.json'
 import couple from '../../assets/pictures/couple.jpg'
 import logoDrapeau from '../../assets/pictures/logo-drapeau.png'
 
@@ -13,6 +14,8 @@ const About = () => {
     const aboutHeader = pagesHeadersArray.find(el => el.title === "1") 
     const aboutHeaderArray = []
     aboutHeaderArray.push(aboutHeader)
+
+    const clientNoRef1 = biensArray.filter((item) => item.NoRef)
 
 	return (
 		<section 
@@ -42,10 +45,10 @@ const About = () => {
                         </div>
                     }
                     subTitle2={item.subTitle2}
-                    button={
-                        <Contact to='/Contact'>
+                    button={clientNoRef1.map((item, Id) => (
+                        <Contact key={Id} to={`/Contact/${item.Id}`}>
                             <p className='button'>Contactez-nous</p>
-                        </Contact>
+                        </Contact>))
                     }
                     text1={
                         <div id='containerAbout' className='containerAbout'>

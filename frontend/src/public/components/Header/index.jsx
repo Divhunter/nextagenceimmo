@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll'
 import { Link as Home, Link as Contact } from "react-router-dom"
 import { useState, useEffect } from 'react'
+import biensArray from '../../datas/biensArray.json'
 import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
@@ -31,6 +32,8 @@ const Header = (props) => {
 		window.scrollTo(0, 0)
 	}
 	
+	const clientNoRef0 = biensArray.filter((item) => item.NoRef)
+
 	return (
 		<>
 			<nav id='navbar' className={	
@@ -123,9 +126,11 @@ const Header = (props) => {
 					<Link to='docs'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Documments utiles</p>
 					</Link>
-					<Contact to='/Contact'>
-						<p onClick={isOpenState} className='navbar__menu__text'>Contact</p>
-					</Contact>
+					{clientNoRef0.map((item, Id) => (
+                    	<Contact key={Id} to={`/Contact/${item.Id}`}>
+							<p onClick={isOpenState} className='navbar__menu__text'>Contact</p>
+						</Contact>))
+                    }
 				</menu> 
 			</nav>
 			<div 
