@@ -119,6 +119,8 @@ const BiensCard = () => {
         )
     }
 
+    const isLocationAvailable = biensArray.some((bien) => bien.Opérations === "Location" && sortedIDsArray.includes(bien.Id))
+
     return card ? (
         <>
             <section className='biensCard'>
@@ -503,14 +505,16 @@ const BiensCard = () => {
                     </div>
                 </article>
                 <div className='biensCard-button-container'>
-                    <Contact to='https://www.matchcredit.fr/calculette/mensualite-credit-immobilier'>
-                        <p className='button biensCard-button-container__simulateur'>
-                            Simulateur&nbsp;
-                            <FontAwesomeIcon
-								icon={faCalculator}
-							/>
-                        </p>
-                    </Contact>
+                    {!isLocationAvailable && 
+                        <Contact to='https://www.matchcredit.fr/calculette/mensualite-credit-immobilier'>
+                            <p className='button biensCard-button-container__simulateur'>
+                                Simulateur&nbsp;
+                                <FontAwesomeIcon
+                                    icon={faCalculator}
+                                />
+                            </p>
+                        </Contact>
+                    }
                     <Contact to='/Contact'>
                         <p className='button biensCard-button-container__contact'>Contactez-nous</p>
                     </Contact>
