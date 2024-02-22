@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import biensArray from '../../datas/biensArray.json'
 import Footer from '../Footer'
-import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
-import lyon from '../../assets/pictures/lyon.jpg'
+import HeaderBanner from '../HeaderBanner'
 
 import './m-biensContainer.css'
 import './d-biensContainer.css'
@@ -40,27 +39,8 @@ const BiensContainer = () => {
   return (
     <>
       <section className='biensContainer'>
-        <div className='biensContainer__header'>
-          <Link to='/'>
-            <img
-              className='biensContainer__header__logo'
-              src={logoNAIS}
-              max-width='4123px'
-              max-height='1554px'
-              fetchpriority='high'
-              alt='logo de notre agence immo'
-            />
-          </Link>
-          <img
-            className='biensContainer__header__pic'
-            src={lyon}
-            max-width='2000px'
-            max-height='630px'
-            fetchpriority='high'
-            alt='ville de lyon panoramique'
-          />
-          <h1 className='biensContainer__header__message'>{resultMessage}</h1>
-        </div>
+        <HeaderBanner />
+        <h1 className='headerBanner__header__message'>{resultMessage}</h1>
 
         {/*Relatif à aucun bien trouvé*/}
 

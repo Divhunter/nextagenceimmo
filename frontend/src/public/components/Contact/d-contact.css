@@ -82,27 +82,19 @@
     /**********************************************************************************************/
     /******************************************** contact *****************************************/
     /**********************************************************************************************/
-
-    .contact__header {
-        width: 100%;
-        height: 6vw;
-        margin: 0;
-    }
-
-    .contact__header__logo {
-        position: absolute;
-        margin-top : 2vw;
-		margin-left: 5vw;
-		width: 8vw;
-		height: auto;
-        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
-        z-index: 1000;
+   
+    .content-contact {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     .containerContact {
+        position: relative;
         height: 127.6vw;
-        margin-top: -4.5vw;
+        margin-top: 5vw;
         margin-bottom: 4.5vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden;
     }
 
     .containerContact__text {

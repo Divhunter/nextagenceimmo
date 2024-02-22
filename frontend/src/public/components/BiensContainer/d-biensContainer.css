@@ -6,44 +6,9 @@
     /**********************************************************************************************/
     /**************************************** BiensContainer **************************************/
     /**********************************************************************************************/
+    
     .biensContainer {
         text-align: center;
-    }
-
-    .biensContainer__header {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    .biensContainer__header__pic {
-        width: 100%;
-        height: auto;
-        margin-bottom: -.3vw;
-        /*filter: brightness(60%);*/
-        opacity: 1;
-    }
-
-    .biensContainer__header__logo {
-        position: absolute;
-        margin-top : 2vw;
-		margin-left: 5vw;
-		width: 8vw;
-		height: auto;
-        filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
-        z-index: 1000;
-    }
-    
-    .biensContainer__header__message {
-        position: absolute;
-        top: 5vw;
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-family: 'Open', sans-serif;
-        color: white;
-        font-weight: 700;
-        font-size: 2.2vw;
-        letter-spacing: .2vw;
     }
 
     .biensContainer__vide {
