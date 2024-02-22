@@ -23,6 +23,7 @@ const Contact = () => {
     const contactHeaderArray = []
     contactHeaderArray.push(contactHeader)
 
+    const isNoRef = card.Opérations.includes('En attente')
     const isAchatContact = card.Opérations.includes('Achat')
     const isVenteContact = card.Opérations.includes('Vente')
     const isLocationContact = card.Opérations.includes('Location')
@@ -88,6 +89,11 @@ const Contact = () => {
                         }
                         <div className='containerContact'>
                             <div className='containerContact__text' >
+                                {isNoRef &&
+                                    <p className='containerContact__text__header'>
+                                        Estimation offerte dans le cadre d'une vente de bien
+                                    </p>
+                                }
                                 {isAchatContact &&
                                     <p className='containerContact__text__header'>
                                         Achat ref : {card.RefNum}
