@@ -86,14 +86,15 @@
     .content-contact {
         padding-left: 5vw;
         padding-right: 5vw;
+        margin-top: 3vw;
     }
 
     .containerContact {
         position: relative;
         height: 127.6vw;
-        margin-top: 5vw;
+        margin-top: 1vw;
         margin-bottom: 4.5vw;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         overflow: hidden;
     }
 
@@ -104,9 +105,10 @@
     }
 
     .containerContact__text__header {
-        font-size: 2.044vw;
+        font-family: 'Open', sans-serif;
+        font-size: 1.6vw;
         font-weight: 600;
-        line-height: 2.555vw;
+        line-height: 2vw;
     }
 
     .containerContact__text__form {
