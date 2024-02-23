@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import ScrollToTop from './functions/ScrollToTop'
 import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
@@ -24,13 +24,14 @@ import io from 'socket.io-client';
 
 const App = () => {
 
+    const [biensArray, setBiensArray] = useState([])
     const { projets, setProjets } = useContext(ProjectContext)
     const { isAuthenticated, isLoading } = useContext(AuthContext);
 
 
-    window.onload = () => {
-        window.scrollTo(0, 0)
-    }
+    useEffect(() => {
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [])
 
     // const sendNotifAndSound = (firstName) => {
     //     addNotification({

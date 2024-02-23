@@ -34,7 +34,6 @@ const Contact = () => {
 
     const navigate = useNavigate();
 
-
     const allOpérations = ['Achat', 'Location', 'Location saisonnière', 'Programme', 'Viager', 'Enchère']
     const isAnyOperationIncluded = allOpérations.some(operation => card.Opérations.includes(operation))
 

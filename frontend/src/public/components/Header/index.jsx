@@ -12,10 +12,10 @@ import background1 from '../../assets/pictures/group.jpg'
 import './m-header.css'
 import './d-header.css'
 
-const Header = (props) => {
+const Header = () => {
 
 	useEffect(() => {
-        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
     }, [])
 
 	const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +29,7 @@ const Header = (props) => {
     }
 
 	const scrollToTop = () => {
-		window.scrollTo(0, 0)
+		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
 	}
 	
 	const clientNoRef0 = biensArray.filter((item) => item.NoRef)

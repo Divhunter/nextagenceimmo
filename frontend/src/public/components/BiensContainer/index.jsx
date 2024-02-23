@@ -8,6 +8,7 @@ import './m-biensContainer.css'
 import './d-biensContainer.css'
 
 const BiensContainer = () => {
+  
   const [resultMessage, setResultMessage] = useState('')
 
   // Récupération du tableau sortedIDsArray à partir du localStorage
