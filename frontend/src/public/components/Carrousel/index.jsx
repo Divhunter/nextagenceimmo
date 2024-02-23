@@ -1,4 +1,3 @@
-import biensArray from '../../datas/biensArray.json'
 import { useParams } from 'react-router-dom'
 import { useState } from "react"
 import arrow from '../../assets/pictures/arrow.png'
@@ -8,6 +7,8 @@ import './d-carrousel.css'
 
 // Définition du Carrousel
 const Carrousel = () => {
+
+	const biensArray = JSON.parse(localStorage.getItem('biensArray'))
 
 	// Récupération de la fiche correspondante 
 	const { Id } = useParams()

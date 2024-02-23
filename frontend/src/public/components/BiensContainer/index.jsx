@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import biensArray from '../../datas/biensArray.json'
 import Footer from '../Footer'
 import HeaderBanner from '../HeaderBanner'
 
@@ -10,6 +9,8 @@ import './d-biensContainer.css'
 const BiensContainer = () => {
   
   const [resultMessage, setResultMessage] = useState('')
+
+  const biensArray = JSON.parse(localStorage.getItem('biensArray'))
 
   // Récupération du tableau sortedIDsArray à partir du localStorage
   const sortedIDsArray = JSON.parse(localStorage.getItem('sortedIDsArray')) || []

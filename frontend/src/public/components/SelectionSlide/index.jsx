@@ -1,8 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
-import axios from "axios"
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
@@ -11,27 +8,9 @@ import 'slick-carousel/slick/slick-theme.css'
 import './m-selectionSlide.css'
 import './d-selectionSlide.css'
 
-// ...
-
 const SelectionSlide = () => {
-  const navigate = useNavigate()
 
-  const [selectionArray, setSelectionArray] = useState([])
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const res = await axios.get("/datas/biensArray.json")
-        setSelectionArray(res.data) // Stockage de tous les éléments dans selectionArray
-      } catch (error) {
-        console.error("Une erreur s'est produite lors de la récupération des données.", error)
-        navigate("/Error", { state: { message: "Nous ne pouvons pas récupérer les données" } })
-      }
-    };
-
-    getData()
-    // eslint-disable-next-line
-  }, [])
+  const selectionArray = JSON.parse(localStorage.getItem('biensArray'))
 
   const settings = {
     dots: false,
@@ -39,9 +18,9 @@ const SelectionSlide = () => {
     speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
-  }
+  };
 
-  const selectedItems = selectionArray.filter((item) => item.Selection === true)
+  const selectedItems = selectionArray.filter((item) => item.Selection === true);
 
   return (
     <div className='selection-slide'>

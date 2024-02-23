@@ -378,7 +378,7 @@ const FormulaireRecherche = () => {
       resetSelection(prix, setPrix, selectAllPrix, setSelectAllPrix, [])
   
       // Récupération du tableau depuis le localStorage
-      const selectionArray = require('../../public/datas/biensArray.json')
+      const selectionArray = JSON.parse(localStorage.getItem('biensArray'))
       const selectedOptionsArray = JSON.parse(localStorage.getItem('selectedOptionsArray'))
   
       // Filtre des options sélectionnées

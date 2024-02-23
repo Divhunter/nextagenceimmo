@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
-import biensArray from '../../datas/biensArray.json'
 import logoEstimation from '../../assets/pictures/logo-estimation.png'
 
 // styles
@@ -14,6 +13,8 @@ import './d-estimation.css'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const Estimation = () => {
+
+    const biensArray = JSON.parse(localStorage.getItem('biensArray'))
 
     const estimationHeader = pagesHeadersArray.find(el => el.title === "3")
     const estimationHeaderArray = []

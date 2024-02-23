@@ -1,4 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
+import { useNavigate } from "react-router-dom"
+import axios from "axios"
 import ScrollToTop from './functions/ScrollToTop'
 import { Routes, Route } from 'react-router-dom'
 import PublicRouter from './public/PublicRouter'
@@ -28,9 +30,26 @@ const App = () => {
     const { projets, setProjets } = useContext(ProjectContext)
     const { isAuthenticated, isLoading } = useContext(AuthContext);
 
+    const navigate = useNavigate()
+
+    const [selectionArray, setSelectionArray] = useState([]);
 
     useEffect(() => {
-        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        const getData = async () => {
+        try {
+            const res = await axios.get('/datas/biensArray.json');
+            setSelectionArray(res.data)
+
+            // Sauvegarder dans le local storage
+            localStorage.setItem('biensArray', JSON.stringify(res.data))
+        } catch (error) {
+            console.error("Une erreur s'est produite lors de la récupération des données.", error)
+            navigate('/Error', { state: { message: "Nous ne pouvons pas récupérer les données" } })
+        }
+        }
+
+        getData()
+        // eslint-disable-next-line
     }, [])
 
     // const sendNotifAndSound = (firstName) => {

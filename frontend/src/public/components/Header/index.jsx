@@ -1,7 +1,6 @@
 import { Link } from 'react-scroll'
 import { Link as Home, Link as Contact } from "react-router-dom"
 import { useState, useEffect } from 'react'
-import biensArray from '../../datas/biensArray.json'
 import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
@@ -13,6 +12,8 @@ import './m-header.css'
 import './d-header.css'
 
 const Header = () => {
+
+	const biensArray = JSON.parse(localStorage.getItem('biensArray'))
 
 	useEffect(() => {
         document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })

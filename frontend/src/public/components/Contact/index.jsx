@@ -5,7 +5,6 @@ import Footer from '../Footer'
 import HeaderBanner from '../HeaderBanner'
 import woman from '../../assets/pictures/woman.png'
 import ContactForm from '../../../functions/ContactForm'
-import biensArray from '../../datas/biensArray.json'
 import { faPrint, faEnvelope, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -14,6 +13,8 @@ import './m-contact.css'
 import './d-contact.css'
 
 const Contact = () => {
+
+    const biensArray = JSON.parse(localStorage.getItem('biensArray'))
 
     // Récupération de la fiche correspondante
 	const { Id } = useParams()

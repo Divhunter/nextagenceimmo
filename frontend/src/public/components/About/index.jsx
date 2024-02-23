@@ -1,7 +1,6 @@
 import { Link as Contact } from "react-router-dom"
 import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../../components/PagesHeaders'
-import biensArray from '../../datas/biensArray.json'
 import couple from '../../assets/pictures/couple.jpg'
 import logoDrapeau from '../../assets/pictures/logo-drapeau.png'
 
@@ -10,6 +9,8 @@ import './m-about.css'
 import './d-about.css'
 
 const About = () => { 
+
+    const biensArray = JSON.parse(localStorage.getItem('biensArray'))
     
     const aboutHeader = pagesHeadersArray.find(el => el.title === "1") 
     const aboutHeaderArray = []
