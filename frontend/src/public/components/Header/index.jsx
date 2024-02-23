@@ -55,7 +55,7 @@ const Header = () => {
 
 				<div className='container-button'>
 					<Link to='selection__container'>
-						<button 
+						<button onClick={() => setIsOpen(false)} 
 							className='nav__menu__button nav__menu__filtre'
 						> 
 							<FontAwesomeIcon
