@@ -32,7 +32,7 @@
         "RefNum": 85842630,
         "Cover": "/assets/covers/appt1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -78,7 +78,7 @@
             "ToilettesNb": null,
             "CaveSurface": null,
             "CaveNb": null,
-            "GarageSurafecParkinSurface": null,
+            "GarageSurfaceParkinSurface": null,
             "GarageNbParkingNb": null
         },
         "Prestations": {   
@@ -97,7 +97,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -152,7 +154,7 @@
         "RefNum": 85842631,
         "Cover": "/assets/covers/appt7.jpg",
         "Pictures": [
-            "/assets/pictures/appt7/pic0-appt7.jpg",
+            "/assets/covers/appt7.jpg",
             "/assets/pictures/appt7/pic1-appt7.jpg",
             "/assets/pictures/appt7/pic2-appt7.jpg",
             "/assets/pictures/appt7/pic3-appt7.jpg",
@@ -198,7 +200,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -217,7 +219,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -272,7 +276,7 @@
         "RefNum": 85842632,
         "Cover": "/assets/covers/appt8.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt8.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -319,7 +323,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -338,7 +342,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -393,7 +399,7 @@
         "RefNum": 85842633,
         "Cover": "/assets/covers/appt9.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt9.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -441,7 +447,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -460,7 +466,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -515,7 +523,7 @@
         "RefNum": 85842634,
         "Cover": "/assets/covers/appt10.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt10.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -562,7 +570,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -581,7 +589,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -636,7 +646,7 @@
         "RefNum": 85842635,
         "Cover": "/assets/covers/mais1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/mais1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -683,7 +693,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -702,7 +712,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -757,7 +769,7 @@
         "RefNum": 85842636,
         "Cover": "/assets/covers/mais2.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/mais2.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -804,7 +816,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -823,7 +835,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -878,7 +892,7 @@
         "RefNum": 85842637,
         "Cover": "/assets/covers/mais3.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/mais3.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -925,7 +939,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -944,7 +958,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -999,7 +1015,7 @@
         "RefNum": 85842638,
         "Cover": "/assets/covers/mais4.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/mais4.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1046,7 +1062,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1065,7 +1081,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1120,7 +1138,7 @@
         "RefNum": 85842639,
         "Cover": "/assets/covers/mais5.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/mais5.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1167,7 +1185,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1186,7 +1204,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1241,7 +1261,7 @@
         "RefNum": 75842630,
         "Cover": "/assets/covers/appt2.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt2.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1289,7 +1309,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1308,7 +1328,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1363,7 +1385,7 @@
         "RefNum": 75842631,
         "Cover": "/assets/covers/appt3.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt3.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1411,7 +1433,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1430,7 +1452,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1485,7 +1509,7 @@
         "RefNum": 75842632,
         "Cover": "/assets/covers/appt4.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt4.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1533,7 +1557,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1552,7 +1576,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1607,7 +1633,7 @@
         "RefNum": 75842633,
         "Cover": "/assets/covers/appt5.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt5.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1655,7 +1681,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1674,7 +1700,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1729,7 +1757,7 @@
         "RefNum": 75842634,
         "Cover": "/assets/covers/appt6.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt6.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1777,7 +1805,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1796,7 +1824,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1851,7 +1881,7 @@
         "RefNum": 75842635,
         "Cover": "/assets/covers/appt11.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt11.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -1899,7 +1929,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -1918,7 +1948,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -1973,7 +2005,7 @@
         "RefNum": 75842636,
         "Cover": "/assets/covers/appt12.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt12.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2021,7 +2053,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2040,7 +2072,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2095,7 +2129,7 @@
         "RefNum": 75842637,
         "Cover": "/assets/covers/appt13.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt13.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2143,7 +2177,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2162,7 +2196,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2217,7 +2253,7 @@
         "RefNum": 75842638,
         "Cover": "/assets/covers/appt14.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt14.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2265,7 +2301,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2284,7 +2320,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2339,7 +2377,7 @@
         "RefNum": 75842639,
         "Cover": "/assets/covers/appt15.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/appt15.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2387,7 +2425,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2406,7 +2444,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2461,7 +2501,7 @@
         "RefNum": 65842630,
         "Cover": "/assets/covers/loc1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2509,7 +2549,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2528,7 +2568,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2583,7 +2625,7 @@
         "RefNum": 65842631,
         "Cover": "/assets/covers/loc2.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc2.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2631,7 +2673,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2650,7 +2692,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2705,7 +2749,7 @@
         "RefNum": 65842632,
         "Cover": "/assets/covers/loc3.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc3.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2753,7 +2797,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2772,7 +2816,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2827,7 +2873,7 @@
         "RefNum": 65842633,
         "Cover": "/assets/covers/loc4.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc4.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2875,7 +2921,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -2894,7 +2940,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -2949,7 +2997,7 @@
         "RefNum": 65842634,
         "Cover": "/assets/covers/loc5.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc5.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -2997,7 +3045,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3016,7 +3064,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3071,7 +3121,7 @@
         "RefNum": 65842635,
         "Cover": "/assets/covers/loc6.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/loc6.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3119,7 +3169,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3138,7 +3188,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3193,7 +3245,7 @@
         "RefNum": 55842630,
         "Cover": "/assets/covers/park1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/park1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3241,7 +3293,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3260,7 +3312,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3315,7 +3369,7 @@
         "RefNum": 55842631,
         "Cover": "/assets/covers/gar2.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/gar2.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3363,7 +3417,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3382,7 +3436,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3437,7 +3493,7 @@
         "RefNum": 55842632,
         "Cover": "/assets/covers/gar1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/gar1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3485,7 +3541,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3504,7 +3560,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3559,7 +3617,7 @@
         "RefNum": 55842632,
         "Cover": "/assets/covers/gar3.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/gar3.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3607,7 +3665,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3626,7 +3684,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3681,7 +3741,7 @@
         "RefNum": 45842630,
         "Cover": "/assets/covers/chal1.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/chal1.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3729,7 +3789,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3748,7 +3808,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3803,7 +3865,7 @@
         "RefNum": 45842631,
         "Cover": "/assets/covers/chal2.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/chal2.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3851,7 +3913,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3870,7 +3932,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -3925,7 +3989,7 @@
         "RefNum": 45842632,
         "Cover": "/assets/covers/chal3.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/chal3.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -3973,7 +4037,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -3992,7 +4056,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",
@@ -4047,7 +4113,7 @@
         "RefNum": 45842633,
         "Cover": "/assets/covers/chal4.jpg",
         "Pictures": [
-            "/assets/pictures/appt1/pic0-appt1.jpg",
+            "/assets/covers/chal4.jpg",
             "/assets/pictures/appt1/pic1-appt1.jpg",
             "/assets/pictures/appt1/pic2-appt1.jpg",
             "/assets/pictures/appt1/pic3-appt1.jpg",
@@ -4095,7 +4161,7 @@
             "ToilettesNb": 1,
             "CaveSurface": "nc",
             "CaveNb": 1,
-            "GarageSurafecParkinSurface": "nc",
+            "GarageSurfaceParkinSurface": "nc",
             "GarageNbParkingNb": 1
         },
         "Prestations": {   
@@ -4114,7 +4180,9 @@
             "LingeDeMaison": null,
             "PlaqueDeCuisson": null,
             "Réfrigérateur": null,
-            "Vaisselle": null
+            "Vaisselle": null,       
+            "PortailElectrique":null,
+            "AccèsHandicapé":null
         },
         "Proximités": {      
             "Bus": "Bus",

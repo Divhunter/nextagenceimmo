@@ -91,7 +91,7 @@ const Contact = () => {
                             <div className='containerContact__text' >
                                 {isNoRef &&
                                     <p className='containerContact__text__header'>
-                                        Estimation offerte dans le cadre d'une vente de bien
+                                        Estimation offerte
                                     </p>
                                 }
                                 {isAchatContact &&
@@ -138,6 +138,7 @@ const Contact = () => {
                 : 
                 < Navigate replace to ="/Error" />
             }
+            <br/><br/>
             <Footer />
         </>
 	)

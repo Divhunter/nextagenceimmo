@@ -500,9 +500,6 @@ const BiensCard = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/*<div className='biensCard__content__text__form'>
-
-                        </div>*/}
                     </div>
                 </article>
                 <div className='biensCard-button-container'>
