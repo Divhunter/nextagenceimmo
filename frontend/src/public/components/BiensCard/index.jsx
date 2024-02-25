@@ -236,15 +236,16 @@ const BiensCard = () => {
                                             </p>
                                         </header>
                                         {generateSurfaces("Pièce(s) de vie", card.Surfaces.PièceDeVieNb, card.Surfaces.PièceDeVieSurface)}
-                                        {generateSurfaces("Entré", card.Surfaces.EntréeNb, card.Surfaces.EntréeSurface)}
-                                        {generateSurfaces("Séjour / cuisine", card.Surfaces.SéjourNbCuisineNb, card.SéjourSurfaceCuisineSurface)}
-                                        {generateSurfaces("Balcon", card.Surfaces.BalconNb, card.Surfaces.BalconSurface)}
-                                        {generateSurfaces("Couloir", card.Surfaces.CouloirNb, card.Surfaces.CouloirSurface)}
-                                        {generateSurfaces("Chambre(s)", card.Surfaces.ChambresNb, card.Surfaces.ChambresSurface)}
-                                        {generateSurfaces("Salle(s) de bain", card.Surfaces.SalleDeBainNb, card.Surfaces.SalleDeBainSurface)}
-                                        {generateSurfaces("Toilette", card.Surfaces.ToilettesNb, card.Surfaces.ToilettesSurface)}
-                                        {generateSurfaces("Cave", card.Surfaces.CaveNb, card.Surfaces.CaveSurface)}
-                                        {generateSurfaces("Garage / Parking", card.Surfaces.GarageNbParkingNb, card.Surfaces.GarageSurafecParkinSurface)}
+                                        {generateSurfaces("Entré(s)", card.Surfaces.EntréeNb, card.Surfaces.EntréeSurface)}
+                                        {generateSurfaces("Séjour(s) - surface principale", card.Surfaces.SéjourNb, card.Surfaces.SéjourSurface)}
+                                        {generateSurfaces("Cuisine(s)", card.Surfaces.CuisineNb, card.Surfaces.CuisineSurface)}
+                                        {generateSurfaces("Balcon(s) - surface principale", card.Surfaces.BalconNb, card.Surfaces.BalconSurface)}
+                                        {generateSurfaces("Couloir(s)", card.Surfaces.CouloirNb, card.Surfaces.CouloirSurface)}
+                                        {generateSurfaces("Chambre(s) - surface principale", card.Surfaces.ChambresNb, card.Surfaces.ChambresSurface)}
+                                        {generateSurfaces("Salle(s) de bain - surface principale", card.Surfaces.SalleDeBainNb, card.Surfaces.SalleDeBainSurface)}
+                                        {generateSurfaces("Toilette(s)", card.Surfaces.ToilettesNb, card.Surfaces.ToilettesSurface)}
+                                        {generateSurfaces("Cave(s)", card.Surfaces.CaveNb, card.Surfaces.CaveSurface)}
+                                        {generateSurfaces("Garage(s) / Parking(s)", card.Surfaces.GarageNbParkingNb, card.Surfaces.GarageSurafecParkinSurface)}
                                     </div>
                                 </li>
                                 <li>
@@ -286,6 +287,8 @@ const BiensCard = () => {
                                         {generatePrestations(card.Prestations.PlaqueDeCuisson)}
                                         {generatePrestations(card.Prestations.Réfrigérateur)}
                                         {generatePrestations(card.Prestations.Vaisselle)}
+                                        {generatePrestations(card.Prestations.PortailElectrique)}
+                                        {generatePrestations(card.Prestations.AccèsHandicapé)}
                                     </div>
                                 </li>
                                 <li>
