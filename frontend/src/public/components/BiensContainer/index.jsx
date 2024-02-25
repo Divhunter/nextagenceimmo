@@ -25,7 +25,7 @@ const BiensContainer = () => {
   const [selectedTypeLocation, setSelectedTypeLocation] = useState('')
 
   const filteredBiens = biensArray.filter((bien) => {
-    return selectedTypeLocation === '' || (bien.TypesL ?? '').includes(selectedTypeLocation)
+    return selectedTypeLocation === '' || (bien.TypesL).includes(selectedTypeLocation)
   })  
   
   useEffect(() => {
