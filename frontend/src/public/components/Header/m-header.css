@@ -10,7 +10,7 @@
 
 .navbar-open {
 	background-color: rgb(6, 17, 22);
-	height: 126.4vw;
+	height: 170w;
 	transition: height .4s, background-color 1.5s;
 	overflow: hidden;
 	
