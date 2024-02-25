@@ -165,7 +165,7 @@ const BiensContainer = () => {
           <>
             <p className='biensContainer__contentAchat'>
               <strong>
-                Notre agence Immo vous accompagne dans vos projets immobilier. 
+                Next agence Immo vous accompagne dans vos projets immobilier. 
                 <br/>
                 Nos 2 agences situées à Lyon et Vénissieux disposent des derniers outils technologiques et de la meilleure couverture publicitaire du marché.
               </strong>

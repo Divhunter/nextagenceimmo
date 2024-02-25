@@ -118,9 +118,9 @@ const CGU = () => {
                 Comment voir ou supprimer mes données ?
             </h2>
             <p>
-                Raison Sociale : NOTREAGENCEIMMO
+                Raison Sociale : NEXTAGENCEIMMO
                 <br/><br/>
-                Adresse du siège social : 165 Rte de Vienne, 69008 Lyon - France
+                Adresse du siège social : 7 CRS Albert thomas, 69003 Lyon - France
                 <br/><br/>
                 Pour toute demande relative à vos données personnelles, vous pouvez nous contacter directement (via notre formulaire de contact) afin de consulter ou demander la suppression de ses données collectées. Nous vous répondrons dans un délai de 30 jours.
             </p>
