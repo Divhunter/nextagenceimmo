@@ -23,16 +23,16 @@ const Footer = () => {
     <section className='footer'>
       <h1>Suivez-nous</h1>
       <div className='footer__link'>
-        <Link to='https://www.facebook.com/Notreagenceimmolyon'>
+        <Link to='https://www.facebook.com/vowd.fr/'>
           <FontAwesomeIcon className='footer__link__icon icon-fb' icon={(fab, faFacebook)} />
         </Link>
-        <Link to='https://twitter.com/NotreAgenceImmo'>
+        <Link to=''>
           <FontAwesomeIcon className='footer__link__icon icon-tw' icon={(fab, faTwitter)} />
         </Link>
-        <Link to='https://www.linkedin.com/company/notre-agence-immo/about/'>
+        <Link to='https://fr.linkedin.com/in/aaron-divioka-vowd-56258248'>
           <FontAwesomeIcon className='footer__link__icon icon-lk' icon={(fab, faLinkedin)} />
         </Link>
-        <Link to='/'>
+        <Link to='https://www.instagram.com/vowd_france/'>
           <FontAwesomeIcon className='footer__link__icon icon-gh' icon={(fab, faInstagram)} />
         </Link>
       </div>
@@ -47,24 +47,24 @@ const Footer = () => {
 				/>
       </Link>
       <p className='footer__logo-info'>
-        NOTRE AGENCE IMMO
+        NEXT AGENCE IMMO
         <br/>
-        Numéro SIRET : 40223003100021
+        Numéro SIRET : 94994281700014
         <br/>
-        Tél : 04 72 76 33 44
+        Tél : 04 27 11 59 13
         <br/>
-        https://www.Notreagenceimmo.com
+        nextagenceimmo.com
         <br/>
         <span>
           <a 
-            href='mailto:accueil@notreagenceimmo.com'
+            href='mailto:vowd-sv@outlook.fr'
             className='mail-link'
           >
-              accueil@notreagenceimmo.com
+              accueil@nextagenceimmo.com
           </a>
         </span>
         <br/>
-        165 Rte de Vienne, 69008 Lyon
+        7 CRS Albert Thomas, 69003 Lyon
       </p><div className='footer__partenaires'>
         <img 
           className='footer__partenaires__logo'
@@ -157,7 +157,7 @@ const Footer = () => {
       </div>
       <div className='footer__copyright'>
           <p>
-              © Notreagenceimmo - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
+              © Nextagenceimmo - Tous droits réservés - <Link className='footer__copyright__link' to='/cgu'>Mentions légales</Link> - 2023 - conception web vowd.fr
           </p>
       </div>	
     </section>

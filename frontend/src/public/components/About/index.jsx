@@ -58,11 +58,11 @@ const About = () => {
                                     La clé de vos projets immo !
                                 </span>
                                 <br/><br/>
-                                À Lyon depuis plus d'une décennie, NOTRE AGENCE IMMO s'est affirmée comme le partenaire de confiance pour tous vos projets immobiliers en région Rhône-Alpes. Notre devise, "La clé de vos projets immo", reflète notre engagement à rendre vos rêves immobiliers accessibles et réalisables.
+                                À Lyon depuis plus d'une décennie, NEXT AGENCE IMMO s'est affirmée comme le partenaire de confiance pour tous vos projets immobiliers en région Rhône-Alpes. Notre devise, "La clé de vos projets immo", reflète notre engagement à rendre vos rêves immobiliers accessibles et réalisables.
                                 <br/><br/>
                                 Nous suivons assidûment l'évolution dynamique du marché immobilier avec passion et expertise. Notre équipe dévouée, composée d'experts locaux, possède une connaissance approfondie du marché lyonnais et de ses environs. Que vous envisagiez d'acheter, de vendre ou de gérer votre patrimoine immobilier, nous sommes là pour vous guider à chaque étape.
                                 <br/><br/>
-                                Chez NOTRE AGENCE IMMO, nous comprenons l'importance des outils technologiques de pointe dans le secteur immobilier moderne. Nous investissons constamment dans les dernières technologies pour offrir à nos clients une expérience transparente et efficace. Nous bénéficions, par ailleurs, de la meilleure couverture publicitaire du marché, assurant une visibilité maximale pour vos biens.
+                                Chez NEXT AGENCE IMMO, nous comprenons l'importance des outils technologiques de pointe dans le secteur immobilier moderne. Nous investissons constamment dans les dernières technologies pour offrir à nos clients une expérience transparente et efficace. Nous bénéficions, par ailleurs, de la meilleure couverture publicitaire du marché, assurant une visibilité maximale pour vos biens.
                                 <br/><br/>
                                 Ici, nous ne vendons pas simplement des propriétés, nous créons des opportunités et réalisons des rêves. Ouvrons la porte à vos projets...
                                 <br/><br/>

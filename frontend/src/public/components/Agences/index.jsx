@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const Agences = () => {
 
-    const redirection = 'https://www.google.fr/maps/place/NOTRE+AGENCE+IMMO/@45.7341047,4.8512631,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ea1a7d100001:0xed0c061d8a46da0c!8m2!3d45.734101!4d4.853838!16s%2Fg%2F11gd215m_z?entry=ttu'
+    const redirection = 'https://www.google.com/maps/place/Vowd.Fr/@45.7491953,4.8617687,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebe1b7fe5f39:0xec44f2a4ee0eef69!8m2!3d45.7491953!4d4.8617687!16s%2Fg%2F11l59mq2zh?entry=ttu'
     
     const agencesHeader = pagesHeadersArray.find(el => el.title === "4")
     const agencesHeaderArray = []
@@ -91,16 +91,16 @@ const Agences = () => {
                                     <div 
                                         className='containerOffice__bloc__office__text__content'
                                         >
-                                        <p><strong>NOTRE AGENCE IMMO</strong></p>
+                                        <p><strong>NEXT AGENCE IMMO</strong></p>
                                         <p>standard</p>
-                                        <p>04 72 76 33 44</p>
+                                        <p>04 27 11 59 13 44</p>
                                         <p>
-                                            <a href='mailto:accueil@notreagenceimmo.com'>accueil@notreagenceimmo.com</a>
+                                            <a href='mailto:vowd-sv@outlook.com'>accueil@nextagenceimmo.com</a>
                                         </p>
                                         <p  
                                             className='agences-adress'
                                         >
-                                            <a href={redirection}>165 Rte de Vienne, 69008 Lyon</a>
+                                            <a href={redirection}>7 CRS Albert Thoms - 69003 Lyon</a>
                                         </p>
                                         <div className='sep'></div>
                                     </div>

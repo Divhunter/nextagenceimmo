@@ -12,45 +12,45 @@ const AgencesSlide = () => {
     const slideText = [
         {
             title: "DIRIGEANTS",
-            name: "Aurélien DELANDREA",
+            name: "Aaron DIVIOKA",
             role: "Directeur général associé",
-            email: "aurelien.delandrea@notreagenceimmo.com",
-            name2: "Sophie EYRAUD",
+            email: "vowd-sv@outlook.com",
+            name2: "Monique DIVIOKA",
             role2: "Directrice générale associée",
-            email2: "sophie.eyraud@notreagenceimmo.com"
+            email2: "vowd-sv@outlook.com"
         },
         {
             title:"SERVICE GESTION",
-            name: "François BRUNET",
+            name: "Pierre DIVIOKA",
             role: "Assistant de gestion",
-            email: "accueil@notreagenceimmo.com",
-            name2: "Andréa FAUCONNET",
+            email: "vowd-sv@outlook.com",
+            name2: "Samuel DIVIOKA",
             role2: "Gestionnaire locative",
-            email2: "andrea.fauconnet@notreagenceimmo.com",
-            name3: "Johanna SERRES",
+            email2: "vowd-sv@outlook.com",
+            name3: "David DIVIOKA",
             role3: "Gestionnaire locative",
-            email3: "johanna.serres@notreagenceimmo.com",
-            name4: "Hugues EYRAUD",
+            email3: "vowd-sv@outlook.com",
+            name4: "Isaak DE LAFAUSSE",
             role4: "Gestionnaire technique",
-            email4: "hugues.eyraud@notreagenceimmo.com",
-            name5: "Micaël FARIA",
+            email4: "vowd-sv@outlook.com",
+            name5: "Piero DE LAFAUSSE",
             role5: "Gestionnaire technique",
-            email5: "micael.faria@notreagenceimmo.com"
+            email5: "vowd-sv@outlook.com"
         },
         {
             title:"SERVICE LOCATION",
-            name: "Morgane LE BOZEC",
+            name: "Noam DIVIOKA",
             role: "Conseillère location",
-            email: "morgane.lebozec@notreagenceimmo.com",
-            name2: "Adrien RAYMOND",
+            email: "vowd-sv@outlook.com",
+            name2: "Eden DIVIOKA",
             role2: "Conseiller location",
-            email2: "adrien.raymond@notreagenceimmo.com"
+            email2: "vowd-sv@outlook.com"
         },
         {
             title:"SERVICE TRANSACTION",
-            name: "Hugues EYRAUD",
+            name: "Yoni DIVIOKA",
             role: "Directeur commercial",
-            email: "hugues.eyraud@notreagenceimmo.com"
+            email: "vowd-sv@outlook.com"
         }
     ]
 
