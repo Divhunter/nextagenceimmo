@@ -3821,7 +3821,7 @@
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
         "Opérations": "Location saisonnière",
-        "TypesL": null,
+        "TypesL": "Meublé",
         "NombreP": "3 pièces",
         "Localisations": "Alpes *Nouveau",
         "Fourchette": "1000-1500",
@@ -3947,7 +3947,7 @@
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
         "Opérations": "Location saisonnière",
-        "TypesL": null,
+        "TypesL": "Meublé",
         "NombreP": "4 pièces",
         "Localisations": "Alpes *Nouveau",
         "Fourchette": "1000-1500",
@@ -4073,7 +4073,7 @@
             "/assets/pictures/appt1/pic4-appt1.jpg"
         ],
         "Opérations": "Location saisonnière",
-        "TypesL": null,
+        "TypesL": "Meublé",
         "NombreP": "2 pièces",
         "Localisations": "Alpes *Nouveau",
         "Fourchette": "500-1000",
