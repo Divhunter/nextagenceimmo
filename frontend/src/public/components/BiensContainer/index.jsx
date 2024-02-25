@@ -69,7 +69,7 @@ const BiensContainer = () => {
             <article className='biensContainer__select'>
               <label 
                 className='biensContainer__select__label' 
-                for="location-select">Affinez votre recherche :
+                htmlFor="location-select">Affinez votre recherche :
               </label>
               <br/><br/>
               <select 

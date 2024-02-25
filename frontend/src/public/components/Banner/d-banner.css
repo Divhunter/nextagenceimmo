@@ -15,12 +15,6 @@
     .banner__picture1 {
         display: none;
     }
-
-    .banner__logo-mutuact {
-        top: -20vw;
-        margin-top: -50vw;
-        width: 60vw;
-    }
 }
 
 /********************************************* media queries ************************************************/

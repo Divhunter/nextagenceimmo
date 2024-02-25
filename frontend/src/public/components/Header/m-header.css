@@ -34,16 +34,6 @@
 	z-index: -1;
 }
 
-.navbar__logoMutuactW {
-	display: none;
-	position: relative;
-	top: 5vw;
-	left: 7vw;
-	width: 9vw;
-	height: auto;
-	filter: brightness(130%);
-}
-
 .logo-hidden {
 	opacity: 0;
 }
@@ -318,12 +308,6 @@
 	
 	.navbar-open {
 		height: 56.43vw;
-	}
-
-	.navbar__logoMutuactW {
-		top: 1.6vw;
-		left: 5vw;
-		width: 6vw;
 	}
 
 	.navbar__button-x {

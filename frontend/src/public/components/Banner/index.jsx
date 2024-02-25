@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react'
 
 import bannerBackground from '../../assets/pictures/banner-background.jpg'
+import bannerBackgroundM from '../../assets/pictures/banner-background-m.jpg'
 import kies from '../../assets/pictures/kies.png'
+import kiesM from '../../assets/pictures/kies-m.png'
 import home from '../../assets/pictures/home.png'
-import businessWoman from '../../assets/pictures/business-woman.png'
+import homeM from '../../assets/pictures/home-m.png'
+import businessMan from '../../assets/pictures/business-man.png'
+import businessManM from '../../assets/pictures/business-man-m.png'
 import logoNAI2 from '../../assets/pictures/logo-notreagence-drapeau.png'
 
 // styles
@@ -26,23 +30,17 @@ const Banner = () => {
 		return () => clearTimeout(timer)
 	}, [currentState] )
 
-	/*const slideArray1 = [
+	const slideArray1 = [
 		{	
-			"img": `${img01}`
+			"img": `${kiesM}`
 		},
 		{	
-			"img": `${img11}`
+			"img": `${homeM}`
 		},
-		{
-			"img": `${img21}`
-		},
-		{
-			"img": `${img31}`
-		},
-		{
-			"img": `${img41}`,
+		{	
+			"img": `${businessManM}`
 		}
-	]*/
+	]
 
 	const slideArray2 = [
 		{	
@@ -52,7 +50,7 @@ const Banner = () => {
 			"img": `${home}`
 		},
 		{	
-			"img": `${businessWoman}`
+			"img": `${businessMan}`
 		}
 	]
 
@@ -63,6 +61,14 @@ const Banner = () => {
 				className='banner'
 			>
 				<img 
+					className='banner__banner-background-m' 
+					src={bannerBackgroundM} 
+					width='836px'
+					height='1383px'
+					fetchpriority='high' 
+					alt="background bleu sombre"
+				/>
+				<img 
 					className='banner__banner-background' 
 					src={bannerBackground} 
 					width='3472px'
@@ -71,19 +77,19 @@ const Banner = () => {
 					alt="background bleu sombre"
 				/>
 				<div>
-					{/*{slideArray1.map((items, index) => (
+					{slideArray1.map((items, index) => (
 						<div key={index}>
 							<img className={index === currentState ? 
 								'banner__picture1 banner__picture--in' : 
 								'banner__picture1 banner__picture--out'
 							}
 							src={items.img} 
-							width='720px'
-							height='1342px'
+							width='836px'
+							height='1383px'
 							fetchpriority='high' 
-							alt="photos paisible" />
+							alt="photos slide" />
 						</div>
-						))*/}
+						))}
 					{slideArray2.map((items, index) => (
 						<div key={index}>
 							<img className={index === currentState ? 
@@ -104,10 +110,6 @@ const Banner = () => {
 					de vos projets
 					<br />
 					<span className='banner__slogan__span-2'>immo</span>
-					{/*<br /> 
-					à portée de
-					<br />
-					vos mains*/}
 				</div>
 				<img 
 					className='banner__logo-nai2' 
