@@ -20,8 +20,8 @@ const About = () => {
     const clientNoRef0 = [];
 
 	biensArray.forEach((item) => {
-		if (item.NoRef) {
-		clientNoRef0.push(item);
+		if (item.NoRef === "En attente") {
+		clientNoRef0.push(item)
 		}
 	})
 
