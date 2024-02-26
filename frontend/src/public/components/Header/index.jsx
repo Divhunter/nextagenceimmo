@@ -34,13 +34,7 @@ const Header = () => {
 		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
 	}
 	
-	const clientNoRef0 = [];
-
-	biensArray.forEach((item) => {
-		if (item.NoRef === "En attente") {
-		clientNoRef0.push(item)
-		}
-	})
+	const clientNoRef = biensArray.filter((item) => item.NoRef)
 
 	return (
 		<>
@@ -134,7 +128,7 @@ const Header = () => {
 					<Link to='docs'>
 						<p onClick={isOpenState} className='navbar__menu__text'>Documments utiles</p>
 					</Link>
-					{clientNoRef0.map((item, Id) => (
+					{clientNoRef.map((item, Id) => (
                     	<Contact key={Id} to={`/Contact/${item.Id}`}>
 							<p onClick={isOpenState} className='navbar__menu__text'>Contact</p>
 						</Contact>))

@@ -21,13 +21,7 @@ const Estimation = () => {
     const estimationHeaderArray = []
     estimationHeaderArray.push(estimationHeader)
 
-    const clientNoRef0 = [];
-
-	biensArray.forEach((item) => {
-		if (item.NoRef === "En attente") {
-		clientNoRef0.push(item)
-		}
-	})
+    const clientNoRef = biensArray.filter((item) => item.NoRef)
 
 	return (
 		<section 
@@ -61,7 +55,7 @@ const Estimation = () => {
                             <p>Formulaire de pré-estimation</p>
                         </div>
                     }
-                    button={clientNoRef0.map((item, Id) => (
+                    button={clientNoRef.map((item, Id) => (
                         <Contact key={Id} to={`/Contact/${item.Id}`}>
                             <p className='button'>Contactez-nous</p>
                         </Contact>))
