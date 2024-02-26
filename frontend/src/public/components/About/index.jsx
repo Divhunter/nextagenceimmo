@@ -10,13 +10,20 @@ import './d-about.css'
 
 const About = () => { 
 
-    const biensArray = JSON.parse(localStorage.getItem('biensArray'))
+    const getBiensArray = localStorage.getItem('biensArray')
+    const biensArray = JSON.parse(getBiensArray)
     
     const aboutHeader = pagesHeadersArray.find(el => el.title === "1") 
     const aboutHeaderArray = []
     aboutHeaderArray.push(aboutHeader)
 
-    const clientNoRef1 = biensArray.filter((item) => item.NoRef)
+    const clientNoRef0 = [];
+
+	biensArray.forEach((item) => {
+		if (item.NoRef) {
+		clientNoRef0.push(item);
+		}
+	})
 
 	return (
 		<section 
@@ -46,7 +53,7 @@ const About = () => {
                         </div>
                     }
                     subTitle2={item.subTitle2}
-                    button={clientNoRef1.map((item, Id) => (
+                    button={clientNoRef0.map((item, Id) => (
                         <Contact key={Id} to={`/Contact/${item.Id}`}>
                             <p className='button'>Contactez-nous</p>
                         </Contact>))

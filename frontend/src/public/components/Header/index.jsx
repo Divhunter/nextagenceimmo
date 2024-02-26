@@ -13,7 +13,8 @@ import './d-header.css'
 
 const Header = () => {
 
-	const biensArray = JSON.parse(localStorage.getItem('biensArray'))
+	const getBiensArray = localStorage.getItem('biensArray')
+    const biensArray = JSON.parse(getBiensArray)
 
 	useEffect(() => {
         document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
@@ -33,7 +34,13 @@ const Header = () => {
 		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
 	}
 	
-	const clientNoRef0 = biensArray.filter((item) => item.NoRef)
+	const clientNoRef0 = [];
+
+	biensArray.forEach((item) => {
+		if (item.NoRef) {
+		clientNoRef0.push(item);
+		}
+	})
 
 	return (
 		<>
