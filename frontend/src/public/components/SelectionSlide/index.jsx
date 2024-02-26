@@ -11,7 +11,7 @@ import './d-selectionSlide.css'
 const SelectionSlide = () => {
 
   const getSelectionArray = localStorage.getItem('biensArray')
-  const selectionArray = JSON.parse(getSelectionArray)
+  const selectionArray = JSON.parse(getSelectionArray) || []
 
   const settings = {
     dots: false,

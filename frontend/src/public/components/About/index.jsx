@@ -11,7 +11,7 @@ import './d-about.css'
 const About = () => { 
 
     const getBiensArray = localStorage.getItem('biensArray')
-    const biensArray = JSON.parse(getBiensArray)
+    const biensArray = JSON.parse(getBiensArray) || []
     
     const aboutHeader = pagesHeadersArray.find(el => el.title === "1") 
     const aboutHeaderArray = []

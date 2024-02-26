@@ -14,7 +14,7 @@ import './d-header.css'
 const Header = () => {
 
 	const getBiensArray = localStorage.getItem('biensArray')
-    const biensArray = JSON.parse(getBiensArray)
+    const biensArray = JSON.parse(getBiensArray) || []
 
 	useEffect(() => {
         document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })

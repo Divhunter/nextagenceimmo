@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 const Estimation = () => {
 
     const getBiensArray = localStorage.getItem('biensArray')
-    const biensArray = JSON.parse(getBiensArray)
+    const biensArray = JSON.parse(getBiensArray) || []
 
     const estimationHeader = pagesHeadersArray.find(el => el.title === "3")
     const estimationHeaderArray = []
