@@ -5,7 +5,7 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 168vw;
+    height: 225vw;
     margin-bottom: -5vw;
     overflow: hidden;
 }
@@ -24,12 +24,11 @@
 .banner__picture1 {
     position: absolute;
     display: block;
-    top: -4vw;
+    top: 25vw;
     left: 0;
     object-fit: contain;
     width: 100%;
     height: 100%;
-    margin-bottom: -2vw;
 }
 
 .banner__picture2 {
