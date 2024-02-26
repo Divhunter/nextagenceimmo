@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
@@ -19,15 +20,17 @@ const SelectionSlide = () => {
     speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
-  };
+  }
 
-  const selectedItems = []
-
-  selectionArray.forEach((item) => {
-    if (item.Selection === true) {
-      selectedItems.push(item)
-    }
-  })
+  const selectedItems = useEffect(() => {
+    const result = []
+    selectionArray.forEach((item) => {
+      if (item.Selection === true) {
+        selectedItems.push(item)
+      }
+    })
+    return result
+  }, [selectionArray])
 
   return (
     <div className='selection-slide'>
