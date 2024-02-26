@@ -21,7 +21,13 @@ const SelectionSlide = () => {
     slidesToScroll: 1,
   };
 
-  const selectedItems = selectionArray.filter((item) => item.Selection === true);
+  const selectedItems = []
+
+  selectionArray.forEach((item) => {
+    if (item.Selection === true) {
+      selectedItems.push(item)
+    }
+  })
 
   return (
     <div className='selection-slide'>
