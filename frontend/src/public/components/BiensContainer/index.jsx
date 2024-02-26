@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
 import HeaderBanner from '../HeaderBanner'
@@ -24,12 +24,19 @@ const BiensContainer = () => {
 
   const [selectedTypeLocation, setSelectedTypeLocation] = useState('')
 
-  const filteredBiens = biensArray.filter((bien) => {
-    return selectedTypeLocation === '' || (bien.TypesL).includes(selectedTypeLocation)
-  })  
-  
+  const filteredBiens = useMemo(() => {
+    const result = []
+    biensArray.forEach((bien) => {
+      if (selectedTypeLocation === '' || (bien.TypesL ?? '').includes(selectedTypeLocation)) {
+        result.push(bien)
+      }
+    })
+    return result
+  }, [biensArray, selectedTypeLocation])
+
   useEffect(() => {
     document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+
     // Mise à jour du message en fonction du nombre de biens trouvés
     if (sortedBiens.length > 0) {
       setResultMessage(`Nous avons trouvé ${selectedTypeLocation === '' ? sortedBiens.length : filteredBiens.length} resultat(s) pour votre recherche`)
