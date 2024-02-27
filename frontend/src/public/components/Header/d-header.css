@@ -119,6 +119,7 @@
 	.container-button {
 		position: absolute;
 		top: 2vw;
+		left: auto;
 		right: 9.6vw;
 		display: flex;
 		width: 26vw;
@@ -130,6 +131,7 @@
 		border: none;
         padding: 1vw;
         border-radius: 5px;
+		font-size: 1.2vw;
 		font-weight: 600;
 		letter-spacing: .2vw;
         color: white;

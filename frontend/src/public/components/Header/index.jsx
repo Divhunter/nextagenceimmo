@@ -5,7 +5,8 @@ import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logoNAI from '../../assets/pictures/logo-notreagence.png'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
-import background1 from '../../assets/pictures/group.jpg'
+import background1 from '../../assets/pictures/group-m.jpg'
+import background2 from '../../assets/pictures/group.jpg'
 
 // styles
 import './m-header.css'
@@ -82,27 +83,40 @@ const Header = () => {
 					onClick={(e) => { isOpenState(e); scrollToTop(e) }} 
 					className={
 						isOpen ?
-						'navbar__button-bars closed':
-						'navbar__button-bars open'} 
+						'navbar__button-bars hidden':
+						'navbar__button-bars visible'} 
 					icon={faBars} 
 				/>
 				<FontAwesomeIcon 
 					onClick={(e) => { isOpenState(e); scrollToTop(e) }} 
 					className={
 						isOpen ?
-						'navbar__button-x open':
-						'navbar__button-x closed'} 
+						'navbar__button-x visible':
+						'navbar__button-x hidden'} 
 					icon={faXmark} 
 				/>
 
-				<img 
-					className={ isOpen ? 'group open' : 'group closed'} 
-					src={background1} 
-					width='1334px'
-					height='2000px'
-					fetchpriority='high' 
-					alt='group' 
-				/>
+				<div className='back1'>
+					<img 
+						className={ isOpen ? 'group visible' : 'group hidden'} 
+						src={background1} 
+						width='720px'
+						height='1438px'
+						fetchpriority='high' 
+						alt='group' 
+					/>
+				</div>
+				
+				<div className='back2'>
+					<img 
+						className={ isOpen ? 'group visible' : 'group hidden'} 
+						src={background2} 
+						width='1334px'
+						height='2000px'
+						fetchpriority='high' 
+						alt='group' 
+					/>
+				</div>
 
 				<menu className={
 						isOpen ?
@@ -139,7 +153,7 @@ const Header = () => {
 				id='actu'
 				className={
 				isActu ?
-				'actu-visible':'actu-hidden'
+				'visible':'hidden'
 				}
 			>
 				<div className='actu-container'>
