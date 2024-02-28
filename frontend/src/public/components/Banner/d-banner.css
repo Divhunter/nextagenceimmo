@@ -56,7 +56,7 @@
         position: absolute;
         display: inline-block;
         top: 20vw;
-        left: 14vw;
+        left: 5vw;
         font-family: 'Archivo Black', sans-serif;
         font-size: 3vw;
         color: rgb(228, 228, 228);
@@ -76,6 +76,10 @@
         color: rgb(170, 181, 187);
     }
 
+    .Banner__logo-nai-full {
+        display: none;
+    }
+
     .banner__logo-nai2 {
         position: absolute;
         display: inline-block;
@@ -83,7 +87,7 @@
         left: -13vw;
         width: 60vw;
         height: auto;
-        opacity: .5;
+        opacity: .3;
         filter: brightness(60%) grayscale(1);
     }
 }

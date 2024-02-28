@@ -47,17 +47,6 @@
     transition: all 2.5s ease;
 }
 
-.Banner__logo-nai-full{
-    position: absolute;
-    display: inline-block;
-    top: 79vw; 
-    left: 21vw;
-    width: 50vw;
-    height: auto;
-    filter: grayscale(1);
-    opacity: .75;
-}
-
 .banner__slogan {
     position: absolute;
     display: inline-block;
@@ -82,6 +71,17 @@
     color: rgb(170, 181, 187);
 }
 
+.Banner__logo-nai-full {
+    position: absolute;
+    display: inline-block;
+    top: 79vw; 
+    left: 21vw;
+    width: 50vw;
+    height: auto;
+    filter: grayscale(1);
+    opacity: .3;
+}
+
 .banner__logo-nai2 {
     position: absolute;
     display: inline-block;
@@ -89,7 +89,7 @@
     left: -40vw;
     width: 150vw;
     height: auto;
-    opacity: .5;
+    opacity: .3;
     filter: brightness(60%) grayscale(1);
 }
 

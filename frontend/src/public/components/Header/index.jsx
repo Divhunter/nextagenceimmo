@@ -101,7 +101,7 @@ const Header = () => {
 						className={ isOpen ? 'group visible' : 'group hidden'} 
 						src={background1} 
 						width='720px'
-						height='1438px'
+						height='1672px'
 						fetchpriority='high' 
 						alt='group' 
 					/>
