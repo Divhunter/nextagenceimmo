@@ -47,27 +47,38 @@
     transition: all 2.5s ease;
 }
 
+.Banner__logo-nai-full{
+    position: absolute;
+    display: inline-block;
+    top: 79vw; 
+    left: 21vw;
+    width: 50vw;
+    height: auto;
+    filter: grayscale(1);
+    opacity: .75;
+}
+
 .banner__slogan {
     position: absolute;
     display: inline-block;
-    top: 40vw;
+    top: 42vw;
     left: 5vw;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 5vw;
+    font-size: 7vw;
     color: rgb(228, 228, 228);
-    line-height: 8.3vw;
+    line-height: 10.3vw;
     z-index: 2000;
 }
 
 .banner__slogan__span-1 {
-    margin-left: -.332vw;
-    font-size: 11.665vw;
+    margin-left: -.465vw;
+    font-size: 16.331vw;
     color: rgb(206, 39, 73);
 }
 
 .banner__slogan__span-2 {
-    margin-left: -.332vw;
-    font-size: 10vw;
+    margin-left: -.4652vw;
+    font-size: 14vw;
     color: rgb(170, 181, 187);
 }
 
