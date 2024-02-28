@@ -76,10 +76,6 @@
         color: rgb(170, 181, 187);
     }
 
-    .Banner__logo-nai-full {
-        display: none;
-    }
-
     .banner__logo-nai2 {
         position: absolute;
         display: inline-block;

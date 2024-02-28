@@ -71,17 +71,6 @@
     color: rgb(170, 181, 187);
 }
 
-.Banner__logo-nai-full {
-    position: absolute;
-    display: inline-block;
-    top: 79vw; 
-    left: 21vw;
-    width: 50vw;
-    height: auto;
-    filter: grayscale(1);
-    opacity: .3;
-}
-
 .banner__logo-nai2 {
     position: absolute;
     display: inline-block;

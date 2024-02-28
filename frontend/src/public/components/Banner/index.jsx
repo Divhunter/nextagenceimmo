@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 
 import bannerBackground from '../../assets/pictures/banner-background.jpg'
 import bannerBackgroundM from '../../assets/pictures/banner-background-m.jpg'
-import logoNAIFull from '../../assets/pictures/logo-notreagence-full.png'
 import kies from '../../assets/pictures/kies.png'
 import kiesM from '../../assets/pictures/kies-m.png'
 import home from '../../assets/pictures/home.png'
@@ -105,14 +104,6 @@ const Banner = () => {
 						</div>
 					))}
 				</div>
-				<img 
-						className='Banner__logo-nai-full' 
-						src={ logoNAIFull } 
-						max-width='4123px'
-						max-height='1554px'
-						fetchpriority='high' 
-						alt='logo de notre agence immo'
-					/>
 				<div className='banner__slogan'>
 					<span className='banner__slogan__span-1'>La Clé</span>
 					<br /> 
