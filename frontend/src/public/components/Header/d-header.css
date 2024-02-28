@@ -120,6 +120,7 @@
 		position: absolute;
 		top: 2vw;
 		left: auto;
+		transform: none;
 		right: 9.6vw;
 		display: flex;
 		width: 26vw;
