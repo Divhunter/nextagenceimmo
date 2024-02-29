@@ -111,7 +111,7 @@
     .banner__picture2 {
         position: absolute;
         display: block;
-        top: 0;
+        top: 2vw;
         left: 0;
         object-fit: contain;
         width: 100%;
