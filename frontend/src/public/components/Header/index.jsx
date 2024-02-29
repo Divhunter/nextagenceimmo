@@ -3,7 +3,7 @@ import { Link as Home, Link as Contact } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { faBars, faXmark, faBullhorn, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logoNAI from '../../assets/pictures/logo-notreagence.png'
+import logoNAI from '../../assets/pictures/logo-notreagence-full.png'
 import logoNAIS from '../../assets/pictures/logo-notreagence-simple.png'
 import background1 from '../../assets/pictures/group-m.jpg'
 import background2 from '../../assets/pictures/group.jpg'
@@ -17,9 +17,20 @@ const Header = () => {
 	const getBiensArray = localStorage.getItem('biensArray')
     const biensArray = JSON.parse(getBiensArray) || []
 
+	const [desktopSearch, setDesktopSearch] = useState(window.innerWidth < 450);
+
 	useEffect(() => {
-        document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
-    }, [])
+		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+		const handleResize = () => {
+			setDesktopSearch(window.innerWidth > 450)
+		}
+
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
 
 	const [isOpen, setIsOpen] = useState(false)
 	const isOpenState = () => {
@@ -62,8 +73,8 @@ const Header = () => {
 						> 
 							<FontAwesomeIcon
 								icon={faSearch}
-							/>&nbsp;
-							Filtrez votre recherche
+							/>{desktopSearch && <p>&nbsp;Filtrez votre recherche</p>}
+							
 						</button>
 					</Link>
 					<div

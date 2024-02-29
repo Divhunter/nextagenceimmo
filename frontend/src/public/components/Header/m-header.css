@@ -31,23 +31,27 @@
 .container-button {
 	position: absolute;
 	top: 11.5vw;
-	left: 51.8%;
-	transform: translate(-50%, 0);
+	right: 15vw;
 	display: flex;
-	width: 66.4vw;
+	width: 17vw;
 	height: auto;
 	justify-content: space-between;
 }
 
 .nav__menu__button {
 	border: none;
-	padding: 2.2vw 2vw 2.2vw 2vw;
+	padding: 2vw;
 	border-radius: 5px;
 	font-size: 3.8vw;
 	font-weight: 600;
 	letter-spacing: .2vw;
 	color: white;
 	cursor: pointer;
+}
+
+.nav__menu__button > p {
+	display: inline-block;
+	margin: 0;
 }
 
 .nav__menu__button:hover {
