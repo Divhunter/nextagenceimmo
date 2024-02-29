@@ -17,12 +17,12 @@ const Header = () => {
 	const getBiensArray = localStorage.getItem('biensArray')
     const biensArray = JSON.parse(getBiensArray) || []
 
-	const [desktopSearch, setDesktopSearch] = useState(window.innerWidth < 450);
+	const [mobileSearch, setMobileSearch] = useState(window.innerWidth <= 767);
 
 	useEffect(() => {
 		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
 		const handleResize = () => {
-			setDesktopSearch(window.innerWidth > 450)
+			setMobileSearch(window.innerWidth <= 767)
 		}
 
 		window.addEventListener('resize', handleResize)
@@ -73,7 +73,7 @@ const Header = () => {
 						> 
 							<FontAwesomeIcon
 								icon={faSearch}
-							/>{desktopSearch && <p>&nbsp;Filtrez votre recherche</p>}
+							/>{!mobileSearch && <p>&nbsp;Filtrez votre recherche</p>}
 							
 						</button>
 					</Link>
