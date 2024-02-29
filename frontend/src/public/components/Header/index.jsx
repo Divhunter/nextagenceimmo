@@ -17,12 +17,12 @@ const Header = () => {
 	const getBiensArray = localStorage.getItem('biensArray')
     const biensArray = JSON.parse(getBiensArray) || []
 
-	const [mobileSearch, setMobileSearch] = useState(window.innerWidth <= 767);
+	const [mobileSearch, setMobileSearch] = useState(window.innerWidth <= 991)
 
 	useEffect(() => {
 		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
 		const handleResize = () => {
-			setMobileSearch(window.innerWidth <= 767)
+			setMobileSearch(window.innerWidth <= 991)
 		}
 
 		window.addEventListener('resize', handleResize)

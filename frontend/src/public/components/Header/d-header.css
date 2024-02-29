@@ -7,13 +7,101 @@
     /********************************************* header *****************************************/
     /**********************************************************************************************/
 
-	.solutions {
+	.navbar-closed {
+		height: 8vw;
+	}
+	
+	.navbar-open {
+		height: 62vw;
+	}
+
+	.navbar__button-x {
+		top: 3vw;
+		right: 4.2vw;
+		font-size: 2.624vw;
+	}
+	
+	.navbar__button-bars {
+		top: 3.3vw;
+		right: 4.2vw;
+		font-size: 2.1vw;
+	}
+
+	.back1 {
 		display: none;
-        padding: 1.7vw;
-        letter-spacing: .15vw;
-        font-size: 2.2vw;
-        top: 55vw;
-    }
+	}
+	
+	.back2 {
+		display: block;
+	}
+
+	.nav__menu__logo-nai {
+		margin-top : 1.8vw;
+		margin-left: 2.5vw;
+		width: 13vw;
+	}
+	
+	.container-button {
+		top: 2vw;
+		right: 8vw;
+		width: 10.5vw;
+	}
+	
+	.nav__menu__button {
+		padding: .8vw;
+		font-size: 3vw;
+		letter-spacing: .1vw;
+	}
+	
+	.nav__menu__alert {
+		padding: .68vw .8vw .68vw .8vw;
+		font-size: 3vw;
+	}
+	
+	.navbar__menu {
+		top: 10vw;
+		width: 38vw;
+	}
+	
+	.navbar__menu__text {
+		font-size: 2.8vw;
+		line-height: .2vw;
+		letter-spacing: .2vw;
+	}
+	
+	.navbar__menu__text:hover {
+		margin-left: 1.7vw;
+	}
+	
+	.actu-container {
+		top: 10vw;
+		padding-left: 1.5vw;
+		padding-right: 1.5vw; 
+		border-radius: 2.5vw;
+	}
+	
+	.actu-container__closed {
+		right: 3vw;
+    	margin-top: 3vw;
+		font-size: 2.5vw;
+	}
+	
+	.actu-container>header>h1 {
+		margin: 8vw 2vw 0vw 2vw;
+		letter-spacing: .05vw;
+		line-height: 4vw;
+		font-size: 2.5vw;
+	}
+	
+	.actu-form {
+		padding-top: 1.5vw;
+		height: 40vw;
+		border-radius: 1vw;
+	}
+	
+	.actu-form > p {
+		font-size: 2.5vw;
+	}
 }
 
 /********************************************* media queries ************************************************/
