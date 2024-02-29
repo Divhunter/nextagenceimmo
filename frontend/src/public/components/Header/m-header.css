@@ -104,7 +104,7 @@
 	text-align: left;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	top: 60vw;
+	top: 30vw;
 	left: 50%;
 	transform: translate(-50%, 0);
 	width: 70vw;
@@ -184,17 +184,6 @@
 	color: white;
 	cursor: pointer;
 	z-index: 500;
-}
-
-.nav__menu__text {
-	margin-top: 2vw;
-	font-size: 4vw;
-	cursor: pointer;
-}
-
-.nav__menu__text:hover {
-	text-decoration: underline;
-	text-underline-position: under;
 }
 
 .actu-container {
