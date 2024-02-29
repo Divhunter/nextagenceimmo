@@ -29,7 +29,7 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .banner__picture2 {
@@ -56,7 +56,7 @@
     font-size: 7vw;
     color: rgb(228, 228, 228);
     line-height: 10.3vw;
-    z-index: 2000;
+    z-index: 3500;
 }
 
 .banner__slogan__span-1 {
@@ -66,7 +66,7 @@
 }
 
 .banner__slogan__span-2 {
-    margin-left: -.4652vw;
+    margin-left: -.465vw;
     font-size: 14vw;
     color: rgb(170, 181, 187);
 }
@@ -92,12 +92,8 @@
     /**********************************************************************************************/
     
     .banner {
-        height: 66vw;
-        margin-bottom: -3vw;
-    }
-
-    .banner__picture1 {
-        display: none;
+        height: 59vw;
+        margin-bottom: 0;
     }
 
     .banner__banner-background-m {
@@ -106,6 +102,10 @@
 
     .banner__banner-background {
         display: block;
+    }
+
+    .banner__picture1 {
+        display: none;
     }
     
     .banner__picture2 {
@@ -117,6 +117,29 @@
         width: 100%;
         height: auto;
         margin-bottom: -3vw;
+        z-index: 3000;
     }
 
+    .banner__slogan {
+        top: 20vw;
+        left: 12vw;
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    
+    .banner__slogan__span-1 {
+        margin-left: -.465vw;
+        font-size: 9.266vw;
+    }
+    
+    .banner__slogan__span-2 {
+        margin-left: -.266vw;
+        font-size: 8vw;
+    }
+    
+    .banner__logo-nai2 {
+        top: 6vw;
+        left: -15vw;
+        width: 70vw;
+    } 
 }

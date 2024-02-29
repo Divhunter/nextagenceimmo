@@ -214,6 +214,10 @@
     z-index: 8500;
 }
 
+.actu-container > header {
+	background-color: transparent;
+}
+
 .actu-container__closed {
     position: absolute;
     right: 5vw;
@@ -331,55 +335,31 @@
 	
 	.actu-container {
 		top: 10vw;
-		padding-left: 5vw;
-		padding-right: 5vw; 
-		width: 90vw;
-		height: auto;
-		border-radius: 5vw;
-		background-color: white;
-		font-family: Open, sans-serif;
-		color: black;
-		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-		z-index: 8500;
+		padding-left: 1.5vw;
+		padding-right: 1.5vw; 
+		border-radius: 2.5vw;
 	}
 	
 	.actu-container__closed {
-		position: absolute;
-		right: 5vw;
-		margin-top: 5vw;
-		font-size: 5vw;
-		cursor: pointer;
-		color: rgb(148, 148, 148);
-		transition: color .4s;
-	}
-	
-	.actu-container__closed:hover {
-		color: rgb(204, 1, 1);
-		transition: color .4s;
+		right: 3vw;
+    	margin-top: 3vw;
+		font-size: 2.5vw;
 	}
 	
 	.actu-container>header>h1 {
-		text-align: center;
-		margin: 20vw 2vw 5vw 2vw;
+		margin: 8vw 2vw 0vw 2vw;
 		letter-spacing: .05vw;
-		line-height: 6.5vw;
-		font-size: 4.8vw;
-		font-weight: bold;
-		color: rgb(206, 39, 73);
+		line-height: 4vw;
+		font-size: 2.5vw;
 	}
 	
 	.actu-form {
-		margin: 5vw auto 5vw auto;
-		padding-top: 5vw;
-		text-align: center;
-		width: 90%;
-		height: 100vw;
-		border: solid 1px transparent;
-		border-radius: 10px;
-		box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		padding-top: 1.5vw;
+		height: 40vw;
+		border-radius: 1vw;
 	}
 	
 	.actu-form > p {
-		font-size: 4.5vw;
+		font-size: 2.5vw;
 	}
 }
