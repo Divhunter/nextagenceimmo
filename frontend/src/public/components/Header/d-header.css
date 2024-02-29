@@ -8,7 +8,7 @@
     /**********************************************************************************************/
 
 	.navbar-closed {
-		height: 8vw;
+		height: 10vw; 
 	}
 	
 	.navbar-open {
@@ -16,13 +16,13 @@
 	}
 
 	.navbar__button-x {
-		top: 3vw;
+		top: 4vw;
 		right: 4.2vw;
 		font-size: 2.624vw;
 	}
 	
 	.navbar__button-bars {
-		top: 3.3vw;
+		top: 4.3vw;
 		right: 4.2vw;
 		font-size: 2.1vw;
 	}
@@ -36,13 +36,13 @@
 	}
 
 	.nav__menu__logo-nai {
-		margin-top : 1.8vw;
+		margin-top : 2.8vw;
 		margin-left: 2.5vw;
 		width: 13vw;
 	}
 	
 	.container-button {
-		top: 2vw;
+		top: 3vw;
 		right: 8vw;
 		width: 10.5vw;
 	}
