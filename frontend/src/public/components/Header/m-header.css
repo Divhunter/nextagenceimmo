@@ -22,7 +22,7 @@
 }
 
 .nav__menu__logo-nai {
-	margin-top : 11vw;
+	margin-top : 7vw;
 	margin-left: 5vw;
 	width: 25vw;
 	height: auto;
@@ -30,7 +30,7 @@
 
 .container-button {
 	position: absolute;
-	top: 11.5vw;
+	top: 7.5vw;
 	right: 15vw;
 	display: flex;
 	width: 17vw;
@@ -161,7 +161,7 @@
 .navbar__button-x {
 	position: absolute;
     float: right;
-	top: 14.5vw;
+	top: 10vw;
 	right: 8.2vw;
 	font-size: 4.4vw;
 	color: white;
@@ -178,7 +178,7 @@
 .navbar__button-bars {
 	position: absolute;
     float: right;
-	top: 14.5vw;
+	top: 10vw;
 	right: 8.2vw;
 	font-size: 4.4vw;
 	color: white;
