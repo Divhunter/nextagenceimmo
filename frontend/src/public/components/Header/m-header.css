@@ -319,18 +319,18 @@
 	}
 	
 	.navbar__menu {
-		top: 8vw;
+		top: 5vw;
 		width: 35vw;
 	}
 	
 	.navbar__menu__text {
-		font-size: 2.5vw;
+		font-size: 2.1vw;
 		line-height: 0;
 		letter-spacing: .2vw;
 	}
 	
 	.navbar__menu__text:hover {
-		margin-left: 1.7vw;
+		margin-left: 2vw;
 	}
 	
 	.actu-container {

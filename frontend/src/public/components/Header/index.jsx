@@ -135,9 +135,6 @@ const Header = () => {
 						'navbar__menu navbar__menu-closed'
 					}
 				>
-					<Link to='/'>
-						<p onClick={isOpenState} className='navbar__menu__text'>Accueil</p>
-					</Link>
 					<Link to='about'>
 						<p onClick={isOpenState} className='navbar__menu__text'>À propos</p>
 					</Link>
