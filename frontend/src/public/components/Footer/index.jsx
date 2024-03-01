@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import {fab, faFacebook, faLinkedin, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logoNAI from '../../assets/pictures/logo-notreagence.png'
+import logoNAI from '../../assets/pictures/logo-notreagence-full.png'
 import logoMalakoff from '../../assets/brands/logo-malakoff.png'
 import logoCegema from '../../assets/brands/logo-cegema.png'
 import logoAlpis from '../../assets/brands/logo-alpis.png'
