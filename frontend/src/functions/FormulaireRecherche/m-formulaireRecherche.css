@@ -1,0 +1,148 @@
+.formulaire-de-recherche {
+    text-align: center; 
+    width: auto;
+    height: 0;
+    margin-left: -3vw;
+    margin-bottom: 6vw; 
+    color: black;
+}
+
+.container-form-tags {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 1vw 3vw 1vw 1vw;
+    width: 82.2vw;
+    margin: 0 auto 2.5vw auto;
+    border: solid 1px rgb(180, 180, 180);
+    font-family: 'Open', sans-serif;
+    border-radius: 5px;
+}
+
+.container-form-tags > p {
+    display: inline-block;
+    margin: .57vw 0 .57vw 0;
+    font-size: 1.2vw;
+    color: rgb(150, 150, 150);
+}
+
+.tag {
+    display: inline-block;
+    margin-left: .5vw;
+    margin-top: .25vw;
+    margin-bottom: .25vw;
+    padding: .5vw .8vw .5vw .8vw;
+    font-family:'Open', sans-serif;
+    font-size: .9vw;
+    border-radius: 5px;
+    background-color: rgb(206, 39, 73);
+    opacity: 1;
+    color: white;
+    transition: opacity .4s;
+}
+
+.tag:hover {
+    opacity: .8;
+    transition: opacity .4s;
+}
+
+.tag-closed {
+    margin-left: .5vw;
+}
+
+.tag-closed:hover {
+    margin-left: .5vw;
+    cursor: pointer;
+}
+
+.tag-closed-all { 
+    position: absolute;
+    right: 9.5vw;
+    margin-top: -.66vw;
+    font-size: 1.5vw;
+    color:  rgb(180, 180, 180);
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.tag-closed-all:hover {
+    color: red;
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    font-family: 'Open', sans-serif;
+    font-size: .97vw;
+    display: inline-block;
+    width: 16vw;
+    margin-bottom: 3vw;
+}
+  
+.dropdown-header {
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dropdown-chevron {
+    display: inline;
+    float: right;
+    margin-right: .5vw;
+    color: rgb(173, 173, 173)
+}
+  
+.dropdown-options {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 15.42vw;
+    height: 13vw;
+    padding-bottom: 2vw;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    z-index: 1;
+}
+  
+.dropdown-options label {
+    display: block;
+    text-align: left;
+    padding: 15px 10px 0 10px;
+}
+
+.dropdown-options label input {
+    margin-bottom: -.5vw;
+}
+
+.button-search {
+    position: absolute;
+    margin-left: 4px;
+    padding: .5vw;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    transition: background-color .4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 .262vw .7vw;
+    border: none;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    background-color: rgb(75, 158, 253);
+    transition: background-color .4s;
+}
+
+.button-search:active {
+    background-color: rgb(136, 191, 253);
+}
