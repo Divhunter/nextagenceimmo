@@ -27,35 +27,23 @@
 		font-size: 2.1vw;
 	}
 
-	.back1 {
-		display: none;
-	}
-	
-	.back2 {
-		display: block;
-	}
-
 	.nav__menu__logo-nai {
 		margin-top : 2.8vw;
-		margin-left: 2.5vw;
-		width: 13vw;
 	}
 	
 	.container-button {
-		top: 3vw;
+		top: 3.5vw;
 		right: 8vw;
-		width: 10.5vw;
+		width: 8.5vw;
 	}
 	
 	.nav__menu__button {
-		padding: .8vw;
-		font-size: 3vw;
-		letter-spacing: .1vw;
+		padding: .68vw .8vw .68vw .8vw;
+		font-size: 2.2vw; 
 	}
 	
 	.nav__menu__alert {
-		padding: .68vw .8vw .68vw .8vw;
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 	
 	.navbar__menu__text:hover {
@@ -103,15 +91,62 @@
     /**********************************************************************************************/
 
 	.navbar-closed {
-		height: 6vw;
+		height: 8vw;
 	}
 
 	.navbar__button-x {
-		top: 1.8vw;
+		top: 2.8vw;
 	}
 	
 	.navbar__button-bars {
-		top: 2vw;
+		top: 3vw;
+	}
+
+	.nav__menu__logo-nai {
+		margin-top : 2vw;
+		width: 10vw;
+	}
+
+	.container-button {
+		top: 2.25vw;
+		right: 8vw;
+		width: 27vw;
+	}
+
+	.nav__menu__button {
+        padding: 1vw;
+		font-size: 1.5vw;
+    }
+
+	.nav__menu__alert {
+        padding: .68vw;
+		font-size: 1.5vw;
+		border: solid 2px rgba(255, 255, 255, .3);
+	}
+
+	.nav__menu__alert:hover {
+		border: solid 2px rgba(255, 255, 255, .3);
+	}
+
+	.nav__menu__alert--gray {
+		border: solid 2px rgba(206, 39, 73, .5);
+	}
+
+	.nav__menu__alert--tranparent {
+		border: solid 2px rgba(255, 255, 255, .4);
+	}
+
+	.navbar__menu {
+		top: 15vw;
+		width: 30vw;
+	}
+
+	.navbar__menu__text {
+		font-size: 2vw;
+	}
+
+	.navbar__menu__text:hover {
+		margin-left: 2vw;
 	}
 
 	.nav__menu__link-header {
@@ -124,31 +159,25 @@
 		font-size: 1.5vw;
 	}
 
-    .actu {
-        margin-right: 8.2vw;
-    }
-
-	.b-contact {
-		margin-right: .6vw;
+    .actu-container {
+		border-radius: 1.5vw;
 	}
-
-	.devis {
-		float: left;
-		margin-left: 3vw;
+	
+	.actu-container>header>h1 {
+		margin: 6vw 2vw 0vw 2vw;
+		line-height: 2vw;
+		font-size: 2.2vw;
 	}
-
-	.devis-hidden {
-		display: none;
+	
+	.actu-form {
+		padding-top: 1vw;
+		height: 30vw;
+		border-radius: .5vw;
 	}
-
-	.devis-visible {
-		display: block;
+	
+	.actu-form > p {
+		font-size: 2vw;
 	}
-
-	.solutions {
-        font-size: 1.8vw;
-        top: 53vw;
-    }
 }
 
 /********************************************* media queries ************************************************/
@@ -188,104 +217,55 @@
 
 	.nav__menu__logo-nai {
 		margin-top : 2vw;
-		margin-left: 5vw;
 		width: 8vw;
-		height: auto;
 	}
 
 	.container-button {
-		position: absolute;
 		top: 2vw;
 		right: 9.6vw;
-		display: flex;
-		width: 26vw;
-		height: auto;
-		justify-content: space-between;
+		width: 23vw;
 	}
 
 	.nav__menu__button {
-		border: none;
-        padding: 1vw;
-        border-radius: 5px;
 		font-size: 1.2vw;
-		font-weight: 600;
-		letter-spacing: .2vw;
-        color: white;
-		cursor: pointer;
     }
-
-	.nav__menu__button:hover {
-        filter: brightness(120%);
-		transition: filter .4s;
-    }
-
-	.nav__menu__filtre {
-        background-color: rgb(206, 39, 73);
-		transition: filter .4s;
-    }
-
-	.nav__menu__alert {
-        padding: .68vw;
-		font-size: 1.5vw;
-		border: solid 2px rgba(255, 255, 255, .3);
-		background-color: transparent;
-		border-radius: 5px;
-		cursor: pointer;
-		transition: background-color .4s;
-	}
-
-	.nav__menu__alert:hover {
-		color: white;
-		background-color: rgba(255, 255, 255, .5);
-		border: solid 2px rgba(255, 255, 255, .3);
-		transition: background-color .4s;
-	}
-
-	.nav__menu__alert--gray {
-		color: rgb(206, 39, 73);
-		border: solid 2px rgba(206, 39, 73, .5);
-	}
-
-	.nav__menu__alert--tranparent {
-		color: white;
-		border: solid 2px rgba(255, 255, 255, .4);
-	}
 
 	.navbar__menu {
-		position: absolute;
-		text-align: left;
-		flex-direction: column;
-		flex-wrap: nowrap;
 		top: 10vw;
-		left: 50%;
-		transform: translate(-50%, 0);
-		width: 30vw;
-	}
-
-	.navbar__menu-open {
-		display: flex;
-		transition: .4s;
-	}
-
-	.navbar__menu-closed {
-		display: none;
-		transition: .4s;
 	}
 
 	.navbar__menu__text {
-		margin-left: 0;
-		font-weight: 600;
 		font-size: 1.8vw;
-		line-height: 1vw;
-		letter-spacing: .3vw;
-		color: white;
-		cursor: pointer;
-		transition: color .4s, margin-left .4s;
 	}
 
 	.navbar__menu__text:hover {
 		margin-left: 2vw;
-		color: rgb(206, 39, 73);
-		transition: color .4s, margin-left .4s;
+	}
+
+	.actu-container {
+		border-radius: 1vw;
+	}
+
+	.actu-container__closed {
+		right: 2vw;
+    	margin-top: 2vw;
+		font-size: 2vw;
+	}
+	
+	.actu-container>header>h1 {
+		margin: 5vw 2vw 0vw 2vw;
+		line-height: 1.5vw;
+		font-size: 1.8vw;
+		letter-spacing: .025vw;
+	}
+	
+	.actu-form {
+		padding-top: .5vw;
+		height: 25vw;
+		border-radius: .25vw;
+	}
+	
+	.actu-form > p {
+		font-size: 1.8vw;
 	}
 }
