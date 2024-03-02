@@ -49,13 +49,12 @@ h3 {
     padding-right: 7vw;
     width: auto;
     font-family: 'Helvetica';
-    font-size: 6vw;
-    letter-spacing: .0437vw;
-    font-weight: 800;
+    font-size: 5.4vw;
+    line-height: 8vw;
+    letter-spacing: .25vw;
+    font-weight: 500;
     color: white;
-    background-image: 
-    url("https://www.transparenttextures.com/patterns/light-wool.png"),
-    linear-gradient(to right, rgb(206, 39, 73), rgb(16, 31, 38));
+    background: rgb(60, 78, 85);
 }
 
 h4 {
