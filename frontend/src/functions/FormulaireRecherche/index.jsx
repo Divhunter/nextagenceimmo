@@ -432,6 +432,10 @@ const FormulaireRecherche = () => {
         onSubmit={handleFilterSubmit}
         ref={formRef}
       >
+        <button className='button-search'>
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+        
         <div className="dropdown">
           <div
             className="dropdown-header"
@@ -632,9 +636,6 @@ const FormulaireRecherche = () => {
             </div>
           )}
         </div>
-        <button className='button-search'>
-          <FontAwesomeIcon icon={faSearch} />
-        </button>
       </form>
     </>
   )

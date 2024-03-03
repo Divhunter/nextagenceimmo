@@ -29,10 +29,13 @@
     /**********************************************************************************************/
     
     .formulaire-de-recherche {
+        display: block;
+        flex-direction: inherit;
         text-align: center; 
         width: auto;
         height: 0;
         margin-left: -3vw;
+        margin-right: 0;
         margin-bottom: 6vw; 
         color: black;
     }
@@ -42,7 +45,7 @@
         flex-wrap: wrap;
         text-align: left;
         padding: 1vw 3vw 1vw 1vw;
-        width: 82.2vw;
+        width: 82.4vw;
         margin: 0 auto 2.5vw auto;
         border: solid 1px rgb(180, 180, 180);
         font-family: 'Open', sans-serif;
@@ -107,7 +110,7 @@
         font-size: .97vw;
         display: inline-block;
         width: 16vw;
-        margin-bottom: 3vw;
+        margin: 0 0 3vw 0;
     }
     
     .dropdown-header {
@@ -155,8 +158,10 @@
     }
 
     .button-search {
-        position: absolute;
-        margin-left: 4px;
+        position: relative;
+        float: right;
+        margin-right: 5.1vw;
+        margin-left: -8vw;
         padding: .5vw;
         border-radius: 5px;
         font-size: 1.5vw;

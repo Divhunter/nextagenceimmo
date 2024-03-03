@@ -2,19 +2,19 @@
     width: 100%;
     height: auto;
     text-align: center;
-    margin: -3vw 0 0 0;
-    padding: 3vw 3vw 3.2vw 3vw;
+    margin: -10vw 0 0 0;
+    padding: 0vw 5vw 3.2vw 5vw;
     background: linear-gradient(rgba(92, 100, 105, .5), rgba(92, 100, 105, .8), white);
 }  
 
 .selection__container__header {
     background: transparent;
-    margin: 2vw 0 2vw 0;
+    margin: 0 0 4vw 0;
 }
 
 .selection__container__header__title {
     font-family: 'Helvetica';
-    font-size: 5.2vw;
+    font-size: 5.4vw;
     font-weight: 500;
     letter-spacing: .2vw;
 }
@@ -26,7 +26,7 @@
     height: auto;
     margin: auto;
     padding-top: 3vw;
-    border-radius: 10px;
+    border-radius: 2.5vw;
     background-color: white;
     color: black;
 }
@@ -34,7 +34,8 @@
 .selection__container__text {
     margin-top: 4vw;
     font-family: 'Open', sans-serif;
-    font-size: 1.2vw;
+    font-size: 4vw;
+    line-height: 5.5vw;
     letter-spacing: .03vw;
     color: rgb(13, 37, 48);
 }
