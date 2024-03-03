@@ -2,31 +2,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 18.27vw;
+    width: auto;
+    height: 50vw;
     margin-top: -1vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
 } 
 
 .selection-slide__card {
     position: relative;
-    width: 22.87vw;
-    height: 16.07vw;
+    width: 75.8vw;
+    height: 50vw;
     margin-top: 0;
-    margin-left: .15vw;
-    border-radius: 10px;
+    border-radius: 2vw;
     color: white;
     font-family: 'Open', sans-serif;
     overflow: hidden;
     z-index: 4000;
 }
 
-.selection-slide__card .selection-slide__card__img{
-    width: 25vw;
+.selection-slide__card .selection-slide__card__img {
+    width: 75.8vw;
     transition: width .4s;
 }
 
-.selection-slide__card:hover .selection-slide__card__img{
-    width: 27vw;
+.selection-slide__card:hover .selection-slide__card__img {
+    width: 80vw;
     transition: width .4s;
 }
 
@@ -37,19 +38,18 @@
     top: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
-    width: 25vw;
+    width: 75.8vw;
     height: auto;
     filter: brightness(50%);
     z-index: -1;
 }
 
 .selection-slide__card__text__exclu {
-    width: 10.96vw;
-    /*transform: rotate(-20deg);*/
-    margin-top: -10vw;
+    width: 30vw;
+    margin-top: -31vw;
     padding: .51vw;
-    font-size: 1.31vw;
-    letter-spacing: .073vw;
+    font-size: 4.2vw;
+    letter-spacing: .2vw;
     color: white;
     background-color: rgb(206, 39, 73);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -57,10 +57,10 @@
 }
 
 .selection-slide__card__text {
-    margin-top: 8.8vw;
-    font-size: 1.24vw;
+    margin-top: 30vw;
+    font-size: 4.2vw;
     font-weight: bold;
-    letter-spacing: .036vw;
+    letter-spacing: .25vw;
     color: white !important;
     text-shadow: 0 0 .2em rgb(1, 1, 1), 0 0 0.1em rgb(1, 1, 1);
     z-index: 5000;
@@ -68,23 +68,23 @@
 
 .selection-slide__card__text__op {
     text-align: left;
-    margin-left: 1.09vw;
-    margin-right: 1.09vw;
-    line-height: 2vw;
-    font-size: 1.61vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    line-height: 5vw;
+    font-size: 4.2vw;
 }
 
 .selection-slide__card__text__dp {
     padding-top: 2vw;
-    margin-top: -5vw;
+    margin-top: -10vw;
 }
 
 .selection-slide__card__text__dp__designation {
     display: inline;
     text-align: left;
     float: left;
-    margin-left: 1.09vw;
-    width: 10vw;
+    margin-left: 3vw;
+    width: 30vw;
     padding: 1vw 0 1vw 0;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -96,8 +96,8 @@
     display: inline;
     text-align: right;
     float: right;
-    margin-right: 1.09vw;
-    width: 10vw;
+    margin-right: 3vw;
+    width: 33vw;
     padding: 1vw 0 1vw 0;
     white-space: nowrap;
     text-overflow: ellipsis;

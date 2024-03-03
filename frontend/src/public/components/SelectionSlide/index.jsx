@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
@@ -13,11 +14,28 @@ const SelectionSlide = () => {
   const getSelectionArray = localStorage.getItem('biensArray')
   const selectionArray = JSON.parse(getSelectionArray) || []
 
+  const [slidesToShow, setSlidesToShow] = useState(4)
+
+  useEffect(() => {
+    const updateSlidesToShow = () => {
+      const screenWidth = window.innerWidth;
+      setSlidesToShow(screenWidth <= 991 ? 1 : 4)
+    }
+
+    updateSlidesToShow()
+
+    window.addEventListener('resize', updateSlidesToShow)
+
+    return () => {
+      window.removeEventListener('resize', updateSlidesToShow)
+    }
+  }, [])
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 200,
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
   }
 
