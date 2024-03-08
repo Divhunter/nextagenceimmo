@@ -45,12 +45,12 @@
 }
 
 .containerAbout>p {
-    font-size: 4.5vw;
+    font-size: 4vw;
     line-height: 5.5vw;
 }
 
 .end {
-    font-size: 4.8vw;
+    font-size: 4.5vw;
     font-weight: bold;
     color: rgb(62, 124, 153);
 }
@@ -62,7 +62,7 @@
 }
 
 .containerAbout__text__header {
-    font-size: 6.5vw;
+    font-size: 5vw;
     font-weight: 600;
     line-height: 7.5vw;
 }
@@ -97,8 +97,8 @@
     margin-right: 4vw;
     font-family: 'Helvetica';
     font-weight: 800;
-    font-size: 5.5vw;
-    line-height: 6vw;
+    font-size: 6vw;
+    line-height: 7vw;
     color: white;
 }
 

@@ -26,6 +26,7 @@
     }
 
     .selection__container__text {
+        margin: 0 auto -5vw auto;
         font-size: 1.2vw;
         line-height: auto;
         letter-spacing: .03vw;

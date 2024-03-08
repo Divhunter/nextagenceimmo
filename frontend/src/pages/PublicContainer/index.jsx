@@ -17,10 +17,9 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const PublicContainer = () => {
 
-	window.onload = () => {
-		// localStorage.removeItem('token')
-		window.scrollTo(0, 0)
-	}
+	useEffect(() => {
+		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+	}, [])
 
 	const slideInTop = (elem, delay, duration) => {
         gsap.fromTo(

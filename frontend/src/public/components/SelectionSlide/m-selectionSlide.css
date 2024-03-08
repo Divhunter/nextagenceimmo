@@ -14,7 +14,6 @@
     width: 75.8vw;
     height: 50vw;
     margin-top: 0;
-    border-radius: 2vw;
     color: white;
     font-family: 'Open', sans-serif;
     overflow: hidden;
@@ -40,7 +39,7 @@
     display: inline-block;
     width: 75.8vw;
     height: auto;
-    filter: brightness(50%);
+    filter: brightness(65%);
     z-index: -1;
 }
 

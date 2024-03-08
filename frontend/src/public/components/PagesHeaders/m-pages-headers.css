@@ -36,7 +36,6 @@ h2 {
     margin-top: 6vw;
     margin-bottom: 0;
     filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
-    z-index: 100;
 }
 
 h3 {
@@ -61,7 +60,7 @@ h4 {
     display: inline-block;
     margin-left: 7vw;
     margin-right: 7vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     line-height: 5.4vw;
     letter-spacing: normal;
     font-weight: 500;
