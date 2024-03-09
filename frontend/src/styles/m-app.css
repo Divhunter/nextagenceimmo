@@ -19,6 +19,26 @@ section {
     z-index: 1000;
 }
 
+.about {
+    z-index: -1;
+}
+
+.gestion {
+    z-index: -2;
+}
+
+.estimation {
+    z-index: -3;
+}
+
+.agences {
+    z-index: 1000;
+}
+
+.docs {
+    z-index: -4;
+}
+
 ul, li {
     list-style:none;
     margin-top: 0;

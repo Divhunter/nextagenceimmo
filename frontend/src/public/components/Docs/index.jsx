@@ -22,13 +22,13 @@ const Docs = () => {
 	return (
 		<section 
             id='docs' 
-            className='docs'
+            className='docs section--padding'
         >
             {docsHeaderArray.map((item, index) => (
                 <PagesHeaders 
                     key={index}
                     titleCol1={
-                        <div id='docs-header-text' className='docs section--padding'>
+                        <div id='docs-header-text'>
                             <img
                                 src={logoDocs} 
                                 className='header-logo'

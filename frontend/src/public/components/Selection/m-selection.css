@@ -39,3 +39,38 @@
     letter-spacing: .03vw;
     color: rgb(13, 37, 48);
 }
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /****************************************** selection *****************************************/
+    /**********************************************************************************************/
+	
+    .selection__container {
+        margin: -15vw 0 0 0;
+        padding: 12vw 5vw 1.5vw 5vw;
+    }  
+    
+    .selection__container__header {
+        margin: 0 0 4vw 0;
+    }
+    
+    .selection__container__header__title {
+        font-size: 3vw;
+        letter-spacing: .2vw;
+    }
+    
+    .selection__container__form {
+        padding-top: 1.5vw;
+        border-radius: 1.5vw;
+    }
+    
+    .selection__container__text {
+        margin-top: 5.5vw;
+        font-size: 2.3vw;
+        line-height: 3.3vw;
+    }
+}

@@ -102,3 +102,76 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /*************************************** selection-slide **************************************/
+    /**********************************************************************************************/
+
+    .selection-slide {
+        height: 50vw;
+        margin-top: -1vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    } 
+    
+    .selection-slide__card {
+        width: 75.8vw;
+        height: 50vw;
+        margin-top: 0;
+    }
+    
+    .selection-slide__card .selection-slide__card__img {
+        width: 75.8vw;
+    }
+    
+    .selection-slide__card:hover .selection-slide__card__img {
+        width: 80vw;
+    }
+    
+    .selection-slide__card__img {
+        width: 75.8vw;
+    }
+    
+    .selection-slide__card__text__exclu {
+        width: 30vw;
+        margin-top: -31vw;
+        padding: .51vw;
+        font-size: 4.2vw;
+        letter-spacing: .2vw;
+    }
+    
+    .selection-slide__card__text {
+        margin-top: 30vw;
+        font-size: 4.2vw;
+        letter-spacing: .25vw;
+    }
+    
+    .selection-slide__card__text__op {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        line-height: 5vw;
+        font-size: 4.2vw;
+    }
+    
+    .selection-slide__card__text__dp {
+        padding-top: 2vw;
+        margin-top: -10vw;
+    }
+    
+    .selection-slide__card__text__dp__designation {
+        margin-left: 3vw;
+        width: 30vw;
+        padding: 1vw 0 1vw 0;
+    }
+    
+    .selection-slide__card__text__dp__prix {
+        margin-right: 3vw;
+        width: 33vw;
+        padding: 1vw 0 1vw 0;
+    }    
+}

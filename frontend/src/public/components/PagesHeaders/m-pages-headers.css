@@ -15,6 +15,11 @@
     overflow: hidden;
 }
 
+.section--padding {
+    padding-top: 15vw;
+    margin-top: -15vw;
+}
+
 .header-rubrik {
     height: auto;
     padding-top: 0.875vw;
@@ -96,22 +101,20 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.why > header,
-.uploader > header {
-    margin-bottom: 7.5vw;
+.why > header {
+    margin-bottom: 12vw;
     padding: 2vw;
     background-color: transparent;
     z-index: 2000;
 }
 
-.why > p
-.uploader > p {
+.why > p {
     text-align: left;
     margin-top: .875vw;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-bottom: 14vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     font-weight: 500;
     line-height: 5.3vw;
 }
@@ -121,9 +124,9 @@ h4 {
     display: inline-block;
     top: 9vw;
     padding: auto;
-    left: 72.6vw;
-    max-width: 12vw;
-    height: 12vw;
+    left: 9vw;
+    max-width: 14vw;
+    height: 14vw;
     font-size: 8vw;
     font-weight: 800;
     background-color: rgb(181, 196, 204);
