@@ -101,7 +101,8 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.why > header {
+.why > header,
+.uploader > header {
     margin-bottom: 12vw;
     padding: 2vw;
     background-color: transparent;
