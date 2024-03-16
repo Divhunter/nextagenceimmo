@@ -79,17 +79,6 @@
     filter: brightness(80%)
 }
 
-.containerAbout__bloc__square {
-    position: absolute;
-    font-size: 0;
-    top: 55vw;
-    left: 3vw;
-    width: auto;
-    height: 13vw;
-    padding-right: 54.3vw;
-    border: .175vw solid rgb(255, 238, 0);
-}
-
 .containerAbout__bloc__pub {
     position: absolute;
     top: 50vw;
@@ -119,7 +108,7 @@
         padding: 1.777vw 1.777vw 1.777vw 1.777vw;
         margin-top: 2.963vw;
         margin-bottom: 4.74vw;
-        font-size: 2.37vw;
+        font-size: 2.3vw;
         letter-spacing: .014vw;
     }
 
@@ -127,30 +116,25 @@
         font-size: 2.074vw;
         line-height: 2.963vw;
     }
+
+    .end {
+        font-size: 3.5vw;
+    }
     
     .containerAbout__text {
         margin: 4.148vw 4.148vw 4.148vw 4.148vw;
-        font-size: 0.711vw;
     }
 
     .containerAbout__text__header {
-        font-size: 2.963vw;
-        line-height: 1.659vw;
-        line-height: 4.444vw;
-    }
-    
-    .containerAbout__bloc__square {
-        top: 8vw;
-        left: 6.777vw;
-        height: 7.703vw;
-        padding-right: 34.8vw;
+        font-size: 3.5vw;
+        line-height: 5vw;
     }
 
     .containerAbout__bloc__pub {
-        top: 5vw;
-        margin-left: 10vw;
-        margin-right: 28vw;
-        font-size: 3.259vw;
-        line-height: 3.555vw;
+        top: 65vw;
+        margin-left: 5vw;
+        margin-right: 10vw;
+        font-size: 5.5vw;
+        line-height: 6vw;
     }
 }

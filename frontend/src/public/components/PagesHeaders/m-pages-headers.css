@@ -161,7 +161,8 @@ h4 {
         padding-bottom: 5vw;
         padding-left: 4.148vw;
         padding-right: 4.148vw;
-        font-size: 3.555vw;
+        font-size: 3vw;
+        line-height: 4.5vw;
         letter-spacing: .0259vw;
     }
 
@@ -175,7 +176,7 @@ h4 {
         line-height: 3.2vw;
         margin-left: 4.148vw;
         margin-right: 4.148vw;
-        font-size: 2.666vw;
+        font-size: 2.4vw;
     }
 
     .paragraph {
