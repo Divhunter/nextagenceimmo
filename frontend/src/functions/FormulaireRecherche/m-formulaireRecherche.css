@@ -152,3 +152,94 @@
 .button-search:active {
     background-color: rgb(136, 191, 253);
 }
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /********************************** formulaire-de-recherche ***********************************/
+    /**********************************************************************************************/
+
+    .formulaire-de-recherche {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 3.5vw; 
+    }
+    
+    .container-form-tags {
+        padding: 3vw 1vw 2vw 1vw;
+        width: 87%;
+        margin: 4vw auto 3vw auto;
+        border-radius: .6vw;
+    }
+    
+    .container-form-tags > p {
+        margin: 0 0 1vw 1vw;
+        font-size: 2.2vw;
+    }
+    
+    .tag {
+        margin-left: .7vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        padding: .8vw 1.2vw .8vw 1.2vw;
+        font-size: 1.8vw;
+        border-radius: .5vw;
+    }
+    
+    .tag-closed {
+        margin-left: 1vw;
+    }
+    
+    .tag-closed:hover {
+        margin-left: 1vw;
+    }
+    
+    .tag-closed-all { 
+        right: 12.1vw;
+        margin-top: -2.2vw;
+        font-size: 2.5vw;
+    }
+    
+    .dropdown {
+        font-size: 2vw;
+        margin: 0 auto 2.5vw auto;
+    }
+      
+    .dropdown-header {
+        font-size: 2.3vw;
+        padding: 2vw;
+        border-radius: .6vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .dropdown-chevron {
+        margin-right: .5vw;
+    }
+      
+    .dropdown-options {
+        height: 23vw;
+        padding-bottom: 3vw;
+    }
+      
+    .dropdown-options label {
+        padding: 1.5vw 0 0 1.5vw;
+    }
+    
+    .dropdown-options label input {
+        margin-bottom: -.5vw;
+    }
+    
+    .button-search {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 3vw;
+        padding: 2vw;
+        border-radius: .6vw;
+        font-size: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 .262vw .7vw;
+    }
+}

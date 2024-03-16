@@ -23,7 +23,7 @@ const Selection = () => {
                 <SelectionSlide />
                 <p className='selection__container__text'>
                     NEXT AGENCE IMMO vous accueille du lundi au vendredi de 9h00 à 12h00
-                    et de 13h30 à 17h30 au 165, route de Vienne à Lyon 8ème.
+                    et de 13h30 à 17h30 au 7, CRS Albert Thomas à Lyon 3ème.
                 </p>
             </div>
         </section>
