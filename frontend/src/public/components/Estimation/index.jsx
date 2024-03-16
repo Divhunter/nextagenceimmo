@@ -57,7 +57,7 @@ const Estimation = () => {
                     }
                     button={clientNoRef.map((item, Id) => (
                         <Contact key={Id} to={`/Contact/${item.Id}`}>
-                            <p className='button'>Contactez-nous</p>
+                            <p className='button button-estimation'>Contactez-nous</p>
                         </Contact>))
                     }
                 />

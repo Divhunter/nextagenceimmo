@@ -123,11 +123,10 @@
         font-size: 1.46vw;
         letter-spacing: .0365vw;
         box-shadow: rgba(0, 0, 0, 0.24) 0 .219vw .584vw;
-        margin-bottom: 8vw;
     }
 
     .containerAbout {
-        margin-top: -7vw;
+        margin-top: 1vw;
         margin-bottom: -3.5vw;
         height: 58.473vw;
     }
