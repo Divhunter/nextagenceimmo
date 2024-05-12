@@ -33,6 +33,7 @@ h2 {
     letter-spacing: .0275vw;
     color: rgb(31, 61, 75);
     font-family: 'Open', sans-serif;
+    z-index: 500;
 }
 
 .header-logo {

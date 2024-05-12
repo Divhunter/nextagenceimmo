@@ -100,7 +100,7 @@ const Agences = () => {
                                         <p  
                                             className='agences-adress'
                                         >
-                                            <a href={redirection}>7 CRS Albert Thoms - 69003 Lyon</a>
+                                            <a href={redirection}>7 CRS Albert Thomas - 69003 Lyon</a>
                                         </p>
                                         <div className='sep'></div>
                                     </div>

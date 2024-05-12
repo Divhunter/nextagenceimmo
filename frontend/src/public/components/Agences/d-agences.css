@@ -53,9 +53,7 @@
     }
 
     .sep {
-        width: 100%;
         height: .3vw;
         margin: 10vw auto 0 auto;
-        background-color: white;
     }
 }
