@@ -8,6 +8,7 @@ section,
 article {
     overflow: hidden;
     background-color: white;
+    z-index: 1000;
 }
 
 section {
@@ -16,27 +17,26 @@ section {
     width: 100%;
     height: auto;
     overflow: hidden;
-    z-index: 1000;
 }
 
 .about {
-    z-index: -1;
+    z-index: 5;
 }
 
 .gestion {
-    z-index: -2;
+    z-index: 4;
 }
 
 .estimation {
-    z-index: -3;
+    z-index: 3;
 }
 
 .agences {
-    z-index: -4;
+    z-index: 2;
 }
 
 .docs {
-    z-index: -5;
+    z-index: 1;
 }
 
 ul, li {
