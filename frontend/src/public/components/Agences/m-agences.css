@@ -9,13 +9,15 @@
 .containerOffice__bloc {
     width: auto;
     height: auto;
+    overflow: hidden;
 }
 
 .containerOffice__bloc__office__pic {
     position: relative;
-    width: 100%;
+    top: -5vw;
+    width: 130vw;
     height: auto;
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .containerOffice__bloc__office__text {
@@ -68,6 +70,12 @@
     /**********************************************************************************************/
     /********************************************* agences ****************************************/
     /**********************************************************************************************/
+
+    .containerOffice__bloc__office__pic {
+        top: 0;
+        width: 100%;
+        filter: brightness(50%);
+    }
 
     .containerOffice__bloc__office__text {
         padding-top: 1.777vw;

@@ -137,13 +137,6 @@
         font-size: 2vw;
     }
     
-    .agences-slide__filtre__text__mail {
-        color: rgb(255, 208, 217) !important; 
-    }
-
-    .agences-slide__filtre__text__mail:hover {
-        text-decoration: underline;
-    }
 
     .agences-title {
         font-size: 2vw;
