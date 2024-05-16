@@ -4,10 +4,6 @@ import pagesHeadersArray from '../../datas/pagesHeadersArray.json'
 import PagesHeaders from '../PagesHeaders'
 import logoGestion from '../../assets/pictures/logo-gestion.png'
 
-// styles
-import './m-gestion.css'
-import './d-gestion.css'
-
 const Gestion = () => {
     
     const gestionHeader = pagesHeadersArray.find(el => el.title === "2")

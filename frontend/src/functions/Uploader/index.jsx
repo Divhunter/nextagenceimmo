@@ -2,10 +2,6 @@ import React from 'react';
 import { faDownload, faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// styles
-import './m-uploader.css';
-import './d-uploader.css';
-
 const Uploader = () => {
     const documents = [
         {

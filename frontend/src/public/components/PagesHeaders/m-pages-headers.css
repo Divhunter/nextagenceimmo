@@ -102,6 +102,14 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
+.why {
+    padding: 0 5vw 0 5vw;
+}
+
+.uploader {
+    padding: 0 5vw 10vw 5vw;
+}
+
 .why > header,
 .uploader > header {
     margin-bottom: 12vw;
@@ -111,6 +119,7 @@ h4 {
 }
 
 .why > p {
+    display: inline-block;
     text-align: left;
     margin-top: .875vw;
     margin-left: 10vw;
@@ -135,6 +144,30 @@ h4 {
     color: white;
     border-radius: 50%;
     z-index: -1;
+}
+
+.uploder__content {
+    text-align: left;
+    margin: 0 0 0 15vw; 
+    font-size: 4.2vw;
+    font-weight: 500;
+    line-height: 5.3vw;
+    width: 90%;
+}
+
+.uploder__content > span {
+    color: rgb(0, 119, 255);
+    transition: color .4s;
+    cursor: pointer;
+}
+
+.uploder__content > span:hover {
+    color: rgb(75, 158, 253);
+    transition: color .4s;
+}
+
+.uploder__content > span:active {
+    color: rgb(136, 191, 253);
 }
 
 /********************************************* media queries ************************************************/

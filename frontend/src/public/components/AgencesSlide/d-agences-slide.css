@@ -97,18 +97,12 @@
     /*******************************************************************************************************/
 
     .agences-slide {
-        position: relative;
-        top: 0;
         margin-top: -5vw;
         left: auto;
-        width: auto;
-        height: auto;
     }
     
     .agences-slide__filtre {
-        margin: auto;
         width: 75.7vw;
-        height: auto;
         padding-left: 5vw;
         padding-right: 5vw;
         line-height: 5.11vw;
@@ -120,12 +114,10 @@
     }
 
     .agences-slide__filtre__arrow__left {
-        float: left;
         margin-left: -.8vw;
     }
 
     .agences-slide__filtre__arrow__right {
-        float: right;
         margin-right: -.6vw;
     }
 
