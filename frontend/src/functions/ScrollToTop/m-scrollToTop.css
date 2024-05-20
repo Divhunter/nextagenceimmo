@@ -4,7 +4,7 @@
 
 .top-to-btm {
     position: relative;
-    z-index: 2000;
+    z-index: 4000;
 }
 
 .icon-position {

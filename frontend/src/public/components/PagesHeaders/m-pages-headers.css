@@ -224,32 +224,43 @@ h4 {
 
     .why,
     .uploader {
-        margin-top: -1.555vw;
-        margin-bottom: 2.592vw;
-        font-size: 2.963vw;
+        margin-top: 0;
+        margin-bottom: 2vw;
+        font-size: 2.6vw;
+        font-weight: 700;
+    }
+    
+    .why {
+        padding: 0 5vw 0 5vw;
+    }
+    
+    .uploader {
+        padding: -5vw 5vw 5vw 5vw;
     }
     
     .why > header,
     .uploader > header {
-        margin-bottom: 4.444vw;
-        padding: 1.185vw;
-    }
-
-    .pagination {
-        top: 5vw;
-        left: 61vw;
-        max-width: 6vw;
-        height: 6vw;
-        font-size: 3vw;
+        margin-bottom: 8vw;
+        padding: 1vw;
     }
     
-    .why > p
-    .uploader > p {
-        margin-top: .518vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 8vw;
-        font-size: 2.37vw;
-        line-height: 3.141vw;
+    .why > p {
+        margin-bottom: 10vw;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    
+    .pagination {
+        top: 6vw;
+        left: 19.7vw;
+        max-width: 10vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+    
+    .uploder__content {
+        margin: 0 0 0 15vw; 
+        font-size: 2.5vw;
+        line-height: 2.5vw;
     }
 }

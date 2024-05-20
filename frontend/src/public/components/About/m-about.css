@@ -136,4 +136,9 @@
         font-size: 5.5vw;
         line-height: 6vw;
     }
+
+    .containerAbout__bloc__pub {
+        font-size: 4.3vw;
+        line-height: 5vw;
+    }
 }
