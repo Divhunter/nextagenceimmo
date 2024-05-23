@@ -19,6 +19,7 @@
     width: 130vw;
     height: auto;
     filter: brightness(30%);
+    z-index: -200;
 }
 
 .containerOffice__bloc__office__text {
