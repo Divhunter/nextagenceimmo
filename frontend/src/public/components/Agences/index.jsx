@@ -86,7 +86,7 @@ const Agences = () => {
                                     height='844px'
                                     fetchpriority='high' 
                                     alt='bureau'
-                                />
+                                /> 
                                 <div className='containerOffice__bloc__office__text'>  
                                     <div 
                                         className='containerOffice__bloc__office__text__content'

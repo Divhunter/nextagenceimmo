@@ -22,7 +22,7 @@
 
 .containerOffice__bloc__office__text {
     position: absolute;
-    display: inline-block;
+    display: inline;
     text-align: center;
     width: 100%;
     left: 50%;
