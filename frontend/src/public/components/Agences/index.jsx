@@ -79,14 +79,6 @@ const Agences = () => {
                         >   
                             <br/><br/>
                             <div id='containerOffice__bloc__office'>
-                                <img 
-                                    className='containerOffice__bloc__office__pic' 
-                                    src={office}
-                                    width='1500px'
-                                    height='844px'
-                                    fetchpriority='high' 
-                                    alt='bureau'
-                                /> 
                                 <div className='containerOffice__bloc__office__text'>  
                                     <div 
                                         className='containerOffice__bloc__office__text__content'
@@ -107,6 +99,14 @@ const Agences = () => {
                                     <p><strong>ORGANIGRAMME</strong></p>
                                     <AgencesSlide />
                                 </div>
+                                <img 
+                                    className='containerOffice__bloc__office__pic' 
+                                    src={office}
+                                    width='1500px'
+                                    height='844px'
+                                    fetchpriority='high' 
+                                    alt='bureau'
+                                /> 
                             </div>
                         </div> 
                     } 

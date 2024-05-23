@@ -24,7 +24,7 @@
 
 .containerOffice__bloc__office__text {
     position: absolute;
-    display: inline;
+    display: inline-block;
     text-align: center;
     width: 100%;
     left: 50%;
@@ -50,7 +50,8 @@
 
 .containerOffice__bloc__office__text__content > p > a,
 .agences-adress {
-    color: rgb(255, 208, 217) !important; 
+    /*color: rgb(255, 208, 217) !important; */
+    color: rgb(193, 255, 79) !important; 
 }
 
 .agences-adress {
