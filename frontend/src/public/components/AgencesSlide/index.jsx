@@ -111,7 +111,7 @@ const AgencesSlide = () => {
                         index === currentText ? 'agences-slide__filtre__text text-visible' : 'agences-slide__filtre__text text-hidden'}
                         >
                         <span className='agences-title'>{items.title}</span>
-                        <br/><br/><br/>
+                        <br/><br/>
                         {items.name}
                         <br/>
                         {items.role}

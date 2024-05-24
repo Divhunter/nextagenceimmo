@@ -84,7 +84,7 @@ const Agences = () => {
                                         className='containerOffice__bloc__office__text__content'
                                         >
                                         <p><strong>NEXT AGENCE IMMO</strong></p>
-                                        <p>standard</p>
+                                        <p>STANDARD</p>
                                         <p>04 27 11 59 13 44</p>
                                         <p>
                                             <a href='mailto:vowd-sv@outlook.com'>accueil@nextagenceimmo.com</a>
