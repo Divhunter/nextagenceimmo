@@ -144,11 +144,11 @@
     }
 
     .footer__partenaires {
-        padding: 8vw 5vw 0vw 5vw;
+        padding: 8vw 5vw 3vw 5vw;
     }
 
     .footer__partenaires__logo {
-        height: 8vw;
+        height: 12vw;
         margin-bottom: 5vw;
         margin-left: 2.5vw;
         margin-right: 2.5vw;
