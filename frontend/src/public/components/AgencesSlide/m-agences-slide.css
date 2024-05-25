@@ -69,7 +69,7 @@
     transform: translate(-50%, 0);
     display: flex;
     justify-content: space-between;
-    width: 13vw;
+    width: 16vw;
 }
 
 .dot {
@@ -138,15 +138,15 @@
         width: 32.592vw;
         margin-top: 8vw;
         margin-bottom: 2.962vw;
-        line-height: 3vw;
+        line-height: 2.9vw;
     } 
     
     .agences-slide__filtre__container__dote {
-        width: 14vw;
+        width: 12vw;
     }
     
     .dot {
-        width: 1.8vw;
-        height: 1.8vw;
+        width: 1.6vw;
+        height: 1.6vw;
     }
 }

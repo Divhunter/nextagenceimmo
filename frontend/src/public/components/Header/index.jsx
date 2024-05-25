@@ -40,6 +40,7 @@ const Header = () => {
 	const [isActu, setIsActu] = useState(false)
 	const isActuState = () => {
         setIsActu(!isActu)
+		document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
 	const scrollToTop = () => {

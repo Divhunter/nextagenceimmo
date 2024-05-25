@@ -7,51 +7,8 @@
     /********************************************* about ******************************************/
     /**********************************************************************************************/
 
-    .about__logo {
-        width: 6vw;
-    }
-    
-    .button {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 1.4vw 2.2vw 1.4vw 2.2vw;
-        font-size: 2vw;
-    }
-
-    .containerAbout>p {
-        font-size: 1.8vw;
-        line-height: 3vw;
-        letter-spacing: normal;
-    }
-
-    .containerAbout>p>div {
-        font-size: 2.1vw;
-    }
-
-    .containerAbout__text {
-        margin: 6vw 4.375vw 5vw 4.375vw;
-        font-size: 1.2vw;
-    }
-
-    .containerAbout__text__header {
-        font-size: 2.8vw;
-        font-weight: 600;
-        line-height: 6vw;
-    }
-
-    .containerAbout__bloc__square {
-        top: 7vw;
-        left: 8vw;
-        padding-right: 43vw;
-        height: 12vw;
-    }
-
     .containerAbout__bloc__pub {
-        top: 4.5vw;
-        margin-left: 12vw;
-        margin-right: 12vw;
-        font-size: 4vw;
-        line-height: 5vw;
+        top: 59vw;
     }
 }
 
