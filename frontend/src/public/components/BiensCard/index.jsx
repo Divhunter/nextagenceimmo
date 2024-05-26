@@ -237,12 +237,12 @@ const BiensCard = () => {
                                         </header>
                                         {generateSurfaces("Pièce(s) de vie", card.Surfaces.PièceDeVieNb, card.Surfaces.PièceDeVieSurface)}
                                         {generateSurfaces("Entré(s)", card.Surfaces.EntréeNb, card.Surfaces.EntréeSurface)}
-                                        {generateSurfaces("Séjour(s) - surface principale", card.Surfaces.SéjourNb, card.Surfaces.SéjourSurface)}
+                                        {generateSurfaces("Séjour(s) - surface ref", card.Surfaces.SéjourNb, card.Surfaces.SéjourSurface)}
                                         {generateSurfaces("Cuisine(s)", card.Surfaces.CuisineNb, card.Surfaces.CuisineSurface)}
-                                        {generateSurfaces("Balcon(s) - surface principale", card.Surfaces.BalconNb, card.Surfaces.BalconSurface)}
+                                        {generateSurfaces("Balcon(s) - surface ref", card.Surfaces.BalconNb, card.Surfaces.BalconSurface)}
                                         {generateSurfaces("Couloir(s)", card.Surfaces.CouloirNb, card.Surfaces.CouloirSurface)}
-                                        {generateSurfaces("Chambre(s) - surface principale", card.Surfaces.ChambresNb, card.Surfaces.ChambresSurface)}
-                                        {generateSurfaces("Salle(s) de bain - surface principale", card.Surfaces.SalleDeBainNb, card.Surfaces.SalleDeBainSurface)}
+                                        {generateSurfaces("Chambre(s) - surface ref", card.Surfaces.ChambresNb, card.Surfaces.ChambresSurface)}
+                                        {generateSurfaces("Salle(s) de bain - surface ref", card.Surfaces.SalleDeBainNb, card.Surfaces.SalleDeBainSurface)}
                                         {generateSurfaces("Toilette(s)", card.Surfaces.ToilettesNb, card.Surfaces.ToilettesSurface)}
                                         {generateSurfaces("Cave(s)", card.Surfaces.CaveNb, card.Surfaces.CaveSurface)}
                                         {generateSurfaces("Garage(s) / Parking(s)", card.Surfaces.GarageNbParkingNb, card.Surfaces.GarageSurafecParkinSurface)}
@@ -393,7 +393,7 @@ const BiensCard = () => {
                                                 card.InformationsLégales.ÉnergieConso !== null && card.InformationsLégales.ÉnergieConso !== "" &&
                                                 card.InformationsLégales.ÉnergieConso !== undefined
                                             ) &&
-                                            <p>Énergie - Consommation conventionnelle :<span><strong>{card.InformationsLégales.ÉnergieConso}</strong></span></p>
+                                            <p>Énergie CC :<span><strong>{card.InformationsLégales.ÉnergieConso}</strong></span></p>
                                         } 
 
                                         {

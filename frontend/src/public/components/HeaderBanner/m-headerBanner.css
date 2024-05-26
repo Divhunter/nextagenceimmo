@@ -27,7 +27,7 @@
 
 .headerBanner__header__message {
     position: absolute;
-    top: 5vw;
+    top: 1vw;
     left: 50%;
     transform: translate(-50%, 0);
     font-family: 'Open', sans-serif;

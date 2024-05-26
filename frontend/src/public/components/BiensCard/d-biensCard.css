@@ -23,6 +23,7 @@
         position: absolute;
         margin-top : 2vw;
 		margin-left: 5vw;
+        margin-right: 0;
 		width: 8vw;
 		height: auto;
         filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
@@ -106,6 +107,7 @@
     }
 
     .biensCard__content__text__description > header {
+        font-size: 1.3vw;
         padding: 0 .5vw 0 .5vw;
     }
 

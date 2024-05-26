@@ -32,9 +32,9 @@
 
 .tag {
     display: inline-block;
-    margin-left: 3vw;
+    margin-left: 2vw;
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0;
     padding: 2vw 3vw 2vw 3vw;
     font-family:'Open', sans-serif;
     font-size: 4vw;

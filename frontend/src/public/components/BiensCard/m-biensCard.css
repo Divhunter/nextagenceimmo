@@ -11,15 +11,15 @@
 
 .biensCard__header {
     width: 100%;
-    height: 6vw;
+    height: 13vw;
     margin: 0;
 }
 
 .biensCard__header__logo {
     position: absolute;
-    margin-top : 2vw;
+    margin-top : 3vw;
     margin-left: 5vw;
-    width: 8vw;
+    width: 20vw;
     height: auto;
     filter: drop-shadow(1px 3px 3px rgba(1, 1, 1, .35));
     z-index: 1000;
@@ -36,17 +36,21 @@
 
 .biensCard__content__tag {
     font-family: 'Open', sans-serif;
-    margin-bottom: 3vw;
+    margin-bottom: 8vw;
 }
 
 .biensCard__content__tag > li {
     display: inline-block;
-    padding: .5vw .8vw .5vw .8vw;
-    margin-right: .5vw;
-    font-size: 1.5vw;
-    letter-spacing: .2vw;
-    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 0;
+    padding: 2vw 3vw 2vw 3vw;
+    font-family:'Open', sans-serif;
+    font-size: 4vw;
+    border-radius: 1.25vw;
     background-color: rgb(206, 39, 73);
+    opacity: 1;
     color: white;
 }
 
@@ -69,9 +73,6 @@
 
 #biensCard__content__tag__envoyer,
 #biensCard__content__tag__imprimer {
-    float: right;
-    margin-left: .5vw;
-    margin-right: 0;
     background-color: rgb(122, 122, 122);
     cursor: pointer;
     transition: background-color .4s;
@@ -89,8 +90,8 @@
     height: auto;
     padding: 0;
     margin-bottom: 5vw;
-    font-size: 1.3vw;
-    line-height: 2vw;
+    font-size: 4vw;
+    line-height: 6vw;
     color: rgb(75, 75, 75);
 }
 
@@ -102,6 +103,7 @@
 }
 
 .biensCard__content__text__description > header {
+    font-size: 3vw;
     padding: 0 .5vw 0 .5vw;
 }
 
@@ -109,7 +111,7 @@
     display: inline-block;
     padding: 0 .2vw 0 .7vw;
     width: 100%;
-    height: auto;
+    height: auto; 
     text-align: justify;
     text-justify: distribute;
 }
@@ -130,20 +132,20 @@
 
 .biensCard__content__text__description__title > li > div {
     min-width: 43.2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
     padding-bottom: 3.5vw;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
 }
-
+ 
 .biensCard-dropdown--Up {
-    max-height: 4vw;
+    max-height: 12vw;
     transition: max-height .5s;
 }
 
 .biensCard-dropdown--Down {
-    max-height: 48vw;
+    max-height: 80vw;
     height: auto;
     transition: max-height .5s;
 }
@@ -156,11 +158,11 @@
     background-color: rgb(206, 39, 73);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: white;
-    padding: 1vw;
+    padding: 3vw;
     margin-top: 0;
     margin-bottom: 0;
     border-radius: 5px;
-    font-size: 1.8vw;
+    font-size: 4.3vw;
     cursor: pointer;
     z-index: 2000;
 }
@@ -172,10 +174,10 @@
 
 .biensCard__content__text__description__title > li > div > p,
 .barem {
-    margin-top: 2.5vw;
-    margin-left: 1vw;
-    margin-right: 2vw;
-    line-height: .8vw;
+    margin-top: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    line-height: 2vw;
 }
 
 .barem {
@@ -209,7 +211,7 @@
     width: 100%;
 }
 .biensCard-button-container__simulateur {
-    margin-right: .7vw;
+    margin-right: 2vw;
 }
 
 .biensCard-button-container__contact {
