@@ -75,11 +75,9 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    padding-left: 30vw;
-    padding-right: 30vw;
     background-color: white;
     margin-top: 10vw;
-    padding: 10vw 5vw 2vw 5vw;
+    padding: 10vw 2vw 2vw 2vw;
 }
 
 .footer__partenaires__logo {

@@ -8,10 +8,11 @@
 
 .containerContact {
     display: inline-block;
-    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
     height: 382.6vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-bottom: 10vw;
 }
 
 .containerContact__text {
@@ -27,7 +28,7 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: 600;
     line-height: 6.5vw;
     color: rgb(104, 104, 104);
@@ -48,7 +49,7 @@
 .containerContact__bloc {
     position: absolute;
     display: inline-block;
-    right: 0vw;
+    right: 0;
     overflow: hidden;
 }
 
@@ -62,7 +63,7 @@
 .containerContact__bloc__pub {
     position: absolute;
     display: inline-block;
-    top: 330vw;
+    top: 350vw;
     margin-left: 15vw;
     margin-right: 5vw;
     font-family: 'Helvetica';
@@ -107,15 +108,15 @@
 
     .containerContact__bloc__woman {
         width: 64.8vw;
-        margin-right: -15vw;
-        margin-top: 50.8vw;
+        margin-right: 0;
+        margin-top: 50.9vw;
     }
 
     .containerContact__bloc__pub {
-        top: 125vw;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        font-size: 3vw;
+        top: 135vw;
+        margin-left: 0;
+        margin-right: 5vw;
+        font-size: 4vw;
         line-height: 3.5vw;
     }
 }

@@ -15,7 +15,7 @@
 .form-contact {
     margin: 0;
     padding: 0;
-    top: 12vw;
+    top: 60vw;
 }
 
 .form-group{
@@ -236,7 +236,8 @@
 
     .form-contact {
         margin: 0;
-        top: 5vw;
+        top: 45vw;
+        left: 5vw;
     }
 
     .form-group > input,
