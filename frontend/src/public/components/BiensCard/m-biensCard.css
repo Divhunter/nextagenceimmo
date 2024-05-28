@@ -37,6 +37,7 @@
 .biensCard__content__tag {
     font-family: 'Open', sans-serif;
     margin-bottom: 8vw;
+    margin-left: 3.5vw;
 }
 
 .biensCard__content__tag > li {

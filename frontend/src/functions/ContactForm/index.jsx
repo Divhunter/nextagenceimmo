@@ -234,7 +234,6 @@ const ContactForm = () => {
 
   return (
     <Fragment >
-
       <form
         onSubmit={handleSubmit}
         id='form'
