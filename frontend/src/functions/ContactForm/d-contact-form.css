@@ -10,6 +10,12 @@
         width: 40vw;
     }
 
+    .form-contact {
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+
     .form-group > input,
     .form-group > textarea {
         margin-bottom: auto;
@@ -61,6 +67,12 @@
     /***************************************** contact-form ***************************************/
     /**********************************************************************************************/
 
+    .form-contact {
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+    
     .form-group > input,
     .form-group > textarea {
         font-size: 1.6vw;

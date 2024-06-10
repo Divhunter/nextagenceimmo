@@ -19,7 +19,7 @@ const SelectionSlide = () => {
   useEffect(() => {
     const updateSlidesToShow = () => {
       const screenWidth = window.innerWidth;
-      setSlidesToShow(screenWidth <= 991 ? 1 : 4)
+      setSlidesToShow(screenWidth <= 1199 ? 1 : 4)
     }
 
     updateSlidesToShow()

@@ -21,6 +21,7 @@
     margin: 6vw 4.375vw 6vw 4.375vw;
     color: black;
     font-size: 1.4vw;
+    font-family: Open, sans-serif;
 }
 
 .containerContact__text__header {
@@ -35,15 +36,13 @@
 }
 
 .containerContact__text__form {
-    position: absolute;
-    margin-top: 5.25vw;
+    position: relative;
     margin-bottom: 4.375vw;
     margin-left: 2vw;
     padding-left: 0;
     padding-right: 0;
     top: 15vw;
     height: auto;
-    background-color: black;
 }
 
 .containerContact__bloc {
@@ -63,7 +62,7 @@
 .containerContact__bloc__pub {
     position: absolute;
     display: inline-block;
-    top: 350vw;
+    bottom: 50vw;
     margin-left: 15vw;
     margin-right: 5vw;
     font-family: 'Helvetica';
@@ -113,7 +112,7 @@
     }
 
     .containerContact__bloc__pub {
-        top: 135vw;
+        bottom: 55vw;
         margin-left: 0;
         margin-right: 5vw;
         font-size: 4vw;

@@ -21,7 +21,7 @@
     }
 
     .containerContact__bloc__pub {
-        top: 132vw;
+        bottom: 40vw;
         margin-left: 0;
         margin-right: 0;
         font-size: 3vw;
@@ -69,8 +69,8 @@
     }
 
     .containerContact__bloc__pub {
-        top: 100vw;
-        margin-left: -5vw;
+        bottom: 40vw;
+        margin-left: 10vw;
         font-size: 2.7vw;
         line-height: 3.5vw;
     }
@@ -132,8 +132,8 @@
     }
 
     .containerContact__bloc__pub {
-        top: 91vw;
-        margin-left: 7vw;
+        bottom: 35vw;
+        margin-left: 10vw;
         font-weight: 800;
         font-size: 2.555vw;
         line-height: 2.92vw;

@@ -481,7 +481,7 @@ const BiensCard = () => {
                                                 card.InformationsLégales.MontantEstimé !== null && card.InformationsLégales.MontantEstimé !== "" &&
                                                 card.InformationsLégales.MontantEstimé !== undefined
                                             ) &&
-                                            <p>Montant estimé des dépenses d'énergie :<span><strong>{card.InformationsLégales.MontantEstimé} (annuel)</strong></span></p>
+                                            <p>Dépenses d'énergie :<span><strong>{card.InformationsLégales.MontantEstimé} (annuel)</strong></span></p>
                                         } 
 
                                         {
@@ -519,6 +519,9 @@ const BiensCard = () => {
                     <Contact to={`/Contact/${Id}`}>
                         <p className='button biensCard-button-container__contact'>Contactez-nous</p>
                     </Contact>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </section>
             <Footer/>

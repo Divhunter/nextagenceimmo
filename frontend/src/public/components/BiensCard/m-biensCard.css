@@ -37,7 +37,6 @@
 .biensCard__content__tag {
     font-family: 'Open', sans-serif;
     margin-bottom: 8vw;
-    margin-left: 3.5vw;
 }
 
 .biensCard__content__tag > li {
@@ -106,6 +105,11 @@
 .biensCard__content__text__description > header {
     font-size: 3vw;
     padding: 0 .5vw 0 .5vw;
+    background-color: transparent;
+    line-height: 0;
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: .15vw;
 }
 
 .biensCard__content__text__description > p {
@@ -115,13 +119,6 @@
     height: auto; 
     text-align: justify;
     text-justify: distribute;
-}
-
-.biensCard__content__text__description > header {
-    background-color: transparent;
-    line-height: 0;
-    font-weight: 600;
-    letter-spacing: .15vw;
 }
 
 .biensCard__content__text__description__title {
@@ -146,7 +143,7 @@
 }
 
 .biensCard-dropdown--Down {
-    max-height: 80vw;
+    max-height: 120vw;
     height: auto;
     transition: max-height .5s;
 }
@@ -201,7 +198,7 @@
 
 .biensCard__content__text__description__title > li > div > div > img {
     margin: 0;
-    width: 11vw;
+    width: 30vw;
     height: auto;
 }
 
@@ -217,4 +214,111 @@
 
 .biensCard-button-container__contact {
     display: inline-block;
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /****************************************** biensCard *****************************************/
+    /**********************************************************************************************/
+
+    .biensCard__header {
+        height: auto;
+    }
+    
+    .biensCard__header__logo {
+        margin-top : 3vw;
+        margin-left: 3vw;
+        width: 13vw;
+    }
+    
+    .biensCard__content {
+        margin: 15vw 8vw auto 8vw;
+    }
+    
+    .biensCard__content__tag {
+        margin-left: 0;
+        margin-bottom: 7vw;
+    }
+
+    .biensCard__content__tag > li {
+        margin-right: .8vw;
+        margin-top: .8vw;
+        padding: 1vw 1.5vw 1vw 1.5vw;
+        font-size: 2vw;
+        border-radius: .8vw;
+    }
+    
+    #biensCard__content__tag__retour {
+        letter-spacing: .12vw;
+    }
+    
+    .biensCard__content__text {
+        margin-bottom: 2vw;
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
+    
+    .biensCard__content__text__description {
+        padding: 1vw 1vw 1vw 0;
+    }
+    
+    .biensCard__content__text__description > header {
+        font-size: 1.7vw;
+        letter-spacing: .12vw;
+    }
+    
+    .biensCard__content__text__description > p {
+        padding: 0 .2vw 0 .7vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div {
+        min-width: 40.2vw;
+        margin-bottom: 2vw;
+        padding-bottom: 3.5vw;
+    }
+     
+    .biensCard-dropdown--Up {
+        max-height: 7vw;
+    }
+    
+    .biensCard-dropdown--Down {
+        max-height: 80vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div > header {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .biensCard__content__text__description__title > li > div > header > p {
+        padding: 2vw;
+        font-size: 2.5vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div > header > p > span {
+        margin-right: 1vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div > p,
+    .barem {
+        margin-top: 5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        line-height: 2vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div > div {
+        margin: .7vw 0 0 1vw;
+    }
+    
+    .biensCard__content__text__description__title > li > div > div > img {
+        width: 18vw;
+    }
+    
+    .biensCard-button-container__simulateur {
+        margin-right: 2vw;
+    }
 }
