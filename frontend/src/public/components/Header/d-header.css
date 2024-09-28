@@ -234,6 +234,10 @@
 		top: 10vw;
 	}
 
+	.nav__menu__alert {
+        padding: .69vw;
+	}
+
 	.navbar__menu__text {
 		font-size: 1.8vw;
 	}
