@@ -7,81 +7,6 @@
     /***************************************** pages-headers **************************************/
     /**********************************************************************************************/
 
-    .header-rubrik {
-        padding-top: .875vw;
-        padding-bottom: 4.375vw;
-    }
-    
-    h2 {
-        font-size: 2.3vw;
-        letter-spacing: .0275vw;
-    }
-
-    .header-logo {
-        width: 5vw;
-    }
-
-    h3 {
-        margin-top: 2vw;
-        padding-left: 14vw;
-        padding-right: 14vw;
-        font-size: 2.5vw;
-        letter-spacing: .0437vw;
-    }
-
-    h4 {
-        font-size: 1.5vw;
-    }
-
-    .paragraph {
-        margin-left: 9.45vw;
-        margin-right: 9.45vw;
-        margin-bottom: 4.8vw;
-        font-size: 1.75vw;
-        line-height: 2.275vw;
-        letter-spacing: .0875vw;
-    }
-
-    .why,
-    .uploader {
-        margin-top: -2.625vw;
-        margin-bottom: 4.375vw;
-        padding: 0 4vw 4vw 4vw;
-        font-size: 2.3vw;
-    }
-
-    .why > header,
-    .uploader > header {
-        margin-bottom: 3vw;
-    }
-
-    .pagination {
-        top: 4.5vw;
-        left: 49.7vw;
-        max-width: 4vw;
-        height: 4vw;
-        font-size: 2.5vw;
-    }
-
-    .why > p 
-    .uploader > p {
-        margin-top: .875vw;
-        margin-left: 1.75vw;
-        margin-right: 1.75vw;
-        font-size: 1.575vw;
-        line-height: 2.187vw;
-    }
-}
-
-/********************************************* media queries ************************************************/
-/************************** New rules if the screen is at more 1199px ****************************************/
-
-@media screen and (min-width: 1200px) {
-
-    /**********************************************************************************************/
-    /***************************************** pages-headers **************************************/
-    /**********************************************************************************************/
-    
     .section--padding {
         padding-top: 3.3vw;
         margin-top: -3.3vw;
@@ -109,7 +34,6 @@
         padding-right: 10vw;
         font-size: 2.774vw;
         letter-spacing: .1vw;
-        line-height: 3.5vw;
         font-weight: 500;
     }
 
@@ -117,6 +41,7 @@
         margin-top: -1vw;
         font-size: 1.8vw;
         letter-spacing: .0365vw;
+        line-height: 3.2vw;
     }
 
     .paragraph {
@@ -131,7 +56,7 @@
 
     .why,
     .uploader {
-        margin-top: -7.5vw;
+        margin-top: -2.5vw;
         margin-bottom: -3.5vw;
         font-size: 2.2vw;
     }
@@ -160,16 +85,39 @@
         margin-top: 5vw;
         margin-left: 1.8vw;
         margin-right: 1.8vw;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         line-height: 1.9vw;
     }
 
     .uploder__content {
         text-align: left;
         margin: 0 auto; 
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         font-weight: 500;
         line-height: 1.9vw;
         width: 40%;
+    }
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 1199px ****************************************/
+
+@media screen and (min-width: 1200px) {
+
+    /**********************************************************************************************/
+    /***************************************** pages-headers **************************************/
+    /**********************************************************************************************/
+    
+    .why,
+    .uploader {
+        margin-top: -7.5vw;
+    }
+
+    .why {
+        padding: 0 5vw 0 5vw;
+    }
+
+    .why > p {
+        font-size: 1.5vw;
     }
 }

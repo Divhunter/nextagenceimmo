@@ -53,10 +53,10 @@
     }
 
     .containerAbout__bloc__pub {
-        top: 4.5vw;
+        top: 53vw;
         margin-left: 15vw;
-        margin-right: 15vw;
-        font-size: 3vw;
+        margin-right: 10vw;
+        font-size: 4vw;
         line-height: 4vw;
     }
 }

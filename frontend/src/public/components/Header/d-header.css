@@ -110,7 +110,7 @@
 	.container-button {
 		top: 2.25vw;
 		right: 8vw;
-		width: 27vw;
+		width: 27.3vw;
 	}
 
 	.nav__menu__button {
@@ -119,7 +119,7 @@
     }
 
 	.nav__menu__alert {
-        padding: .68vw;
+        padding: .8vw;
 		font-size: 1.5vw;
 		border: solid 2px rgba(255, 255, 255, .3);
 	}
