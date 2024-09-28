@@ -15,6 +15,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.content-contact__biensCard__content__tag {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
 .containerContact__text {
     display: inline-block;
     width: auto;

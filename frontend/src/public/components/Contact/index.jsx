@@ -54,7 +54,7 @@ const Contact = () => {
                     <h1 className='headerBanner__header__message'>Contact</h1>
                     <div className='content-contact'>
                         {(isAchatContact || isVenteContact || isLocationContact) && 
-                            <ul className='biensCard__content__tag'>
+                            <ul className='content-contact__biensCard__content__tag biensCard__content__tag'>
                                 {
                                     (
                                         card.Exclu !== false && card.Exclu !== "" &&
