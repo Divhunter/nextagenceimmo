@@ -489,7 +489,7 @@ const BiensCard = () => {
                                                 card.InformationsLégales.BarèmHonnoraires !== null && card.InformationsLégales.BarèmHonnoraires !== "" &&
                                                 card.InformationsLégales.BarèmHonnoraires !== undefined
                                             ) &&
-                                            <Link to='https://www.notreagenceimmo.com/fr/mentions-legales'><p className='barem'>{card.InformationsLégales.BarèmHonnoraires}</p></Link>
+                                            <Link to='https://www.nextagenceimmo.com/fr/mentions-legales'><p className='barem'>{card.InformationsLégales.BarèmHonnoraires}</p></Link>
                                         } 
 
                                         {

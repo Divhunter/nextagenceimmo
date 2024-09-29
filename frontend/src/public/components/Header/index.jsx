@@ -56,7 +56,7 @@ const Header = () => {
 				'navbar navbar-open':
 				'navbar navbar-closed' 
 			}>
-				<Home to='https://notreagenceimmo.vercel.app/'>
+				<Home to='https://nextagenceimmo.vercel.app/'>
 					<img 
 						className='nav__menu__logo-nai' 
 						src={ isOpen ? logoNAIS : logoNAI } 

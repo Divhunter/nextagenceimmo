@@ -36,9 +36,9 @@ const Footer = () => {
           <FontAwesomeIcon className='footer__link__icon icon-gh' icon={(fab, faInstagram)} />
         </Link>
       </div>
-      <Link to='https://notreagenceimmo.vercel.app/'>
+      <Link to='https://nextagenceimmo.vercel.app/'>
         <img 
-						className='footer__logo-Notreagenceimmo' 
+						className='footer__logo-nextagenceimmo' 
 						src={ logoNAI } 
 						max-width='4123px'
 						max-height='1554px'
